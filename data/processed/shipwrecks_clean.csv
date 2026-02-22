@@ -1,0 +1,1832 @@
+wreck_id,strauss_id,name,parker_number,country,sea_area,region_db,latitude,longitude,date_start,date_end,cargo_types,provenance,destination,region
+1,331,Komiza,,Croatia,Adriatic,Vis Island,43.03333,16.08333,1.0,200.0,amphorae,Egypt,Northern Italy,adriatic
+2,328,Lokunji,,Croatia,Adriatic,Kvarner region,44.7,14.28333,1.0,100.0,amphorae,Cos,Northern Italy,adriatic
+3,329,Maharac Cape,,Croatia,Adriatic,Mljet island,42.73333,17.66666,1.0,100.0,amphorae; Eastern coarse ware pottery of biconical dishes and trefoil mouth jugs.,Rhodes,Northern Italy,adriatic
+4,330,Mlin,702,Croatia,Adriatic,Split channel,43.45,16.23333,1.0,200.0,amphorae,Aegean,Northern Italy,adriatic
+5,322,Plavac B,832,Croatia,Adriatic,"Zlarin Island, central Dalmatia",,,1.0,100.0,,,,adriatic
+6,326,Tramerka,,Croatia,Adriatic,Northern Dalmatia,44.21666,14.78333,1.0,100.0,amphorae,Rhodes,northern Italy,adriatic
+7,332,Veliki Skolj,,Croatia,Adriatic,Mljet island,42.7,17.75,1.0,200.0,"marble; sarcophagi; marble:15 basins or unfinished sarcophagi with lids.; Sherds of Eastern coarse ware two-handled dishes, oinochoe.",Aegean,Northern Italy,adriatic
+8,453,La Fourmigue C,425,France,Western Mediterranean,Alpes-Maritimes,,,-80.0,-60.0,"amphorae; A fine collection of furniture and sculptural appliques, mostly belonging to bronze couches inlaid with silver and copper; an inscription indicated Greek manufacture._x000D_
+Also a large dish, a bucket, decorated with a fine Bacchic mask, a candelabrum foot and other pieces of bronze furniture.",Aegean via Cosa,France,western_med
+9,407,Le Grotticelle,486,Italy,Tyrrhenian Sea,"Between Ventotene and S. Stefano, Pontine Islands",,,-75.0,-25.0,"amphorae; About four hundred pieces belonging to couches, bronze fittings from the legs and carved bone decoration (including female figures and animal heads)  from the bed and back of the couch. _x000D_
+Other items include bronze fittings from chests and boxes. _x000D_
+Also a marble base (for a statue), a marble basin, a wooden marline-spike. _x000D_
+Coarse ware and fineware.",Aegean.,Rome,western_med
+10,323,Koromasna  Cove,,Croatia,Adriatic,North side of Zirje island,43.65,15.65,1.0,100.0,amphorae,Aegean,Northern Italy,adriatic
+11,372,Ognina A,755,Italy,Central Mediterranean,"Near Syracuse, east coast of Sicily",,,215.0,230.0,amphorae,Aegean/N. Africa/Propontis,Sicily/Rome?,western_med
+12,12,Kizil Burun Column,,Turkey,Aegean,Southwest of Izmir,38.26075,26.24256,-125.0,-25.0,"amphorae; marble; columns; blocks; marble:Eight Proconnesian marble column drums averaging about 3 feet tall and ranging in diameter from 5 to 5.5 feet. This incremental graduation suggests that the eight drums and one capital comprise a single column over 30 feet tall. Newly quarried stone as the drums are not fluted and still preserve traces of corkscrew-shaped hoisting grooves. A group of large rectangular marble blocks which probably represent architectural elements associated with the column. This area also yielded an interesting array of newly-quarried, roughly-finished marble objects such as a small hand basin, the pedestal for one of two larger basins, and at least 6 uninscribed grave stones or stele. More than a dozen marble blocks.; Undecorated, utilitarian cookware (plates, casseroles). Numerous Italian ceramics including cooking pans. Several types of typical Hellenistic fineware (moldmade bowls, grey ware, and black glaze cups, bowls, and salt cellars).Nine bronze handles.",Proconnesus,"Claros, Turkey?",eastern_med
+13,337,Vele Orjule/Lussino,,Croatia,Adriatic,Near Losinj Island,44.5,14.53333,-110.0,170.0,A life-size bronze statue of 'Apoxyomenos' was found as a solitary find. Supposedly a Hellenistic or Roman copy of the famous Greek C4th original. Dated by organic material found inside the statue.,Greece,Northern Italy,adriatic
+14,362,Mazara del vallo,,Italy,Central Mediterranean,"Between Sicily and Cap Bon, Tunisia",,,-300.0,-100.0,"amphorae; A bronze satyr was retrieved on two different occasions: the discovery of the left leg, caught up in the nets of a fishing boat from Mazara in 1997, was followed by the discovery of the body in March 1998,  missing the other leg and the arms, however. The figure had larger than lifesize dimensions and was more than two metres tall. The overall weight of the preserved parts is around 108 kilograms (96 for the body, 12 the detached leg). The young Satyr is caught in the act of dancing, with his arms outspread, possibly holding a cup and a thyrsus, the left leg slightly raised and the head turned to one side with hair flowing around._x000D_
+His semi-feral nature is shown by his pointed ears.",Greece,?,western_med
+15,72,Aghios Eustratios(?),,Greece,Aegean,Between Euboea and Lesbos,,,-25.0,-1.0,Bronze statue of Augustus riding a horse.Tthis is the only preserved life-size equestrian statue of him. He wears a heavy chiton and a mantle and holds the reins with his left hand.,Aegean,?,eastern_med
+16,503,Tyre F,1189,Lebanon,Eastern Mediterranean,On the south side of Tyre,,,-200.0,-100.0,amphorae,?,?,eastern_med
+17,1,Marmaris B,658,Turkey,Aegean,Marmaris,,,-400.0,-25.0,"marble; marble:Louteria, similar in shape and concretion to those  in the Bodrum Museum.",Aegean,?,eastern_med
+18,2,Kuçük Keramit Adasi,559,Turkey,Aegean,North of Bodrum,,,-310.0,-300.0,amphorae,Samos,?,eastern_med
+19,3,Kizil Burun,547,Turkey,Aegean,Marmaris Peninsula,,,-300.0,-250.0,amphorae,Rhodes,?,eastern_med
+20,4,Serçe Limani B,1071,Turkey,Aegean,Marmaris Peninsula,,,-300.0,-270.0,"amphorae; Minor cargo of small handle-less pots possibly for unguents, courseware jugs and black gloss ware. Twenty seven jars of uniform size and shape were found (heights vary between 8.2 and 9.3 cm.).  They may have originally contained unguents as the narrow mouth and carefully formed rim indicate their use for such valuable liquids. The jars may originate in Egypt._x000D_
+This globular amphora has comparable parallels to ones from Pergamun and Tarsus, but enough differences exist to mark this one as unusual._x000D_
+Millstones.",Egypt? Datça Peninsula,?,eastern_med
+21,5,Mandalya Gulf B,643,Turkey,Aegean,North of Bodrum,,,-300.0,-100.0,amphorae,Aegean,?,eastern_med
+22,7,Serçe Limani C,1072,Turkey,Aegean,Marmaris Peninsula,,,-150.0,-100.0,amphorae; Palestinian pottery.,Palestine/Rhodes,?,eastern_med
+23,8,Sarah Ky,1038,Turkey,Aegean,Marmaris Peninsula,,,-300.0,-1.0,amphorae,Rhodes,?,eastern_med
+24,10,Knidos A,548,Turkey,Aegean,Western tip of Datça Peninsula,,,-200.0,-1.0,"Cups, lamps and two-handled bowls.",Aegean,?,eastern_med
+25,11,Knidos B,549,Turkey,Aegean,Western tip of Datça Peninsula,,,-200.0,-1.0,"amphorae; A large cargo of roof tiles, both pantiles and cover tiles. _x000D_
+Some coarse pottery.",Aegean,?,eastern_med
+26,13,Arap Adasi,50,Turkey,Aegean,South west of Marmaris,,,-100.0,-1.0,"amphorae; Bronze statue of a woman, C 3rd  BC.  Not necessarily from the same wreck.",Rhodes,?,eastern_med
+27,14,Bodrum,105,Turkey,Aegean,Bodrum,,,-100.0,-1.0,amphorae,Cos,?,eastern_med
+28,15,Yalikavak,1238,Turkey,Aegean,North of Bodrum,,,-100.0,-1.0,"amphorae; Tiles. Bronze statue of a negro boy, 47cm high, broken off at the waist; a bronze figurine of Isis-Fortuna 28cm high, with right arm and left wrist missing.",Aegean,?,eastern_med
+29,16,Çökertme B,325,Turkey,Aegean,East of Bodrum,,,-100.0,-1.0,amphorae,Cnidus,?,eastern_med
+30,17,Cape Gelidonya B,209,Turkey,Aegean,South of Kemer,,,-50.0,-25.0,"Over 300 pieces of Eastern Sigillata A pottery, including plates, larger plates, cups and bowls.",Eastern Cilicia,Aegean? Rome?,eastern_med
+31,18,Sancak Burun,1026,Turkey,Aegean,East of Bodrum,,,-25.0,100.0,amphorae,Rhodes,?,eastern_med
+32,19,Mandalya Gulf A,642,Turkey,Aegean,North of Bodrum,,,-50.0,50.0,amphorae,Cos,?,eastern_med
+33,20,Ince Ada,516,Turkey,Aegean,South west of Marmaris,,,1.0,100.0,amphorae,Aegean,?,eastern_med
+34,21,Karabağla,534,Turkey,Aegean,"Yassi Ada Reef, west of Bodrum",,,1.0,100.0,"amphorae; Tiles, lamps and pottery.",Rhodes,?,eastern_med
+35,22,Cakil Burnu,,Turkey,Aegean,Sea of Marmara,,,1.0,100.0,amphorae,Cos?,Black Sea?,eastern_med
+36,23,Sigacek,,Turkey,Aegean,?,,,1.0,100.0,"marble; columns; blocks; marble:8 column drums, a plinth and slabs.",?,?,eastern_med
+37,6,Gökova,457,Turkey,Aegean,Gökova Gulf,,,-300.0,-100.0,amphorae,Rhodes,?,eastern_med
+38,100,Şile,1088,Turkey,Black Sea,Near Şile,,,100.0,125.0,"marble; columns; blocks; marble:Two 10 foot columns, finished state; large verde antico block from Thessaly; five Ionic capitals, a column base, two blocks and a plaque from Proconnesus, some roughly quarried, some half finished. _x000D_
+Huge unfinished statue of an emperor (4.5m), a  large female bust that may date to the early C2nd AD. A sarcophagus lid, a stele and two bowls. _x000D_
+There may be more marble buried in the sand.","Thessaly, Proconnesus",Black Sea,black_sea
+39,24,Bozukkale,112,Turkey,Aegean,Marmaris Peninsula,,,,,amphorae,?,?,eastern_med
+40,101,Sinope deep wreck A,,Turkey,Black Sea,Northern Turkey,,,400.0,700.0,amphorae,Black Sea,?,black_sea
+41,102,no name,,Bulgaria,Black Sea,?,,,-500.0,-200.0,amphorae,South coast Black Sea,?,black_sea
+42,30,Piadha,810,Greece,Aegean,"North of Epidaurus, Argolis",,,-500.0,-1.0,Laconian tiles,Aegean,?,eastern_med
+43,300,Preveza B,905,Greece,Central Mediterranean,In the area of Actium,,,-300.0,-250.0,amphorae,Corinth,Italy?,eastern_med
+44,305,Methone A,693,Greece,Central Mediterranean,"Near Methone, Peloponnese",,,-425.0,-25.0,amphorae,Aegean?,Italy?,eastern_med
+45,31,Marathon,650,Greece,Aegean,"Near Marathon, Attica",,,-400.0,-1.0,"Famous bronze statue of a boy, perhaps the god Hermes. It is the work of the school of Praxiteles and is dated to 325-300 BC.",Athens,?,eastern_med
+46,306,Preveza A,904,Greece,Central Mediterranean,Near Actium,,,-200.0,-150.0,amphorae,Italy,?,eastern_med
+47,33,Dhrapi,363,Greece,Aegean,"Between Hydra and Spetsai, Peloponnese",,,-250.0,-50.0,amphorae,Rhodes,?,eastern_med
+48,34,Artemision,57,Greece,Aegean,Northern Euboea,,,-200.0,-80.0,"Bronze works of art, including C5th male statue of Poseidon/Zeus brandishing a trident with his raised right hand. It is an original work of a great sculptor, possibly  Kalamis, and a C2nd horse and jockey. The Jockey's physiognomy and original black skin are those of an Ethiopian, but his hairstyle is Greek, which implies that he is of mixed heritage. He is most likely a professional jockey. The best interpretation is that the group was set up in a sanctuary to honour one or more victories in horse races. The large size of the monument and the high quality of the sculpture suggest commission by a royal or wealthy Greek aristocratic. Lots of pottery, two cups and a lamp (perhaps dating the site to ca.150 BC).",Corinth?,Pergamum?,eastern_med
+49,307,Limeni,597,Greece,Central Mediterranean,South west Peloponnese,,,-100.0,-75.0,amphorae,?,?,eastern_med
+50,35,Rhaphina,982,Greece,Aegean,East coast of Attica,,,-100.0,-1.0,amphorae,Cos,?,eastern_med
+51,308,Areopolis,54,Greece,Central Mediterranean,"Mani, Peloponnese",,,-100.0,-1.0,amphorae,Adriatic,Aegean,eastern_med
+52,42,Ai-Strate (?),,Greece,Aegean,Euboea,,,-325.0,400.0,amphorae,?,?,eastern_med
+53,313,Palairos (?),,Greece,Central Mediterranean,Aetolia,,,1.0,350.0,marble; columns; marble:A column of green cipollino 4.10m long and 0.37m and 0.57m in diameter was collected in the net of a fishing boat.,Carystos,Italy?,eastern_med
+54,210,Arwad C,60,Syria,Eastern Mediterranean,Off the coast of Tartous,,,,,marble; columns; marble:Small black basalt columns lying on sand.,?,?,eastern_med
+55,211,Tyre E,1188,Lebanon,Eastern Mediterranean,On the south side of Tyre,,,-300.0,-200.0,amphorae,?,?,eastern_med
+56,212,Sidon,1083,Lebanon,Eastern Mediterranean,Near Sidon,,,-100.0,-1.0,amphorae; Pottery of C 1st BC.,?,?,eastern_med
+57,213,Tyre B,1185,Lebanon,Eastern Mediterranean,On the south side of Tyre,,,1.0,100.0,amphorae,?,?,eastern_med
+58,214,Tyre C,1186,Lebanon,Eastern Mediterranean,On the south side of Tyre,,,1.0,400.0,amphorae,?,?,eastern_med
+59,215,Haifa (?),,Israel,Eastern Mediterranean,Off Haifa,,,-150.0,-140.0,"40 kg silver coins, tetradrachms of Ptolemy VI, 20kg stuck together and 1,800 coins.",Egypt,?,eastern_med
+60,216,Megadim A,689,Israel,Eastern Mediterranean,Near 'Atlit,,,-140.0,-130.0,"Scattered over an area 100m x 50m -  jewellery; copper bar ingots marked with Greek letters and two circular tin ingots approximately 18cm across._x000D_
+Many fragments of life-size bronze statues, both human and animal._x000D_
+Other decorative items of bronze and silver._x000D_
+Two neck-less amphorae used as containers for miscellaneous items, including bronze bracelets in various stages of manufacture, arrowheads, gilded balance plates, gold diadem leaves and silversmith’s tools.",Aegean,Levant,eastern_med
+61,217,Straton’s Tower,1115,Israel,Eastern Mediterranean,Just to the north of Caesarea,,,25.0,75.0,amphorae,Italy,Caesarea,eastern_med
+62,218,Caesarea Maritima,,Israel,Eastern Mediterranean,Caesarea,,,84.0,96.0,Lead ingots with stamp of Domitian; title GER indicates a date in or after AD 84.,?,Caesarea Maritima,eastern_med
+63,219,Hof Hacarmel  A,504,Israel,Eastern Mediterranean,South of Haifa,,,160.0,170.0,"amphorae; Bronze statuettes of Venus, Diana and the Dioscuri; Roman coins of Trajan, Hadrian, Antoninus Pius and Faustina the Younger.",?,?,eastern_med
+64,220,Alexandria A,31,Egypt,Eastern Mediterranean,Near Alexandria,,,-150.0,400.0,amphorae,Adriatic,Alexandria,eastern_med
+65,222,Qaitbay 1,,Egypt,Eastern Mediterranean,"100m  north of Fort Qaitbay, Alexandria",,,-75.0,-25.0,"amphorae; marble; blocks; Some plain pottery,  fine pottery and lamps.",Italy via Crete and Rhodes,Alexandria,eastern_med
+66,223,Deep Tow Site,356,International waters,Eastern Mediterranean,Between Libya and Turkey,,,-300.0,-200.0,amphorae,Aegean,North Africa?,eastern_med
+67,103,Callatis B,161,Romania,Black Sea,"Off 2 Mai village, near border with Bulgaria",,,-200.0,-150.0,amphorae,Thasos,Black Sea,black_sea
+68,501,Shab Rumi,1077,Sudan,Red Sea,An atoll 40km from Port Sudan,,,-50.0,100.0,amphorae,Aegean,India?,eastern_med
+69,36,Antikythera A,44,Greece,Aegean,Off southern tip of Peloponnese,,,-80.0,-70.0,"amphorae; marble; columns; marble:36 marble statues, many of which are copies of bronze originals that are unknown. Fragments of more statues.; Contemporary works of art and old masters from C 4th-2nd BC, including the bronze Antikythera Youth, a bearded head, a pair of statuettes and a bronze bed._x000D_
+A large amount of fine and coarse pottery. _x000D_
+A dozen glass vessels, possibly Alexandrian?_x000D_
+Piles of coins from Pergamum 88-86 BC and gold bars. _x000D_
+A necklace, a ring and other jewellery. _x000D_
+Ingots and lead items._x000D_
+An astronomical computer by which the wreck is dated.",Alex/ Pergamum/ Aegean,Rome,eastern_med
+70,37,Kythera,564,Greece,Aegean,Off southern tip of Peloponnese,,,-50.0,110.0,amphorae,Rhodes,Rome?,eastern_med
+71,309,Methone D,696,Greece,Central Mediterranean,"South west Messinia, Peloponnese",,,100.0,300.0,"marble; sarcophagi; marble:Four unfinished garland sarcophagi of Assos stone with lids lying underneath them.; Tiles, pottery and a glass unguent jar.",Assos,Italy?,eastern_med
+72,39,Piraeus A,817,Greece,Aegean,In Piraeus harbour,,,100.0,200.0,Sculptures of the C2nd AD.,Aegean?,?,eastern_med
+73,310,Methone C,695,Greece,Central Mediterranean,"South west Messinia, Peloponnese",,,200.0,250.0,"amphorae; marble; columns; marble:One complete and twenty fragments of already broken columns of pink granite, from Aswan, scattered over a 30 x 20m area. Six columns lie 60m south of the site. Apparently from a ruined building, being transported for re-use. The complete column is 8m long. Total estimated weight 131.5 tons; A fragment of glass.",Aegean,Italy?,eastern_med
+74,312,Cape Akritas,201,Greece,Central Mediterranean,"South Messinia, Peloponnese",,,,,amphorae,?,?,eastern_med
+75,43,Antikythera B,45,Greece,Aegean,Off south east Peloponnesus,,,-100.0,500.0,amphorae,Aegean,Rome?,eastern_med
+76,311,Sapientza,1037,Greece,Central Mediterranean,"South west Messinia, Peloponnese",,,-150.0,400.0,"amphorae; marble; blocks; marble:Blocks and slabs of white marble, estimated weight 300 tons.",Aegean,Italy?,eastern_med
+77,500,Quseir,,Egypt,Red Sea,Halfway down Egyptian coast of Red Sea,,,-100.0,100.0,amphorae,Italy,India?,eastern_med
+78,502,Bet Dwarka,,India,Indian Ocean,West coast,,,-100.0,200.0,amphorae; A lead ingot; sherds of pottery.,Italy,India,other
+79,424,Santa Maria,1034,Italy,Tyrrhenian Sea,North east Sardinia,,,200.0,300.0,marble; blocks; marble:Several marble blocks.,Aegean?,France/Spain?,western_med
+80,464,St Tropez A,1008,France,Western Mediterranean,Var,,,100.0,200.0,"marble; columns; marble:12 large piece of Luna marble  (column drums, bases, a slab and an architrave) with an estimated weight of 200-230 tons.",Luna,South of France,western_med
+81,57,Kalymnos (?),,Greece,Aegean,"Kalymnos, Dodecanese",,,-325.0,400.0,"Leg of a bronze statue of a horseman, probably part of the same statue as the leg handed in in 1997.  Discovered by fishermen.",Aegean,?,eastern_med
+82,58,Pserimos (?),,Greece,Aegean,"Kalymnos, Dodecanese",,,-325.0,-25.0,"Bronze statue of a woman, 1.98m high. The head was broken off during lifting.",Aegean,?,eastern_med
+83,59,Kalymnos (?),,Greece,Aegean,"Kalymnos, Dodecanese",,,-325.0,400.0,"Bronze sculptures incl. male head with crown/hat, 2 bronze legs, bronze dolphin.",Aegean,?,eastern_med
+84,64,Makronisi (?),,Greece,Aegean,"Near Leipsoi, Dodecanese",,,1.0,200.0,amphorae,Aegean,?,eastern_med
+85,62,Four wrecks off Maltezana,,Greece,Aegean,"Astypalaea, Dodecanese",,,-150.0,400.0,"Lead sarcophagus, ‘thought to have belonged to a Roman officer who had died in the Middle East’ of C1st BC-AD.",Aegean,?,eastern_med
+86,60,Astypalaea (?),,Greece,Aegean,"Astypalaea, Dodecanese",,,-300.0,-100.0,amphorae,Cos,Rome?,eastern_med
+87,61,Astypalaea (?),,Greece,Aegean,"Astypalaea, Dodecanese",,,200.0,300.0,"50,000 silver-plated copper coins.",?,?,eastern_med
+88,63,Astypalaea (?),,Greece,Aegean,"Astypalaea, Dodecanese",,,-150.0,400.0,Large consignment of household pots.,Aegean,?,eastern_med
+89,65,Samos (?),,Greece,Aegean,Samos,,,-325.0,400.0,amphorae,Aegean,?,eastern_med
+90,66,AĬ-Yannis Tholou B,20,Greece,Aegean,Chios,,,-200.0,-100.0,amphorae,Cnidus,?,eastern_med
+91,67,Skerki Bank Keith Reef 1,,International waters,,"Between Sicily, Sardinia and Tunisia",,,-50.0,-25.0,,,,western_med
+92,68,Atalanti,62,Greece,Aegean,Chios,,,1.0,100.0,amphorae,Aegean,?,eastern_med
+93,69,Komi B,553,Greece,Aegean,Chios,,,-150.0,400.0,amphorae; Roof tiles and terracotta pipes.,Aegean,?,eastern_med
+94,70,Mytilene (?),,Greece,Aegean,Lesbos,,,-150.0,400.0,"The hand of a bronze statue, over life-sized, found by fishermen in 1970.",Aegean,?,eastern_med
+95,71,Glaronissi,455,Greece,Aegean,Lesbos,,,-150.0,400.0,amphorae,?,?,eastern_med
+96,73,Moudros Bay (?),,Greece,Aegean,Lemnos,,,-325.0,-25.0,amphorae,Aegean,?,eastern_med
+97,74,Thasos B,1147,Greece,Aegean,Thasos,,,-100.0,-1.0,amphorae,Adriatic,Aegean?,eastern_med
+98,76,Andros (?),,Greece,Aegean,Cyclades,,,-150.0,400.0,marble; sarcophagi; marble:Stone sarcophagi.,Aegean,?,eastern_med
+99,78,Psathonisi (?),,Greece,Aegean,"SW of Kokinas, Syros, Cyclades",,,,,amphorae,Aegean,?,eastern_med
+100,79,Kythnos I,,Greece,Aegean,"Kythnos, Cyclades",,,-350.0,-300.0,"amphorae; Bronze statue of a nude male, partially preserved 1.45m high (the head, right arm, right calf and back are missing)._x000D_
+Cooking pots and other vases.",Aegean,?,eastern_med
+101,80,Seriphos,1075,Greece,Aegean,"Seriphos, Cyclades",,,-250.0,-225.0,amphorae,Corinth,?,eastern_med
+102,77,Foinikas port,,Greece,Aegean,"Syros, Cyclades",,,,,amphorae,Aegean,?,eastern_med
+103,81,Siphnos (?),,Greece,Aegean,"Siphnos, Cyclades",,,-200.0,-100.0,amphorae,Aegean,?,eastern_med
+104,82,Bay of Naousa,,Greece,Aegean,"Paros, Cyclades",,,-100.0,-1.0,amphorae,Cos,?,eastern_med
+105,83,Paros B,792,Greece,Aegean,"Paros, Cyclades",,,-50.0,150.0,amphorae,Adriatic?,?,eastern_med
+106,84,Paros A,791,Greece,Aegean,"Paros, Cyclades",,,1.0,100.0,amphorae,Cos,?,eastern_med
+107,85,Bay of Paroikia,,Greece,Aegean,"Paros, Cyclades",,,100.0,200.0,"marble; columns; marble:Two hundred and seven marble objects including unfluted columns and architectural blocks; cinerary urns, some complete and inscribed, the pediment crowning a funerary stele, a lion’s foot, sarcophagus lids; two Doric capitals; the head of a marble statue and the torso of a small statue of Artemis.",Paros?,?,eastern_med
+108,86,Saliagos,1016,Greece,Aegean,"Paros, Cyclades",,,-150.0,400.0,Coarse pottery.,Aegean,?,eastern_med
+109,320,Glavat Islet,,Croatia,Adriatic,"NW side of Mljet island, north west of Dubrovnik.",42.8,17.36666,-25.0,-1.0,amphorae,?,Northern Italy,adriatic
+110,38,Agios Petros Bay(?),,Greece,Aegean,"Near Gythion, Laconia",,,1.0,125.0,amphorae,Aegean,Rome?,eastern_med
+111,40,Neapolis (?),,Greece,Aegean,"South east Laconia, Peloponnese",,,100.0,200.0,amphorae,Aegean,Rome?,eastern_med
+112,41,Stenos Desfinas (?),,Greece,Aegean,"Phocis, off the Tsimplias headland",,,-150.0,400.0,amphorae,Aegean,?,eastern_med
+113,449,Le Grand Congloué A,472,France,Western Mediterranean,Near Marseille,,,-210.0,-180.0,"amphorae; 7000 pieces of Campanian A pottery datable to c. 190 BC. _x000D_
+Some ungentaria, 3 lamps and some Ampuritan Grey pottery.","Aegean, Italy",France/Spain?,western_med
+114,452,Cassidaigne,274,France,Western Mediterranean,Bouches-du-Rhône,,,-100.0,-1.0,amphorae,"Cos, Crete, Italy",France,western_med
+115,455,Rhône Delta,984,France,Western Mediterranean,Bouches-du-Rhône,,,-25.0,-15.0,"amphorae; marble; columns; marble:A colossal head of Augustus in Luna marble, 0.7m high belonging to a statue at least 3-4m tall. The marble head was new at the time of loss and belongs stylistically with representations of Augustus from the 20s BC. Also granite blocks.",Luna,Inland France?,western_med
+116,456,La Tradelière,1174,France,Western Mediterranean,Alpes-Maritimes,43.51343,7.07373,-20.0,-10.0,"amphorae; Tens of thousands of hazelnuts, which formed a layer up to a metre thick. Pottery including Pompeian red plates, rimless platters, fine-wall goblets and two-handled and four-handled cups, as well as two pieces of eastern pottery. Glass cups, stacked in piles of 8 or 10, in six different colours.",Aegean via southern Italy,France,western_med
+117,432,Porto Novo,,France,Western Mediterranean,South east Corsica,41.50169,9.2749,27.0,50.0,"amphorae; marble; columns; blocks; marble:Over an area of 15m x 7m, four column fragments between 2.2m and 4.8m long with a diameter of 1.5m; five blocks, one of which is large at 23.3 tons, all in an unfinished state from Luna . A total weight is estimated at 138 tons. Some badly finished slabs of veneer of coloured marble, from a variety of sources, Chemtou, Teos, Chios and Carystos,  possibly left over from previous journeys. Black and white quartz from Egypt. A large number of sets of stone-working tools.",Egypt? Luna?,"France, Spain?",western_med
+118,200,Kyrenia,563,Cyprus,Eastern Mediterranean,North coast,,,-310.0,-300.0,"amphorae; 10,000 almonds, lying in clusters, indicating that they were carried in sacks. _x000D_
+29 millstones with mason's marks including single Greek letters, but a great variety of size and types of finish, possibly from Cos.",Aegean and lastly Cyprus.,Aegean?,eastern_med
+119,201,Xerolimini,1233,Cyprus,Eastern Mediterranean,West coast,,,-300.0,-100.0,amphorae,?,?,eastern_med
+120,202,Cyprus,350,Cyprus,Eastern Mediterranean,South coast,,,-125.0,-100.0,amphorae,Rhodes,Cyprus/ Levant,eastern_med
+121,203,Ayios Georghios,69,Cyprus,Eastern Mediterranean,West coast,,,-300.0,-200.0,amphorae,?,?,eastern_med
+122,204,Koppo,554,Cyprus,Eastern Mediterranean,West coast,,,-100.0,-1.0,amphorae; Pottery and part of moulded glass bowl.,Rhodes,?,eastern_med
+123,205,Cape Kiti B,213,Cyprus,Eastern Mediterranean,South coast,,,-10.0,40.0,amphorae,Adriatic?,Cyprus/Levant?,eastern_med
+124,207,Fondana Amorosa,414,Cyprus,Eastern Mediterranean,North west tip,,,-150.0,400.0,amphorae; Other artefacts?,?,?,eastern_med
+125,206,Cape Andreas F,207,Cyprus,Eastern Mediterranean,East tip,,,-150.0,400.0,"Corinthian-style roof tiles and cover-tiles, still stacked in position, in two areas. The larger area has about 60 tiles in four rows with another layer underneath; the smaller has about 15 tiles.",Corinth?,Cyprus/Levant,eastern_med
+126,208,No name,,International waters,Eastern Mediterranean,Between Rhodes and Alexandria 200 miles off Cyprus,,,-225.0,-175.0,amphorae,Pamphylia,Alexandria,eastern_med
+127,240,Apollonia B,48,Libya,Eastern Mediterranean,In the harbour of Apollonia,,,-180.0,-150.0,amphorae; Main cargo of Megarian bowls made at the 'Atelier de Menemakhos' (eastern Aegean).,Aegean and Italy?,North Africa,western_med
+128,241,Apollonia A,47,Libya,Eastern Mediterranean,In the harbour of Apollonia,,,-150.0,-120.0,Pottery including a black-gloss cup with Greek graffito 'Herakleides'.,Aegean?,North Africa?,western_med
+129,386,Sidi Ahmad,1082,Libya,Central Mediterranean,West end of Gulf of Sirte,,,117.0,300.0,marble; columns; marble:Two long columns of white marble with green veins (cipollino?).,Carystos?,North Africa,western_med
+130,242,Marsa -El-Brega Roman,,Libya,Eastern Mediterranean,Gulf of Sirte,,,1.0,100.0,amphorae,Tripolitania (?),"Brega, for trans shipment (?)",western_med
+131,221,Qaitbay 2,,Egypt,Eastern Mediterranean,"650m NE of Fort Qaitbay, Alexandria",,,-200.0,-1.0,amphorae,Rhodes,Alexandria,eastern_med
+132,385,Mahdia,621,Tunisia,Central Mediterranean,Eastern Tunisia,,,-90.0,-60.0,"marble; columns; marble:Seventy Attic marble columns, weighing about 205 tonnes, varying in size from 1.85m to 4.4m. Also bases, capitals and basins. Total weight probably about 250 tonnes._x000D_
+Seven life-sized marble heads and busts among them the bust of Aphrodite, that had already been used as tondi._x000D_
+At least four large craters decorated with reliefs showing Dionysiac processions._x000D_
+Bases, altars, fountain rims, small Doric capitals etc that had obviously furnished one or more sanctuaries. Two of the inscriptions refer to the sanctuary of the paraloi in the Piraeus.; Full-size and miniature bronze sculptures, including a statue of a winged youth (Eros?) and a herm of Dionysus with the signature of Boethus of Chalchedon, both of which show traces of having been removed from their marble bases; vases and candelabra, other decorative pieces. _x000D_
+Bronze couches inscribed with Greek numbers, showing that the ship was carrying at least 22 of them.",Athens via Delos?,Rome?,western_med
+133,451,Cavalière,282,France,Western Mediterranean,Var,,,-110.0,-90.0,"amphorae; A considerable quantity of bones of domestic pigs, without feet or many vertebrae, points to a cargo of quartered meat that may have been smoked or salted._x000D_
+Black-gloss Campanian ware._x000D_
+A group of Spanish pottery, jugs, a jar, two goblets in grey ware and 'six sombreros de copa'.",General Mediterranean?,France,western_med
+134,335,Jakljan Island,,Croatia,Adriatic,Southern Dalmatia,42.73333,17.8,-150.0,400.0,marble; sarcophagi; marble:Three sarcophagi with lids.,?,Northern Italy,adriatic
+135,408,Panarea (Alberti),784,Italy,Tyrrhenian Sea,Lipari Islands,,,50.0,100.0,amphorae,Crete,Rome,western_med
+136,400,Punta Mazza,,Italy,Tyrrhenian Sea,North-east Sicily near Capo Milazzo,38.27049,15.23537,200.0,250.0,"amphorae; Corinthian relief cups showing the exploits of Heracles, battle scenes, ritual scenes and hunting scenes.","Palestine? Cilicia,  Aegean?",Rome,western_med
+137,460,Beauséjour,,France,Western Mediterranean,Languedoc-Roussillon,,,50.0,100.0,"amphorae; marble; blocks; marble:Five blocks of Luna marble well buried in an area 8m x 3m. Different sizes 2.1m x 1.4m x 1.5m = 11.7tons; 1.48m x 1.04m x 0.28m = 1.14tons; 1.33m x 0.76m x 0.3m = 0.8tons; 3m x 1.26m x 0.68m = 6.83tons; 1.9m x 1.26m x 0.55m = 3.9tons. Small tonnage compared to St. Tropez or Porto Nuovo, but similar to Meloria. All blocks are inscribed with quarry marks.",Luna,"French coast, Pyrenées",western_med
+138,465,Les Riches Dunes 5,,France,Western Mediterranean,Languedoc-Roussillon,43.33053,3.61656,175.0,200.0,"marble; columns; blocks; marble:A partially worked block of Luna marble 2m x 1m x 0.4m = 3.3 tons buried in sediment.Twenty-one plaques of grey marble; all are broken, but polished on both sides,  the largest one measures 28cm x 20cm apart from a triangular one of 44.2cm x 55.5cm. Small white column 50.4cm long.An Ionic white marble base of plinth and drum in perfect condition.; The head of an ibis made of lead 12.5cm long. These finds suggest the ship was carrying the property of a private collector.",Luna,France,western_med
+139,466,Ouest Embiez 1,,France,Western Mediterranean,Var,43.07627,5.76996,175.0,225.0,"amphorae; Principal cargo of colourless glass: irregular blocks of very good quality raw glass up to 25kg each with a total of at least 10 tons stacked in the centre of the boat. More than fifteen fragments of sheet glass, all rectangular except one circular piece with a diameter of 43cm (very rare). At least 2000 pieces of glassware, the majority of which are cylindrical goblets, with different types of bases, stacked together. The sheets of glass were definitely made on the Syrian-Palestinian coast between Acre and Haifa which was famous for its glass production (Pliny NH 36.45; Josephus BJ 11.188; Strabo 16,758). The other glass could have come from any Mediterranean area.",Palestine and elsewhere (?),France?,western_med
+140,433,Porticcio,,France,Western Mediterranean,"Near Ajaccio, south Corsica",41.87872,8.77872,200.0,300.0,"amphorae; marble; columns; marble:Two 2m high marble statues representing the Roman Emperor Philip 1 of Arabia (ruled AD 244-249) and his wife Marcia Otacilia, in fragments but weighing about 600kg each.; African coarse ware and millstones. Sheets of glass and glass objects with a total weight of at least 230kg.",?,?,western_med
+141,469,Saintes-Maries-de-la-mer 18,,France,Western Mediterranean,Bouches-du-Rhône,43.42334,4.40242,-30.0,400.0,"marble; blocks; marble:Seven blocks of Luna marble in disorder over an area 8m long. The main block measures 2.8m x 1.1m, the others are smaller (1.4m x 1.7m, 1.8m x 1.5m etc).",Luna,South west France? Inland France?,western_med
+142,470,Saintes Maries-de-la-mer 21,,France,Western Mediterranean,Bouches-du-Rhône,43.4211,4.39882,-30.0,400.0,"marble; blocks; marble:Seven blocks of Luna marble, two of which are completely buried in sediment. The heaviest load of the three marble wrecks at Saintes Marie.",Luna,South west France? Inland France?,western_med
+143,461,Saintes Maries-de-la-mer 22,,France,Western Mediterranean,Bouches-du-Rhône,43.4211,4.39882,1.0,200.0,"amphorae; marble; columns; blocks; marble:Six or seven blocks of Luna marble over an area 12m long, parallel to the beach. Two of the blocks are half cylindrical, i.e. part columns, 2.1m long. Three others are rectangular.",Luna,South west France? Inland France?,western_med
+144,353,Punta del Serrone,,Italy,Central Mediterranean,"Near Brindisi, Puglia",40.6,17.95,250.0,300.0,"amphorae; A bronze foot (45cm) was found in 1972, followed by another 150 pieces of bronze sculpture in 1992 in an area 15m x 10m. Another foot, two statues, one late Hellenistic male nude, another Augustan male in a toga (1.47m). Seven bronze heads are better conserved, two date to the C4th BC, one with a short beard to the Late Hellenistic period, another male head and two female heads to the early Imperial period, and a final male head to late Imperial times. This was either a ship carrying works of art belonging to a private collector or a cargo of metal ready for recasting.",Greece?,Rome?,western_med
+145,409,Meloria C,,Italy,Tyrrhenian Sea,Near Livorno,,,1.0,100.0,"marble; blocks; marble:Eleven large white marble blocks and probably a half-worked column, 170cm in diameter and 350cm long. Total tonnage about 50 tons. Possibly Luna marble?",Luna?,Rome?,western_med
+146,360,Stentinello,1113,Italy,Central Mediterranean,"Santa Panagia Bay, eastern Sicily",,,-300.0,-280.0,amphorae,Greece,Sicily/Rome?,western_med
+147,423,Baia di Salinedda,,Italy,Tyrrhenian Sea,"San Teodoro, north-east Sardinia",,,200.0,300.0,amphorae; African red slipware and coarse ware. Eastern Mediterranean glass.,Aegean/Africa,France/Spain?,western_med
+148,9,Serçe Limani D,1073,Turkey,Aegean,Marmaris Peninsula,,,-300.0,-1.0,amphorae,Rhodes,?,eastern_med
+149,421,Coscia di Donna,,Italy,Tyrrhenian Sea,"Near Punta del Francese, north-west Sardinia",40.8919,8.21365,75.0,100.0,"marble; blocks; marble:A central file of three blocks of white marble 2.2msq.; on each side are four rectangular blocks 2.8m x 1.2m x 0.8m; at the end, four rectangular blocks of the same dimensions. A total of about 100m cubed, weighing 265-275 tons. Could be Luna marble but not certain. Small black and white marble chips, possibly from earlier voyages.",Luna?,France/Spain?,western_med
+150,406,Pozzino,898,Italy,Tyrrhenian Sea,Gulf of Baratti,,,-140.0,-120.0,"amphorae; Fragments of Megarian bowls. _x000D_
+Cuttings of 6 different species of cultivated vines. _x000D_
+Folded lead sheathing._x000D_
+A medical chest including a bronze cupping vessel; 136 small boxwood, lidded cylinders grouped in threes containing herbal medicines, such as vanilla and cumin from India. _x000D_
+The right hand and lower forearm of a wooden and ivory statue. _x000D_
+Vases made of bronze, lead and tin with foliage decoration;  three glass cups typical of Syrio-Palestine._x000D_
+A bronze oil lamp decorated with leaves 14.7cm long and probably from the eastern Mediterranean.",Aegean,Rome?,western_med
+151,410,Maratea A,647,Italy,Tyrrhenian Sea,South of Naples,,,25.0,75.0,amphorae,Aegean,Rome?,western_med
+152,411,Ladispoli B,566,Italy,Tyrrhenian Sea,Near Rome,,,25.0,100.0,"marble; columns; marble:Nine marble columns, not yet identified, lying in three files of three.",Luna?,Rome,western_med
+153,412,Capraia D,264,Italy,Tyrrhenian Sea,Capraia Islands,,,1.0,400.0,marble; blocks; marble:Marble blocks.,Luna?,Rome?,western_med
+154,413,Agropoli,18,Italy,Tyrrhenian Sea,Near Naples,,,-150.0,400.0,marble; marble:A brief reference to marble.,Aegean?,Rome,western_med
+155,359,Vulpiglia,1230,Italy,Central Mediterranean,"Pachino, South east Sicily",,,-300.0,-290.0,"amphorae; Over twenty pieces of  Attic or Corinthian black-gloss pottery._x000D_
+Over forty bones and teeth of sheep and goats.",Corinth,Sicily?,western_med
+156,363,Lampedusa B,568,Italy,Central Mediterranean,"Lampedusa Island, south of Sicily",,,-125.0,-75.0,amphorae,Rhodes,?,western_med
+157,364,Skerki Bank wreck D,,Italy,Central Mediterranean,Between Sicily and Carthage,,,-80.0,-50.0,"amphorae; Several black-glaze plates, and about fifteen cooking ware vessels in first heap. _x000D_
+Fifteen cooking vessels, a bronze ladle, hundreds of lamps and other artefacts in the second. _x000D_
+Heavy stone weights for weighing cargo (cf Valle Ponti wreck)._x000D_
+A very mixed cargo that may have been picked up in one place or along the coasts of the western Mediterranean.",Cosa?,Sicily/North Africa?,western_med
+158,365,Skerki Bank wreck F,,Italy,Central Mediterranean,Between Sicily and Carthage,,,25.0,75.0,"amphorae; marble; columns; blocks; marble:Two layers of marble building stones, including  monolithic columns and large irregular blocks, loaded along the line of the keel (cf. Dramont I, Cape Izmetiste and Isole delle Correnti). The stone may be red granite from Aswan, or grey granite from the western Mediterranean.; Stacks of coarse ware ceramics of N. African ware. _x000D_
+Bronze artefacts.",Egypt? W. Med.?,Gaul?,western_med
+159,366,Skerki Bank wreck G,,Italy,Central Mediterranean,Between Sicily and Carthage,,,25.0,75.0,"amphorae; At least seventeen coarse ware bowls, pitchers and jugs.",Tarraconensis,Sicily?,western_med
+160,367,Skerki Bank wreck B,,Italy,Central Mediterranean,Between Sicily and Carthage,,,50.0,100.0,"amphorae; Probably a lot of organic cargo, now disintegrated.",Egypt and Crete via Campania,?,western_med
+161,368,Camarina A,163,Italy,Central Mediterranean,South Sicily,,,175.0,200.0,"amphorae; marble; columns; blocks; marble:Two giallo antico columns (others salvaged?), 6m long,  wedged in by sandstone blocks.; Plates and casseroles of black-rim ware. Two small bronze buckets with swan's head terminal handles and other bronze objects, including strigils. A samovar 25cm high decorated with theatrical masks just below the rim and a lion's head protome snout. A rare (perfume?) container with blue enamel inlay, 24cm high, decorated with vine leaves and trellis patterns.","Chemtou, Tunisia",Rome,western_med
+162,370,Terrauzza,1143,Italy,Central Mediterranean,"South of Syracuse,  Sicily",,,175.0,225.0,amphorae; .,Aegean,Sicily/Rome?,western_med
+163,371,Marzamemi A,670,Italy,Central Mediterranean,Southern Sicily,,,200.0,250.0,"amphorae; marble; columns; blocks; marble:Main part of the cargo was fifteen grey-white marble blocks from Attica, in an area 30m x 8m. Some blocks are  partly shaped as columns or architraves, largest of which weighed 40 tons. The biggest column measures 6.2m long and 1.78m diameter. Total weight 172 tons.",Athens,Sicily/Rome?,western_med
+164,373,Capo Granitola A,229,Italy,Central Mediterranean,Western Sicily,,,225.0,275.0,"amphorae; marble; blocks; marble:Over sixty blocks approximately 3m x 1m x 1m in 8 files. Some salvage appears to have taken place in antiquity. Total weight c. 350 tons. Proconnesus marble in trapezoidal form; chips of Parian and unidentified Asiatic marble and verde antico were found between the blocks, presumably the remains of previous voyages.; Small pieces of pottery.",Proconnesus,Rome/France/ Spain?,western_med
+165,374,Giardini Naxos,443,Italy,Central Mediterranean,North east Sicily,,,200.0,300.0,"amphorae; marble; columns; blocks; marble:Twenty-four  white-grey Aegean columns and thirteen green cipollino rectangular blocks, over an area of 17m x 5-6m, with an estimated weight of 95 tons. The columns are in a half-finished state, while the blocks show only a surface roughing-out. Loaded at the same time forming two levels inside the hull.",Euboea/ Aegean,Rome?,western_med
+166,375,Isola delle Correnti,522,Italy,Central Mediterranean,Southern Sicily,,,200.0,400.0,"amphorae; marble; columns; blocks; marble:350 tons of marble blocks, white with a bluish streak, probably Asiatic. One fragment of a worked architectural piece.; Some pottery",Proconnesus,Rome/France/ Spain?,western_med
+167,376,Capo Taormina,256,Italy,Central Mediterranean,North east Sicily,,,1.0,400.0,"marble; columns; blocks; marble:Thirty-seven columns and two blocks of green marble, probable weight 90-100 tons.",Thessaly/ Euboea?,Rome,western_med
+168,377,Capo Granitola D,232,Italy,Central Mediterranean,Western Sicily,,,200.0,400.0,"marble; columns; marble:Corinthian and Ionic capitals and plinths in white marble with blue veins, probably Asiatic.",Asia,Rome/France/            Spain?,western_med
+169,420,Spargi,1108,Italy,Tyrrhenian Sea,"Maddelana Island_x000D_
+North east Sardinia",,,-120.0,-100.0,"amphorae; A great quantity of black-gloss Campanian pottery stacked in the hold. _x000D_
+Also Greek fineware from Megaria and Pergamum.","Aegean, Italy",France/Spain?,western_med
+170,458,Dramont D,374,France,Western Mediterranean,Var,,,40.0,50.0,"amphorae; Tilted piles of mortaria of two main types; the first with a flat rim was in four sizes (27, 33, 40 and 46cm diameter); one was stamped with HERM[  ]. The second variety, wall-rimmed was larger and heavier and mostly stamped with the Figlinae Marcianae. _x000D_
+A set of four bronze pumps, one signed by the maker CLAV[DIVS] F[ECIT].","Aegean, Italy",France,western_med
+171,463,Bagaud A (a),76a,France,Western Mediterranean,Var,,,75.0,200.0,,?,France,western_med
+172,468,Bagaud A,76,France,Western Mediterranean,Var,,,200.0,275.0,"amphorae; At least 2 mortaria , late Roman spatheia.",Aegean,France,western_med
+173,319,Lastovska,576,Croatia,Adriatic,"Mljet Island, north west of Dubrovnik",42.78333,17.31666,-25.0,-1.0,amphorae; amphora_type:Lam 2/Dr 6A + Rodian,?,Northern Italy,adriatic
+174,324,Kvarner Gulf,561,Croatia,Adriatic,North west Croatia,45.0,14.0,1.0,100.0,amphorae,Cos,Northern Italy,adriatic
+175,325,Silba B/ Arat Cape,1085,Croatia,Adriatic,"Silba Island, north west of Zadar",44.33,14.71,1.0,100.0,amphorae,Rhodes,Northern Italy,adriatic
+176,321,Margarina Point,653,Croatia,Adriatic,"near Susak Island, NW of Zadar",44.48333,14.3,1.0,250.0,marble; columns; blocks; marble:Several unfinished blocks and  20 worked white marble columns.; Flat roof tiles and curved roof tiles.,Aegean?,Northern Italy,adriatic
+177,333,Pakleni/ Izmetište,773,Croatia,Adriatic,Near Palmezan,43.16666,16.38333,100.0,150.0,"amphorae; blocks; marble:About 10 half-finished stone blocks, one of them dark greenish granite, while others are of limestone.; About 2,500 pieces of various  pottery, half are Eastern Sigillata B (plates and platters) many with stamps, potter Sporos's amongst them. The rest was eastern coarse ware with about 10 forms of mugs, jugs, dishes, pots, plates, pans etc.",Aegean,Northern  Italy,adriatic
+178,334,Viganj (Sv. Ivan promontory),1216,Croatia,Adriatic,southern Dalmatia,42.96666,17.06666,100.0,200.0,"Estimated 50,000 pieces of Eastern coarse ware pottery, much looted, including bowls, dishes, trefoil mouth jugs, pots, lids, platters with profiled rim, braziers etc. More than 200 pieces were raised.",Aegean,Northern Italy,adriatic
+179,336,Čavlena,288,Croatia,Adriatic,Krk Island,45.1,14.45,-150.0,400.0,marble; columns; marble:Marble ‘elaborated’ columns and other stones.,?,Northern Italy,adriatic
+180,343,Savelletri,1043,Italy,Central Mediterranean,"Fasano, near Bari",,,-280.0,-250.0,amphorae,Aegean,Italy,western_med
+181,344,Valle Ponti,1206,Italy,Central Mediterranean,"Emilia Romagna,near Comacchio",,,-25.0,-1.0,"amphorae; A large load of shingle in the centre of the hold; 102 lead ingots of five varieties of shape but all marked with the counter stamps  L.CAE.BAT and AGRIP probably of Spanish origin. _x000D_
+Coarse pottery, bronze vessels including pots, pans, ladles, strainers and plates. _x000D_
+Six tiny votive models of temples each with Hermes or Venus inside of lead._x000D_
+A number of five-foot long boxwood logs._x000D_
+Seventeen lamps._x000D_
+Heavy stone weights for weighing cargo.","Spain, Aegean, Adriatic",Northern Italy,western_med
+182,345,Secche Di Ugento A,1066,Italy,Central Mediterranean,"South of Gallipoli, Gulf of Taranto",,,-50.0,100.0,amphorae,Aegean,Rome,western_med
+183,346,Tremiti Islands (?),,Italy,Central Mediterranean,South east of Pescara,,,-100.0,100.0,"marble; blocks; marble:‘A load of marble slabs and blocks’, relatively intact, in at least four layers.",Aegean,Italy,western_med
+184,347,Taranto C,1133,Italy,Central Mediterranean,Near Taranto,,,1.0,100.0,amphorae; Hundreds of broken roof tiles.,"Cos, Rhodes",Rome,western_med
+185,348,Riace,985,Italy,Central Mediterranean,Calabria,,,1.0,100.0,"amphorae; Works of art:  two male bronze statues of C5th BC type, but probably Hellenistic or Roman copies. Tenons of lead show that they have been taken from their bases and are therefore probably spolia. Also other statue fragments including a shield-grip.","Cos, Rhodes, Athens",Rome,western_med
+186,354,Capo Cimiti,222,Italy,Central Mediterranean,"near Crotone, Calabria",,,-150.0,400.0,"marble; columns; marble:Five columns of cipollino, 8m long or less, lie parallel on a rocky bottom .",Euboea,Rome,western_med
+187,454,Cap Camarat 2,,France,Western Mediterranean,Var,43.1971,6.69101,-75.0,-25.0,amphorae; Red slip Arretine ware. Eastern sigillata A.,Aegean? Tripolitania? Italy,France?,western_med
+188,459,Dramont I,378,France,Western Mediterranean,Var,43.41238,6.85057,50.0,60.0,"amphorae; marble; blocks; marble:In an area of 500m sq, three blocks of africano marble were found (2.2m x 1m x 1m; 3.8m x 0.95m x 0.8m; 2.68m x 1.1m x 1m). A total weight of 23 tons.; A complementary cargo of polished (pumice) stones, equivalent to 500 litres. Several hundred kilos of corundum, a very hard and heavy mineral probably from the island of Naxos.","Teos, Naxos, Rome",France?,western_med
+189,422,La Maddalena,,Italy,Tyrrhenian Sea,Most northerly point of Sardinia,,,200.0,300.0,marble; blocks; marble:Fragments of slabs of marble in different sizes.; Some African tableware.,Aegean?,France/Spain?,western_med
+190,431,Sanguinaires,,France,Western Mediterranean,"Near Ajaccio, Corsica",41.88472,8.60138,-250.0,-200.0,"amphorae; Coarse ware, fineware, red and black-glazed pottery. Attic lamps. Small copper ingots and millstones as ballast. At least 550kg of glass, both manufactured and unmanufactured.",Carthage? Aegean?,France?,western_med
+191,314,Lixouri,604,Greece,Central Mediterranean,Cephalonia,,,-150.0,400.0,"marble; columns; marble:Six headless statues of three male nudes, a draped female and a seated male;  two Ionic capitals, four half-column bases.",Aegean,Italy?,eastern_med
+192,50,Ag Pavlos Bay (?),,Greece,Aegean,"Lindos, Rhodes",,,-500.0,500.0,amphorae,Aegean?,?,eastern_med
+193,51,Lindos A,598,Greece,Aegean,Rhodes,,,-50.0,100.0,amphorae,Rhodes,?,eastern_med
+194,52,Akandia A,24,Greece,Aegean,Rhodes,,,-50.0,100.0,amphorae,Rhodes,?,eastern_med
+195,55,Paloi (?),,Greece,Aegean,"Nisyros, Dodecanese",,,,,Large cargo of glazed plates.,Aegean,?,eastern_med
+196,56,Syrna Island (?),,Greece,Aegean,"Syrna, Dodecanese",,,100.0,200.0,amphorae,Aegean,?,eastern_med
+197,32,Idhra,510,Greece,Aegean,Off east Peloponnesus,,,-300.0,-1.0,amphorae,Aegean,?,eastern_med
+198,315,Ithaki 1,,Greece,Ionian,North east Ithaca,,,-100.0,-1.0,amphorae,Aegean,Italy?,eastern_med
+199,316,Corfu,337,Greece,Central Mediterranean,Corfu,,,-200.0,-100.0,amphorae,Aegean?,Italy?,eastern_med
+200,90,Dhia A,359,Greece,Aegean,"Island of Dhia, North Crete",,,1.0,100.0,amphorae,"Rhodes, Cos",Italy?,eastern_med
+201,91,Cape Sidero A,214,Greece,Aegean,Eastern Crete,,,-150.0,400.0,amphorae,Aegean?,?,eastern_med
+202,250,Matala,681,Greece,Eastern Mediterranean,"North of Bay of Matala, South Crete",,,-50.0,110.0,amphorae,Crete?,?,eastern_med
+203,251,Ayia Galini,68,Greece,Eastern Mediterranean,"West end of Mesara, south Crete",,,276.0,290.0,"A variety of bronze statue fragments and statuettes. Bronze and brass weights, filled with lead, lamps, a portable altar, rings, locks, tools and various handles and feet from bronze vessels. A hoard of 259 coins, closing with Probus (AD 276-82).",Aegean,Rome?,eastern_med
+204,361,Camarina E,,Italy,Central Mediterranean,Southern Sicily,,,-300.0,400.0,amphorae,Italy?,Italy?,western_med
+205,369,Mercury,,Italy,Central Mediterranean,"Camarina, southern Sicily",,,75.0,200.0,"Bronze objects including two containers, three lamps and a statuette of Mercury. One of the lamps is of Campanian manufacture and another Egyptian.","Egypt, Aegean, Campania?",?,western_med
+206,403,Barbarossa,90,Italy,Tyrrhenian Sea,"Elba, Tuscany",,,-250.0,-150.0,amphorae,Southern Italy?,?,western_med
+207,404,Secca Del Bagno,1061,Italy,Tyrrhenian Sea,Off west coast of Lipari Island,,,-200.0,-180.0,amphorae,Greece? Southern Italy?,?,western_med
+208,405,Porto Ercole A,887,Italy,Tyrrhenian Sea,Etruria,,,-150.0,-100.0,amphorae,Greece? Italy?,?,western_med
+209,349,Torre Sgarrata,1163,Italy,Central Mediterranean,"South east of Taranto, Puglia",,,180.0,205.0,"marble; sarcophagi; blocks; marble:Eighteen roughed out sarcophagi and twenty-three large blocks and marble veneer weighing at least 160 tons, from Thasos. Alabaster from Asia Minor. Total tonnage possibly 250 tons.",Thasos/Asia Minor,Rome?,western_med
+210,340,Grado (Julia Felix),464,Italy,Adriatic,"Near Aquileia, Veneto",45.71666,13.33333,117.0,150.0,"amphorae; Bronze stands with lions’ paws and acanthus decoration. Glass, much of it waste glass, packed in a barrel which had disintegrated; some square bottles with the base mark C SALVI GRATI.",North Africa ?,Aquileia ?,adriatic
+211,350,Punta Scifo A,965,Italy,Central Mediterranean,Near Crotone,,,200.0,225.0,"amphorae; marble; columns; marble:Pavonazzetto and white marble from Docimium and grey-white marble from Proconnesus: columns, basins, blocks, capitals, bases, tables and a statuary group of Cupid and Psyche, some roughed out, some half-finished and some finished. Consular dates of AD 197 and 200 cut into some of the columns. 150 tons were raised from an area 50m x 50m, 3m thick and in 2 sections (cf Marzamemi A).",Docimium/ Proconnesus,Rome,western_med
+212,351,Torre Chianca,1153,Italy,Central Mediterranean,"South east of Taranto, Puglia",40.26248,17.8569,225.0,275.0,"amphorae; marble; columns; marble:Five marble columns, 8-9m long of cipollino, lying approximately 50cm apart, still in the original position in which they were transported. Another 2 are still buried in sand.; A lead seal marked with a Greek monogram and a star.",Euboea,Rome?,western_med
+213,352,San Pietro,1022,Italy,,"South east of Taranto, Puglia",,,200.0,250.0,"amphorae; marble; sarcophagi; marble:Twenty-three half-finished sarcophagi,  some left double and some with lids in fine white, crystalline stone, maybe from Aphrodisias. Most of the shapes are rectangular, while nine are rounded at the ends. Total weight about 75 tons.; Tile fragments.",Asia Minor,Rome?,western_med
+7252,0,Abbeville,4,ZZ-Non-Mediterranean,,,0.0,0.0,-150.0,400.0,,,,other
+7253,0,Alblasserdam,29,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,250.0,,,,other
+7254,0,Ancenis,40,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,300.0,,,,other
+7255,0,Avenches,63,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,200.0,,,,other
+7256,0,Bevaix,102,ZZ-Non-Mediterranean,,,0.0,0.0,182.0,190.0,,,,other
+7257,0,Bevaix NE 1917,103,ZZ-Non-Mediterranean,,,0.0,0.0,-39.0,-1.0,,,,other
+7258,0,Bordeaux,108,ZZ-Non-Mediterranean,,,0.0,0.0,161.0,161.0,,,,other
+7259,0,Bruges,118,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,275.0,,,,other
+7260,0,Cabo de Mar,121,ZZ-Non-Mediterranean,,,0.0,0.0,1.0,300.0,,,,other
+7261,0,Caen A,134,ZZ-Non-Mediterranean,,,0.0,0.0,138.0,170.0,,,,other
+7262,0,Caen B,135,ZZ-Non-Mediterranean,,,0.0,0.0,-150.0,150.0,,,,other
+7263,0,Canarias,168,ZZ-Non-Mediterranean,,,0.0,0.0,200.0,300.0,,,,other
+7264,0,Chantenay,295,ZZ-Non-Mediterranean,,,0.0,0.0,-150.0,400.0,,,,other
+7265,0,Chaudeney-sur-Moselle A,296,ZZ-Non-Mediterranean,,,0.0,0.0,40.0,160.0,,,,other
+7266,0,Chaudenay-sur-Moselle B,297,ZZ-Non-Mediterranean,,,0.0,0.0,130.0,270.0,,,,other
+7267,0,Cortegada,340,ZZ-Non-Mediterranean,,,0.0,0.0,1.0,100.0,,,,other
+7268,0,Cudrefin,342,ZZ-Non-Mediterranean,,,0.0,0.0,-50.0,150.0,,,,other
+7269,0,Druten,379,ZZ-Non-Mediterranean,,,0.0,0.0,190.0,210.0,,,,other
+7270,0,Fuenterrabia,430,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,150.0,,,,other
+7271,0,Hardham,497,ZZ-Non-Mediterranean,,,0.0,0.0,245.0,345.0,,,,other
+7272,0,Herne Bay,502,ZZ-Non-Mediterranean,,,0.0,0.0,55.0,85.0,,,,other
+7273,0,Isle of Wight,521,ZZ-Non-Mediterranean,,,0.0,0.0,1.0,100.0,,,,other
+7274,0,Kapel Avazaath,533,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,160.0,,,,other
+7275,0,Little Russel A,602,ZZ-Non-Mediterranean,,,0.0,0.0,75.0,125.0,,,,other
+7276,0,Little Russel B,603,ZZ-Non-Mediterranean,,,0.0,0.0,1.0,75.0,,,,other
+7277,0,London (Blackfriars),606,ZZ-Non-Mediterranean,,,0.0,0.0,175.0,225.0,,,,other
+7278,0,London (County Hall),607,ZZ-Non-Mediterranean,,,0.0,0.0,296.0,300.0,,,,other
+7279,0,London (New Guy's House),608,ZZ-Non-Mediterranean,,,0.0,0.0,175.0,225.0,,,,other
+7280,0,Mainz A,622,ZZ-Non-Mediterranean,,,0.0,0.0,-30.0,100.0,,,,other
+7281,0,Mainz B,623,ZZ-Non-Mediterranean,,,0.0,0.0,406.0,410.0,,,,other
+7282,0,Mainz C,624,ZZ-Non-Mediterranean,,,0.0,0.0,406.0,410.0,,,,other
+7283,0,Mainz D,625,ZZ-Non-Mediterranean,,,0.0,0.0,406.0,410.0,,,,other
+7284,0,Mainz E,626,ZZ-Non-Mediterranean,,,0.0,0.0,406.0,410.0,,,,other
+7285,0,Mainz F,627,ZZ-Non-Mediterranean,,,0.0,0.0,406.0,410.0,,,,other
+7286,0,Mainz G,628,ZZ-Non-Mediterranean,,,0.0,0.0,406.0,410.0,,,,other
+7287,0,Mainz H,629,ZZ-Non-Mediterranean,,,0.0,0.0,81.0,125.0,,,,other
+7288,0,Mainz J,630,ZZ-Non-Mediterranean,,,0.0,0.0,75.0,125.0,,,,other
+7289,0,Maresquel,651,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,200.0,,,,other
+7290,0,Mersea,692,ZZ-Non-Mediterranean,,,0.0,0.0,-150.0,400.0,,,,other
+7291,0,Oberstimm A,751,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,125.0,,,,other
+7292,0,Oberstimm B,752,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,125.0,,,,other
+7293,0,Ooze Deep,763,ZZ-Non-Mediterranean,,,0.0,0.0,65.0,105.0,,,,other
+7294,0,Panxon,789,ZZ-Non-Mediterranean,,,0.0,0.0,1.0,300.0,,,,other
+7295,0,Ploumanac'h,838,ZZ-Non-Mediterranean,,,0.0,0.0,200.0,400.0,,,,other
+7296,0,Pommeroeul A,853,ZZ-Non-Mediterranean,,,0.0,0.0,50.0,150.0,,,,other
+7297,0,Pommeroeul B,854,ZZ-Non-Mediterranean,,,0.0,0.0,50.0,150.0,,,,other
+7298,0,Pommeroeul C,855,ZZ-Non-Mediterranean,,,0.0,0.0,50.0,150.0,,,,other
+7299,0,Pommeroeul D,856,ZZ-Non-Mediterranean,,,0.0,0.0,50.0,150.0,,,,other
+7300,0,Pommeroeul E,857,ZZ-Non-Mediterranean,,,0.0,0.0,150.0,225.0,,,,other
+7301,0,Pommeroeul F,858,ZZ-Non-Mediterranean,,,0.0,0.0,,,,,,other
+7302,0,Pudding-Pan Rock,908,ZZ-Non-Mediterranean,,,0.0,0.0,175.0,200.0,,,,other
+7303,0,Runcorn,997,ZZ-Non-Mediterranean,,,0.0,0.0,80.0,90.0,,,,other
+7304,0,Saint Peter Port,1007,ZZ-Non-Mediterranean,,,0.0,0.0,280.0,290.0,,,,other
+7305,0,Sanguinet,1028,ZZ-Non-Mediterranean,,,0.0,0.0,125.0,175.0,,,,other
+7307,0,Shiant Isalnds,1080,ZZ-Non-Mediterranean,,,0.0,0.0,-150.0,400.0,,,,other
+7308,0,Szazhalombatta,1126,ZZ-Non-Mediterranean,,,0.0,0.0,1.0,200.0,,,,other
+7309,0,Tours,1173,ZZ-Non-Mediterranean,,,0.0,0.0,1.0,400.0,,,,other
+7310,0,Vechten,1210,ZZ-Non-Mediterranean,,,0.0,0.0,1.0,100.0,,,,other
+7311,0,Vichy,1214,ZZ-Non-Mediterranean,,,0.0,0.0,100.0,150.0,,,,other
+7312,0,Wantzenau,1231,ZZ-Non-Mediterranean,,,0.0,0.0,275.0,300.0,,,,other
+7313,0,Woerden,1232,ZZ-Non-Mediterranean,,,0.0,0.0,170.0,175.0,,,,other
+7314,0,Yverdon A,1241,ZZ-Non-Mediterranean,,,0.0,0.0,75.0,100.0,,,,other
+7315,0,Yverdon B,1242,ZZ-Non-Mediterranean,,,0.0,0.0,300.0,400.0,,,,other
+7316,0,Zwammerdam A,1254,ZZ-Non-Mediterranean,,,0.0,0.0,150.0,225.0,,,,other
+7317,0,Zwammerdam B,1255,ZZ-Non-Mediterranean,,,0.0,0.0,150.0,225.0,,,,other
+7318,0,Zwammerdam C,1256,ZZ-Non-Mediterranean,,,0.0,0.0,150.0,225.0,,,,other
+7319,0,Zwammerdam D,1257,ZZ-Non-Mediterranean,,,0.0,0.0,150.0,225.0,,,,other
+7320,0,Zwammerdam E,1258,ZZ-Non-Mediterranean,,,0.0,0.0,150.0,225.0,,,,other
+7321,0,Zwammerdam F,1259,ZZ-Non-Mediterranean,,,0.0,0.0,150.0,225.0,,,,other
+7324,0,Palagruza B (Pupak Reef),775,Croatia,Adriatic,central Dalmatia,42.36666,16.33333,75.0,100.0,"amphorae; Pottery, numerous sherds of clay mortaria and, uniquely for the Adriatic,  chamber pots (lasanua). South Italic services of 'orlo bifido' dishes with plates/lids and Pompeian red ware plates were also found.",Spain - central/southern Italy,Adriatic/ further east?,adriatic
+7325,0,Bumbiste,,Croatia,Adriatic,west side of Istria,44.8,13.9,-30.0,200.0,amphorae,,,adriatic
+7326,0,Drazica,,Croatia,Adriatic,Velebit,44.7,14.8,-50.0,-1.0,amphorae,,,adriatic
+7328,0,Cape Gradina,,Croatia,Adriatic,Bay of Rogoznica,43.5166,15.96667,-30.0,100.0,amphorae,,,adriatic
+7329,0,Greben S. islet,,Croatia,Adriatic,SW of Silba Island,44.31666,14.7,-70.0,100.0,amphorae,,,adriatic
+7330,0,Host B,,Croatia,Adriatic,central Dalmatia,43.06666,16.2,1.0,100.0,amphorae,,,adriatic
+7332,0,"Jaz, islet",,Croatia,Adriatic,central Dalmatia,43.53333,15.93333,-50.0,-1.0,amphorae,,,adriatic
+7333,0,Karantunic,,Croatia,Adriatic,northern Dalmatia,43.0,15.23333,1.0,75.0,amphorae,,,adriatic
+7335,0,Kopa,,Croatia,Adriatic,west side of Istria,44.8,13.86666,-25.0,75.0,amphorae,,,adriatic
+7336,0,Kopiste,,Croatia,Adriatic,central Dalmatia,42.73333,16.71666,-25.0,75.0,amphorae,,,adriatic
+7338,0,Krbar,,Croatia,Adriatic,central Dalmatia,43.88333,15.26666,1.0,400.0,amphorae,,,adriatic
+7339,0,Lirica,,Croatia,Adriatic,southern Dalmatia,42.86666,17.43333,-25.0,75.0,,,,adriatic
+7342,0,Mala Palagruza,,Croatia,Adriatic,central Dalmatia,42.38333,16.26666,1.0,100.0,amphorae,,,adriatic
+7343,0,Mali Frasker,,Croatia,Adriatic,West Istria,44.81666,13.83333,-25.0,75.0,amphorae,,,adriatic
+7344,0,Mrcara,,Croatia,Adriatic,central Dalmatia,42.75,16.8,1.0,200.0,amphorae,,,adriatic
+7345,0,Parzanj,,Croatia,Adriatic,near Hvar,43.16666,16.31666,1.0,96.0,amphorae; Mortaria,Spain,,adriatic
+7346,0,Pelegrin (cape),,Croatia,Adriatic,west of Hvar,43.18333,16.36666,1.0,150.0,amphorae; ECW -like pottery,,,adriatic
+7347,0,Skolj od Volam,,Croatia,Adriatic,west side of Istria,44.8,13.86666,1.0,100.0,amphorae,,,adriatic
+7348,0,Supetar,,Croatia,Adriatic,southern Dalmatia,42.58333,18.2,-30.0,200.0,amphorae,,,adriatic
+7349,0,Supetric,,Croatia,Adriatic,southern Dalmatia,42.43333,18.43333,-30.0,200.0,A large quantity of tegulae and imbrices suggests a shipwreck.,,,adriatic
+7350,0,Tijascica,,Croatia,Adriatic,central Dalmatia,43.66666,15.76666,-60.0,-1.0,amphorae,,,adriatic
+7354,0,Verudica,,Croatia,Adriatic,west side of Istria,44.83333,13.81666,1.0,100.0,amphorae,,,adriatic
+7355,0,Vratnicka,,Croatia,Adriatic,Mjlet Island,42.7,17.73333,1.0,100.0,amphorae,,,adriatic
+7377,0,Bay of Naousa,,Greece,,Paros,37.12295,25.22598,-100.0,-1.0,,,,eastern_med
+7385,0,Ithaki 2,,Greece,Ionian,Between Ithaki and Cephalonia,37.98909,20.76965,-100.0,100.0,amphorae,,,eastern_med
+7386,0,Ithaki 4,,Greece,Ionian,Between Ithaki and Cephalonia,37.98909,20.76965,,,Lead ingots.,,,eastern_med
+7387,0,Ithaki 3,,Greece,Ionian,Between Ithaki and Cephalonia,37.98909,20.76965,-100.0,-1.0,Roof tiles.,,,eastern_med
+7407,0,Skerki Bank,,International waters,,,0.0,0.0,355.0,400.0,,,,western_med
+7410,0,Torre Flavia B,1158,Italy,,,0.0,0.0,,,,,,western_med
+7411,0,Torre Flavia C ?,,Italy,,Latium,41.94812,12.0568,1.0,15.0,amphorae,,,western_med
+7427,0,Culip VIII,,Spain,Western Mediterranean,Catalunya,0.0,0.0,1.0,50.0,amphorae; amphora_type:Haltern 70,,,western_med
+7428,0,Bou Ferrer (Alicante),,Spain,Western Mediterranean,"La Vila Joiosa, Alicante",0.0,0.0,40.0,50.0,amphorae,Cadiz,Rome?,western_med
+7430,0,Sinope deep wreck C,,Turkey,Black Sea,Northern Turkey,0.0,0.0,400.0,700.0,amphorae,,,black_sea
+7431,0,Sinope deep wreck B,,Turkey,Black Sea,Northern Turkey,0.0,0.0,550.0,700.0,amphorae,,,black_sea
+7432,0,Sinope deep wreck D,,Turkey,Black Sea,,0.0,0.0,470.0,520.0,amphorae,,,black_sea
+7436,0,Atlit A,1,Israel,Eastern Mediterranean,,32.7,34.91666,-700.0,-600.0,"Parker notes Assyrian bronze helmets, Babylonian weights (in the form of swans), furniture and candelabras.",,,eastern_med
+7437,0,'Atlit B,2,Israel,Eastern Mediterranean,,0.0,0.0,1250.0,1300.0,,,,eastern_med
+7438,0,'Atlit C,3,Israel,Eastern Mediterranean,,0.0,0.0,1400.0,1500.0,,,,eastern_med
+7439,0,Acquaviva,5,Italy,,"Elba, Tuscany",0.0,0.0,100.0,200.0,amphorae,,,western_med
+7440,0,Acque Chiare,6,Italy,,"Brindisi, Puglia",0.0,0.0,300.0,450.0,"amphorae; At least 4 terracotta 'vaulting tubes', but these may not have been part of the cargo.",,,western_med
+7441,0,Addaya,7,Spain,Western Mediterranean,Minorca,0.0,0.0,-150.0,-1.0,amphorae,,,western_med
+7442,0,Agay A (Camp Long),8,France,Western Mediterranean,Var,0.0,0.0,925.0,975.0,"amphorae; At least 7 basalt grinding stones atnd 250 bronze ingots of slender form, 38-40cm long. A brass ingot and some copper vessels were possibly also part of the cargo.",,,western_med
+7443,0,Agde A,9,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-200.0,-150.0,amphorae; Campanian B pottery,,,western_med
+7444,0,Agde B,10,France,Western Mediterranean,Languedoc-Roussillon,43.26666,3.45,-200.0,-100.0,amphorae; Campanian B pottery,,,western_med
+7445,0,Agde D,11,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-100.0,-1.0,amphorae,,,western_med
+7446,0,Agde E,12,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,75.0,125.0,amphorae,,,western_med
+7447,0,Agde F,13,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-500.0,-400.0,amphorae,,,western_med
+7448,0,Agde G,14,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-500.0,-100.0,"Tablets of litharge (red lead) clay were stacked together in an area 20 x 14m, representing about 100 tons.",,,western_med
+7449,0,Agde H,15,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,,,Lead ore.,,,western_med
+7450,0,Agde J,16,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-125.0,-75.0,"A group of lead ingots of Republican Spanish type. They bear the mould-marks L. PLANI.L.F.RUSSINI, SOC GARGILI T F ET M LAETILI ML and SOC.M.C. PONTILIENORUM.M.F..The ingot of L. Planius Russinius is exactly similar to 2 ingots found in the Mahdia wreck.",,,western_med
+7451,0,Agde K,17,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-300.0,-200.0,"A group of lead ingots, cast in oval mounds resembling the ""Pinna nobilis"" shell and inscribed with TT. Compare the ingots from the Cabrera B wreck.",,,western_med
+7453,0,Ai-Yannis Tholou A,19,Greece,,Chios,0.0,0.0,-400.0,-300.0,amphorae,,,eastern_med
+7455,0,Aigus Blava,21,Spain,Western Mediterranean,,0.0,0.0,-50.0,25.0,amphorae,,,western_med
+7456,0,Ain El Gazala,22,Libya,,near Tobruk,0.0,0.0,200.0,400.0,amphorae,,,western_med
+7457,0,Ajaccio,23,France,Western Mediterranean,Corsica,0.0,0.0,1400.0,1600.0,"Yellow or green glazed ware pottery 'a stecca' (ribbed), imitating products of Pisa, commonly found in Liguria and less frequently in Corsica.",,,western_med
+7459,0,Akandia B,25,Greece,,Rhodes,0.0,0.0,,,amphorae,,,eastern_med
+7460,0,Akko A,26,Israel,Eastern Mediterranean,north of Akko,0.0,0.0,-325.0,-25.0,,,,eastern_med
+7461,0,Akko B,27,Israel,Eastern Mediterranean,north of Akko,0.0,0.0,-200.0,-1.0,Millstones.,,,eastern_med
+7462,0,Albenga,28,Italy,,Liguria,0.0,0.0,-100.0,-80.0,"amphorae; A variety of pottery: black-gloss ware, including Campanian A plates and 'imitation Campanian' bowls. Some is said to have been stacked between the amphorae.",,,western_med
+7463,0,Alcudia,30,Spain,Western Mediterranean,Majorca,0.0,0.0,,,"'A considerable number' of tin ingots is said to have been found. About 30cm tall, with a hole near the top, and weighing 10.5-11.5 kg. They were slightly alloyed with silver.",,,western_med
+7465,0,Alexandria B,32,Egypt,,Alexandria,0.0,0.0,,,A cargo of mill-stones.,,,eastern_med
+7466,0,Algajola,33,France,Western Mediterranean,Corsica,0.0,0.0,-150.0,-100.0,44 uninscribed lead ingots.,,,western_med
+7467,0,Alghero,34,Italy,,Western Sardinia,0.0,0.0,-150.0,400.0,Bricks/ tiles.,,,western_med
+7468,0,La Almadraba,35,,,,0.0,0.0,100.0,200.0,,,,western_med
+7469,0,Ametilla de Mar A,36,Spain,Western Mediterranean,,0.0,0.0,-25.0,75.0,amphorae,,,western_med
+7470,0,Ametilla de Mar B,37,Spain,Western Mediterranean,,0.0,0.0,-300.0,-250.0,amphorae,,,western_med
+7471,0,Ametilla de Mar C,38,Spain,Western Mediterranean,,,0.0,1.0,300.0,amphorae,,,western_med
+7472,0,Las Amoladeras,39,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7473,0,Ancona,41,Italy,,,0.0,0.0,-150.0,-25.0,amphorae,,,western_med
+7474,0,Antalya,42,Turkey,,,0.0,0.0,-1500.0,-1400.0,Copper ingots.,,,eastern_med
+7475,0,Antheor,43,France,Western Mediterranean,,0.0,0.0,1400.0,1600.0,Glazed ware similar to that of the wreck Ajaccio.,,,western_med
+7478,0,Anzio,46,Italy,,,0.0,0.0,,,"Tufa blocks, presumably ancient.",,,western_med
+7481,0,Aragnon,49,France,Western Mediterranean,,0.0,0.0,1.0,50.0,amphorae,,,western_med
+7483,0,Ardenza,51,,,,0.0,0.0,25.0,75.0,,,,western_med
+7484,0,Is Arenas,52,,,,0.0,0.0,-400.0,-100.0,,,,western_med
+7485,0,Arenella,53,,,,0.0,0.0,1000.0,1500.0,,,,western_med
+7487,0,Argentario,55,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7488,0,Arles-Rhone,56,,,,0.0,0.0,1.0,100.0,,,,western_med
+7490,0,Arwad A,58,,,,0.0,0.0,-600.0,-300.0,,,,eastern_med
+7491,0,Arwad B,59,,,,0.0,0.0,500.0,700.0,,,,eastern_med
+7493,0,Ashkelon,61,,,,0.0,0.0,,,,,,eastern_med
+7495,0,Averno A,64,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7496,0,Averno B,65,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7497,0,Averno C,66,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7498,0,Averno D,67,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7501,0,Ayios Ioannis Theologos,70,,,,0.0,0.0,1000.0,1100.0,,,,eastern_med
+7502,0,Ayios Stephanos,71,Greece,,,0.0,0.0,525.0,675.0,,,,eastern_med
+7503,0,Ayitasi Burnu,72,,,,0.0,0.0,-400.0,-300.0,,,,eastern_med
+7504,0,Bacoli A,73,,,,0.0,0.0,-50.0,100.0,,,,western_med
+7505,0,Bacoli B,74,,,,0.0,0.0,100.0,200.0,,,,western_med
+7506,0,Bacoli C,75,,,,0.0,0.0,-500.0,-300.0,,,,western_med
+7508,0,Bagaud B,77,France,Western Mediterranean,Var,43.01286,6.35868,-110.0,-100.0,"Tin and iron ingots, some marked. According to one round inscription, the merchants were Celts, specifically Hypocelts who were assembled by a Greek named Heracleides for the coomercial exploration of tin.",,,western_med
+7509,0,Bagaud C,78,France,Western Mediterranean,Var,43.005,6.35936,50.0,200.0,amphorae,,,western_med
+7510,0,Baia di Gadir,79,,,,0.0,0.0,-150.0,50.0,,,,western_med
+7511,0,Baie de l'Amitie,80,,,,0.0,0.0,50.0,100.0,,,,western_med
+7512,0,Bajo de Dentro,81,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+7513,0,Bajo de la Barra,82,,,,0.0,0.0,1.0,100.0,,,,western_med
+7514,0,Bajo de la Campana A,83,,,,0.0,0.0,-500.0,-400.0,,,,western_med
+7515,0,Bajo de la Campana B,84,,,,0.0,0.0,1.0,100.0,,,,western_med
+7516,0,Balise du Pretre A,85,,,,0.0,0.0,-200.0,-140.0,,,,western_med
+7517,0,Balise du Pretre B,86,,,,0.0,0.0,1.0,100.0,,,,western_med
+7518,0,Balise du Pretre C,87,,,,0.0,0.0,290.0,340.0,,,,western_med
+7519,0,Bandol,88,,,,0.0,0.0,-200.0,-140.0,,,,western_med
+7520,0,Baratti,89,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+7522,0,Barbate,91,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7523,0,Bari,92,,,,0.0,0.0,,,,,,western_med
+7524,0,Basiluzzo,93,,,,0.0,0.0,1000.0,1500.0,,,,western_med
+7525,0,Baska,94,,,,0.0,0.0,-100.0,-1.0,,,,adriatic
+7526,0,La Basse du Verhuge,95,,,,0.0,0.0,-140.0,-130.0,,,,western_med
+7527,0,Les Basses du Can,96,France,Western Mediterranean,Var,43.24838,6.69445,-150.0,-100.0,amphorae,,,western_med
+7528,0,Preveto,,Italy,,Sicily - Egadi Islands,37.9144,12.2864,1000.0,1100.0,"amphorae; Cups, pitchers and bowls. Many tiles.",,,western_med
+7529,0,Ben-Afeli,98,,,,0.0,0.0,85.0,95.0,,,,western_med
+7530,0,Benicarlo,99,,,,0.0,0.0,1.0,50.0,,,,western_med
+7531,0,Bera,100,Spain,Western Mediterranean,,41.11666,1.45,25.0,75.0,amphorae,,,western_med
+7532,0,Bergeggi A,101,Italy,,Liguria,0.0,0.0,10.0,60.0,,,,western_med
+7533,0,Binasafuller,104,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+7535,0,Bon-Porte A,106,,,,0.0,0.0,-550.0,-525.0,,,,western_med
+7536,0,Bon -Porte B,107,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+7537,0,Borgo Caprile,109,,,,0.0,0.0,1000.0,1200.0,,,,western_med
+7538,0,Boulouris,110,,,,0.0,0.0,1.0,275.0,,,,western_med
+7539,0,Bozburun Byzantine,111,Turkey,Eastern Mediterranean,Marmaris Peninsula,36.71666,28.08333,875.0,900.0,amphorae,Crimea,,eastern_med
+7541,0,Bregancon,113,,,,0.0,0.0,-600.0,-400.0,,,,western_med
+7542,0,Brescou,114,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7543,0,Briande,115,,,,0.0,0.0,-200.0,-180.0,,,,western_med
+7544,0,Brida Marina,116,,,,0.0,0.0,1.0,200.0,,,,western_med
+7545,0,Brindisi,117,,,,0.0,0.0,1100.0,1200.0,,,,western_med
+7546,0,Bruzzi,119,,,,0.0,0.0,-300.0,-250.0,,,,eastern_med
+7547,0,Cabo de Gata,120,,,,0.0,0.0,175.0,325.0,,,,western_med
+7548,0,Cabras,122,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7549,0,Cabrera A,123,,,,0.0,0.0,300.0,325.0,,,,western_med
+7550,0,Cabrera B,124,,,,0.0,0.0,-250.0,-225.0,,,,western_med
+7551,0,Cabrera C,125,,,,0.0,0.0,253.0,257.0,,,,western_med
+7552,0,Cabrera D,126,,,,0.0,0.0,1.0,15.0,,,,western_med
+7553,0,Cabrera E,127,,,,0.0,0.0,-10.0,25.0,,,,western_med
+7554,0,Cadiz A,128,,,,0.0,0.0,-400.0,-300.0,,,,western_med
+7555,0,Cadiz B,129,,,,0.0,0.0,-100.0,-40.0,,,,western_med
+7556,0,Cadiz C,130,,,,0.0,0.0,70.0,96.0,,,,western_med
+7557,0,Cadiz D,131,,,,0.0,0.0,-50.0,50.0,,,,western_med
+7558,0,Cadiz E,132,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7559,0,Cadiz F,133,,,,0.0,0.0,-700.0,-600.0,,,,western_med
+7560,0,Caesarea A,136,,,,0.0,0.0,250.0,350.0,,,,eastern_med
+7561,0,Caesarea B,137,,,,0.0,0.0,250.0,350.0,,,,eastern_med
+7562,0,Caesarea C,138,,,,0.0,0.0,225.0,275.0,,,,eastern_med
+7563,0,Cagliari A,139,,,,0.0,0.0,1.0,300.0,,,,western_med
+7564,0,Cagliari B,140,,,,0.0,0.0,200.0,375.0,,,,western_med
+7565,0,Cala Barbiere,141,Italy,,,0.0,0.0,-200.0,-150.0,,,,western_med
+7566,0,Cal Cativa,142,,,,0.0,0.0,-50.0,25.0,,,,western_med
+7567,0,Cala Cupa,143,,,,0.0,0.0,50.0,150.0,,,,western_med
+7568,0,Cala de Sant Vicent,144,Spain,Western Mediterranean,Majorca,0.0,0.0,-150.0,400.0,,,,western_med
+7569,0,Cala del Piccione,145,,,,0.0,0.0,-400.0,-350.0,,,,western_med
+7570,0,Cala di Li Francesi,146,,,,0.0,0.0,-100.0,100.0,,,,western_med
+7571,0,Cala Gadir,147,,,,0.0,0.0,-220.0,-150.0,amphorae,,,western_med
+7572,0,Cala Grande,148,,,,0.0,0.0,300.0,400.0,,,,western_med
+7573,0,Cala Levante,149,,,,0.0,0.0,,,,,,western_med
+7574,0,Cala Mindola,150,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7575,0,Cala Portalo,151,,,,0.0,0.0,-200.0,-175.0,,,,western_med
+7576,0,Cala Rossa,152,France,Western Mediterranean,Corsica,41.61951,9.33597,-250.0,-200.0,amphorae,,,western_med
+7577,0,Cala Rossano,153,Italy,,Ventotene,40.8039,13.43181,30.0,60.0,amphorae,Baetica,,western_med
+7578,0,Cala Scirocco,154,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+7579,0,Cala Ustina A,155,,,,0.0,0.0,-150.0,-30.0,,,,western_med
+7580,0,Cala Ustina B,156,,,,0.0,0.0,-30.0,400.0,,,,western_med
+7581,0,Cala Vellana,157,,,,0.0,0.0,50.0,60.0,,,,western_med
+7582,0,Calanque de l'Ane,158,France,Western Mediterranean,Bouches-du-Rhône,43.26657,5.2988,75.0,100.0,"A cargo of tiles, tegulae and imbrices, still in rows.",,,western_med
+7583,0,Calanque du Berger,159,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7585,0,Callatis A,160,,,,0.0,0.0,-300.0,-200.0,,,,black_sea
+7586,0,Calvi,162,,,,0.0,0.0,1500.0,1510.0,,,,western_med
+7588,0,Camarina B,164,Italy,,Sicily,0.0,0.0,1.0,100.0,"A block of 73 North African oil lamps that had been carried in fabric sacks, and all were marked with the maker's mark STACTE as well as being decorated",North Africa,,western_med
+7589,0,Camarina C,165,,,,0.0,0.0,1100.0,1200.0,,,,western_med
+7590,0,Camarina D,166,,,,0.0,0.0,265.0,275.0,,,,western_med
+7591,0,Camirus,167,,,,0.0,0.0,1200.0,1300.0,,,,eastern_med
+7592,0,Cap Bear A,169,,,,0.0,0.0,-50.0,25.0,,,,western_med
+7593,0,Cap Bear B,170,,,,0.0,0.0,100.0,300.0,,,,western_med
+7594,0,Cap Bear C,171,France,Western Mediterranean,Languedoc-Rousillon,0.0,0.0,-50.0,-25.0,amphorae,"Baetulo/Iluro, Spain",,western_med
+7595,0,Cap Benat A,172,,,,43.09063,6.37254,30.0,190.0,,,,western_med
+7596,0,Sud Lavezzi 5,,France,Western Mediterranean,Corsica,41.33335,9.25512,50.0,150.0,"Tegulae; ceramics, terra sigillata plates from N Italy etc",,,western_med
+7597,0,Cap Benat C,174,,,,43.09063,6.37254,1.0,50.0,,,,western_med
+7598,0,Cap Benat D,175,,,,,,-130.0,-110.0,,,,western_med
+7599,0,Cap Blanc,176,Spain,Western Mediterranean,,0.0,0.0,295.0,325.0,amphorae,,,western_med
+7600,0,Cap Bon A,177,,,,0.0,0.0,1.0,100.0,,,,western_med
+7601,0,Cap Bon B,178,,,,0.0,0.0,-25.0,100.0,,,,western_med
+7602,0,Cap Camarat A,179,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7603,0,Cap Camarat B,180,,,,0.0,0.0,-75.0,-25.0,,,,western_med
+7604,0,Cap Couronne,181,,,,0.0,0.0,1450.0,1500.0,,,,western_med
+7605,0,Cap Croisette,182,,,,0.0,0.0,200.0,400.0,,,,western_med
+7606,0,Cap d'Antibes,183,,,,0.0,0.0,-550.0,-530.0,,,,western_med
+7607,0,Cap de Creus,184,,,,0.0,0.0,-50.0,25.0,,,,western_med
+7608,0,Cap de Garde,185,,,,0.0,0.0,285.0,365.0,,,,western_med
+7609,0,Cap del Vol,186,,,,0.0,0.0,-10.0,5.0,,,,western_med
+7610,0,Cap Gros (Collioure),187,,,,0.0,0.0,-50.0,25.0,,,,western_med
+7611,0,Cap Gros A,188,France,Western Mediterranean,Alpes-Maritimes,43.55151,7.14737,-100.0,-50.0,,,,western_med
+7612,0,Cap Gros B,189,,Western Mediterranean,Alpes-Maritimes,43.55151,7.14737,-200.0,-1.0,,,,western_med
+7613,0,Cap Gros C,190,France,Western Mediterranean,Alpes-Maritimes,43.55151,7.14737,-50.0,-1.0,amphorae,,,western_med
+7614,0,Cap Gros D,191,,,,0.0,0.0,-400.0,-300.0,,,,western_med
+7615,0,Cap Leucate A,192,,,,0.0,0.0,1.0,275.0,,,,western_med
+7616,0,Cap Leucate B,193,,,,0.0,0.0,-50.0,100.0,,,,western_med
+7617,0,Cap Magroua,194,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7618,0,Cap Negret,195,,,,0.0,0.0,-110.0,-90.0,,,,western_med
+7619,0,Cap Roux A,196,,,,0.0,0.0,300.0,400.0,,,,western_med
+7620,0,Cap Roux B,197,,,,0.0,0.0,-120.0,-80.0,,,,western_med
+7621,0,Cap Sicie,198,,,,0.0,0.0,-75.0,-70.0,,,,western_med
+7622,0,Cap Spartel,199,,,,0.0,0.0,-100.0,50.0,,,,western_med
+7623,0,Cap Taillat,200,,,,0.0,0.0,-110.0,-90.0,,,,western_med
+7625,0,Cape Andreas A,202,,,,0.0,0.0,400.0,650.0,,,,eastern_med
+7626,0,Cape Andreas B,203,,,,0.0,0.0,600.0,700.0,,,,eastern_med
+7627,0,Cape Andreas C,204,Cyprus,,,0.0,0.0,450.0,650.0,amphorae,,,eastern_med
+7628,0,Cape Andreas D,205,,,,0.0,0.0,-600.0,-400.0,,,,eastern_med
+7629,0,Cape Andreas E,206,,,,0.0,0.0,450.0,650.0,amphorae,,,eastern_med
+7631,0,Cape Gelidonya A,208,Turkey,,Antalya,36.18333,30.4,-1200.0,-1150.0,"amphorae; 34 flat four-handled copper ingots (25kg each) cast in the shape of an ox hide, several tin ingots, several raw bronze ingots and broken bronze tools (scrap axes, adzes, knives and a spade carried in wicker baskets)) destined to be melted down for re-use.",Near East,,eastern_med
+7633,0,Cape Gelidonya C,210,,,,0.0,0.0,,,,,,eastern_med
+7634,0,Cape Gelidonya D,211,,,,0.0,0.0,1200.0,1500.0,,,,eastern_med
+7635,0,Cape Kiti A,212,,,,0.0,0.0,600.0,700.0,,,,eastern_med
+7638,0,Cape Sidero B,215,,,,0.0,0.0,300.0,750.0,,,,eastern_med
+7639,0,Capel Rosso,216,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+7640,0,Capo Ali,217,,,,0.0,0.0,-500.0,-400.0,,,,western_med
+7641,0,Capo Bellavista,218,,,,0.0,0.0,-25.0,25.0,,,,western_med
+7642,0,Capo Carbonara A,219,,,,0.0,0.0,-300.0,-100.0,,,,western_med
+7643,0,Capo Carbonara B,220,,,,0.0,0.0,200.0,275.0,,,,western_med
+7644,0,Capo Carbonara C,221,,,,0.0,0.0,30.0,70.0,,,,western_med
+7646,0,Capo Colonna,223,,,,0.0,0.0,-600.0,-300.0,,,,western_med
+7647,0,Capo della Frasca,224,,,,0.0,0.0,-400.0,-200.0,,,,western_med
+7648,0,Capo di Muro,225,,,,0.0,0.0,1.0,400.0,,,,western_med
+7649,0,Capo di Torre Cavallo,226,Italy,,Puglia,0.0,0.0,-150.0,-50.0,amphorae,,,western_med
+7650,0,Capo Enfola,227,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+7651,0,Capo Ferrato,228,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7653,0,Capo Granitola B,230,,,,0.0,0.0,-300.0,-150.0,,,,western_med
+7654,0,Capo Granitola C,231,,,,0.0,0.0,250.0,400.0,,,,western_med
+7656,0,Capo Graziano A,233,,,,0.0,0.0,-160.0,-140.0,,,,western_med
+7657,0,Capo Graziano B,234,,,,0.0,0.0,-325.0,-275.0,,,,western_med
+7658,0,Capo Graziano C,235,,,,0.0,0.0,1.0,10.0,,,,western_med
+7659,0,Capo Graziano F,236,,,,0.0,0.0,-300.0,-250.0,,,,western_med
+7660,0,Capo Graziano G,237,,,,0.0,0.0,-450.0,-425.0,,,,western_med
+7661,0,Capo Graziano H,238,,,,0.0,0.0,-100.0,-50.0,,,,western_med
+7662,0,Capo Graziano J,239,,,,0.0,0.0,,,,,,western_med
+7663,0,Capo Graziano K,240,,,,0.0,0.0,,,,,,western_med
+7664,0,Capo Graziano L,241,,,,0.0,0.0,,,,,,western_med
+7665,0,Capo Graziano M,242,,,,0.0,0.0,150.0,250.0,,,,western_med
+7666,0,Capo Graziano N,243,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7667,0,Capo Mele,244,,,,0.0,0.0,-175.0,-125.0,,,,western_med
+7668,0,Capo Passero,245,,,,0.0,0.0,400.0,650.0,,,,western_med
+7669,0,Capo Plaia,246,,,,0.0,0.0,200.0,275.0,,,,western_med
+7670,0,Capo Rasocolmo A,247,,,,0.0,0.0,-36.0,-36.0,,,,western_med
+7671,0,Capo Rasocolmo B,248,,,,0.0,0.0,-450.0,-400.0,,,,western_med
+7672,0,Capo Rasocolmo C,249,,,,0.0,0.0,-150.0,-75.0,,,,western_med
+7673,0,Capo Rizzuto,250,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7674,0,Capo San Alessio,251,,,,0.0,0.0,100.0,300.0,,,,western_med
+7675,0,Capo San Vito,252,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7676,0,Capo Sant'Andrea A,253,,,,0.0,0.0,-60.0,-35.0,,,,western_med
+7677,0,Capo Sant'Andrea B,254,,,,0.0,0.0,-125.0,-100.0,,,,western_med
+7678,0,Capo Sant'Elia,255,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7680,0,Capo Testa A,257,,,,0.0,0.0,1.0,75.0,,,,western_med
+7681,0,Capo Testa B,258,,,,0.0,0.0,-75.0,-25.0,,,,western_med
+7682,0,Capo Vite,259,,,,0.0,0.0,1300.0,1500.0,,,,western_med
+7683,0,Capo Zafferano,260,,,,0.0,0.0,-300.0,-150.0,,,,western_med
+7684,0,Capraia A,261,,,,0.0,0.0,-100.0,100.0,,,,western_med
+7685,0,Capraia B,262,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7686,0,Capraia C,263,,,,0.0,0.0,,,,,,western_med
+7688,0,Capraia E,265,,,,0.0,0.0,1000.0,1500.0,,,,western_med
+7689,0,Caprera,266,,,,0.0,0.0,100.0,200.0,,,,western_med
+7690,0,Carqueiranne,267,,,,0.0,0.0,-75.0,-25.0,,,,western_med
+7691,0,Carro A,268,,,,0.0,0.0,525.0,550.0,,,,western_med
+7692,0,Carro B,269,,,,0.0,0.0,-125.0,-75.0,,,,western_med
+7693,0,Carro C,270,,,,0.0,0.0,1.0,275.0,,,,western_med
+7694,0,Carry-le-Rouet,271,France,Western Mediterranean,,0.0,0.0,-125.0,-75.0,blocks; marble:24 tons of local French limestone.,South of France,,western_med
+7695,0,Cartagena A,272,,,,0.0,0.0,-50.0,50.0,,,,western_med
+7697,0,Cartagena B,273,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+7698,0,Cassis,275,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+7699,0,Castellammare del Golfo,276,,,,0.0,0.0,1400.0,1500.0,,,,western_med
+7700,0,Castellare del Porto,277,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+7701,0,Castelsardo,278,,,,0.0,0.0,100.0,200.0,,,,western_med
+7702,0,Castillo,279,,,,0.0,0.0,1.0,100.0,,,,western_med
+7703,0,Les Catalans,280,,,,0.0,0.0,325.0,375.0,,,,western_med
+7704,0,Cattolica,281,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7706,0,Cavallo A,283,France,Western Mediterranean,Corsica,41.3601,9.26181,40.0,60.0,amphorae,"Llobregat, Spain",,western_med
+7707,0,Cavallo B,284,,,,0.0,0.0,275.0,400.0,,,,western_med
+7708,0,Cavallo C,285,,,,0.0,0.0,-200.0,-140.0,,,,western_med
+7709,0,Caveaux A,286,,,,0.0,0.0,-125.0,-75.0,,,,western_med
+7710,0,Caveaux B,287,,,,0.0,0.0,-125.0,-100.0,,,,western_med
+7712,0,Cavoli,289,,,,0.0,0.0,1425.0,1440.0,,,,western_med
+7713,0,Cavtat,290,,,,0.0,0.0,-100.0,-25.0,,,,adriatic
+7714,0,Cecina,291,,,,0.0,0.0,-125.0,-75.0,,,,western_med
+7715,0,Cefalu,292,Italy,,Sicily,0.0,0.0,400.0,600.0,,,,western_med
+7716,0,Cervia,293,,,,0.0,0.0,1.0,400.0,,,,western_med
+7717,0,Cervo,294,,,,0.0,0.0,-50.0,100.0,,,,western_med
+7718,0,Cherchel A,298,,,,0.0,0.0,-25.0,75.0,,,,western_med
+7719,0,Cherchel B,299,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7720,0,Chia,300,,,,0.0,0.0,200.0,275.0,,,,western_med
+7721,0,Chiessi,301,Italy,,"Elba, Tuscany",0.0,0.0,60.0,85.0,amphorae; Bronze ingots.,,,western_med
+7722,0,Chretienne A,302,France,Western Mediterranean,Var,0.0,0.0,-150.0,-100.0,,,,western_med
+7723,0,Chretienne B,303,France,Western Mediterranean,Var,0.0,0.0,50.0,200.0,,,,western_med
+7724,0,Chretienne C,304,France,Western Mediterranean,Var,0.0,0.0,-175.0,-150.0,,,,western_med
+7725,0,Chretienne D,305,France,Western Mediterranean,Var,43.4175,6.88555,325.0,375.0,amphorae,Lusitania- Baetica,,western_med
+7726,0,Chretienne E,306,France,Western Mediterranean,Var,0.0,0.0,-300.0,-150.0,,,,western_med
+7727,0,Chretienne F,307,France,Western Mediterranean,Var,0.0,0.0,15.0,20.0,,,,western_med
+7728,0,Chretienne I,308,France,Western Mediterranean,Var,0.0,0.0,1.0,100.0,,,,western_med
+7729,0,Chretienne J,309,France,Western Mediterranean,Var,0.0,0.0,-125.0,-75.0,,,,western_med
+7730,0,La Ciaccia,310,,,,0.0,0.0,-300.0,-50.0,,,,western_med
+7731,0,Cikat,311,,,,0.0,0.0,-100.0,100.0,,,,adriatic
+7732,0,La Ciotat A,312,France,Western Mediterranean,,0.0,0.0,-200.0,-140.0,,,,western_med
+7733,0,La Ciotat B,313,France,Western Mediterranean,,0.0,0.0,-400.0,-300.0,,,,western_med
+7734,0,La Ciotat C,314,France,Western Mediterranean,Bouches-du-Rhône,43.1601,5.61942,-125.0,-75.0,amphorae,,,western_med
+7735,0,La Citotat D,315,France,Western Mediterranean,,0.0,0.0,275.0,280.0,,,,western_med
+7736,0,Ciovo,316,,,,0.0,0.0,-100.0,200.0,,,,adriatic
+7737,0,Circeo A,317,,,,0.0,0.0,-550.0,-500.0,,,,western_med
+7738,0,Circeo B,318,,,,0.0,0.0,-250.0,-150.0,,,,western_med
+7739,0,Circeo C,319,,,,0.0,0.0,-150.0,-1.0,,,,western_med
+7740,0,Circeo D,320,,,,0.0,0.0,-25.0,25.0,,,,western_med
+7741,0,Circeo E,321,,,,0.0,0.0,200.0,325.0,,,,western_med
+7742,0,Cirella di Diamante,322,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+7743,0,Civitavecchia,323,,,,0.0,0.0,50.0,150.0,,,,western_med
+7744,0,Çökertme A,324,,,,0.0,0.0,-700.0,-400.0,,,,eastern_med
+7746,0,Colonia de Sant Jordi A,326,,,,0.0,0.0,-100.0,-80.0,amphorae,,,western_med
+7747,0,Colonia de Sant Jordi C,327,,,,0.0,0.0,250.0,300.0,,,,western_med
+7748,0,Colonia de Sant Jordi D,328,,,,0.0,0.0,,,,,,western_med
+7749,0,Coltellazzo A,329,,,,0.0,0.0,-700.0,-500.0,,,,western_med
+7750,0,Coltellazzo B,330,,,,0.0,0.0,-400.0,-100.0,,,,western_med
+7751,0,Coltellazzo C,331,,,,0.0,0.0,-100.0,-75.0,,,,western_med
+7752,0,Columbretes,332,,,,0.0,0.0,-25.0,75.0,,,,western_med
+7753,0,Comino,333,,,,0.0,0.0,-350.0,-200.0,,,,western_med
+7754,0,Conillera,334,,,,0.0,0.0,30.0,190.0,,,,western_med
+7755,0,Agios Petros Byzantine,,Greece,Aegean,"Kyra-Panagia Island, Northern Sporades",39.2874,24.04357,1025.0,1075.0,amphorae,,,eastern_med
+7756,0,Corbella,336,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7758,0,Corsica,338,,,,0.0,0.0,274.0,274.0,,,,western_med
+7759,0,Corte Cavanella,339,,,,0.0,0.0,1.0,300.0,,,,western_med
+7760,0,Cova del Infern,341,Spain,Western Mediterranean,,0.0,0.0,-100.0,150.0,,,,western_med
+7761,0,Cueva del Jarro A,343,,,,0.0,0.0,-350.0,-250.0,,,,western_med
+7762,0,Cueva del Jarro B,344,,,,0.0,0.0,75.0,100.0,,,,western_med
+7763,0,Culip A,345,,,,0.0,0.0,-50.0,25.0,,,,western_med
+7764,0,Culip C,346,,,,0.0,0.0,-50.0,25.0,,,,western_med
+7765,0,Culip D/ Culip IV,347,,,,0.0,0.0,70.0,80.0,,,,western_med
+7766,0,Culip E,348,,,,0.0,0.0,50.0,100.0,,,,western_med
+7767,0,Culip F,349,,,,0.0,0.0,1350.0,1400.0,,,,western_med
+7769,0,Datca A,351,,,,0.0,0.0,400.0,650.0,,,,eastern_med
+7770,0,Datca B,352,Turkey,,,0.0,0.0,650.0,725.0,,,,eastern_med
+7771,0,Datca C,353,,,,0.0,0.0,275.0,325.0,,,,eastern_med
+7772,0,Le Dattier,354,,,,0.0,0.0,-550.0,-525.0,,,,western_med
+7773,0,Dattilo,355,,,,0.0,0.0,-400.0,-375.0,,,,western_med
+7775,0,Delphinion,357,,,,0.0,0.0,400.0,600.0,amphorae,,,eastern_med
+7776,0,Denia,358,,,,0.0,0.0,150.0,225.0,,,,western_med
+7778,0,Dhia B,360,,,,0.0,0.0,900.0,1000.0,,,,eastern_med
+7779,0,Dhia C,361,,,,0.0,0.0,1100.0,1200.0,,,,eastern_med
+7780,0,Dhokos,362,Greece,,Argolid,0.0,0.0,-2210.0,-2190.0,"Most of the 1,381 objects recorded were vase fragments dating from the Early Helladic II  period, inlcuding saucers, deep and medium-depth bowls, pots, jugs and plates. Fragments of a pyxis, a cylindrical or spherical box with a lid were also found. Larger vases included several wide-lipped earthenware jars and a pithos. Grinding wheels, fragments of lead ingots and obsidian blade shafts were also found.",Attica? Euboea?,Argolic Gulf,eastern_med
+7782,0,Diano Marina,364,Italy,,Liguria,0.0,0.0,25.0,75.0,amphorae,"Llobregat and Maresme, Spain",,western_med
+7783,0,Domu de S'Orku,365,,,,0.0,0.0,-700.0,-400.0,,,,western_med
+7784,0,Donuzlav,366,,,,0.0,0.0,-325.0,-275.0,,,,black_sea
+7785,0,Dor,367,Israel,Eastern Mediterranean,,0.0,0.0,600.0,700.0,,,,eastern_med
+7786,0,Dragonera A,368,,,,0.0,0.0,200.0,275.0,,,,western_med
+7787,0,Dragonera B,369,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7788,0,Dragonera C,370,,,,0.0,0.0,,,,,,western_med
+7789,0,Dramont A,371,France,Western Mediterranean,Var,43.41136,6.84173,-75.0,-25.0,marble; blocks; marble:Stone blocks measuring 4 x 1 x 1m,,,western_med
+7790,0,Dramont B,372,France,Western Mediterranean,Var,0.0,0.0,1.0,10.0,amphorae,"Lllobregat, Spain",,western_med
+7791,0,Dramont C,373,France,Western Mediterranean,Var,43.41158,6.84293,-125.0,-100.0,"amphorae; Iron bars and blocks of resin; 3 millstones. Numerous ceramics, ollae, olpes, jars, plates, cups and some copper tableware.",,,western_med
+7793,0,Dramont E,375,France,Western Mediterranean,Var,0.0,0.0,425.0,455.0,"amphorae; 30 tubuli of which 22 were intact may have been  part of the cargo? 800-900 plates of terra sigillata D  (Hayes 61B, Hayes 64, Hayes 65 and Hayes 50 B), some with geometric motifs, others botanical.",Neapolis (Nabeul) North Africa,,western_med
+7794,0,Dramont F,376,,,Var,0.0,0.0,390.0,410.0,,,,western_med
+7795,0,Dramont G,377,France,Western Mediterranean,Var,0.0,0.0,60.0,70.0,"Tegulae and imbrices from Frejus, cf Bartelemy B and Roches d'Aurelle wrecks.",,,western_med
+7797,0,Dunas del Pinatar,380,,,,0.0,0.0,1.0,250.0,,,,western_med
+7798,0,Eloro A,381,,,,0.0,0.0,300.0,450.0,,,,western_med
+7799,0,Eloro B,382,,,,0.0,0.0,-300.0,-100.0,,,,western_med
+7800,0,Les Embiez,383,,,,0.0,0.0,-150.0,-50.0,,,,western_med
+7801,0,Empoli,384,,,,0.0,0.0,1300.0,1400.0,,,,western_med
+7802,0,Erdek,385,,,,0.0,0.0,900.0,1200.0,,,,eastern_med
+7803,0,Los Escolletes A,386,,,,0.0,0.0,200.0,300.0,,,,western_med
+7804,0,Los Escolletes B,387,,,,0.0,0.0,200.0,400.0,,,,western_med
+7805,0,Escombreras,388,,,,0.0,0.0,-140.0,-100.0,,,,western_med
+7806,0,Los Esculls,389,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7807,0,Los Espines,390,,,,0.0,0.0,-25.0,50.0,,,,western_med
+7808,0,L'Esquillade,391,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+7809,0,Est-Perduto 1,392,France,Western Mediterranean,Corsica,41.37002,9.30314,1.0,50.0,amphorae,,,western_med
+7810,0,L'Esterel,393,,,,0.0,0.0,-110.0,-90.0,,,,western_med
+7811,0,Esteu dou Mieu A,394,,,,0.0,0.0,-575.0,-525.0,,,,western_med
+7812,0,Esteu dou Mieu B,395,,,,0.0,0.0,-200.0,-180.0,,,,western_med
+7813,0,Fano,396,,,,0.0,0.0,-200.0,-1.0,,,,western_med
+7814,0,Favaritx,397,Spain,Western Mediterranean,Minorca,0.0,0.0,450.0,600.0,"Hundreds of bronze plates, keys, chains, candelabra, statuettes, balances and coins - Christian liturgical objects,",Syria,,western_med
+7815,0,Femmina Morta,398,Italy,,Sicily,0.0,0.0,300.0,325.0,,,,western_med
+7816,0,Fethiye,399,,,,0.0,0.0,-325.0,-300.0,,,,eastern_med
+7817,0,Filfla,400,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7818,0,Filicudi Porto,401,,,,0.0,0.0,475.0,550.0,,,,western_med
+7819,0,Fiumicino A,402,,,,0.0,0.0,125.0,175.0,,,,western_med
+7820,0,Fiumicino B,403,,,,0.0,0.0,300.0,400.0,,,,western_med
+7821,0,Fiumicino C,404,,,,0.0,0.0,300.0,400.0,,,,western_med
+7822,0,Fiumicino D,405,,,,0.0,0.0,200.0,400.0,,,,western_med
+7823,0,Fiumicino E,406,,,,0.0,0.0,101.0,300.0,,,,western_med
+7824,0,Fiumicino F,407,,,,0.0,0.0,300.0,400.0,,,,western_med
+7825,0,Fiumicino G,408,,,,0.0,0.0,200.0,400.0,,,,western_med
+7826,0,Fiumicino H,409,,,,0.0,0.0,101.0,300.0,,,,western_med
+7827,0,Fiumicino J,410,,,,0.0,0.0,101.0,300.0,,,,western_med
+7828,0,Fiumicino K,411,,,,0.0,0.0,42.0,66.0,,,,western_med
+7829,0,Fiumicino L,412,,,,0.0,0.0,42.0,66.0,,,,western_med
+7830,0,Fiumicino M,413,,,,0.0,0.0,42.0,66.0,,,,western_med
+7832,0,Fontanamare A,415,,,,0.0,0.0,290.0,310.0,,,,western_med
+7833,0,Fontanamare B,416,,,,0.0,0.0,-200.0,-1.0,,,,western_med
+7834,0,Fontanamare C,417,,,,0.0,0.0,,,,,,western_med
+7835,0,Formentera,418,,,,0.0,0.0,-1500.0,-1000.0,,,,western_med
+7836,0,Le Formiche di Grosseto A,419,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7837,0,Le Formiche di Grosseto B,420,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7838,0,Le Formiche di Grosseto C,421,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7839,0,Fos A,422,,,,0.0,0.0,-50.0,-25.0,,,,western_med
+7840,0,Fos B,423,,,,0.0,0.0,1.0,100.0,,,,western_med
+7841,0,La Fourmigue A,424,,,,0.0,0.0,-125.0,-75.0,,,,western_med
+7843,0,Les Fourmigues,426,France,Western Mediterranean,Var,0.0,0.0,50.0,50.0,amphorae,"Llobregat, Spain",,western_med
+7844,0,La Frasca,427,,,,0.0,0.0,1475.0,1500.0,,,,western_med
+7845,0,Freu d'en Valento,428,,,,0.0,0.0,-50.0,25.0,,,,western_med
+7846,0,Frontignan,429,,,,0.0,0.0,25.0,75.0,,,,western_med
+7847,0,Gaidouromandhra,431,,,,0.0,0.0,-425.0,-400.0,,,,eastern_med
+7848,0,Galbucina,432,,,,0.0,0.0,-550.0,-450.0,,,,western_med
+7849,0,Galli,433,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7850,0,Gallinaria,434,,,,0.0,0.0,-500.0,-400.0,,,,western_med
+7851,0,Gandolfo,435,,,,0.0,0.0,90.0,100.0,,,,western_med
+7852,0,La Garoupe A,436,,,,0.0,0.0,10.0,35.0,,,,western_med
+7853,0,La Garoupe B,437,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7854,0,La Garoupe C,438,,,,0.0,0.0,140.0,200.0,,,,western_med
+7855,0,Gavetti,439,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+7856,0,Gavrion,440,,,,0.0,0.0,-500.0,-200.0,,,,eastern_med
+7857,0,Gela A,441,Italy,,Sicily,37.03333,14.26666,-525.0,-475.0,amphorae; Pottery,,,western_med
+7858,0,Genoa,442,,,,0.0,0.0,-130.0,-110.0,,,,western_med
+7860,0,Gibraltar A,444,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7861,0,Gibraltar B,445,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7862,0,Gibraltar C,446,,,,0.0,0.0,300.0,750.0,,,,western_med
+7863,0,Gibraltar Strait,447,,,,0.0,0.0,1.0,100.0,,,,western_med
+7864,0,Giens A/Redonne B1,448,France,Western Mediterranean,Var,0.0,0.0,-200.0,-175.0,amphorae; Campanian A ceramics - Lamboglia 27Ba cups with palms et 27c with rosettes as well as small cups L34a.,,,western_med
+7865,0,Giens B,449,,,,0.0,0.0,1.0,100.0,,,,western_med
+7866,0,Giglio,450,,,,0.0,0.0,1200.0,1400.0,,,,western_med
+7867,0,Giglio Campese A,451,Italy,,Tuscany,0.0,0.0,-600.0,-590.0,"amphorae; Attic and Corinthian ceramics, circular ingots (80cm diameter).",,,western_med
+7868,0,Giglio Campese B,452,,,,0.0,0.0,-200.0,-1.0,,,,western_med
+7869,0,Giglio Porto,453,Italy,,Tuscany,0.0,0.0,200.0,225.0,amphorae,North Africa,,western_med
+7870,0,Ginosar,454,,,,0.0,0.0,25.0,67.0,,,,eastern_med
+7872,0,Goica/Gojca Islet,456,Croatia,Adriatic,Pakleni Islands near Hvar,43.16666,16.4,1.0,100.0,amphorae,,,adriatic
+7874,0,El Golfet,458,,,,0.0,0.0,-100.0,-75.0,,,,western_med
+7875,0,Golfo della Stella,459,,,,0.0,0.0,,,,,,western_med
+7876,0,Golo,460,,,,0.0,0.0,-150.0,400.0,,,,western_med
+7877,0,Gorgona A,461,,,,0.0,0.0,1.0,100.0,,,,western_med
+7878,0,Gorgona B,462,,,,0.0,0.0,,,,,,western_med
+7879,0,Gospa Prizidnica,463,,,,0.0,0.0,-75.0,-25.0,,,,adriatic
+7881,0,Graham Bank A,465,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+7882,0,Graham Bank B,466,,,,0.0,0.0,375.0,450.0,,,,western_med
+7883,0,Le Grand Avis,467,,,,0.0,0.0,-100.0,-75.0,,,,western_med
+7884,0,Grand Bassin A,468,,,,0.0,0.0,-350.0,-250.0,,,,western_med
+7885,0,Grand Bassin B,469,,,,0.0,0.0,-110.0,-90.0,,,,western_med
+7886,0,Grand Bassin C,470,,,,0.0,0.0,117.0,123.0,,,,western_med
+7887,0,Grand Bassin D,471,,,,0.0,0.0,313.0,313.0,,,,western_med
+7889,0,Le Grand Congloué B,473,,,,0.0,0.0,-110.0,-80.0,,,,western_med
+7890,0,Le Grand Congloué C,474,,,,0.0,0.0,-75.0,-25.0,,,,western_med
+7891,0,Le Grand Radeau,475,,,,0.0,0.0,-45.0,-35.0,,,,western_med
+7892,0,Le Grand Ribaud A,476,,,,0.0,0.0,-120.0,-100.0,,,,western_med
+7893,0,Le Grand Ribaud D,477,France,Western Mediterranean,Var,0.0,0.0,-10.0,-1.0,amphorae,,,western_med
+7894,0,Le Grand Rouveau,478,France,Western Mediterranean,Var,0.0,0.0,25.0,75.0,amphorae,,,western_med
+7895,0,Le Grand Souffre,479,France,Western Mediterranean,Bouches-du-Rhône,43.2664,5.29907,-100.0,-75.0,amphorae,,,western_med
+7896,0,Grand Grenille,480,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+7897,0,Gravisca,481,,,,0.0,0.0,1.0,100.0,,,,western_med
+7898,0,Grazel A,482,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+7899,0,Grazel B,483,,,,0.0,0.0,631.0,631.0,,,,western_med
+7900,0,Grebeni,484,Croatia,Adriatic,SW  of Silba Island,44.33333,14.66667,-150.0,400.0,A cargo of tegulae.,,,adriatic
+7901,0,Le Gros Mur,485,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7903,0,Grscica,487,,,,0.0,0.0,1.0,200.0,,,,adriatic
+7904,0,Guardias Viejas,488,,,,0.0,0.0,75.0,100.0,,,,western_med
+7905,0,Guardis A,489,,,,0.0,0.0,-150.0,-130.0,,,,western_med
+7906,0,Guardis B,490,,,,0.0,0.0,1.0,25.0,,,,western_med
+7907,0,Gumusluk,491,,,,0.0,0.0,300.0,400.0,,,,eastern_med
+7908,0,Gusteranski,492,Croatia,Adriatic,N of Zirje Island,43.63333,15.7,75.0,125.0,"amphorae; South Italian Pompeian ware consisting of 'orlo bifido' bowls, with plates/lids and standard Pompeian red plates, which were only 15% of the total of 50 brought to the surface.",,,adriatic
+7909,0,Haghiokambos,493,,,,0.0,0.0,,,,,,eastern_med
+7910,0,Hahotrim A,494,,,,0.0,0.0,-1300.0,-1100.0,,,,eastern_med
+7911,0,Hahotrim B,495,,,,0.0,0.0,200.0,300.0,,,,eastern_med
+7912,0,Halkoz Adasi,496,,,,0.0,0.0,-325.0,-275.0,,,,eastern_med
+7913,0,Hayirsiz Ada,498,,,,0.0,0.0,900.0,1100.0,,,,eastern_med
+7914,0,Heliopolis A,499,France,Western Mediterranean,Var,43.02268,6.4282,300.0,325.0,amphorae,North Africa,,western_med
+7915,0,Heliopolis B,500,France,Western Mediterranean,Var,0.0,0.0,-200.0,-125.0,,,,western_med
+7916,0,Herculaneum I,501,Italy,,Bay of Naples,0.0,0.0,79.0,79.0,,,,western_med
+7917,0,Hishuley Carmel,503,,,,0.0,0.0,-1450.0,-1350.0,,,,eastern_med
+7919,0,Hof Hacarmel B,505,,,,0.0,0.0,400.0,425.0,,,,eastern_med
+7920,0,Las Hormigas,506,,,,0.0,0.0,425.0,550.0,,,,western_med
+7921,0,El Hornillo,507,,,,0.0,0.0,-80.0,-50.0,,,,western_med
+7922,0,Huelva,508,,,,0.0,0.0,-900.0,-800.0,,,,western_med
+7923,0,Iassos,509,,,,0.0,0.0,300.0,700.0,,,,eastern_med
+7925,0,Ile Rousse,511,France,Western Mediterranean,Corsica,0.0,0.0,50.0,50.0,amphorae,"Maresme, Spain",,western_med
+7926,0,Ilot Barthelemy,512,,,,0.0,0.0,-125.0,-100.0,,,,western_med
+7927,0,Ilovik,513,Croatia,Adriatic,between Sv. Petar isl and Kozjak island,44.46666,14.53333,117.0,123.0,amphorae,Northern Italy,,adriatic
+7928,0,Imera,514,,,,0.0,0.0,285.0,350.0,,,,western_med
+7929,0,Imperia,515,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7931,0,Isis,517,International waters,,Sicily - Tunisia,0.0,0.0,375.0,425.0,"amphorae; Common ware pottery, mostly Tunisian, datable to c AD 400, some are unique in style. A basalt millstone from Libya with a concave hopper and protruding handles is an previoulsy unknown form.",Carthage,Rome,western_med
+7932,0,Iskandil Burnu A,518,,,,0.0,0.0,575.0,600.0,amphorae,,,eastern_med
+7933,0,Iskandil Burnu B,519,,,,0.0,0.0,200.0,300.0,,,,eastern_med
+7934,0,Isla Pedrosa,520,,,,0.0,0.0,-150.0,-140.0,,,,western_med
+7936,0,Isola delle Femmine,523,,,,0.0,0.0,-400.0,-200.0,,,,western_med
+7937,0,Isola Rossa,524,,,,0.0,0.0,100.0,200.0,,,,western_med
+7938,0,Israel,525,,,,0.0,0.0,500.0,600.0,,,,eastern_med
+7939,0,Ist,526,,,,0.0,0.0,-100.0,100.0,,,,adriatic
+7940,0,Istanbul,527,,,,0.0,0.0,-400.0,-300.0,,,,eastern_med
+7941,0,Istria,528,,,,0.0,0.0,,,,,,adriatic
+7942,0,Jarre,529,,,,0.0,0.0,10.0,50.0,,,,western_med
+7943,0,La Jaumegarde A,530,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+7944,0,Pakleni Cape,,Croatia,Adriatic,west side of Istria,45.43333,13.5,1.0,100.0,amphorae,,,adriatic
+7945,0,Kallithea,532,,,,0.0,0.0,325.0,675.0,,,,eastern_med
+7947,0,Karaca Adasi,535,,,,0.0,0.0,,,,,,eastern_med
+7948,0,Karatunic,536,,,,0.0,0.0,-150.0,-1.0,,,,adriatic
+7949,0,Kas,537,,,,0.0,0.0,1200.0,1400.0,,,,eastern_med
+7950,0,Kastellorizon,538,,,,0.0,0.0,1200.0,1225.0,,,,eastern_med
+7951,0,Kavo Vodi,539,,,,0.0,0.0,-475.0,-425.0,,,,eastern_med
+7952,0,Kefar Shamir,540,,,,0.0,0.0,-1400.0,-1200.0,,,,eastern_med
+7953,0,Kefar Shamir South,541,,,,0.0,0.0,-500.0,-400.0,,,,eastern_med
+7954,0,Kepec (Kepce Burnu),542,Turkey,,near Bodrum,0.0,0.0,-700.0,-600.0,amphorae,,,eastern_med
+7955,0,Kerme Gulf,543,,,,0.0,0.0,300.0,1200.0,,,,eastern_med
+7956,0,Kimi,544,,,,0.0,0.0,-1500.0,-1400.0,,,,eastern_med
+7957,0,Kimolos,545,,,,0.0,0.0,-375.0,-325.0,,,,eastern_med
+7958,0,Kizil Agac Adasi,546,Turkey,,,0.0,0.0,,,amphorae,,,eastern_med
+7962,0,Knidos C,550,,,,0.0,0.0,-450.0,-425.0,,,,eastern_med
+7963,0,Knidos D,551,,,,0.0,0.0,1200.0,1400.0,,,,eastern_med
+7964,0,Komi A,552,,,,0.0,0.0,-425.0,-375.0,,,,eastern_med
+7967,0,Korcula,555,,,,0.0,0.0,-175.0,-125.0,,,,adriatic
+7968,0,Kornat,556,,,,0.0,0.0,1.0,100.0,,,,adriatic
+7969,0,Kotu Burun,557,,,,0.0,0.0,1000.0,1100.0,,,,eastern_med
+7970,0,Krava,558,Croatia,Adriatic,Vis,43.07822,16.21955,-400.0,-200.0,amphorae; Grindstones and handmills,,,adriatic
+7972,0,Kurba Vela,560,,,,0.0,0.0,-150.0,-1.0,,,,adriatic
+7974,0,Kynosoura,562,,,,0.0,0.0,-400.0,-300.0,,,,eastern_med
+7977,0,Ladispoli A,565,Italy,,Lazio,0.0,0.0,1.0,15.0,amphorae; A wooden head of a duck as decoration for a kline.,,,western_med
+7979,0,Lampedusa A,567,,,,0.0,0.0,300.0,350.0,,,,western_med
+7981,0,Lampione,569,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+7982,0,Lastovo A (Mali Brod),570,,,,0.0,0.0,400.0,500.0,,,,adriatic
+7983,0,Lastovo B (Saplun),571,Croatia,Adriatic,Lastovo Island,42.77836,16.98057,-175.0,-125.0,amphorae,,,adriatic
+7984,0,Lastovo C,572,,,,0.0,0.0,-100.0,-1.0,,,,adriatic
+7985,0,Lastovo D,573,,,,0.0,0.0,-100.0,-1.0,,,,adriatic
+7986,0,Lastovo E,574,,,,0.0,0.0,-300.0,-100.0,,,,adriatic
+7987,0,Lastovo F,575,,,,0.0,0.0,-150.0,400.0,,,,adriatic
+7989,0,Les Laurons A,577,France,Western Mediterranean,Bouches-du-Rhône,43.34583,5.01285,200.0,400.0,,,,western_med
+7990,0,Les Laurons B,578,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,250.0,300.0,amphorae; Wheat - grains were preserved in pitch,,,western_med
+7991,0,Les Laurons C,579,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,200.0,275.0,,,,western_med
+7992,0,Les Laurons D,580,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,310.0,340.0,,,,western_med
+7993,0,Les Laurons E,581,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,300.0,400.0,,,,western_med
+7994,0,Les Laurons F,582,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,300.0,400.0,,,,western_med
+7995,0,Lavezzi (Balise),583,,,,0.0,0.0,45.0,70.0,,,,western_med
+7996,0,Lavezzi A (1),584,France,Western Mediterranean,Corsica,41.35811,9.2637,25.0,50.0,amphorae; At least 7 lead ingots and 18 copper ingots.,,,western_med
+7997,0,Lavezzi B,585,,,,0.0,0.0,40.0,70.0,,,,western_med
+7998,0,Lavezzi C,586,,,,0.0,0.0,50.0,100.0,,,,western_med
+7999,0,Lavezzi D,587,,,,0.0,0.0,100.0,150.0,,,,western_med
+8000,0,Lavezzi F,588,,,,0.0,0.0,300.0,325.0,,,,western_med
+8001,0,Lavezzi G,589,,,,0.0,0.0,1.0,200.0,,,,western_med
+8002,0,Lavezzi H,590,,,,0.0,0.0,1.0,200.0,,,,western_med
+8003,0,Lavezzi J,591,,,,0.0,0.0,1.0,200.0,,,,western_med
+8004,0,Lavezzi K,592,,,,0.0,0.0,1.0,200.0,,,,western_med
+8005,0,Lazaret,593,,,,0.0,0.0,-225.0,-175.0,,,,western_med
+8006,0,Lazzaretto A,594,Italy,,Sardinia,40.58068,8.2485,315.0,325.0,,,,western_med
+8007,0,Lemnos,595,,,,0.0,0.0,-400.0,-300.0,,,,eastern_med
+8008,0,Lido di Sant'Anna,596,Italy,,Puglia,0.0,0.0,-150.0,-25.0,amphorae,,,western_med
+8011,0,Lindos B,599,,,,0.0,0.0,-600.0,-500.0,,,,eastern_med
+8012,0,Lindons C,600,,,,0.0,0.0,,,,,,western_med
+8013,0,Le Lion de Mer,601,,,,0.0,0.0,1.0,200.0,,,,western_med
+8015,0,Logonovo,605,,,,0.0,0.0,1475.0,1500.0,,,,western_med
+8016,0,Losinj,609,,,,0.0,0.0,-300.0,-250.0,,,,adriatic
+8017,0,La Luque A,610,,,,0.0,0.0,125.0,175.0,,,,western_med
+8018,0,La Luque B,611,,,,0.0,0.0,300.0,325.0,250 oil lamps,,,western_med
+8019,0,Ma'agan Mikha'el,612,Israel,Eastern Mediterranean,south of Haifa,0.0,0.0,-430.0,-390.0,"Seventy Cypriot and East Greek clay vessels, including a pithos, basket-handled jars, oil lamps, small jugs,mortaria and a cooking pot. 12 tons of rocks, mainly blueschist from Euboea, as well as some magmatic from southern Cyprus.",,,eastern_med
+8020,0,La Macchi Tonda,613,,,,0.0,0.0,50.0,100.0,,,,western_med
+8021,0,Maddalena,614,,,,0.0,0.0,100.0,300.0,,,,western_med
+8022,0,La Madonnina,615,Italy,,Puglia,0.0,0.0,-325.0,-300.0,amphorae; Courseware pottery.,,,western_med
+8023,0,La Madrague de Giens,616,France,Western Mediterranean,Var,0.0,0.0,-70.0,-50.0,,,,western_med
+8024,0,La Madrague-de-Montredon,617,,,,0.0,0.0,-175.0,-125.0,,,,western_med
+8025,0,Maestro-Maria,618,,,,0.0,0.0,,,,,,western_med
+8026,0,Les Magnons A,619,,,,0.0,0.0,-50.0,50.0,,,,western_med
+8027,0,Les Magnons B,620,,,,0.0,0.0,-400.0,-100.0,,,,western_med
+8029,0,Maire A,631,,,,0.0,0.0,-150.0,-1.0,,,,western_med
+8030,0,Maire B,632,,,,0.0,0.0,100.0,125.0,,,,western_med
+8031,0,Maire C,633,,,,0.0,0.0,-110.0,-90.0,,,,western_med
+8032,0,Maire D,634,,,,0.0,0.0,-125.0,-75.0,,,,western_med
+8033,0,Majorca,635,,,,0.0,0.0,100.0,200.0,,,,western_med
+8034,0,Mararska,636,,,,0.0,0.0,-200.0,-100.0,,,,adriatic
+8035,0,Mal di Ventre,637,Italy,,Sardinia,39.97313,8.30755,-75.0,-25.0,"amphorae; 1100 Spanish lead ingots mined from Cartagena, each weighing about 100 Roman pounds and inscribed on theupper side with the manufacturer's mark. One was SOCMPONTILIENORUMMAE, ie Societas Marci et Caio Pontilienorum figli di Marco. The other LCARULILFHISPALIMN, ie. Luci Caruli Luci fili Hispali MeNenia tribu.","Cartagena, Spain",Italy,western_med
+8036,0,Mala Jana,638,,,,0.0,0.0,1300.0,1600.0,,,,adriatic
+8037,0,Malamocco,639,,,,0.0,0.0,1400.0,1500.0,,,,western_med
+8038,0,Malta,640,,,,0.0,0.0,,,,,,western_med
+8039,0,La Malvarrosa,641,,,,0.0,0.0,-250.0,-175.0,,,,western_med
+8042,0,Mandalya Gulf C,644,,,,0.0,0.0,900.0,1000.0,,,,eastern_med
+8043,0,Mangub,645,,,,0.0,0.0,312.0,318.0,,,,western_med
+8044,0,Maraone,646,,,,0.0,0.0,-100.0,-1.0,amphorae,,,western_med
+8046,0,Maratea B,648,,,,0.0,0.0,25.0,260.0,,,,western_med
+8047,0,Maratea C,649,,,,0.0,0.0,200.0,400.0,,,,western_med
+8049,0,Margarida,652,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+8051,0,Marina Porto,654,,,,0.0,0.0,-300.0,-100.0,,,,western_med
+8052,0,Las Marinas,655,,,,0.0,0.0,-125.0,-100.0,,,,western_med
+8053,0,La Marisma de las Mesas,656,,,,0.0,0.0,-200.0,-1.0,,,,western_med
+8054,0,Marmaris A,657,,,,0.0,0.0,700.0,900.0,,,,eastern_med
+8056,0,Marritza,659,,,,0.0,0.0,75.0,125.0,,,,western_med
+8057,0,Marsa Lucch,660,,,,0.0,0.0,500.0,650.0,,,,western_med
+8058,0,Marsala (Punic Ship),661,Italy,,Sicily,0.0,0.0,-250.0,-175.0,,,,western_med
+8059,0,Marsala (Sister Ship),662,,,,0.0,0.0,-300.0,-200.0,,,,western_med
+8060,0,Marsala A,663,Italy,,Sicily,37.74462,12.4669,1150.0,1200.0,,North Africa,Sicily,western_med
+8061,0,Marsala B,664,Italy,,Sicily,0.0,0.0,1150.0,1200.0,,North Africa,Sicily,western_med
+8062,0,Marsala C,665,,,,0.0,0.0,1000.0,1500.0,,,,western_med
+8063,0,Marseillan-Plage A,666,,,,0.0,0.0,-125.0,-75.0,,,,western_med
+8064,0,Marseillan-Plage B,667,,,,0.0,0.0,50.0,100.0,,,,western_med
+8065,0,Marseille (Bourse),668,,,,0.0,0.0,160.0,220.0,,,,western_med
+8066,0,Marseille (Galere de Cesar),669,,,,0.0,0.0,200.0,300.0,,,,western_med
+8068,0,Marzamemi B,671,Italy,,Southern Sicily,0.0,0.0,500.0,540.0,"A cargo of pre-fabricated marble architectural pieces from a Byzantine church, including 28 bases and 27 capitals of Proconnesian marble, and an 'ambo' with 2 staircases from which a priest would deliver sermons.",,,western_med
+8069,0,Marzamemi C,672,,,,0.0,0.0,1.0,400.0,,,,western_med
+8070,0,Marzamemi D,673,,,,0.0,0.0,325.0,350.0,,,,western_med
+8071,0,Marzamemi E,674,,,,0.0,0.0,-400.0,-300.0,,,,western_med
+8072,0,Marzamemi F,675,,,,0.0,0.0,275.0,300.0,,,,western_med
+8073,0,Marzamemi G,676,,,,0.0,0.0,-160.0,-140.0,,,,western_med
+8074,0,Marzamemi H,677,,,,0.0,0.0,-425.0,-375.0,,,,western_med
+8075,0,Marzamemi J,678,,,,0.0,0.0,400.0,700.0,,,,western_med
+8076,0,Marzamemi K,679,,,,0.0,0.0,400.0,700.0,,,,western_med
+8077,0,Masa d'Or,680,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8079,0,Mateille A,682,France,Western Mediterranean,,0.0,0.0,300.0,325.0,"A bronze consignment of female statue fragments, animal terminals for furniture, boar's tusk decoration, pendants, dishes and pots.",,,western_med
+8080,0,Mateille B,683,,,,0.0,0.0,1.0,100.0,,,,western_med
+8081,0,Medas A,684,,,,0.0,0.0,-125.0,-75.0,,,,western_med
+8082,0,Medas B,685,,,,0.0,0.0,-50.0,25.0,,,,western_med
+8083,0,Les Medes A,686,,,,0.0,0.0,-100.0,-11.0,,,,western_med
+8084,0,Les Medes B,687,,,,0.0,0.0,1.0,100.0,,,,western_med
+8085,0,Mediterranean,688,,,,0.0,0.0,308.0,308.0,,,,unclassified
+8087,0,Megadim B,690,,,,0.0,0.0,1404.0,1412.0,,,,eastern_med
+8088,0,Mellieha,691,,,,0.0,0.0,200.0,250.0,,,,western_med
+8090,0,Methone B,694,,,,0.0,0.0,1000.0,1500.0,,,,eastern_med
+8093,0,Mikhmoret,697,,,,0.0,0.0,-150.0,750.0,,,,eastern_med
+8094,0,Le Miladou,698,France,Western Mediterranean,Var,43.01555,6.38039,-125.0,-50.0,amphorae,Italy,,western_med
+8095,0,Milazzo,699,,,,0.0,0.0,350.0,375.0,,,,western_med
+8096,0,Minat Mishrafa,700,,,,0.0,0.0,-200.0,-1.0,,,,eastern_med
+8097,0,Miramar,701,,,,0.0,0.0,-50.0,-1.0,,,,western_med
+8099,0,Mljet A,703,,,,0.0,0.0,850.0,1000.0,amphorae,,,adriatic
+8100,0,Minorca,,Spain,Western Mediterranean,Minorca,0.0,0.0,1.0,300.0,"amphorae; Bronze ingots weighing 80kg each, still arranged in rows.",,,western_med
+8101,0,Mola,705,,,,0.0,0.0,-100.0,100.0,,,,western_med
+8102,0,Molara,706,,,,0.0,0.0,-200.0,100.0,,,,western_med
+8103,0,Molat,707,,,,0.0,0.0,-100.0,100.0,,,,adriatic
+8104,0,Monaco A,708,,,,0.0,0.0,200.0,250.0,,,,western_med
+8105,0,Monaco B,709,,,,0.0,0.0,-160.0,-140.0,,,,western_med
+8106,0,Monaco C,710,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8107,0,Monaco D,711,,,,0.0,0.0,-160.0,-140.0,,,,western_med
+8108,0,Lago di Monate,712,,,,0.0,0.0,80.0,180.0,,,,western_med
+8109,0,Monfalcone,713,,,,0.0,0.0,1.0,100.0,,,,western_med
+8110,0,Mont Rose,714,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+8111,0,Montecristo A,715,,,,0.0,0.0,-260.0,-250.0,,,,western_med
+8112,0,Montecristo B,716,,,,0.0,0.0,1400.0,1500.0,,,,western_med
+8113,0,Montecristo C,717,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8114,0,Montecristo D,718,,,,0.0,0.0,-600.0,-500.0,,,,western_med
+8115,0,Montecristo E,719,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8116,0,Montecristo F,720,Italy,,Tuscany,0.0,0.0,100.0,300.0,amphorae,,,western_med
+8117,0,Morovnik,721,,,,0.0,0.0,300.0,425.0,,,,adriatic
+8118,0,Is Mortorius,722,,,,0.0,0.0,30.0,55.0,,,,western_med
+8119,0,Munxar,723,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8120,0,Le Murelle,724,,,,0.0,0.0,-300.0,-250.0,,,,western_med
+8121,0,Murter,725,,,,0.0,0.0,-150.0,-1.0,,,,adriatic
+8122,0,Napoli,726,Italy,,Campania,0.0,0.0,200.0,250.0,,,,western_med
+8123,0,Naregno,727,,,,0.0,0.0,200.0,400.0,,,,western_med
+8124,0,Sa Nau Perdudo,728,,,,0.0,0.0,-60.0,-40.0,,,,western_med
+8125,0,Navplion A,729,,,,0.0,0.0,-500.0,-300.0,,,,eastern_med
+8126,0,Navplion B,730,,,,0.0,0.0,1200.0,1500.0,,,,eastern_med
+8127,0,Les Negres,731,,,,0.0,0.0,125.0,175.0,,,,western_med
+8128,0,Nemi A,732,,,,0.0,0.0,35.0,50.0,,,,western_med
+8129,0,Nemi B,733,,,,0.0,0.0,35.0,50.0,,,,western_med
+8130,0,Nemi C,734,,,,0.0,0.0,35.0,50.0,,,,western_med
+8131,0,Nemi D,735,,,,0.0,0.0,35.0,50.0,,,,western_med
+8132,0,Nerezine,736,Croatia,,Kvarner,44.65,14.4,100.0,200.0,amphorae; Eastern coarseware.,,,adriatic
+8133,0,Neseber A,737,,,,0.0,0.0,-475.0,-450.0,,,,black_sea
+8134,0,Neseber B,738,,,,0.0,0.0,500.0,625.0,,,,black_sea
+8135,0,Newe Yam A,739,Israel,Eastern Mediterranean,,0.0,0.0,-400.0,-350.0,,,,eastern_med
+8136,0,Newe Yam B,740,,,,0.0,0.0,200.0,650.0,,,,eastern_med
+8137,0,Newe Yam C,741,,,,0.0,0.0,-2500.0,-1800.0,,,,eastern_med
+8138,0,Nice,742,,,,,0.0,-600.0,-500.0,,,,western_med
+8139,0,Nicotera,743,,,,0.0,0.0,-25.0,-1.0,,,,western_med
+8140,0,Nin A,744,,,,0.0,0.0,1050.0,1100.0,,,,adriatic
+8141,0,Nin B,745,,,,0.0,0.0,1050.0,1100.0,,,,adriatic
+8142,0,Niolon,746,,,,0.0,0.0,1.0,100.0,,,,western_med
+8143,0,"Noce, Fiume",747,,,,0.0,0.0,-50.0,100.0,,,,western_med
+8144,0,Nora,748,,,,0.0,0.0,300.0,400.0,,,,western_med
+8145,0,Nord-Camarat,749,,,,0.0,0.0,1.0,100.0,,,,western_med
+8146,0,Nord-Levant,750,,,,0.0,0.0,-300.0,-150.0,,,,western_med
+8147,0,Ognina (Catania) A,753,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+8148,0,Ognina (Catania) B,754,,,,0.0,0.0,,,,,,western_med
+8150,0,Ognina D,756,,,,0.0,0.0,-400.0,-300.0,,,,western_med
+8151,0,Ognina West,757,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8152,0,Olbia A,758,,,,0.0,0.0,-200.0,-1.0,,,,western_med
+8153,0,Olbia B,759,,,,0.0,,-400.0,-100.0,,,,western_med
+8154,0,Olib A,760,,,,0.0,0.0,300.0,425.0,,,,adriatic
+8155,0,Olib B,761,,,,0.0,0.0,25.0,125.0,,,,adriatic
+8156,0,Omisalj,762,,,,0.0,0.0,-150.0,-50.0,,,,adriatic
+8157,0,Opat,764,,,,0.0,0.0,-150.0,400.0,,,,adriatic
+8158,0,Oristano,765,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+8159,0,Osellucia,766,,,,0.0,0.0,20.0,50.0,,,,western_med
+8160,0,Ostia,767,,,,0.0,0.0,-50.0,50.0,,,,western_med
+8161,0,Ostuni,768,,,,0.0,0.0,1100.0,1300.0,,,,western_med
+8162,0,Ouest de Plane,769,,,,0.0,0.0,-150.0,-50.0,,,,western_med
+8163,0,Ovrat,770,,,,0.0,0.0,1.0,100.0,,,,adriatic
+8164,0,Pa,771,,,,0.0,0.0,200.0,300.0,,,,adriatic
+8165,0,Pag area,772,,,,0.0,0.0,275.0,300.0,,,,adriatic
+8166,0,Palagruza A,774,,,,0.0,0.0,-75.0,-25.0,,,,adriatic
+8167,0,Palamos,776,,,,0.0,0.0,-80.0,-30.0,amphora_type:Laetanian I,,,western_med
+8168,0,Palazzo di Stella,777,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8169,0,Palese,778,,,,0.0,0.0,-300.0,400.0,,,,western_med
+8170,0,Palinuro,779,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8171,0,Palizi Marina,780,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8172,0,Palombina Vecchia,781,Italy,,Ancona,0.0,0.0,-100.0,-50.0,amphorae,,,western_med
+8173,0,La Palud 1,782,France,Western Mediterranean,Var,43.01398,6.38726,525.0,575.0,amphorae,Neapolis (Nabeul) North Africa,Marseilles?,western_med
+8174,0,Pampelonne,783,France,Western Mediterranean,Var,43.22737,6.679,380.0,420.0,amphorae,Neapolis (Nabeul) North Africa,,western_med
+8176,0,Panarea (Roghi),785,,,,0.0,0.0,-325.0,-300.0,,,,western_med
+8177,0,Panarelli,786,,,,0.0,0.0,-150.0,-70.0,,,,western_med
+8178,0,Pantano Longarini,787,Italy,,SE Sicily,0.0,0.0,600.0,650.0,,Sicily,,western_med
+8179,0,Pantelleria,788,,,,0.0,0.0,,,,,,western_med
+8180,0,La Paolina,790,,,,0.0,0.0,1.0,200.0,,,,western_med
+8183,0,Pasalimani A,793,,,,0.0,0.0,-500.0,-300.0,,,,eastern_med
+8184,0,Pasalimani B,794,,,,0.0,0.0,1400.0,1500.0,,,,eastern_med
+8185,0,Pefkos,795,,,,0.0,0.0,400.0,700.0,,,,eastern_med
+8186,0,Pelagos,796,,,,0.0,0.0,1125.0,1175.0,,,,eastern_med
+8187,0,Peljesac,797,,,,0.0,0.0,200.0,400.0,,,,adriatic
+8188,0,Pelosa A,798,,,,0.0,0.0,1.0,400.0,,,,western_med
+8189,0,Pelosa B,799,,,,0.0,0.0,1000.0,1500.0,,,,western_med
+8190,0,Percheles,800,,,,0.0,0.0,1.0,100.0,,,,western_med
+8191,0,Perduto,801,,,,0.0,0.0,15.0,25.0,amphorae,"El Rosa, Calella, Spain",,western_med
+8192,0,Perejil,802,,,,0.0,0.0,-175.0,-125.0,,,,western_med
+8193,0,Pernat A,803,,,,0.0,0.0,1300.0,1500.0,,,,adriatic
+8194,0,Pernat B,804,,,,0.0,0.0,-200.0,-100.0,,,,adriatic
+8195,0,Pesaro,805,,,,0.0,0.0,-125.0,-25.0,,,,western_med
+8196,0,Le Petit Congloue,806,France,Western Mediterranean,Corsica,0.0,0.0,40.0,60.0,amphorae,"Llobregat, Spain",,western_med
+8197,0,Le Petit Rhone,807,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8198,0,Petrokaravo,808,,,,0.0,0.0,-500.0,-300.0,,,,eastern_med
+8199,0,Philadelphia,809,,,,0.0,0.0,-500.0,-400.0,,,,eastern_med
+8201,0,Pian di Spille,811,,,,0.0,0.0,350.0,500.0,,,,western_med
+8202,0,Pianosa A,812,,,,0.0,0.0,50.0,100.0,,,,western_med
+8203,0,Pianosa B,813,,,,0.0,0.0,1.0,100.0,,,,western_med
+8204,0,Piedra Negra,814,,,,0.0,0.0,75.0,150.0,,,,western_med
+8205,0,Pierres Plates,815,,,,0.0,0.0,300.0,325.0,,,,western_med
+8206,0,Pignato di Fuori,816,,,,0.0,0.0,-1600.0,-1550.0,,,,western_med
+8208,0,Piraeus B,818,,,,0.0,0.0,,,,,,eastern_med
+8209,0,Plane A,819,,,,0.0,0.0,-60.0,-40.0,,,,western_med
+8210,0,Plane B,820,,,,0.0,0.0,-425.0,-375.0,,,,western_med
+8211,0,Plane C,821,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,900.0,1000.0,,Marseille,Cassis,western_med
+8212,0,Plane D,822,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8213,0,Plane E,823,,,,0.0,0.0,-50.0,-1.0,,,,western_med
+8214,0,Planier A,824,France,Western Mediterranean,Bouches-du Rhône,0.0,0.0,1.0,15.0,amphorae,"Llobregat, Spain",,western_med
+8215,0,Planier B,825,,,,0.0,0.0,125.0,175.0,,,,western_med
+8216,0,Planier C,826,,,,0.0,0.0,-55.0,-45.0,,,,western_med
+8217,0,Planier D,827,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8218,0,Planier E,828,,,,0.0,0.0,-100.0,-50.0,,,,western_med
+8219,0,Planier F,829,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+8220,0,Planier G,830,,,,0.0,0.0,300.0,350.0,,,,western_med
+8221,0,Plavac A,831,Croatia,Adriatic,Zlarin,43.66666,15.86666,-10.0,15.0,amphorae,Aegean,Northern Italy,adriatic
+8223,0,Plemmirio A,833,Italy,,Sicily,0.0,0.0,300.0,500.0,"Bronze lamps, censers, pitchers, bowls and a steelyard.",,,western_med
+8224,0,Plemmirio B,834,Italy,,Sicily,37.00001,15.3297,175.0,225.0,amphorae,North Africa,Rome,western_med
+8225,0,Plemmirio C,835,,,,0.0,0.0,-575.0,-525.0,,,,western_med
+8226,0,Plitharia,836,,,,0.0,0.0,300.0,700.0,,,,eastern_med
+8227,0,Plocice,837,Croatia,Adriatic,Kvarner,44.51666,14.43333,-150.0,400.0,A cargo of roof tiles.,,,adriatic
+8228,0,Pointe Bacon,839,,,,0.0,0.0,-400.0,-300.0,,,,western_med
+8229,0,Pointe de la Galere,840,,,,0.0,0.0,1.0,50.0,,,,western_med
+8230,0,Pointe Debie A,841,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,1.0,100.0,,,,western_med
+8231,0,Pointe Debie B,842,,,,0.0,0.0,225.0,250.0,,,,western_med
+8232,0,Pointe du Ble,843,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8233,0,Pointe du Brouil,844,,,,0.0,0.0,-140.0,-130.0,,,,western_med
+8234,0,Pointe Grenier,845,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+8235,0,Pointe Lequin 1B,,France,Western Mediterranean,Var,43.01461,6.21577,-500.0,-400.0,,Marseilles,,western_med
+8236,0,Pointe Lequin B,847,France,Western Mediterranean,Var,43.01461,6.21577,-200.0,-150.0,,,,western_med
+8237,0,Pointe Lequin C,848,France,Western Mediterranean,Var,43.01461,6.21577,50.0,70.0,,,,western_med
+8238,0,Pointe Moussure,849,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+8239,0,Pointe Pomegues,850,,,,0.0,0.0,-100.0,-80.0,,,,western_med
+8240,0,Pomegues A,851,,,,0.0,0.0,249.0,300.0,,,,western_med
+8241,0,Pomegues B,852,,,,0.0,0.0,-200.0,-1.0,,,,western_med
+8242,0,Pomonte,859,,,,0.0,0.0,-100.0,100.0,,,,western_med
+8243,0,Pomorje A,860,,,,0.0,0.0,400.0,600.0,,,,black_sea
+8244,0,Pomorje B,861,,,,0.0,0.0,400.0,600.0,,,,black_sea
+8245,0,Pomposa,862,,,,0.0,0.0,1000.0,1800.0,,,,western_med
+8246,0,Ponte d'Oro,863,,,,0.0,0.0,25.0,75.0,,,,western_med
+8247,0,Pontelagoscuro,864,,,,0.0,0.0,300.0,1200.0,,,,western_med
+8248,0,Ponza A,865,,,,0.0,0.0,-300.0,-250.0,,,,western_med
+8249,0,Ponza B,866,,,,0.0,0.0,-175.0,-150.0,,,,western_med
+8250,0,Ponza C,867,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+8251,0,Ponza Porto,868,Italy,,,0.0,0.0,1.0,200.0,,,,western_med
+8252,0,Populonia,869,,,,0.0,0.0,1.0,200.0,,,,western_med
+8253,0,Poros,870,,,,0.0,0.0,-500.0,-480.0,,,,eastern_med
+8254,0,Port-de-Bouc,871,,,,0.0,0.0,-200.0,-1.0,,,,western_med
+8255,0,Port-la-Nouvelle,872,,,,0.0,0.0,1.0,250.0,,,,western_med
+8256,0,Port-Miou (Port Miou B),873,France,Western Mediterranean,Bouches-du-Rhône,43.20304,5.53573,375.0,425.0,"amphorae; Sigillata D or African redslip, Hayes 81 B and 67 B 33",,,western_med
+8257,0,Port Vendres A,874,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,390.0,410.0,amphorae,,,western_med
+8258,0,Port Vendres B,875,France,Western Mediterranean,Languedoc-Roussillon,42.52724,3.10415,42.0,48.0,,,,western_med
+8259,0,Port Vendres C/ 3,876,France,Western Mediterranean,Languedoc-Roussillon,42.52724,3.10415,125.0,175.0,amphorae; A small amount of glass tableware.,,,western_med
+8260,0,Port Vendres D,877,France,Western Mediterranean,Languedoc-Roussillon,42.52724,3.10415,-50.0,25.0,amphorae,"Barcino, Spain",,western_med
+8261,0,Port Vendres E,878,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-50.0,25.0,amphorae; marble; marble:Five unfinished sheets of Luna marble.,Tarraconensis,,western_med
+8262,0,Porticello,879,Italy,,"Calabria, Straits of Messina",38.23972,15.66101,-425.0,-400.0,"amphorae; At least two dozen lead ingots, looted, only 2 have been excavated that are stamped, probably from Laurion. Eight small clay inkpots. Bronze sculpture: a superb male bearded  head, approximately life size, cast in 2 sections; a fragment of right leg and buttock with drapery; a large fragment of drapery; a left hand; the rear protion of a left foot; right foot and leg; genitals; left buttock and thigh; right buttock and upper thigh; other miscellaneous fragments - in total, probably at least one draped male and two undraped males.",Athens?,Italy?,western_med
+8263,0,Porto Azzurro A,880,,,,0.0,0.0,250.0,300.0,,,,western_med
+8264,0,Porto Azzurro B,881,,,,0.0,0.0,50.0,100.0,,,,western_med
+8265,0,Porto Badisco,882,,,,0.0,0.0,-60.0,-40.0,,,,western_med
+8266,0,Porto Cesareo,883,,,,0.0,0.0,1100.0,1300.0,,,,western_med
+8267,0,Porto Cheli,884,,,,0.0,0.0,500.0,600.0,,,,eastern_med
+8268,0,Porto Christo A,885,,,,0.0,0.0,50.0,70.0,,,,western_med
+8269,0,Porto Christo B,886,,,,0.0,0.0,25.0,100.0,,,,western_med
+8271,0,Porto Ercole B,888,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+8272,0,Porto Longo,889,,,,0.0,0.0,400.0,650.0,,,,western_med
+8273,0,Porto Paglia,890,,,,0.0,0.0,-100.0,100.0,,,,western_med
+8274,0,Porto Palo,891,,,,0.0,0.0,-150.0,-1.0,,,,western_med
+8275,0,Porto Pistis,892,,,,0.0,0.0,117.0,138.0,,,,western_med
+8276,0,Porto Santo Stefano,893,,,,0.0,0.0,,,,,,western_med
+8277,0,Porto Venere,894,,,,0.0,0.0,-225.0,-175.0,,,,western_med
+8278,0,Portomaggiore,895,,,,0.0,0.0,-500.0,-250.0,,,,western_med
+8279,0,Posillipo,896,,,,0.0,0.0,-500.0,500.0,,,,western_med
+8280,0,Povile,897,,,,0.0,0.0,275.0,400.0,,,,adriatic
+8282,0,Praiano,899,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8283,0,Prasso,900,,,,0.0,0.0,400.0,700.0,amphorae,,,adriatic
+8284,0,Premuda A,901,,,,0.0,0.0,1.0,100.0,,,,adriatic
+8285,0,Premuda B,902,,,,0.0,0.0,400.0,700.0,,,,adriatic
+8286,0,Premuda C,903,,,,0.0,0.0,1000.0,1500.0,,,,adriatic
+8289,0,Procchio,906,Italy,,"Elba, Tuscany",0.0,0.0,160.0,200.0,,,,western_med
+8290,0,Procida,907,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+8291,0,Pudrimel Norte,909,,,,0.0,0.0,50.0,150.0,,,,western_med
+8292,0,Pudrimel Sur,910,,,,0.0,0.0,-150.0,-50.0,,,,western_med
+8293,0,Puebla del Rio,911,,,,0.0,0.0,1000.0,1200.0,,,,western_med
+8294,0,Punta Ala A,912,Italy,,,0.0,0.0,250.0,251.0,,Carthage -Spain-Sicily/Sardinia,Rome,western_med
+8295,0,Punta Altarella,913,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8296,0,Punta Blanca,914,,,,0.0,0.0,-50.0,25.0,,,,western_med
+8297,0,Punta Braccetto,915,Italy,,Sicily,0.0,0.0,-500.0,-475.0,amphorae,,,western_med
+8298,0,Punta Cera,916,,,,0.0,0.0,200.0,275.0,,,,adriatic
+8299,0,Punta Chiappa,917,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+8300,0,Punta Crapazza,918,,,,0.0,0.0,200.0,300.0,,,,western_med
+8301,0,Punta de Algas,919,,,,0.0,0.0,-100.0,-50.0,,,,western_med
+8302,0,Punta de la Mona,920,,,,0.0,0.0,175.0,250.0,,,,western_med
+8303,0,Punta dei Mangani,921,,,,0.0,0.0,-100.0,200.0,,,,western_med
+8304,0,Punta dei Ripalti A,922,,,,0.0,0.0,-600.0,-300.0,,,,western_med
+8305,0,Punta dei Ripalti B,923,,,,0.0,0.0,-150.0,-1.0,,,,western_med
+8306,0,Punta del Diavolo,924,Italy,,Puglia,42.10267,15.47767,1000.0,1500.0,"marble; columns; blocks; marble:A cargo of stone (marble??) comprising of blocks, slabs, small columns and pillars. It is covered in in concretions which hinders exact definition of the material, but is i  its original stacked position",,,western_med
+8307,0,Punta del Fenaio,925,,,,0.0,0.0,200.0,325.0,,,,western_med
+8308,0,Punta del Milagro,926,Spain,Western Mediterranean,Tarragona,0.0,0.0,-150.0,400.0,marble; columns,,,western_med
+8309,0,Punta del Morto A,927,,,,0.0,0.0,-300.0,-100.0,,,,western_med
+8310,0,Punta del Morto B,928,,,,0.0,0.0,70.0,220.0,,,,western_med
+8311,0,Punta del Vapor A,929,,,,0.0,0.0,1.0,100.0,,,,western_med
+8312,0,Punta del Vapor B,930,,,,0.0,0.0,-300.0,-200.0,,,,western_med
+8313,0,Punta del Vapore,931,,,,0.0,0.0,-300.0,-250.0,,,,western_med
+8314,0,Punta dell'Arco,932,,,,0.0,0.0,-100.0,-50.0,,,,western_med
+8315,0,Punta della Contessa A,933,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8316,0,Punta della Contessa B,934,,,,0.0,0.0,1.0,100.0,,,,western_med
+8317,0,Punta della Madonna,935,,,,0.0,0.0,-175.0,-75.0,,,,western_med
+8318,0,Punta di San Francesco,936,,,,0.0,0.0,-400.0,-100.0,,,,western_med
+8319,0,Punta Entina,937,,,,0.0,0.0,1.0,150.0,,,,western_med
+8320,0,Punta Falconaia,938,,,,0.0,0.0,100.0,300.0,,,,western_med
+8321,0,Punta Falcone,939,,,,0.0,0.0,-100.0,-25.0,,,,western_med
+8322,0,Punta Glavina A,940,,,,0.0,0.0,-100.0,-25.0,,,,adriatic
+8323,0,Punta Glavina B,941,,,,0.0,0.0,1.0,50.0,,,,adriatic
+8324,0,Punta Glavina C,942,,,,0.0,0.0,-180.0,-170.0,,,,adriatic
+8325,0,Punta Javana,943,,,,0.0,0.0,1.0,200.0,,,,western_med
+8326,0,Punta Lazzaretto,944,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+8327,0,Punta le Tombe,945,,,,0.0,0.0,1.0,100.0,,,,western_med
+8328,0,Punta Leona,946,,,,0.0,0.0,-300.0,-200.0,,,,western_med
+8329,0,Punta Licosa 1,947,Italy,,Campania,40.25509,14.86724,-100.0,-1.0,amphorae,,,western_med
+8330,0,Punta Nera,948,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8331,0,Punta Palom,949,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+8332,0,Punta Patedda,950,,,,0.0,0.0,-15.0,20.0,,,,western_med
+8333,0,Punta Penne A,951,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+8334,0,Punta Penne B,952,,,,0.0,0.0,150.0,225.0,,,,western_med
+8335,0,Punta Perla,953,,,,0.0,0.0,-100.0,100.0,,,,western_med
+8336,0,Punta Polveraia,954,,,,0.0,0.0,1.0,100.0,,,,western_med
+8337,0,Punta Pozzolana,955,,,,0.0,0.0,-200.0,-100.0,,,,western_med
+8338,0,Punta Prima,956,,,,0.0,0.0,70.0,100.0,,,,western_med
+8339,0,Punta Raisi,957,,,,0.0,0.0,1.0,300.0,,,,western_med
+8340,0,Punta Salina,958,,,,0.0,0.0,-175.0,-125.0,,,,western_med
+8341,0,Punta Sardegna,959,,,,0.0,0.0,1.0,200.0,,,,western_med
+8342,0,Punta Scaletta,960,Italy,,Tuscany,0.0,0.0,-140.0,-130.0,amphorae,,,western_med
+8343,0,Punta Scario A,961,,,,0.0,0.0,1.0,100.0,,,,western_med
+8344,0,Punta Scario B,962,,,,0.0,0.0,-225.0,-150.0,,,,western_med
+8345,0,Punta Scario C,963,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+8346,0,Punta Scario D,964,,,,0.0,0.0,-150.0,-75.0,,,,western_med
+8348,0,Punta Scifo B,966,,,,0.0,0.0,-300.0,-100.0,,,,western_med
+8349,0,Punta Secca A,967,,,,0.0,0.0,650.0,700.0,,,,western_med
+8350,0,Punta Secca B,968,,,,0.0,0.0,650.0,700.0,,,,western_med
+8351,0,Punta Sottile A,969,,,,0.0,0.0,-300.0,-150.0,,,,western_med
+8352,0,Punta Sottile B,970,,,,0.0,0.0,-150.0,-1.0,,,,western_med
+8353,0,Punta Stilo,971,,,,0.0,0.0,-600.0,-300.0,,,,western_med
+8354,0,Las Puntas,972,,,,0.0,0.0,70.0,96.0,,,,western_med
+8355,0,Qawra,973,,,,0.0,0.0,200.0,275.0,,,,western_med
+8356,0,Raf Raf,974,,,,0.0,0.0,-125.0,-100.0,,,,western_med
+8357,0,Randello,975,Italy,,Sicily,0.0,0.0,300.0,325.0,amphorae,,,western_med
+8358,0,Ras Achakkar,976,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8359,0,Ras El Basit,977,,,,0.0,0.0,250.0,350.0,,,,western_med
+8360,0,Ratino 1,978,France,,Corsica,41.37316,9.24568,325.0,350.0,,,,western_med
+8361,0,Ratonneau,979,,,,0.0,0.0,-200.0,-140.0,,,,western_med
+8362,0,"Redona, Na",980,,,,0.0,0.0,1.0,100.0,,,,western_med
+8363,0,Rhamnous,981,,,,0.0,0.0,,,,,,eastern_med
+8365,0,Rhodos,983,,,,0.0,0.0,-550.0,-350.0,,,,eastern_med
+8368,0,Riou A,986,,,,0.0,0.0,-200.0,-190.0,,,,western_med
+8369,0,Riou B,987,,,,0.0,0.0,-120.0,-90.0,,,,western_med
+8370,0,Risan,988,,,,0.0,0.0,,,,,,adriatic
+8371,0,Rocca di San Nicola A,989,,,,0.0,0.0,1400.0,1500.0,,,,western_med
+8372,0,Rocca di San Nicola B,990,,,,0.0,0.0,300.0,500.0,,,,western_med
+8373,0,Rocca di San Nicola C,991,,,,0.0,0.0,300.0,500.0,,,,western_med
+8374,0,La Roche Fouras,992,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+8375,0,Rochelongue,993,,,,0.0,0.0,-575.0,-525.0,,,,western_med
+8376,0,Roches d'Aurelle,994,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,80.0,100.0,"amphorae; Tegulae and imbrices from Frejus, cf Bartelemy B and Dramont G wrecks.",,,western_med
+8377,0,Les Roquetes,995,,,,0.0,0.0,1300.0,1600.0,,,,western_med
+8378,0,Rovinj,996,,,,0.0,0.0,-50.0,100.0,,,,adriatic
+8379,0,Sagunt,998,,,,0.0,0.0,-25.0,75.0,,,,western_med
+8380,0,Saint George's Bay,999,,,,0.0,0.0,,,,,,western_med
+8381,0,Saint Gervais A (1),1000,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,138.0,142.0,,,,western_med
+8382,0,Saint Gervais B (2),1001,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,650.0,700.0,amphorae; Wheat - a layer of pitch spilt from the amphorae glued  this rich archaeological layer of organic material  in position in the back one third of the ship.,,,western_med
+8383,0,Saint Gervais C,1002,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,149.0,154.0,"amphorae; 11 glass ungentaria, 10 of which were found in a basket; an ESA plate;",,,western_med
+8384,0,Saint Gervais D,1003,,,,0.0,0.0,50.0,150.0,,,,western_med
+8385,0,Saint Honorat,1004,France,West Mediterranean,,43.5,7.05,160.0,200.0,amphorae,,,western_med
+8386,0,Saint Hospice,1005,,,,0.0,0.0,,,,,,western_med
+8387,0,Saint Paul's Bay,1006,,,,0.0,0.0,-600.0,-100.0,,,,western_med
+8389,0,Saint Tropez B,1009,,,,0.0,0.0,-25.0,75.0,,,,western_med
+8390,0,Sainte Marguerite,1010,,,,0.0,0.0,-100.0,-50.0,,,,western_med
+8391,0,Saintes-Maries-de-la-mer A,1011,,,Bouches-du-Rhône,0.0,0.0,-100.0,-25.0,,,,western_med
+8392,0,Saintes-Maries-de-la-mer B,1012,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-100.0,-1.0,,,,western_med
+8393,0,Saintes-Maries-de-la-mer C,1013,,,Bouches-du-Rhône,0.0,0.0,100.0,200.0,,,,western_med
+8394,0,Salakta,1014,Tunisia,,,0.0,0.0,200.0,225.0,marble; columns; marble:Architrave and pilaster parts.,,,western_med
+8395,0,Salerno,1015,,,,0.0,0.0,,,,,,western_med
+8397,0,Les Salines,1017,,,,0.0,0.0,70.0,80.0,,,,western_med
+8398,0,Salou,1018,,,,0.0,0.0,50.0,200.0,,,,western_med
+8399,0,San Bartolomeo,1019,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+8400,0,San Ferreol,1020,,,,0.0,0.0,-110.0,-80.0,,,,western_med
+8401,0,San Nicola,1021,,,,0.0,0.0,1.0,100.0,,,,western_med
+8403,0,San Vincenzo A,1023,,,,0.0,0.0,1250.0,1350.0,,,,western_med
+8404,0,San Vincenzo B,1024,,,,0.0,0.0,-300.0,-100.0,,,,western_med
+8405,0,San Vito,1025,,,,0.0,0.0,-400.0,400.0,,,,western_med
+8407,0,Sancti Petri,1027,,,,0.0,0.0,50.0,100.0,,,,western_med
+8408,0,Sant Antoni,1029,,,,0.0,0.0,1.0,50.0,,,,western_med
+8409,0,Sant'Antioco A,1030,,,,0.0,0.0,275.0,300.0,,,,western_med
+8410,0,Sant'Antioco B,1031,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8411,0,Santa Caterina di Nardo,1032,Italy,,Puglia,40.13633,17.95166,-175.0,-125.0,amphorae,,,western_med
+8412,0,Santa Cesarea,1033,,,,0.0,0.0,,,,,,western_med
+8414,0,Santa Severa,1035,,,,0.0,0.0,-50.0,-25.0,,,,western_med
+8415,0,Santo Ianni,1036,,,,0.0,0.0,-300.0,200.0,,,,western_med
+8418,0,Sardinia,1039,,,,0.0,0.0,-210.0,-190.0,,,,western_med
+8419,0,Saturo A,1040,Italy,,Puglia,0.0,0.0,-200.0,-150.0,amphorae; marble; marble:Limestone blocks.; Campania A black-gloss pottery.,,,western_med
+8420,0,Saturo B,1041,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+8421,0,Sausset,1042,,,,0.0,0.0,-600.0,-500.0,,,,western_med
+8423,0,Savudrija,1044,,,,0.0,0.0,-140.0,20.0,,,,adriatic
+8424,0,Sćedro A,1045,,,,0.0,0.0,300.0,400.0,,,,adriatic
+8425,0,Sćedro B,1046,,,,0.0,0.0,-75.0,-25.0,,,,adriatic
+8426,0,Sciacca,1047,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8427,0,Scialandro A,1048,,,,0.0,0.0,-150.0,-100.0,,,,western_med
+8428,0,Scialandro B,1049,,,,0.0,0.0,1.0,300.0,,,,western_med
+8429,0,Scoglietto,1050,,,,0.0,0.0,,,,,,western_med
+8430,0,Scoglio Businco,1051,,,,0.0,0.0,-50.0,-1.0,,,,western_med
+8431,0,Scoglio della Formica A,1052,,,,0.0,0.0,-200.0,-100.0,,,,western_med
+8432,0,Scoglio della Formica B,1053,,,,0.0,0.0,800.0,1100.0,,,,western_med
+8433,0,Scoglitti,1054,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8434,0,"Scole A, Le",1055,Italy,,Tuscany,0.0,0.0,365.0,380.0,,,,western_med
+8435,0,"Scole B, Le",1056,,,,0.0,0.0,,,,,,western_med
+8436,0,Scopello,1057,,,,0.0,0.0,-300.0,-1.0,,,,western_med
+8437,0,El Sec,1058,,,,0.0,0.0,-360.0,-340.0,,,,western_med
+8438,0,"Secanion, Le",1059,,,,0.0,0.0,-10.0,40.0,,,,western_med
+8439,0,Secca dei Mattoni,1060,Italy,,Lazio,0.0,0.0,-100.0,-50.0,"amphorae; Ceramics mainly consist of cups of the Morel 2323 and 1222 type, Lamboglia 3 vases and ciboria (Morel 7450 and 7550 types), other forms such as the Lamboglia 5 (low bowls without handles) small Lamboglia 10 urns and two spindle-shaped ointment jars.",Apulia - Campania,Spain/ France?,western_med
+8441,0,Secca del Mignone,1062,,,,0.0,0.0,1200.0,1300.0,,,,western_med
+8442,0,Secca del Palo,1063,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+8443,0,Secca della Croce,1064,,,,0.0,0.0,1.0,100.0,,,,western_med
+8444,0,Secca di Capistello,1065,Italy,,Sicily,0.0,0.0,-300.0,-280.0,amphorae,,,western_med
+8446,0,Secche Di Ugento B,1067,,,,0.0,0.0,-150.0,-1.0,,,,western_med
+8447,0,Secche Di Ugento C,1068,,,,0.0,0.0,600.0,700.0,,,,western_med
+8448,0,Sedot Yam,1069,,,,0.0,0.0,400.0,600.0,,,,eastern_med
+8449,0,Serçe Limani A,1070,Turkey,,Marmaris Peninsula,0.0,0.0,1025.0,1030.0,"Two tons of raw glass and one ton (between half a million and a million sherds) of broken glass (broken prior to loading on board and possibly stored in baskets as they were found in clumps) as well as 80 intact glass vessels were found. The number of vessels present may have been as high as 10-20,000., They include cups, plates, dishes, bowls, bottles, ewers, jugs, jars, lamps, cupping glasses, alembics and stemmed vessels, all of an Islamic origin.",Syria,,eastern_med
+8453,0,Serçe Limani zone,1074,,,Marmaris Peninsula,0.0,0.0,975.0,1100.0,,,,eastern_med
+8455,0,Sete,1076,,,,0.0,0.0,-50.0,-25.0,,,,western_med
+8456,0,Shave Ziyyon,1078,,,,0.0,0.0,-425.0,-375.0,,,,eastern_med
+8457,0,Sheytan Deresi,1079,,,,0.0,0.0,-1650.0,-1550.0,,,,eastern_med
+8458,0,Sicilian Channel,1081,,,,0.0,0.0,-425.0,-375.0,,,,western_med
+8461,0,Silba A,1084,,,,0.0,0.0,300.0,425.0,,,,adriatic
+8463,0,Silba C,1086,,,,0.0,0.0,-150.0,400.0,,,,adriatic
+8464,0,Silba D,1087,,,,0.0,0.0,1000.0,1500.0,,,,adriatic
+8466,0,Sinuessa A,1089,,,,0.0,0.0,-300.0,-200.0,,,,western_med
+8467,0,Sinuessa B,1090,,,,0.0,0.0,-50.0,-1.0,,,,western_med
+8468,0,Siracusa A,1091,,,,0.0,0.0,-450.0,-430.0,,,,western_med
+8469,0,Siracusa B,1092,,,,0.0,0.0,400.0,700.0,,,,western_med
+8470,0,Siracusa C,1093,,,,0.0,0.0,400.0,700.0,,,,western_med
+8471,0,Siracusa D,1094,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8472,0,Sithonia,1095,,,,0.0,0.0,-425.0,-400.0,,,,eastern_med
+8473,0,Skarda A,1096,,,,0.0,0.0,-100.0,100.0,,,,adriatic
+8474,0,Skarda B,1097,,,,0.0,0.0,-150.0,400.0,,,,adriatic
+8475,0,Skoljic,1098,Croatia,Adriatic,Kvarner,44.63333,14.21666,50.0,150.0,amphorae,Northern Italy,,adriatic
+8476,0,Skopelos,1099,,,,0.0,0.0,1175.0,1200.0,,,,eastern_med
+8477,0,Sobra,1100,Croatia,Adriatic,off Mjlet Island,0.0,0.0,320.0,340.0,amphorae,,,adriatic
+8478,0,Les Sorres A,1101,Spain,Western Mediterranean,Catalunia,0.0,0.0,-150.0,-75.0,,,,western_med
+8479,0,Les Sorres B,1102,,,,0.0,0.0,-100.0,200.0,,,,western_med
+8480,0,Les Sorres C,1103,Spain,Western Mediterranean,,0.0,0.0,25.0,100.0,,,,western_med
+8481,0,Les Sorres D,1104,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8482,0,Les Sorres E,1105,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8483,0,Les Sorres F,1106,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8484,0,Sozopol,1107,,,,0.0,0.0,-500.0,-200.0,,,,black_sea
+8486,0,Sporades A,1109,,,,0.0,0.0,-400.0,-200.0,,,,eastern_med
+8487,0,Sporades B,1110,,,,0.0,0.0,1000.0,1200.0,,,,eastern_med
+8488,0,Sporades C,1111,,,,0.0,0.0,1000.0,1200.0,,,,eastern_med
+8489,0,Stanci-Celina,1112,,,,0.0,0.0,-100.0,-25.0,,,,adriatic
+8491,0,Stori Stoni (Stari Stani),1114,Croatia,Adriatic,Hvar,0.0,0.0,-125.0,-75.0,amphorae,,,adriatic
+8493,0,Sud-Camarat,1116,,,,0.0,0.0,1.0,300.0,,,,western_med
+8494,0,Sud-Lavezzi A (1),1117,France,Western Mediterranean,Corsica,0.0,0.0,375.0,425.0,,,,western_med
+8495,0,Sud-Lavezzi B (2),1118,France,Western Mediterranean,Corsica,0.0,0.0,22.0,25.0,"amphorae; 95  lead ingots arranged in 11 rows all bearing the the mould-mark MINVCIORVM and the counter stamp AP.IVN and ZETH and graffiti indicating their weight (51-54kg). 237 circular copper ingots were stacked in piles fore and aft of the lead (20kg), bearing 20 different inscriptions, but most commonly Q. C. ANTO.19 pieces of  Arretine pottery from 8 different objects - 1 small cup stamped with CERES[IM] / P CORNE , Chresimus was one of 30 slaves known to have belonged to P. Cornelius of Arezzo. Other small fragments of fineware and some coarseware.",Baetica,,western_med
+8496,0,Sud-Lavezzi C (3),1119,France,Western Mediterranean,Corsica,0.0,0.0,15.0,25.0,amphorae,"Llobregat, Spain",,western_med
+8497,0,Sud-Perduto A,1120,France,Western Mediterranean,Corsica,41.36836,9.30584,-25.0,25.0,amphorae,Baetica,,western_med
+8498,0,Sud-Perduto B,1121,,,,0.0,0.0,1.0,15.0,,,,western_med
+8499,0,Sulcis,1122,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8500,0,Susak,1123,,,,0.0,0.0,-150.0,400.0,,,,adriatic
+8501,0,Sveti Andrija (Svetac island),1124,Croatia,Adriatic,central Dalmatia,43.01666,15.75,1.0,100.0,amphorae,,,adriatic
+8502,0,Syria,1125,,,,0.0,0.0,800.0,900.0,,,,eastern_med
+8503,0,Tagomago,1127,,,,0.0,0.0,-500.0,-450.0,,,,western_med
+8504,0,Tainaron,1128,,,,0.0,0.0,1200.0,1300.0,,,,eastern_med
+8505,0,Tanger A,1129,,,,0.0,0.0,-200.0,-100.0,,,,western_med
+8506,0,Tanger B,1130,,,,0.0,0.0,1.0,100.0,,,,western_med
+8507,0,Taranto A,1131,,,,0.0,0.0,400.0,650.0,,,,western_med
+8508,0,Taranto B,1132,,,,0.0,0.0,-300.0,-150.0,,,,western_med
+8510,0,Taravo,1134,,,,0.0,0.0,-150.0,-25.0,,,,western_med
+8511,0,Tarragona,1135,,,,0.0,0.0,-300.0,-1.0,,,,western_med
+8512,0,Tartus,1136,,,,0.0,0.0,1000.0,1200.0,,,,eastern_med
+8513,0,Tcerny Nos,1137,,,,0.0,0.0,375.0,500.0,,,,black_sea
+8514,0,Tekmezar Burnu roof tiles,1138,,,,0.0,0.0,1200.0,1300.0,,,,eastern_med
+8515,0,Tenedos,1139,,,,0.0,0.0,1000.0,1100.0,,,,eastern_med
+8516,0,Terracina,1140,,,,0.0,0.0,-150.0,-1.0,,,,western_med
+8517,0,Terrasini A,1141,,,,0.0,0.0,25.0,50.0,,,,western_med
+8518,0,Terrasini B,1142,,,,0.0,0.0,-310.0,-260.0,,,,western_med
+8520,0,Teulada,1144,,,,0.0,0.0,-600.0,-300.0,,,,western_med
+8521,0,Thalassinies Spilies,1145,,,,0.0,0.0,500.0,700.0,,,,eastern_med
+8522,0,Thasos A,1146,,,,0.0,0.0,400.0,600.0,,,,eastern_med
+8524,0,Tiboulen de Maire 1,1148,France,Western Mediterranean,Bouches-du-Rhône,43.22105,5.32699,130.0,150.0,amphorae,Baetica - Tarraconensis - Gaul,Rome?,western_med
+8525,0,Le Titan,1149,,,,0.0,0.0,-50.0,-45.0,,,,western_med
+8526,0,El Toro,1150,,,,0.0,0.0,1.0,50.0,,,,western_med
+8527,0,Torre Castellucia A,1151,,,,0.0,0.0,200.0,300.0,,,,western_med
+8528,0,Torre Castellucia B,1152,,,,0.0,0.0,200.0,300.0,,,,western_med
+8530,0,Torre dell'Orso,1154,,,,0.0,0.0,200.0,400.0,,,,western_med
+8531,0,Torre dell'Ovo,1155,,,,0.0,0.0,-425.0,-375.0,,,,western_med
+8532,0,Torre Derribada,1156,,,,0.0,0.0,-200.0,-100.0,,,,western_med
+8533,0,Torre Flavia A,1157,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8534,0,Torre Guaceto,1159,Italy,,Puglia,0.0,0.0,-100.0,-1.0,amphorae,,,western_med
+8535,0,Torre La Sal,1160,,,,0.0,0.0,-130.0,-110.0,,,,western_med
+8536,0,Torre San Gennaro,1161,,,,0.0,0.0,1100.0,1200.0,,,,western_med
+8537,0,Torre Santa Sabina 1,1162,Italy,,Brindisi,40.75993,17.70652,-25.0,25.0,,,,western_med
+8539,0,Torre Testa,1164,,,,0.0,0.0,,,,,,western_med
+8540,0,Torre Valdaliga,1165,,,,0.0,0.0,1.0,20.0,,,,western_med
+8541,0,Toulon A,1166,,,,0.0,0.0,1.0,100.0,,,,western_med
+8542,0,Toulon B,1167,,,,0.0,0.0,1.0,100.0,,,,western_med
+8543,0,Tour d'Agnello 1,1168,France,Western Mediterranean,Corsica,43.01325,9.42545,-300.0,-275.0,amphorae,,,western_med
+8544,0,Tour du Castellas 1,1169,France,Western Mediterranean,Languedoc-Roussillon,43.33053,3.61656,-325.0,-275.0,amphorae; A bronze Etruscan tripod dated to the beginning of the C5th BC.,,,western_med
+8545,0,La Tour Fondue,1170,France,Western Mediterranean,Var,43.02471,6.15963,-250.0,-200.0,amphorae; Massiliot ceramics - cups and millstones.,Marseilles,,western_med
+8546,0,Tour Sainte Marie A,1171,,,,0.0,0.0,30.0,55.0,,,,western_med
+8547,0,Tour Sainte Marie B,1172,,,,0.0,0.0,-200.0,-100.0,,,,western_med
+8549,0,Trapani,1175,,,,0.0,0.0,200.0,300.0,,,,western_med
+8550,0,Tre Senghe,1176,Italy,,Puglia (Isole Tremiti),42.10267,15.47767,-30.0,-20.0,amphorae,,,western_med
+8551,0,Triscina A,1177,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+8552,0,Triscina B,1178,,,,0.0,0.0,-150.0,-130.0,,,,western_med
+8553,0,Triscina C,1179,,,,0.0,0.0,400.0,500.0,,,,western_med
+8554,0,Triscina D,1180,,,,0.0,0.0,25.0,125.0,,,,western_med
+8555,0,Tsikhisdziri,1181,,,,0.0,0.0,-500.0,-1.0,,,,black_sea
+8556,0,Sa Tuna,1182,,,,0.0,0.0,100.0,200.0,,,,western_med
+8557,0,Turkey,1183,,,,0.0,0.0,200.0,300.0,,,,eastern_med
+8558,0,Tyre A,1184,,,,0.0,0.0,-400.0,-200.0,,,,eastern_med
+8561,0,Tyre D,1187,,,,0.0,0.0,-400.0,-300.0,,,,eastern_med
+8564,0,Tyre G,1190,,,,0.0,0.0,-500.0,-400.0,,,,eastern_med
+8565,0,Tyre H,1191,,,,0.0,0.0,500.0,1500.0,,,,eastern_med
+8566,0,Los Ullastres,1192,Spain,Western Mediterranean,N of Barcelona,0.0,0.0,-50.0,25.0,amphorae,,,western_med
+8567,0,Ulu Burun,1193,Turkey,,Kaş,36.13086,29.6878,-1350.0,-1300.0,"amphorae; Ten tons of Cypriot copper ingots (354 oxhide ingots and 121 smaller bun- and pillow-shaped ingots). Nearly a ton of tin ingots. Raw ivory (elephant tusk and hippo teeth!) and ivory carvings, a gold goblet, ebony, glass ingots and an assortment of gold jewellery. Huge amount of organic material including fruits, nuts, spices and other plants  . Bronze tools and weapons Cypriot pottery",Syria/Palestine via Ugarit,a palace in the Aegean?,eastern_med
+8568,0,Ulu Burun area,1194,,,,0.0,0.0,900.0,1200.0,,,,eastern_med
+8569,0,Ustica A,1195,,,,0.0,0.0,-100.0,-1.0,,,,western_med
+8570,0,Ustica B,1196,,,,0.0,0.0,-350.0,-250.0,,,,western_med
+8571,0,Vachetta A,1197,,,,0.0,0.0,1.0,75.0,,,,western_med
+8572,0,Vachetta B,1198,,,,0.0,0.0,320.0,340.0,,,,western_med
+8573,0,Vada A,1199,,,,0.0,0.0,-125.0,-75.0,,,,western_med
+8574,0,Vada B,1200,,,,0.0,0.0,-200.0,-150.0,,,,western_med
+8575,0,Vada C,1201,,,,0.0,0.0,1.0,100.0,,,,western_med
+8576,0,Vada D,1202,,,,0.0,0.0,1.0,100.0,,,,western_med
+8577,0,Valencia,1203,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8578,0,Valle Isola A,1204,,,,0.0,0.0,1.0,300.0,,,,western_med
+8579,0,Valle Isola B,1205,,,,0.0,0.0,1.0,300.0,,,,western_med
+8581,0,Varazze,1207,,,,0.0,0.0,-100.0,-50.0,,,,western_med
+8582,0,Varna,1208,,,,0.0,0.0,300.0,500.0,,,,black_sea
+8583,0,Varvara,1209,,,,0.0,0.0,-600.0,-400.0,,,,black_sea
+8584,0,Vendicari,1211,,,,0.0,0.0,375.0,625.0,amphorae,,,western_med
+8585,0,Ventotene A,1212,,,,0.0,0.0,-325.0,-275.0,,,,western_med
+8586,0,Ventotene B,1213,,,,0.0,0.0,-75.0,-25.0,,,,western_med
+8587,0,Vieste,1215,,,,0.0,0.0,1000.0,1500.0,,,,western_med
+8589,0,Vignale,1217,,,,0.0,0.0,307.0,310.0,,,,western_med
+8590,0,Villefranche,1218,,,,0.0,0.0,-175.0,-150.0,,,,western_med
+8591,0,Villepey,1219,,,,0.0,0.0,110.0,160.0,,,,western_med
+8592,0,Vis A,1220,,,,0.0,0.0,-125.0,-75.0,,,,adriatic
+8593,0,Vis B,1221,,,,0.0,0.0,-150.0,-25.0,,,,adriatic
+8594,0,Vis C,1222,,,,0.0,0.0,-175.0,-125.0,,,,adriatic
+8595,0,Vis D,1223,,,,0.0,0.0,-300.0,-100.0,,,,adriatic
+8596,0,Vis E,1224,,,,0.0,0.0,400.0,600.0,,,,adriatic
+8597,0,Vis F,1225,,,,0.0,0.0,-150.0,400.0,,,,adriatic
+8598,0,Vis G,1226,,,,0.0,0.0,-150.0,400.0,,,,adriatic
+8599,0,Voula A,1227,,,,0.0,0.0,-350.0,-325.0,,,,eastern_med
+8600,0,Voula B,1228,,,,0.0,0.0,-400.0,-350.0,,,,eastern_med
+8601,0,Vulcano,1229,,,,0.0,0.0,-100.0,-80.0,,,,western_med
+8604,0,Xlendi A,1234,,,,0.0,0.0,-150.0,-75.0,,,,western_med
+8605,0,Xlendi B,1235,,,,0.0,0.0,1.0,100.0,,,,western_med
+8606,0,Xlendi C,1236,,,,0.0,0.0,350.0,450.0,,,,western_med
+8607,0,Xlendi D,1237,,,,0.0,0.0,,,,,,western_med
+8609,0,Yassi Ada A,1239,Turkey,Aegean,between Turkish mainland and Kos,36.99166,27.19583,625.0,630.0,amphorae,,,eastern_med
+8610,0,Yassi Ada B,1240,Turkey,,between Turkish mainland and Kos,36.99166,27.19583,375.0,435.0,amphorae,Aegean,,eastern_med
+8611,0,Zakynthos A,1243,,,,0.0,0.0,-550.0,-450.0,,,,eastern_med
+8612,0,Zakynthos B,1244,,,,0.0,0.0,400.0,700.0,,,,eastern_med
+8613,0,Zanca,1245,,,,0.0,0.0,1.0,100.0,,,,western_med
+8614,0,Zapuntel,1246,,,,0.0,0.0,1000.0,1500.0,,,,adriatic
+8615,0,Zatoane,1247,,,,0.0,0.0,-150.0,400.0,,,,adriatic
+8616,0,Zaton A,1248,,,,0.0,0.0,75.0,100.0,,,,adriatic
+8617,0,Zaton B,1249,,,,0.0,0.0,75.0,100.0,,,,adriatic
+8618,0,Zdrijac,1250,,,,0.0,0.0,800.0,1000.0,,,,adriatic
+8619,0,Zembretta,1251,,,,0.0,0.0,,,,,,western_med
+8620,0,Zirje,1252,,,,0.0,0.0,250.0,450.0,,,,adriatic
+8621,0,Zut,1253,,,,0.0,0.0,-150.0,-25.0,,,,adriatic
+8622,0,Arles IV,,France,Western Mediterranean,Bouches-du-Rhône,42.89501,4.62524,25.0,40.0,amphorae; Pottery and copper ingots.,Baetica,,western_med
+8623,0,Cavaliere (medieval),,,,,0.0,0.0,1479.0,1500.0,,,,western_med
+8624,0,Culip II,,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8625,0,Culip VII,,,,,0.0,0.0,-150.0,400.0,,,,western_med
+8626,0,Roquetas del Mar,,,,,0.0,0.0,1.0,200.0,,,,western_med
+8627,0,Las Encombreras,,,,,0.0,0.0,25.0,75.0,,,,western_med
+8628,0,Mahon,,,,,0.0,0.0,1.0,200.0,,,,western_med
+8629,0,Arles VIII,,,,,0.0,0.0,-30.0,14.0,,,,western_med
+8630,0,Cala Piomba,,Italy,,Sardinia,38.89416,8.60263,30.0,40.0,amphorae; Two lead ingots of trapezoidal shape,,,western_med
+8631,0,Cabo de Gata,,,,,0.0,0.0,50.0,75.0,,,,western_med
+8632,0,Saintes-Maries-de-la-Mer 2,,France,Western Mediterranean,Bouches-du-Rhône,43.43817,4.37599,1.0,25.0,"amphorae; Iron ingots and 146 bars some of which are very well preserved with stamps EROTIS and LEPIDI, plus symbols of anchors and other unidentifiable oval shapes. Some measure as long as 123cm and weigh 6.5kg. The total number may have been as high as 3000 to 4000.",Baetica - Narbonne,,western_med
+8633,0,Esteu dou Mieu 2,,France,Western Mediterranean,,0.0,0.0,69.0,96.0,,,,western_med
+8634,0,Le Grand Ribaud B,,France,Western Mediterranean,Var,43.01869,6.14513,69.0,96.0,,,,western_med
+8635,0,Anse de Montfort,,France,,Languedoc-Roussillon,43.14026,3.00132,-50.0,25.0,amphora_type:Pascual 1,,,western_med
+8636,0,Mounine 2,,,,,0.0,0.0,-50.0,25.0,amphora_type:Pascual 1,,,western_med
+8637,0,Els Reis,,,,,0.0,0.0,-50.0,25.0,amphora_type:Pascual 1,,,western_med
+8638,0,Cala Bona I,,,,,0.0,0.0,-80.0,-30.0,amphora_type:Laetanian I,,,western_med
+8639,0,Cala n'Carbo,,Minorca,,,0.0,0.0,-25.0,25.0,"amphora_type:Pascual 1, Dr 2-4",,,western_med
+8640,0,Callela I,,,,,0.0,0.0,-25.0,175.0,amphora_type:Dr. 2-4 Tarraconensis,,,western_med
+8641,0,La Giraglia,,France,Western Mediterranean,Corsica,43.02381,9.4024,15.0,25.0,"amphorae; Six fragments of Aretine ware, one with a stampTHALI. Four fragments of blue-green glass from 2 plates and 2 cups.; amphora_type:Dr. 2-4 Tarraconensis",Tarraconensis,Rome,western_med
+8642,0,Calaminnola,,Italy,,"Egadi Islands, Sicily",0.0,0.0,-300.0,-200.0,amphorae; amphora_type:Dr. 2-4 Tarraconensis; Dr. 7-11; Haltern 70,,,western_med
+8644,0,Albenga II,,Italy,Tyrrhenian Sea,Liguria,44.04255,8.22876,-100.0,-1.0,amphorae,,,western_med
+8645,0,Les Sorres VIII,,Spain,Western Mediterranean,Catalonia,0.0,0.0,-400.0,-200.0,amphorae,,,western_med
+8646,0,Pisa A,,Italy,,Tuscany,43.72388,10.38813,175.0,225.0,amphorae,"Adriatic via Africa, Spain, France",Pisa,western_med
+8647,0,Pisa B,,Italy,,Tuscany,43.72388,10.38813,-12.0,15.0,amphorae,,,western_med
+8648,0,Pisa C,,Italy,,Tuscany,43.72388,10.38813,-50.0,-1.0,,,,western_med
+8649,0,Pisa D,,Italy,,Tuscany,43.72388,10.38813,400.0,600.0,,,,western_med
+8650,0,Pisa E,,Italy,,Tuscany,43.72388,10.38813,-30.0,-1.0,amphorae,Tarraconensis,,western_med
+8651,0,Pisa F,,Italy,,Tuscany,43.72388,10.38813,100.0,150.0,,,,western_med
+8652,0,Pisa P,,Italy,,Tuscany,43.72388,10.38813,-30.0,30.0,,,,western_med
+8653,0,Pisa G,,Italy,,Tuscany,43.72388,10.38813,-150.0,400.0,,,,western_med
+8654,0,Pisa H,,Italy,,Tuscany,43.72388,10.38813,-150.0,400.0,,,,western_med
+8655,0,Pisa I,,Italy,,Tuscany,43.72388,10.38813,300.0,400.0,amphorae,,,western_med
+8656,0,Marsa -El-Brega Byzantine,,Libya,,Gulf of Sirte,0.0,0.0,500.0,600.0,"amphorae; Fineware - Hayes Late Roman C, Form 3, Type H - cooking pots and a sherd of African redslip ware",Northeast Mediterranean,,western_med
+8657,0,Point Iria,,Greece,,Argolid,37.45727,23.00468,-1250.0,-1200.0,"amphorae; 25 pieces of Mycenaean and Cypriot pottery, and Cretan transport jars. ""Cypriot pithoi and LH/LM IIIB 2 pithoid jars) and medium size ones (Cretan stirrup-jars, Cypriot jugs and an amphora with incised linear signs).""  ""a few decorated Mycenaean vases in fine ware (a deep bowl krater and one or two deep bowls)""",Southern Cyprus,,eastern_med
+8658,0,Antidragonera,,Greece,,Kythera,36.23426,23.11969,-350.0,-300.0,,,,eastern_med
+8659,0,Tanit,,Israel,Eastern Mediterranean,Gaza,0.0,0.0,-800.0,-700.0,"amphorae; Timber, most probably cedars from Lebanon, bundles of wool and potter's clay.",Phoenicia,Egypt?,eastern_med
+8660,0,Elissa,,Israel,Eastern Mediterranean,Gaza,0.0,0.0,-800.0,-700.0,"amphorae; Timber, most probably cedars from Lebanon, bundles of wool and potter's clay.",Phoenicia,Egypt?,eastern_med
+8662,0,Soldaya,,,Black Sea,,0.0,0.0,1200.0,1300.0,,,,black_sea
+8663,0,Tektaş Burnu,,Turkey,Aegean,Between Chios and Samos,0.0,0.0,-440.0,-425.0,"amphorae; Pottery appears to have been made in Ionia or on Chios, including a modest assortment of 2 handled drinking cups, one-handled bowls, table amphorae, oil lamps, a jug, a water pitcher and an askos. Fineware is limited to a stamped blak-glazed Attic kantharos and 2 small perfume vessels (a black-glazed askos and a creamy white stone alabastron.",,,eastern_med
+8664,0,Tantura A/Dor J,,Israel,Eastern Mediterranean,Dor,0.0,0.0,415.0,530.0,amphorae; marble; columns; marble:A fragment of pavement from Trench IV and 2 slabs and 4 small fragments from Trench VI.; Plenty of organic material.,,,eastern_med
+8665,0,Tantura B/Dor N,,Israel,Eastern Mediterranean,Dor,0.0,0.0,800.0,850.0,"Numerous remains of basketry, some of it amazingly delicate. Ceramics. Egyptian??",Egypt/ Cyprus?,,eastern_med
+8666,0,Tantura C,,Israel,Eastern Mediterranean,,0.0,0.0,325.0,500.0,"amphorae; Coarsewares, including perfectly preserved jugs.",,,eastern_med
+8667,0,Les Sorres X,,Spain,Western Mediterranean,Catalonia,0.0,0.0,1350.0,1400.0,amphorae; A few fragments of bowls.,,,western_med
+8668,0,Capraia Etruscan 2004,,Italy,,"Capraia Island, Liguria",43.07225,9.82366,-600.0,-300.0,amphorae,Spain,Rome,western_med
+8669,0,Capraia Roman 2004,,Italy,,"Capraia Island, Liguria",43.07225,9.82366,-300.0,400.0,amphorae,,,western_med
+8670,0,Le Grand Ribaud F (A??),,France,Western Mediterranean,Var,43.01869,6.14513,-525.0,-475.0,amphorae; Etruscan and Greek black-figure ceramics and bronze drinking bowls.,Etruria,Montpellier?,western_med
+8671,0,Melkarth,,,Western Mediterranean,west of Cyprus,0.0,0.0,-500.0,-200.0,amphorae,,,eastern_med
+8672,0,Marseille 3 (Jules Verne 9),,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-525.0,-500.0,,,,western_med
+8673,0,Marseille 4 (Jules Verne 7),,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-525.0,-500.0,,,,western_med
+8674,0,Marseille 5 (Jules Verne 3),,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,1.0,200.0,,,,western_med
+8675,0,Marseille 6 (Jules Verne 4),,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,1.0,200.0,,,,western_med
+8676,0,Marseille 7 (Jules Verne 8),,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,200.0,300.0,,,,western_med
+8678,0,Herculaneum II,,Italy,Tyrrhenian Sea,Bay of Naples,0.0,0.0,79.0,79.0,,,,western_med
+8679,0,Pointe Lequin 1A,846,France,Western Mediterranean,Var,43.01461,6.21577,-520.0,-510.0,"amphorae; Small bronze statue of a helmeted soldier; a large amount of Attic coarse ware and B2 cups (about 2,500 pieces) - decorated with scenes of  battle, mythology and daily life; oil lamps",Aegean,Marseillles,western_med
+8680,0,L'Isolella,,France,Western Mediterranean,Corsica,41.83444,8.75083,175.0,300.0,Tegulae (57 complete and 388 fragments) and imbricae (56 complete and 80 fragments).,Baetica?,,western_med
+8681,0,Cap Benat B/ Cap Benat 2,173,France,Western Mediterranean,Var,43.09166,6.38055,-100.0,-75.0,amphorae,,,western_med
+8683,0,La Jaume-Garde B,531,France,Western Mediterranean,Var,42.96607,6.16762,-200.0,-140.0,,,,western_med
+8684,0,Saintes-Maries-de-la-mer 27,,France,Western Mediterranean,Bouches-du-Rhône,43.44082,4.45289,-50.0,100.0,Iron ingots and bars.,,,western_med
+8686,0,Elba,,Italy,,"Elba, Tuscany",42.68381,10.27839,25.0,75.0,amphorae,Baetica,Rome,western_med
+8687,0,Perelli,,Italy,,Tuscany,42.94221,10.64781,1.0,25.0,amphorae; Ceramics?,,,western_med
+8688,0,Isole di Ponza,,Italy,,Naples,0.0,0.0,1.0,300.0,amphorae,,,western_med
+8689,0,Bocca Grande,,Italy,,"Capri, Campania",40.53607,14.18644,-100.0,100.0,amphorae,,,western_med
+8690,0,Bocca Piccola 1,,Italy,,"Capri, Campania",40.56359,14.27999,1.0,150.0,amphorae,,,western_med
+8691,0,Punta dell'Arcera,,Italy,,Capri,40.561,14.19871,300.0,450.0,amphorae,,,western_med
+8692,0,Pigne (Salerno),,Italy,,Capri,0.0,0.0,1000.0,1500.0,amphorae; marble; marble:Over a hundred marble closed pine cones.; Glazed ceramic vessels,,,western_med
+8693,0,Ischia,,Italy,,Campania,40.72571,13.96164,-300.0,300.0,,,,western_med
+8694,0,Gallipoli 1,,Italy,,Puglia,39.97683,17.94204,1.0,400.0,amphorae,,,western_med
+8695,0,Gallipoli 2,,Italy,,Puglia,39.88416,18.07388,-300.0,-200.0,amphorae,,,western_med
+8696,0,Gallipoli 3,,Italy,,Puglia,39.88416,18.07388,-300.0,-200.0,amphorae,,,western_med
+8697,0,Punta Penna,,Italy,,Brindisi,0.0,0.0,200.0,400.0,,,,western_med
+8698,0,Torre Santa Sabina 2,,Italy,,Brindisi,40.75993,17.70652,-300.0,300.0,,,,western_med
+8699,0,Margherita di Savoia,,Italy,,Puglia,41.39405,16.20758,-500.0,-300.0,,,,western_med
+8700,0,Ancona 1,,Italy,,Marche,43.81418,13.60656,-200.0,-50.0,amphorae,Aegean,,western_med
+8701,0,Ancona 2,,Italy,,Marche,43.81418,13.60656,-200.0,-175.0,amphorae,,,western_med
+8702,0,Ancona 3,,Italy,,Marche,43.81418,13.60656,-300.0,-100.0,amphorae,,,western_med
+8703,0,Caorle,,Italy,Adriatic,Veneto,45.49646,12.95288,-125.0,-75.0,amphorae,,,adriatic
+8704,0,Lazzaretto B,,Italy,,Sardinia,40.57937,8.24798,100.0,200.0,,,,western_med
+8705,0,Ottiolu,,Italy,,Sardinia,40.73808,9.715,1.0,100.0,"amphorae; marble; columns; marble:Finished grey, fine-grained marble slabs, possibly from Luna.",,,western_med
+8706,0,La Speranza,,Italy,,Sardinia,40.369,8.37707,1.0,50.0,amphorae; Concretions of iron items?,Baetica,,western_med
+8707,0,Cala Reale,,Italy,,Sardinia,41.05779,8.29502,380.0,400.0,amphorae; A shipment of glass paste tesserae accompanied the main cargo of amphorae.,Spain,,western_med
+8708,0,Cala Barca,,Italy,,Sardinia (Isola Piana),0.0,0.0,,,,,,western_med
+8709,0,L'Asinara 2,,Italy,,Sardinia,41.01377,8.77361,300.0,500.0,amphorae; A large concretion of minerals or metals.,Lusitania,,western_med
+8710,0,Olbia Late Roman 1,,Italy,,Sardinia,40.91148,9.50738,425.0,475.0,,,,western_med
+8711,0,Cala del Falco 1,,Italy,,Sardinia,40.65536,8.18344,200.0,300.0,amphorae; In the late '70s a 4m long lead bar was still visible .,Baetica,,western_med
+8712,0,Teulada,,Italy,,Sardinia,38.89684,8.7482,75.0,125.0,amphorae,,,western_med
+8713,0,Trapani,,Italy,,Sicily,37.94629,12.48664,200.0,300.0,amphorae,,,western_med
+8714,0,Porto Racolomo,,Italy,,Sicily,0.0,0.0,,,,,,western_med
+8715,0,Caucana,,Italy,,Sicily,36.78529,14.51396,700.0,800.0,,,,western_med
+8716,0,Capo Scalambri-Malta,,Italy,,Sicily,0.0,0.0,,,,,,western_med
+8717,0,Capo Feto,,Italy,,Sicily,37.65552,12.53694,-500.0,-300.0,,,,western_med
+8718,0,Porto Palo di Menfi,,Italy,,Sicily,37.57434,12.91082,-200.0,-100.0,amphorae,,,western_med
+8719,0,Santa Croce Camerina,,Italy,,Sicily,0.0,0.0,,,,,,western_med
+8720,0,Egadi,,Italy,,Sicily,0.0,0.0,,,,,,western_med
+8721,0,Secche della Circe,,Italy,,Sicily,36.70441,14.92389,400.0,499.0,amphorae,,,western_med
+8722,0,Cala Minnola,,Italy,,Sicily,37.99504,12.35309,-100.0,-50.0,amphorae,,,western_med
+8723,0,Sciacca,,Italy,,"Agrigento, Sicily",37.49603,13.08025,-100.0,0.0,,,,western_med
+8724,0,Olbia Roman Imperial,,Italy,,Sardinia,40.91148,9.50738,60.0,70.0,amphorae; Oil lamps and glassware.,,,western_med
+8725,0,Capo Galera,,Italy,,Sardinia,40.569,8.24592,1100.0,1300.0,"amphorae; Glazed pottery - bowls, plates and casseroles",,,western_med
+8726,0,Les Aresquiers 3,,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-150.0,-100.0,amphorae,,,western_med
+8727,0,Les Mouettes,,France,Western Mediterranean,Languedoc-Roussillon,43.41648,3.74719,150.0,200.0,"amphorae; Tiles, copper ingots and lead ingots some of which are stamped M AURELI; a bronze tripod",,,western_med
+8728,0,Les Lingots,,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,,,,,,western_med
+8729,0,Les Aresquiers 2,,France,Western Mediterranean,Languedoc-Roussillon,43.37983,3.83148,200.0,450.0,amphorae,,,western_med
+8730,0,Les Pierres,,France,Western Mediterranean,Languedoc-Roussillon,43.51741,3.96606,-100.0,400.0,"75 blocks of stone from Bois des Lens, north-west of Nimes, including 7 columns and capitals. The blocks were still lying in alignment and were rectangular; the dimensions varied between 0.7 0.75 x 0.6m and 2.85 x 0.6 x0.7m. This type of stone was popular for its similar look to marble.",,,western_med
+8731,0,Plage Beauregard,,France,Western Mediterranean,Languedoc-Roussillon,43.48617,3.87474,1.0,100.0,amphorae,,,western_med
+8733,0,Conque des Salins,,France,Western Mediterranean,Languedoc-Roussillon,43.41489,3.61312,-210.0,-85.0,,,,western_med
+8734,0,Redoute Bear 1,,France,Western Mediterranean,Languedoc-Roussillon,42.52436,3.11595,-125.0,-50.0,amphorae,,,western_med
+8737,0,Les Tambours,,France,Western Mediterranean,Languedoc-Roussillon,43.34508,3.6399,-150.0,400.0,"columns; marble:Sixteen drums measuring between 0.5 and 0.8m high with traces of inscriptions, possibly from Les Lens",,,western_med
+8739,0,Bonnieu 5,,France,Western Mediterranean,Bouches-du-Rhône,43.34655,5.02341,,,marble; blocks; marble:Three rows of 57 finished limestone blocks,,,western_med
+8740,0,Baie de l'Amitie/Les Battuts 2,,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,1.0,100.0,,,,western_med
+8741,0,Les Battuts,,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,,,,,,western_med
+8742,0,Les Riches Dunes 4,,France,Western Mediterranean,Languedoc-Roussillon,43.33053,3.61656,-50.0,-1.0,"amphorae; Two bronze statues: the first is of a young naked child, 65cm high, possibly Eros, datable to C1st BC- AD. The second is also of a child, in a short tunic, 80cm high and very well preserved, datable to the same era. They are both probablly from Campania and may have belonged to an Italian moving to Gaul (?). A mosaic  emblema measuring 48 x 49cm representing the judgement of Marsyas on a base of travertine.",,,western_med
+8743,0,La Fangade,,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,,,,,,western_med
+8745,0,Est Brescou,,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-150.0,-30.0,amphorae,,,western_med
+8747,0,Marine de Tollare,,France,Western Mediterranean,Corsica,43.00775,9.40283,-50.0,100.0,amphorae,,,western_med
+8749,0,Calanque de Conca,,France,Western Mediterranean,Corsica,41.57326,8.787,-50.0,100.0,amphorae; A large amount of fragments of jugs.,,,western_med
+8750,0,Marina di Fiori,,France,Western Mediterranean,Corsica,41.60847,9.29044,50.0,100.0,"amphorae; A secondary cargo of blocks of minerals, never found on a wreck before. Some are of clay and are stamped M.ACILI and VENU",Tarraconensis,Rome,western_med
+8751,0,Ratino 2,,France,Western Mediterranean,Corsica,41.37316,9.24568,-100.0,200.0,amphorae,,,western_med
+8752,0,Bugho I,,France,Western Mediterranean,Corsica,42.9878,9.46369,-100.0,-50.0,amphorae,,,western_med
+8753,0,Martinska,,Croatia,Adriatic,central Dalmatia,43.73333,15.86666,100.0,300.0,amphorae,,,adriatic
+8754,0,Erbalunga,,France,Western Mediterranean,Corsica,42.77251,9.47673,300.0,400.0,32kg of medium and small-sized coins dated to the end of the reign of Constantine I and the end of the C4th AD. The amphora was a Byzantine Keay XXV.,,,western_med
+8755,0,Pointe Cacalu,,France,Western Mediterranean,Corsica,41.73682,8.65516,-100.0,-1.0,amphorae; Oil lamps including Dressel-Lamboglia type 3 classic.,Campania,,western_med
+8756,0,Porto Pollo 1,,France,Western Mediterranean,Corsica,41.70744,8.79687,550.0,600.0,amphorae; Small iron ingots.,,,western_med
+8757,0,Les Moines 1,,France,Western Mediterranean,Corsica,41.46284,8.91909,1275.0,1325.0,"Some decorated fragments of Arabic ceramics and tableware, some from Pisa",,,western_med
+8758,0,Les Moines 2,,France,Western Mediterranean,Corsica,41.46284,8.91909,-75.0,-25.0,amphorae,,,western_med
+8759,0,Olmeto,,France,Western Mediterranean,Corsica,41.69443,8.84459,1.0,100.0,amphorae,,,western_med
+8760,0,Cavallo 4,,France,Western Mediterranean,Corsica,41.36672,9.25186,1300.0,1500.0,,,,western_med
+8761,0,Bonnieu 3,,France,Western Mediterranean,Bouches-du-Rhône,43.34655,5.02341,-450.0,-425.0,amphorae; Millstones from Marseilles.,Marseilles,,western_med
+8762,0,Saintes-Maries-de-la-Mer 3,,France,Western Mediterranean,Bouches-du-Rhône,43.4359,4.37908,1.0,100.0,Concretions of iron bars.,,,western_med
+8763,0,Saintes-Maries-de-la-Mer 6,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-50.0,-1.0,"Iron ingots and bars, some stamped. Apiece of Campanian pottery was found in one of the concretions dating the wreck to the second half of the C1st BC",,,western_med
+8765,0,Saintes-Maries-de-la-Mer 8,,France,Western Mediterranean,Bouches-du-Rhône,43.4383,4.43315,1.0,50.0,amphorae; Twenty concretions of iron ingots,,,western_med
+8766,0,Saintes-Maries-de-la-Mer 10,,France,Western Mediterranean,Bouches-du-Rhône,43.43817,4.37599,1.0,300.0,A concretion 8m long of iron ingots with illegible stamps.,,,western_med
+8767,0,Saintes-Maries-de-la-Mer 14,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-100.0,-1.0,amphorae,,,western_med
+8768,0,Plage d'Arles 5,,France,Western Mediterranean,Bouches-du-Rhône,43.10887,4.79003,60.0,80.0,"Sigillata from La Graufesenque, some stamped, that dates the wreck to the period of Claudius/Vespasian.","Narbonne, France",Rome?,western_med
+8769,0,Plage d'Arles 8,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-30.0,20.0,amphorae,Baetica,,western_med
+8770,0,Anse Saint-Gervais,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,260.0,400.0,,,,western_med
+8771,0,Sud Caveaux 1,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-50.0,-1.0,amphorae; Ceramics found at the far end of the wreck,Baetica,,western_med
+8772,0,Les Battuts 4,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-100.0,-1.0,"amphorae; A three-beaked bronze lamp, very rare.",,,western_med
+8773,0,Saintes-Maries-de-la-Mer 26,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-200.0,-1.0,,,,western_med
+8774,0,Jarre-Ecueil de Miet 4,,France,Western Mediterranean,Bouches-du-Rhône,43.1971,5.3572,-125.0,-75.0,amphorae,,,western_med
+8775,0,Calanque Devenson 1,,France,Western Mediterranean,Bouches-du-Rhône,43.16649,5.4705,-100.0,-1.0,amphorae,,,western_med
+8776,0,Port Miou C,,France,Western Mediterranean,Bouches-du-Rhône,43.18408,5.53299,-130.0,-50.0,amphorae,,,western_med
+8777,0,Calanque Devenson 2,,France,Western Mediterranean,Bouches-du-Rhône,43.16649,5.4705,1.0,100.0,amphorae,Baetica,,western_med
+8778,0,Bec Sormiou,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-100.0,-1.0,amphorae,,,western_med
+8779,0,Calanque d'En Vau 2,,France,Western Mediterranean,Bouches-du-Rhône,43.18752,5.50552,1.0,100.0,Tegulae and imbrices,,,western_med
+8780,0,Nord-ouest Cassidaigne,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,1.0,100.0,amphorae,,,western_med
+8781,0,Pointe de Vaisseau,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-25.0,100.0,amphorae,,,western_med
+8782,0,Pointe de la Voile,,France,Western Mediterranean,Bouches-du-Rhône,0.0,0.0,-130.0,-75.0,amphorae; Campanian B ware form L5a,,,western_med
+8783,0,Saintes-Maries-de-la-Mer 19,,France,Western Mediterranean,Bouches-du-Rhône,43.42536,4.29908,200.0,300.0,amphorae,,,western_med
+8784,0,Sud Gracieuse,,France,Western Mediterranean,Bouches-du-Rhône,43.20464,4.86694,-200.0,-175.0,amphorae,,,western_med
+8785,0,Saintes-Maries-de-la-Mer 4,,France,Western Mediterranean,Bouches-du-Rhône,43.44082,4.45289,1.0,100.0,"A large number of bronze objects - tableware, furniture pieces, jewellery and a statuette possibly of Mercury. Bronze scales, measuring 26cm and engraved with numbers I-VII on one side, with hooks decorated as ducks' heads; a few other bronze decoration fragments including part of a 'simplum' and a hinged bronze lid decorated with a dolphin.",,,western_med
+8787,0,Saintes-Maries-de-la-Mer 24,,France,Western Mediterranean,Bouches-du-Rhône,43.43739,4.37255,25.0,75.0,Large iron bars weighing between 23 and 33kg,,,western_med
+8790,0,Cavalaire 1,,France,Western Mediterranean,Var,43.17418,6.53823,1450.0,1500.0,"A huge amount of weapons - at least 8 cannons, projectile weapons, crossbow parts, lance tips",,,western_med
+8791,0,Balise de Rabiou,,France,Western Mediterranean,Var,43.27988,6.68071,40.0,100.0,amphorae,,,western_med
+8792,0,Chretienne M,,France,Western Mediterranean,Var,43.42222,6.87366,,,,,,western_med
+8793,0,Barthelemy B,,France,Western Mediterranean,Var,0.0,0.0,25.0,50.0,Tegulae and imbrices from Frejus cf Dramont G and Roches d'Aurelle wrecks.,,,western_med
+8794,0,Lardier 4,,France,Western Mediterranean,Var,43.15631,6.6208,50.0,75.0,Nine rows of tegulae in 2 layers and imbrices in the residual spaces. A large amount of pottery typical of the lower Argens valley (Rivet form 17),Argens,"Cavalaire, South of France",western_med
+8795,0,Baie de Sanary,,France,Western Mediterranean,Var,0.0,0.0,,,,,,western_med
+8797,0,Grand Rouveau 2,,France,Western Mediterranean,Var,43.08267,5.76842,-140.0,400.0,"amphorae; Tiles, between 100 and 300 imbrices and probably as many tegulae.",,,western_med
+8798,0,La Palud 2,,France,Western Mediterranean,Var,43.01398,6.38726,-520.0,-475.0,,,,western_med
+8799,0,La Plage d'Argent 1,,France,Western Mediterranean,Var,43.00707,6.19028,-150.0,-100.0,amphorae,,,western_med
+8801,0,Baie du Brusc,,France,Western Mediterranean,Var,0.0,0.0,,,,,,western_med
+8802,0,Marinieres I,,France,Western Mediterranean,Alpes-Maritimes,43.70459,7.31646,1400.0,1500.0,,,,western_med
+8803,0,Pabuç Burnu,,Turkey,Aegean,Marmaris Peninsula,36.97341,27.56195,-575.0,-550.0,"amphorae; blocks; A heavy concentration of grape seeds in the lower region of the site suggests that the ship also carried a bulk cargo of grapes or raisins, perhaps packed in sacks or baskets, which did not survive underwater.",Southeast Aegean,,eastern_med
+8805,0,Marina Grande di Bacoli,,Italy,,Campania,40.80325,14.08361,-50.0,100.0,amphorae; Numerous fragments of unidentified pottery.,,,western_med
+8806,0,Golfo di Pozzuoli (Le Crastole),,Italy,,Campania,40.82027,14.1164,1.0,300.0,amphorae,,,western_med
+8807,0,Bocca Piccola 2,,Italy,,Capri,40.56359,14.27999,50.0,150.0,amphorae,,,western_med
+8808,0,Golfo di Pozzuoli,,Italy,,Campania,40.81468,14.11983,200.0,500.0,amphorae,,,western_med
+8809,0,Li Galli - Vetara,,Italy,,Campania,40.58051,14.36428,-100.0,100.0,amphorae; marble; columns,,,western_med
+8810,0,Punta Licosa 2,,Italy,,Campania,40.25368,14.90192,-100.0,100.0,marble; blocks; marble:About 15-20  blocks with dimensions varying from 50 to 100cm which have clearly been squared,,,western_med
+8811,0,Capo Palinuro - Punta della Quaglia,,Italy,,Campania,40.02649,15.24078,-150.0,400.0,,,,western_med
+8812,0,Punta di Zambrone,,Italy,,Calabria,38.72,15.97789,-100.0,40.0,amphorae,,,western_med
+8813,0,Capo d'Armi,,Italy,,Calabria,37.95864,15.66942,-40.0,100.0,amphorae,,,western_med
+8814,0,Capo Bianco,,Italy,,Calabria,38.89676,17.10434,350.0,500.0,"amphorae; marble; columns; blocks; marble:Blocks of heterogeneous dimensions and drums of columns, distributed in a chaotic manner among the rocks. One of the larger blocks had been worked to create a semi-column on one of the long sides. The marble is of 3 different types.",,,western_med
+8815,0,Capo Donato,,Italy,,Calabria,0.0,0.0,1.0,300.0,"Cooking ware, generally of an open-form type.",,,western_med
+8816,0,Seleno,,Italy,,Calabria,38.89716,17.02056,-150.0,-25.0,,,,western_med
+8817,0,"Capo Colonna, Cicala",,Italy,,Calabria,39.02978,17.20047,200.0,300.0,"marble; columns; blocks; marble:Blocks of considerable dimensions, 6-7m in length, including 2 coumn drums with a diameter of c70cm and a length of 4-5m. The blocks laid as headers and sitting on their long sides are stacked without any particular order and are mostly parallelepiped or cubed in form and all are semi-worked and carved.",,,western_med
+8818,0,Cantafora B,,Italy,,Calabria,39.00657,17.18261,200.0,225.0,"amphorae; marble; columns; blocks; marble:An accumulation of semi-worked blocks distributed in a disorderly manner and slightly overlying one another. Several of the column drums, with a diameter of 70cm, are already prepared with the hole for fixing the the column cut in the centre of the circumference.",,,western_med
+8819,0,La Tonnara,,Italy,,Calabria,0.0,0.0,-100.0,50.0,amphorae,,,western_med
+8820,0,Torre Melissa - Villaggio Sirio,,Italy,,Calabria,39.30421,17.11326,-125.0,0.0,amphorae,,,western_med
+8822,0,Nardo,,Italy,,Puglia,40.15102,17.92419,-200.0,-50.0,amphorae,,,western_med
+8823,0,Santa Caterina di Nardo 2,,Italy,,Puglia,40.13633,17.95166,-400.0,-200.0,amphorae; Cooking ware.,,,western_med
+8824,0,Torre Sinfono,,Italy,,Puglia,39.90945,18.04092,-100.0,-1.0,amphorae,,,western_med
+8825,0,Cala Palombara,,Italy,,Puglia,40.14829,18.49823,-100.0,0.0,amphorae,,,western_med
+8826,0,Mucurune,,Italy,,Puglia,40.06689,18.48793,-200.0,-50.0,amphorae,,,western_med
+8827,0,Torre Chianca (Lecce),,Italy,,Puglia,40.46039,18.21807,175.0,400.0,amphorae,,,western_med
+8828,0,Torre Testa - Porto di Brindisi,,Italy,,Puglia,40.68831,17.88368,-200.0,-50.0,amphorae,,,western_med
+8829,0,Isole Pedagne Grandi,,Italy,,Puglia,40.60026,18.04779,-25.0,25.0,amphorae; marble; columns; marble:Various broken pieces of an unidentified column.,,,western_med
+8830,0,Atlit D,,Israel,Eastern Mediterranean,,0.0,0.0,1000.0,1450.0,amphorae,,,eastern_med
+8831,0,Atlit E,,Israel,Eastern Mediterranean,,0.0,0.0,1000.0,1450.0,Scrap metal,,,eastern_med
+8832,0,Carmel Beach A,,Israel,Eastern Mediterranean,,0.0,0.0,380.0,390.0,amphorae,,,eastern_med
+8833,0,Carmel Beach B,,Israel,Eastern Mediterranean,,0.0,0.0,300.0,400.0,,,,eastern_med
+8834,0,Dor A,,Israel,Eastern Mediterranean,,0.0,0.0,600.0,640.0,,,,eastern_med
+8835,0,Dor D,,Israel,Eastern Mediterranean,Dor,0.0,0.0,550.0,600.0,amphorae,Cyprus,Palestine,eastern_med
+8836,0,Dor E,,Israel,Eastern Mediterranean,,0.0,0.0,500.0,700.0,,,,eastern_med
+8837,0,Dor F,,Israel,Eastern Mediterranean,,0.0,0.0,600.0,640.0,,,,eastern_med
+8838,0,Dor G,,Israel,Eastern Mediterranean,,0.0,0.0,600.0,640.0,amphorae,,,eastern_med
+8839,0,Dor O,,Israel,Eastern Mediterranean,,0.0,0.0,553.0,645.0,,,,eastern_med
+8840,0,Dor M,,Israel,Eastern Mediterranean,,0.0,0.0,500.0,600.0,,,,eastern_med
+8841,0,Ginosar B,,Israel,Eastern Mediterranean,,0.0,0.0,1000.0,1450.0,,,,eastern_med
+8842,0,Givat Olgar,,Israel,Eastern Mediterranean,,0.0,0.0,500.0,700.0,amphorae,,,eastern_med
+8843,0,Hahotrim C,,Israel,Eastern Mediterranean,,0.0,0.0,400.0,1450.0,"marble; columns; blocks; marble:'Masonry', capitals and columns",,,eastern_med
+8844,0,Sdot Yam C,,Israel,Eastern Mediterranean,,0.0,0.0,400.0,600.0,amphorae,,,eastern_med
+8845,0,Sdot Yam D,,,,,0.0,0.0,300.0,350.0,amphorae,,,eastern_med
+8846,0,Sdot Yam E,,Israel,Eastern Mediterranean,,0.0,0.0,400.0,1450.0,marble; columns; marble:Bowls and columns,,,eastern_med
+8847,0,Ashkelon,,Israel,Eastern Mediterranean,,0.0,0.0,400.0,1450.0,marble; columns; marble:'Masonry' columns and drums.,,,eastern_med
+8848,0,Tantura F,,Israel,Eastern Mediterranean,,0.0,0.0,700.0,750.0,"amphorae; About 30 ceramic vessels, some containing fish remains, and a juglet. A large amount of fish bones, carobs and olive stones were also found on the site.",,,eastern_med
+8850,0,Tantura Trench VIII,,Israel,Eastern Mediterranean,,0.0,0.0,680.0,850.0,,,,eastern_med
+8851,0,Tantura E ? Trench IX,,Israel,Eastern Mediterranean,,0.0,0.0,553.0,645.0,"amphorae; Two ashlar blocks are retained in their original alignment, directly inboard of the transverse timber. Maybe cargo, alternatively they may have served as ballast.",,,eastern_med
+8852,0,Dor 2001/1,,Israel,Eastern Mediterranean,,0.0,0.0,480.0,530.0,"amphorae; Almost all of the hull remains were covered by about 100 building stones made of local kurkar (coarse calcerous sandstone) stacked in 2 layers of 3 to 7 rows.The stones are approximately the same size, 57 x 28 x 18cm.",,,eastern_med
+8854,0,Dor south-east,,Israel,Eastern Mediterranean,Dor,0.0,0.0,659.0,700.0,"Two piles of kurklar (ashlar) stones measuring 24 x 25 x 60cm, some of which have a rectangular slot. Metal artefacts.",,,eastern_med
+8855,0,Ashkelon North Roman,,Israel,Eastern Mediterranean,,0.0,0.0,1.0,200.0,"Bronzes: 3 figurines, a nude female (20cm, Aphrodite?), a naked bearded man (10cm, a Satyr?)  and a small zoomorphic  figure (1.9cm, monkey?). Other bronzes: a bell (12cm), a weight in the shape of a cardium shell, 2 decorative pieces, a lid of a vessel that bears 2 busts in relief and a lead mace head.",,,eastern_med
+8856,0,Herzliya Beach,,Israel,Eastern Mediterranean,,0.0,0.0,1.0,400.0,"amphorae; A cargo of unfinished donkey millstones made of basalt - 6 conical lower stones (0.8 x 0.85 m, 395kg) and 5 biconical upper stones (0.6 x 0.57m, 250kg) - were scattered along the flat rocky seabed.",Northern Levant,"Israel, Egypt?",eastern_med
+8857,0,Çamalti Burnu 1,,Turkey,,Marmara,40.64299,27.52349,1204.0,1280.0,amphorae; Other types of storage jars and two or three dozen broken anchors destined to be repaired or used as scrap iron,Ganos,,eastern_med
+8858,0,Cape Qefalit,,Albania,,,0.0,0.0,-520.0,-480.0,amphorae,,,adriatic
+8859,0,Bozburun Julio-Claudian,,Turkey,,Marmaris Peninsula,36.62199,28.17031,-50.0,50.0,amphorae,Rhodes,,eastern_med
+8860,0,Bozburun Late Antiquity anchor,,Turkey,,Marmaris Peninsula,36.63246,28.16276,500.0,600.0,amphorae,Eastern Mediterranean,,eastern_med
+8861,0,Comlek Burun,,Turkey,,Bozburun/Bodrum area,0.0,0.0,1000.0,1200.0,amphorae,,,eastern_med
+8862,0,Bozburun Late Republican,,Turkey,,Marmaris Peninsula,36.66606,28.2122,-150.0,-100.0,amphorae,,,eastern_med
+8863,0,Levanzo I,,Italy - Sicily,,Egadi islands,0.0,0.0,300.0,400.0,"amphorae; Numerous tubi fitilli (vaulting tubes), at least 100 of which were visible on the surface. Shape and sizes are consistent, c. 13.5 x 5.5 cm but  they are crudely formed and produced from poor-quality clay.",North Africa,,western_med
+8864,0,Mazotos,,Cyprus,,Larnaca,0.0,0.0,-350.0,-350.0,amphorae,Chios,,eastern_med
+8865,0,Montalto di Castro,,Italy,,Lazio,42.33811,11.50405,-200.0,-100.0,amphorae,,,western_med
+8866,0,Lerici,,Italy,,Liguria,44.07559,9.90623,1.0,200.0,marble; columns; marble:A cargo of columns.,,,western_med
+8867,0,Santo Stefano al Mare,,Italy,,Liguria,43.83025,7.91118,-10.0,10.0,amphorae,Campania,,western_med
+8868,0,Marciano Marina,,Italy,,"Elba, Tuscany",42.81692,10.19943,1.0,100.0,amphorae,,,western_med
+8869,0,Sant'Andrea A,,Italy,,"Elba, Tuscany",42.80997,10.14038,-50.0,-50.0,,,,western_med
+8870,0,Sant'Andrea B,,Italy,,"Elba, Tuscany",42.81174,10.1378,-100.0,-100.0,amphorae,,,western_med
+8871,0,Punta La Cera,,Italy,,"Elba, Tuscany",0.0,0.0,180.0,400.0,amphorae,,,western_med
+8872,0,Porto Palo di Capo Passero,,Italy,,"Syracuse, Sicily",36.66922,15.16525,-400.0,-200.0,amphorae,,,western_med
+8873,0,Gela B,,Italy,,Sicily,37.04304,14.25441,-475.0,-425.0,,,,western_med
+8874,0,Capo Linaro,,Italy,,Latium,42.03239,11.83124,25.0,75.0,,,,western_med
+8875,0,Toscana Cala del Barbiere,,Italy,,Tuscany,42.80112,10.72814,1.0,200.0,amphorae,,,western_med
+8876,0,Secche della Meloria,,Italy,,"Livorno, Tuscany",43.54776,10.22071,-275.0,-225.0,amphorae; Black-glazed pottery,,,western_med
+8877,0,Alghero 1,,Italy,,Sardinia,40.55756,8.30944,-25.0,150.0,amphorae,,,western_med
+8878,0,Caprara,,Italy,,Puglia,42.11267,15.49621,-100.0,50.0,"amphorae; Two piles of tiles still in stacked position. The tiles have a form typical of the Roman period, with the dimensions of approximately 40 cm x 30 cm, with a flat surface and raised edges on the longer two sides. The concretions which cover this material mean it is impossible to identify any stamps.",,,western_med
+8879,0,Napoli A,,Italy,,Campania,40.84181,14.25544,75.0,100.0,,,,western_med
+8880,0,Napoli B,,Italy,,Campania,40.84181,14.25544,180.0,220.0,,,,western_med
+8881,0,Napoli C,,Italy,,Campania,40.84181,14.25544,1.0,100.0,,,,western_med
+8882,0,Gallipoli (BA),,Italy,,"Bari, Puglia",0.0,0.0,-150.0,400.0,amphorae,,,western_med
+8883,0,Punta Penne C,,Italy,,Brindisi,0.0,0.0,-150.0,400.0,,,,western_med
+8885,0,Grado (2000),,Italy,Adriatic,Veneto,45.71666,13.33333,-300.0,-200.0,amphorae,,,adriatic
+8886,0,Ecueil de Miet 3,,France,Western Mediterranean,Bouches-du Rhône,43.20284,5.34931,-575.0,-550.0,amphorae,,,western_med
+8887,0,Bateguier/ Le Batiguier,97,France,Western Mediterranean,Alpes-Maritimes,0.0,0.0,900.0,1000.0,"amphorae; An extensive amount of pottery - ewers, water jugs, dishes etc. decorated with a great variety of designs, sometimes with Arabic graffiti. A very rare lamp with 7 openings. Millstones. Copper cauldrons. They seemed to have been transported in large earthenware jars without handles, decorated with digitated friezes.",,,western_med
+8888,0,La Mauresque,,France,Western Mediterranean,Languedoc-Roussillon,0.0,0.0,-50.0,100.0,amphorae,,,western_med
+8889,0,Anse de Montfort 1,,France,Western Mediterranean,Languedoc-Roussillon,43.14026,3.00132,-100.0,-1.0,amphorae,,,western_med
+8890,0,Anse de Montfort 2,,France,Western Mediterranean,Languedoc-Roussillon,43.14026,3.00132,-50.0,100.0,amphorae,,,western_med
+8891,0,Port Vendres 9 (Redoute Bear 2),,France,Western Mediterranean,Languedoc -Roussillon,42.52436,3.11595,400.0,450.0,amphorae,,,western_med
+8892,0,Les Riches Dunes 2,,France,Western Mediterranean,Languedoc-Roussillon,43.33053,3.61656,1.0,50.0,amphorae; 17 lead ingots,,,western_med
+8893,0,Les Riches Dunes 6,,France,Western Mediterranean,Languedoc-Roussiloon,43.33053,3.61656,,,,,,western_med
+8894,0,Maguelone,,France,Western Mediterranean,Languedoc-Roussillon,43.53554,3.98254,1.0,100.0,12 copper ingots and an iron bar stamped with HAEDI cf Saintes-Maries-de-la-mer 2.,,,western_med
+8895,0,Port Vendres 11,,France,Western Mediterranean,Languedoc-Roussillon,42.52417,3.11565,270.0,300.0,amphorae,Tarraconensis,,western_med
+8896,0,Banc du Benedetto,,France,Western Mediterranean,Corsica,41.60963,9.32756,-400.0,-200.0,amphorae,Elba,,western_med
+8897,0,Les Moines 3,,France,Western Mediterranean,Corsica,41.46284,8.91909,50.0,250.0,amphorae; Three lead ingots (type Domergue 1)were found nearby.,,,western_med
+8898,0,"La Vacca, Iles Cerbicales",,France,Western Mediterranean,Corsica,41.55617,9.38653,-100.0,-1.0,amphorae; Millstone.,,,western_med
+8900,0,Coscia,,France,Western Mediterranean,Corsica,0.0,0.0,-250.0,-50.0,amphorae,,,western_med
+8901,0,Punta Vecchia 1,,France,Western Mediterranean,Corsica,42.71868,9.32404,225.0,275.0,amphorae,Lusitania,,western_med
+8902,0,Est Perduto 2,,France,Western Mediterranean,Corsica,41.36944,9.30396,-125.0,-75.0,"amphorae; A large amount of Campanian ceramics - plates, bowls and cups.",Adriatic - Brindisi - Campania,"Gaul, Spain??",western_med
+8903,0,Mazarron 1,,Spain,Western Mediterranean,near Cartagena,37.53993,-1.27578,-650.0,-600.0,"amphorae; Urns, baskets, mortars, religious objects and carafes.",,,western_med
+8904,0,Mazarron 2,,Spain,Western Mediterranean,near Cartagena,0.0,0.0,-650.0,-600.0,amphorae; Lead ingots.,,,western_med
+8905,0,Alonnisos,,Greece,Aegean,Northern Sporades,39.23583,23.98452,-420.0,-400.0,"amphorae; High quality black-glazed pottery, the best of which came from Athens, including skyphoi, cups decorated with petals, drinking vessels. Heavy terracotta mortars with 2 handles, a large base and a thick rounded lip. Bowls with black-glazed bases from southern Italy.","Athens, then Mende, then Peparethos",Ikos,eastern_med
+8906,0,Ekinlik Adasi Marble wreck,,Turkey,,Marmara,0.0,0.0,500.0,600.0,"marble; columns; marble:At least 17 columns, some broken, presumably from Proconnesus.",Proconnesus,,eastern_med
+8907,0,"Parco di Teodorico, Ravenna",,Italy,,,0.0,0.0,400.0,500.0,,,,western_med
+8908,0,Carmel Coast,,Israel,Eastern Mediterranean,,0.0,0.0,500.0,550.0,,,,eastern_med
+8909,0,Nord-Fouras,,France,Western Mediterranean,Var,0.0,0.0,900.0,1000.0,amphorae; Millstones,,,western_med
+8911,0,Ashkelon North Late Roman,,Israel,Eastern Mediterranean,,0.0,0.0,300.0,500.0,,,,eastern_med
+8912,0,Ashkelon North Byzantine,,,,,0.0,0.0,400.0,1450.0,"Handles of lead and bronze vessels soje with incised designs. Dozens of bronze coins of the 40 numia denomination of the Constantinople and Nicomedia mints, bearing the bust of Justin and his wife Sofia.",,,eastern_med
+8913,0,Tel Ashqelon,,Israel,Eastern Mediterranean,,0.0,0.0,1000.0,1300.0,"Lead, including dozens of loaf-shaped ingots (80-100 kg each). Most bear inscriptions that have yet to be deciphered. Next to the ingots were 3 elongated pieces of iron (8 x 10 x 50cm) whose function is unclear.",,,eastern_med
+8914,0,Tel Ashqelon Byzantine,,Israel,Eastern Mediterranean,,0.0,0.0,,,"Round millstones (diam 0.6m, thickness 0.3m).",,,eastern_med
+8915,0,'Akko West,,Israel,Eastern Mediterranean,,0.0,0.0,100.0,300.0,amphorae,,,eastern_med
+8916,0,Cape Tiha,,Croatia,Adriatic,Sipan Island,42.70538,17.872,-400.0,-200.0,amphorae,,,adriatic
+8917,0,Cape Borova,,Croatia,Adriatic,Lastovo Island,42.69347,16.85852,-400.0,-200.0,amphorae,,,adriatic
+8918,0,Veli Porat,,Croatia,Adriatic,off Scedro,43.06925,16.69784,-200.0,-50.0,amphorae,,,adriatic
+8919,0,Le Formiche di Capraia,,Italy,,"N tip Capraia Island, Tuscany",43.07383,9.82624,-175.0,-125.0,"amphorae; Black-glazed pottery from central Italy, including plates, cups and bowls.",Aegean,,western_med
+8920,0,Golfo di Follonica,,Italy,,Tuscany,0.0,0.0,-250.0,-25.0,amphorae,,,western_med
+8921,0,Siciliano (Porto San Paolo),,Italy,,Sardinia,40.88246,9.63805,200.0,300.0,amphorae; Ceramics: Ostia III 267 and Ostia I 17 plates,North Africa,,western_med
+8922,0,Baia Salinedda (San Teodoro),,Italy,,Sardinia,40.84127,9.72049,200.0,400.0,"amphorae; Ceramics, glass and metal?",,,western_med
+8923,0,Rena Maiore,,Italy,,Sardinia,41.16766,9.16191,,0.0,"Lead ingots, many of them stamped.",,,western_med
+8924,0,Olbia (statue),,Italy,,Sardinia,40.91148,9.50738,-150.0,400.0,amphorae; Fragments of a terracotta statue of Hercules.,,,western_med
+8925,0,Cala Gadir II,,Italy,,"Pantelleria, Sicily",0.0,0.0,-125.0,-75.0,amphorae,,,western_med
+8926,0,Capo Passero II,,Italy,,Sicily,0.0,0.0,-150.0,150.0,Lead ingots probably from Spain each weighing about 30kg and stamped with the manufacturer's mark,Spain,,western_med
+8927,0,Favignana,,Italy,,Sicily,0.0,0.0,1000.0,1100.0,"amphorae; Bricks and tiles ""a coppa"".",,,western_med
+8928,0,Scauri,,Italy,,Sicily (Pantelleria),36.76803,11.96363,475.0,500.0,"amphorae; Ceramics - cylindrical pots, bowls and cups; glass bottles and beakers in fragments. Oil lamps and some Sigillata Africana D",Africa,Sicily/Rome?,western_med
+8929,0,Marausa Lido,,Italy,,Sicily,0.0,0.0,200.0,300.0,amphorae,,,western_med
+8930,0,Ocaklar Burnu,,Turkey,,Marmara,0.0,0.0,400.0,1450.0,amphorae,,,eastern_med
+8931,0,Çihli Burnu,,Turkey,,Marmara,0.0,0.0,600.0,700.0,amphorae,,,eastern_med
+8932,0,Tekmezar Burnu 1,,Turkey,,Marmara,0.0,0.0,1000.0,1100.0,amphorae; Three tonnes of glass.,Ganos,Constantinople,eastern_med
+8933,0,Tekmezar Burnu 2,,Turkey,,Marmara,0.0,0.0,1000.0,1100.0,amphorae,Ganos,Constantinople?,eastern_med
+8934,0,Kocayemişilik,,Turkey,,Marmara,0.0,0.0,1000.0,1100.0,amphorae,,,eastern_med
+8935,0,Anataş  Adacik (Palapetra),,Turkey,,Marmara islands,40.65654,27.54821,1000.0,1100.0,amphorae,,,eastern_med
+8936,0,Kuyu Burnu Tile wreck,,Turkey,,Marmara,0.0,0.0,600.0,700.0,Tiles measuring 80 x 45cm x 3cm.,,,eastern_med
+8937,0,Kuçuk Ada,,Turkey,,Marmara,0.0,0.0,500.0,600.0,Terracotta pipes  in 2 piles 38.6 x 5.1m and 26.3 x 20.4m at the 2 different depths.,,,eastern_med
+8938,0,Taşada (Virankoy),,Turkey,,Marmara,0.0,0.0,1000.0,1100.0,amphorae,,,eastern_med
+8939,0,Saraylar (Eşek Adalari),,Turkey,,Marmara,0.0,0.0,1000.0,1100.0,amphorae,,,eastern_med
+8940,0,Tell Hreiz 1,,Israel,Eastern Mediterranean,,0.0,0.0,,,Glass lumps.,,,eastern_med
+8941,0,Tell Hreiz II,,Israel,Eastern Mediterranean,,0.0,0.0,400.0,1450.0,About 50 loaf-shaped iron bars.,,,eastern_med
+8942,0,Atlit North Bay I,,Israel,Eastern Mediterranean,,0.0,0.0,-400.0,-250.0,Decorated bronze handles of large vessels.,,,eastern_med
+8943,0,Nahal Oren,,Israel,Eastern Mediterranean,Atlit,0.0,0.0,-400.0,-250.0,"Bronze furniture/works of art? - bronze attachments of a bed with remains of wood, a stylized bronze handle of a container and  adecorated gold plaque.",,,eastern_med
+8944,0,Atlit North Bay II,,Israel,Eastern Mediterranean,,0.0,0.0,400.0,1450.0,,,,eastern_med
+8945,0,Newe Yam Late Bronze Age,,Israel,Eastern Mediterranean,,0.0,0.0,-1200.0,-900.0,83 loaf-shaped copper bars (3-5kg).,,,eastern_med
+8946,0,Newe Yam Hellenistic,,Israel,Eastern Mediterranean,,0.0,0.0,-325.0,-50.0,,,,eastern_med
+8947,0,Newe Yam Roman,,Israel,Eastern Mediterranean,,0.0,0.0,-150.0,400.0,,,,eastern_med
+8948,0,Fiumicino 1 (Natante 2),,Italy,,Lazio,0.0,0.0,300.0,500.0,,,,western_med
+8949,0,Okuklje Cove,,Croatia,Adriatic,Mjlet Island,42.71666,17.68333,1.0,100.0,amphorae,,,adriatic
+8950,0,Duboka Cove,,Croatia,Adriatic,Hvar island,43.11274,16.66076,200.0,400.0,amphorae,,,adriatic
+8951,0,Cavtat 2,,Croatia,Adriatic,south of Dubrovnick,42.57652,18.21018,200.0,400.0,amphorae,,,adriatic
+8952,0,Mandriola A,,Italy,,Sardinia,40.03069,8.39767,275.0,325.0,amphorae; Many fragments of African table ware,Spain,,western_med
+8953,0,Cala Su Pallosu,,Italy,,Sardinia,40.04279,8.39492,-200.0,-100.0,amphorae; Millstones - 4 lower cone-shaped parts (metae) and 5 upper parts (catilli). Glass. Cups.,Sardinia,,western_med
+8954,0,Sa Tonnara A,,Italy,,Sardinia,40.05386,8.40351,-200.0,-150.0,amphorae,,,western_med
+8955,0,Ventotene 1,,Italy,,,0.0,0.0,1.0,100.0,amphorae,,,western_med
+8956,0,Ventotene 2,,Italy,,,0.0,0.0,-100.0,-1.0,amphorae,,,western_med
+8957,0,Ventotene 3,,Italy,,,0.0,0.0,1.0,100.0,amphorae,,,western_med
+8958,0,Ventotene 4,,Italy,,,0.0,0.0,1.0,100.0,,,,western_med
+8959,0,Ventotene 5,,Italy,,,0.0,0.0,400.0,500.0,amphorae,,,western_med
+8960,0,Cartagena,,Spain,Western Mediterranean,Cartagena,0.0,0.0,-225.0,-175.0,amphorae,,,western_med
+8961,0,Malta (2006),,Malta,,,0.0,0.0,-600.0,-500.0,amphorae,,,western_med
+8962,0,Rodon,,Albania,,,0.0,0.0,-525.0,-475.0,amphorae,Corinth,,adriatic
+8963,0,Qefalit Tile wreck,,Albania,,,0.0,0.0,-400.0,-300.0,amphorae; The tile cargo is still stacked and forms an interlocking and compacted deposit. Pan and cover tiles are present of Corinthiam manufacture measuring 29 x 20 inches.,Corinth,,adriatic
+8964,0,Butrint 2,,Albania,,,0.0,0.0,50.0,200.0,amphorae,,,adriatic
+8965,0,Butrint 3,,Albania,,,0.0,0.0,-600.0,-400.0,amphorae,,,adriatic
+8966,0,Butrint 1,,Albania,Adriatic,,0.0,0.0,-300.0,-275.0,amphorae,,,adriatic
+8967,0,Tilegrafo Bay,,Greece,,"near Volos, Pagasitic Gulf",39.34463,22.95318,375.0,400.0,amphorae,,,eastern_med
+8968,0,Korakia (Porto heli),,Greece,,Argolic Gulf,37.31266,23.1269,500.0,700.0,amphorae,,,eastern_med
+8969,0,Vlychos (Hydra),,Greece,,Argolic Gulf,37.34599,23.44757,500.0,700.0,amphorae,,,eastern_med
+8970,0,Trikeri,,Greece,,Argolic Gulf,0.0,0.0,500.0,700.0,amphorae,,,eastern_med
+8971,0,Metochi,,Greece,,Argolic Gulf,37.40721,23.39641,500.0,700.0,amphorae,,,eastern_med
+8972,0,Saranda 1,,Albania,,,0.0,0.0,-600.0,-450.0,amphorae,,,adriatic
+8973,0,Saranda 2,,Albania,,,0.0,0.0,-400.0,-300.0,amphorae,,,adriatic
+8974,0,Saranda 3,,Albania,,,0.0,0.0,1.0,200.0,amphorae,,,adriatic
+8975,0,Saranda 4,,Albania,,,0.0,0.0,-100.0,-1.0,,,,adriatic
+8976,0,Boka Kotorska 2,,Montenegro,,,42.41527,18.70903,-200.0,-1.0,amphorae,,,adriatic
+8977,0,La Yuca Beach,,Spain,Western Mediterranean,,0.0,0.0,175.0,225.0,marble; columns,,,western_med
+8978,0,Rompetimones rock,,Spain,Western Mediterranean,Cadiz,0.0,0.0,-30.0,20.0,,,,western_med
+8979,0,Ship of Tarragona,,Spain,Western Mediterranean,,0.0,0.0,50.0,150.0,marble; columns,,,western_med
+8980,0,Sant Jordi,,Spain,Western Mediterranean,Majorca,0.0,0.0,-100.0,-80.0,amphorae,,,western_med
+8981,0,Pegli,,,,,0.0,0.0,-200.0,-100.0,amphorae,,,western_med
+8982,0,Seno del Campese,,Italy,,Giglio,0.0,0.0,-700.0,-600.0,,,,western_med
+8983,0,Cala del Diavolo,,Italy,,"Isola di Montecristo,Tuscany",42.30612,10.31066,-120.0,-10.0,amphorae; Black Campanian pottery,,,western_med
+8984,0,Polyaigos,,Greece,Southern Aegean,"Cyclades, near Kimolos",36.75729,24.54483,-420.0,-350.0,amphorae; Ceramic vases,,,eastern_med
+8985,0,La Manga (Bajo de la Campana),,Spain,Western Mediterranean,Cartagena,0.0,0.0,-620.0,-600.0,"amphorae; A cargo of ivory, amber and many ceramic objects. The 10 ivory tusks measure between 70 and 150 cm long and are inscribed with Phoenician writing. They have come from a race of elephants now thought to be extinct. Also on board were 28 small tin ingots, 2 copper ingots, hundres of galena (lead ore) nuggets) and stones containing silver and lead, and plates, bowls, several double-sided wooden combs, ivory knife handles, bronze needles and chandeliers.",Cadiz?,,western_med
+8986,0,Pseira,,Greece,,NE Crete,35.17766,25.85701,-1800.0,-1675.0,"amphorae; Ceramics including jugs, cups and cooking pots.",Eastern Crete,Crete,eastern_med
+8987,0,Chios Straits,,Greece,Northern Aegean,Chios,38.52761,26.18248,-400.0,-300.0,amphorae,,,eastern_med
+8988,0,Protaras,,Cyprus,,"Cape Greco, SE tip",0.0,0.0,100.0,120.0,amphorae,Cyprus,Cyprus?,eastern_med
+8989,0,Polyaigos (marble),,Greece,Southern Aegean,Polyaigos,36.73528,24.54483,1.0,350.0,marble; columns; marble:A single column of cipollino from Carystos was found that may come from an otherwise unknown wreck transporting architectural elements.,,,eastern_med
+8990,0,Agios Petros classical,,Greece,Aegean,"Kyra-Panagia Island, Northern Sporades",39.29165,24.07653,-475.0,-425.0,amphorae,,,eastern_med
+8991,0,Portolafia 1,,Greece,,Attica,0.0,0.0,100.0,250.0,amphorae,,,eastern_med
+8992,0,Portolafia 2,,,,,0.0,0.0,1100.0,1200.0,amphorae,,,western_med
+8993,0,Megalo Stironisi,,Greece,,Attica,0.0,0.0,,,A cargo of tiles in sets of 6 and tied in large piles.,,,eastern_med
+8994,0,Agios Andreas,,Greece,,Euboia,38.39534,23.72428,400.0,550.0,amphorae,,,eastern_med
+8995,0,Petousi,,Greece,,Euboia,38.14937,24.16339,100.0,250.0,amphorae,,,eastern_med
+8996,0,Prophete Elie,,Greece,,Laconia,0.0,0.0,100.0,200.0,amphorae,,,eastern_med
+8997,0,Plytra - Xyli Bay,,Greece,,Laconia,0.0,0.0,-150.0,400.0,Metal pipes?,,,eastern_med
+8998,0,Monemvasia - Kremmydi,,Greece,,Laconia,36.68148,23.05687,1.0,350.0,amphorae,,,eastern_med
+8999,0,Ashkelon Hellenistic/Roman,,Israel,Eastern Mediterranean,,,0.0,-200.0,-1.0,,,,eastern_med
+9000,0,Yenikapi,,Turkey,,Istanbul,41.00447,28.95249,600.0,1099.0,,,,eastern_med
+9001,0,Cala Sant Vicents 2,,Spain,Western Mediterranean,Majorca,0.0,0.0,-520.0,-500.0,"amphorae; Bundles of iron tools, some tin ingots, baskets and grain-rubbers.",,,western_med
+9002,0,Porto Palermo,,Albania,,,0.0,0.0,400.0,500.0,amphorae,,,adriatic
+9003,0,Boka Kotorska  1,,Montenegro,,,42.41756,18.70731,1.0,300.0,"Pan tiles and cover tiles are in several stacks, many of which are now postitioned vertically. The pan tiles measure c 65 x 45 cm with flanges angled at 90 degrees and are characteristic of Roman manufacture during the Imperial period.",,,adriatic
+9004,0,Kekova Adasi,,Turkey,,Antalya,0.0,0.0,-700.0,-600.0,amphorae,,,eastern_med
+9005,0,Arapya Gulf,,Bulgaria,Black Sea,,0.0,0.0,300.0,600.0,"Table ceramics, glass pots",,,black_sea
+9006,0,Ropotamo River,,Bulgaria,Black Sea,,0.0,0.0,375.0,525.0,Luxury ceramics from Asia Minor,Asia Minor,Tera??,black_sea
+9007,0,Sozopol,,Bulgaria,Black Sea,,0.0,0.0,-300.0,-200.0,amphorae,Herakleia Pontica,Apollonia,black_sea
+9008,0,Pomorie 1-5,,Bulgaria,Black Sea,,0.0,0.0,400.0,600.0,amphorae,,,black_sea
+9009,0,Pomorie 6,,Bulgaria,Black Sea,,0.0,0.0,400.0,600.0,Tiles,Constantinople,Anhialo,black_sea
+9010,0,Ravda,,Bulgaria,Black Sea,,0.0,0.0,-475.0,-450.0,amphorae,Chios,Mesembria,black_sea
+9011,0,Nesebar 1,,Bulgaria,Black Sea,,0.0,0.0,-500.0,-400.0,amphorae,Chios,Mesembria,black_sea
+9012,0,Nesebar 2,,Bulgaria,Black Sea,,0.0,0.0,-325.0,-280.0,amphorae,Aegean,Mesembria,black_sea
+9013,0,Cape Cherni nos 1,,Bulgaria,Black Sea,,0.0,0.0,400.0,600.0,amphorae,,,black_sea
+9014,0,Varna,,Bulgaria,Black Sea,,0.0,0.0,-400.0,-300.0,amphorae,Chios,Odessos,black_sea
+9015,0,Lazuran bryag,,Bulgaria,Black Sea,,0.0,0.0,400.0,500.0,,,,black_sea
+9016,0,"Cape Chirakman, Kaliakra 1-2",,Bulgaria,Black Sea,,0.0,0.0,-330.0,-50.0,,,,black_sea
+9017,0,"Cape Chirakman, Kaliakra 3-5",,Bulgaria,Black Sea,,0.0,0.0,400.0,800.0,,,,black_sea
+9018,0,Port Kavarna,,Bulgaria,Black Sea,,0.0,0.0,-400.0,-370.0,amphorae,Herakleia Pontica,Bizone,black_sea
+9019,0,Cape Kaliakra,,Bulgaria,Black Sea,,0.0,0.0,400.0,600.0,,,,black_sea
+9020,0,Cape Cherni nos 2,,Bulgaria,Black Sea,,0.0,0.0,-400.0,-300.0,amphorae,,,black_sea
+9021,0,Cape Cherni nos 3,,Bulgaria,Black Sea,,0.0,0.0,-600.0,-400.0,amphorae,,,black_sea
+9022,0,Kekova Oludeniz,,Turkey,,,0.0,0.0,1.0,750.0,amphorae,,,eastern_med
+9023,0,Cap de Volt,,Spain,Western Mediterranean,French border,0.0,0.0,-10.0,5.0,amphorae,"Barcino/ Baetulo, Spain",,western_med
+9024,0,Chretienne H,,France,Western Mediterranean,Var,0.0,0.0,15.0,20.0,amphorae,"Llobregat and Maresme, Spain",,western_med
+9025,0,Bozburun tile wreck,,Turkey,,Bozburun,36.67267,28.1607,-30.0,400.0,"amphorae; Roof tiles, both cover and pan: over 10 of red fabric with white inclusions have been exposed possibly by an octupus (!). The cover tiles are about 1m long and 0.2-0.3m  wide, and slightly rounded to form a convex shape that is more acute at their edges than at the centre, stacked one upon the other and lying on their sides.",,,eastern_med
+9026,0,Çamalti Burnu 2,,Turkey,,Marmara islands,40.64299,27.52349,1000.0,1100.0,,,,eastern_med
+9027,0,Sette Fratelli,,Italy,,"Giardini Naxos, Sicily",0.0,0.0,-400.0,-300.0,amphorae,,,western_med
+9028,0,Les Catalans 2,,France,Western Mediterranean,Bouches-du-Rhône,43.28306,5.34321,50.0,200.0,"marble; columns; marble:The remains of 2 white marble statues.  One of the statues (46cm high) ressembles an Apollo although there is no head, datable to mid C1st AD, whilst the other is simply part of a female foot with a sandal. A great number of unfinished architectural pieces - columns, architraves, capitals, slabs - may or may not be from the same wreck.; The small bronze statue represents Apollo as well and is 12cm high, found 138m away from the marble statues. It is of mediocre quality and is datable to the Roman Imperial period.",,,western_med
+9029,0,Golfo di Porto Azzurro,,Italy,,"Elba, Tuscany",42.7621,10.39753,1.0,400.0,,,,western_med
+9030,0,Aci Trezza 1,,Italy,,Sicily,37.55855,15.16199,1.0,400.0,amphorae,,,western_med
+9031,0,Aci Trezza 2,,Italy,,Sicily,37.55917,15.1656,1.0,400.0,"A cargo of millstones, of which 20 have been recovered and are now exhibited at Naxos Antiquarium.",,,western_med
+9032,0,Isola Rossa 2,,Italy,,"Golfo dell'Asinara, N Sardinia",41.01725,8.84579,-30.0,200.0,amphorae,Baetica,Rome,western_med
+9033,0,Isola Rossa 3,,Italy,,"Golfo dell'Asinara, N Sardinia",41.01725,8.84579,200.0,400.0,amphorae; A concretion probably of metal,Lusitania,Rome,western_med
+9034,0,Pisa Hellenistic ship,,Italy,,Tuscany,43.72388,10.38813,-200.0,-175.0,amphorae,Southern Spain via Marseilles,Pisa,western_med
+9035,0,Comacchio,,Italy,,,0.0,0.0,-100.0,-1.0,,,,western_med
+9036,0,Cape Zevgari,,Cyprus,,"Episkopi Bay, southern Cyprus",0.0,0.0,500.0,700.0,amphorae,,,eastern_med
+9037,0,Avidmou Bay,,Cyprus,,"Episkopi Bay, S Cyprus",0.0,0.0,450.0,500.0,amphorae; Millstones,Southern Levant or Cyprus,Southern Levant or Cyprus,eastern_med
+9038,0,Skerki Bank Keith Reef 2,,International waters,,"Between Sicily, Sardinia and Tunisia",0.0,0.0,150.0,175.0,,,,western_med
+9039,0,Skerki Bank Keith Reef 3,,International waters,,"Between Sicily, Sardinia and Tunisia",0.0,0.0,400.0,450.0,"amphorae; Seven mortaria, a rare find in late Roman wrecks, cf Ustica wreck",,,western_med
+9040,0,Skerki Bank Keith Reef 4,,International waters,,"Between Sicily, Sardinia and Tunisia",0.0,0.0,-400.0,400.0,"Pieces of raw glass, yellow, green and blue in colour, and weighing between 24 and 126gm. Analysis suggests that are ancient since they consist of sodium silicate which is typical of Roman glass.",,,western_med
+9041,0,Skerki Bank Keith Reef 5,,International waters,,"Between Sicily, Sardinia and Tunisia",0.0,0.0,-200.0,400.0,"At least 5 lead ingots, weighing between 20 and 25kg, some of which bear stamps.",,,western_med
+9042,0,Vasiliko Bay Byzantine wrecks,,Greece,Aegean,"Peristera Island, N Sporades",39.16879,23.98521,900.0,1100.0,amphorae,,,eastern_med
+9043,0,Cape Glavat/Mljet B,704,Croatia,Adriatic,NW side of Mljet island,42.8,17.38333,75.0,100.0,"amphorae; Southern Italian pottery, 'orlo bifido' dishes with the plates/ lids (more than 500) and 15 Pompeian red plates. Great quantities of rough glass clumps.",central western Italy,Aegean,adriatic
+9044,0,Saintes-Maries-de-la-mer 9,,France,Western Mediterranean,Bouches-du-Rhône,43.44328,4.451,-150.0,400.0,"Hundreds of iron ingots of differing sizes in 4 rows and at least 2 layers in concreted masses, some stamped. A piece of ceramic?",,,western_med
+9045,0,Saintes-Maries-de-la-mer 11,,France,Western Mediterranean,Bouches-du-Rhône,43.42621,4.38268,-150.0,400.0,Iron ingots amalgamated with fragments of amphorae.,,,western_med
+9046,0,Saintes-Maries-de-la-mer 13,,France,Western Mediterranean,Bouches-du-Rhône,43.42883,4.382,,,Iron ingots,,,western_med
+9047,0,Saintes-Maries-de-la-mer 23,,France,Western Mediterranean,Bouches-du-Rhône,43.42895,4.40895,-100.0,100.0,"Iron ingots in mass concretions, 3m x 2m",,,western_med
+9048,0,Saintes-Maries-de-la-Mer 25,,France,Western Mediterranean,Bouches-du-Rhône,43.44082,4.45289,-50.0,50.0,amphorae; About 50 tons of iron bars and ingots in concretion.,,,western_med
+9049,0,La Plage d'Argent 2,,France,Western Mediterranean,Var,43.00707,6.19028,-125.0,-50.0,amphorae,,,western_med
+9050,0,Camarina bronzes,,Italy,,Sicily,36.84438,14.45011,1.0,200.0,"amphorae; Bronze objects including oil lamps, bronzes similar to those found in the noble houses of Pompeii and Herculaneum, decorative pots, braziers, chandeliers and parts of statuettes of Mercury.",,,western_med
+9051,0,Mezzaluna,,Italy,,Sardinia,38.9556,8.60916,1000.0,1500.0,amphorae,,,western_med
+9052,0,East Porto Pino,,Italy,,Sardinia,38.9607,8.60469,1000.0,1500.0,amphorae,Islamic Maghreb?,,western_med
+9053,0,Porto Pino,,Italy,,Sardinia,38.96106,8.59916,100.0,200.0,amphorae,,,western_med
+9054,0,Punta Tonnara,,Italy,,Sardinia,38.95499,8.58813,1000.0,1500.0,,Islamic Mahgreb?,,western_med
+9055,0,Guardia de su Turcu,,Italy,,Sardinia,38.9919,8.56246,1000.0,1500.0,amphorae,Islamic Mahgreb?,,western_med
+9056,0,Cala del Falco 2,,Italy,,Sardinia,40.65536,8.18344,25.0,50.0,amphorae,,,western_med
+9057,0,L'Asinara 1,,Italy,,Sardinia,41.03112,8.73516,50.0,200.0,amphorae,Baetica,,western_med
+9058,0,Olbia Late Roman 2,,Italy,,Sardinia,40.91148,9.50738,400.0,500.0,,,,western_med
+9059,0,Olbia medieval,,Italy,,Sardinia,40.91148,9.50738,1000.0,1500.0,,,,western_med
+9060,0,Isola della Gallinara (Savona),,Italy,,Liguria,44.02648,8.22996,-100.0,-1.0,amphorae,Campania,,western_med
+9061,0,San Vito Lo Capo,,Italy,,Sicily,38.18825,12.74551,1100.0,1200.0,amphorae,,,western_med
+9063,0,Capo Colonna and Capo Alfieri,,Italy,,Calabria,38.95399,17.17163,300.0,500.0,amphorae,,,western_med

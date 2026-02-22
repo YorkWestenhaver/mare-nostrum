@@ -1,0 +1,212 @@
+{
+  "changepoints_lead": [
+    -335.5,
+    -10.5,
+    174.5,
+    674.5,
+    765.5
+  ],
+  "segments_lead": [
+    {
+      "start_idx": 0,
+      "end_idx": 265,
+      "start_year": -599.5,
+      "end_year": -335.5,
+      "mean_emissions": 0.3769178469511404,
+      "std_emissions": 0.12061877746109033
+    },
+    {
+      "start_idx": 265,
+      "end_idx": 590,
+      "start_year": -334.5,
+      "end_year": -10.5,
+      "mean_emissions": 0.6825137320796687,
+      "std_emissions": 0.23778859568041325
+    },
+    {
+      "start_idx": 590,
+      "end_idx": 775,
+      "start_year": -9.5,
+      "end_year": 174.5,
+      "mean_emissions": 0.9089311638754493,
+      "std_emissions": 0.21436187752869165
+    },
+    {
+      "start_idx": 775,
+      "end_idx": 1275,
+      "start_year": 175.5,
+      "end_year": 674.5,
+      "mean_emissions": 0.3296167690297471,
+      "std_emissions": 0.09395365680945304
+    },
+    {
+      "start_idx": 1275,
+      "end_idx": 1365,
+      "start_year": 675.5,
+      "end_year": 765.5,
+      "mean_emissions": 0.6583555689996852,
+      "std_emissions": 0.17314753229964927
+    },
+    {
+      "start_idx": 1365,
+      "end_idx": 1399,
+      "start_year": 766.5,
+      "end_year": 799.5,
+      "mean_emissions": 1.7658019038259578,
+      "std_emissions": 0.3320087979187081
+    }
+  ],
+  "changepoints_ship_all": [
+    -375.0,
+    125.0,
+    375.0
+  ],
+  "segments_ship_all": [
+    {
+      "start_idx": 0,
+      "end_idx": 5,
+      "start_year": -575.0,
+      "end_year": -375.0,
+      "mean_count": 21.099247582047983
+    },
+    {
+      "start_idx": 5,
+      "end_idx": 15,
+      "start_year": -325.0,
+      "end_year": 125.0,
+      "mean_count": 103.15305404991686
+    },
+    {
+      "start_idx": 15,
+      "end_idx": 20,
+      "start_year": 175.0,
+      "end_year": 375.0,
+      "mean_count": 65.421821869372
+    },
+    {
+      "start_idx": 20,
+      "end_idx": 32,
+      "start_year": 425.0,
+      "end_year": 975.0,
+      "mean_count": 12.91315059259994
+    }
+  ],
+  "changepoints_ship_west": [
+    -375.0,
+    125.0,
+    375.0
+  ],
+  "segments_ship_west": [
+    {
+      "start_idx": 0,
+      "end_idx": 5,
+      "start_year": -575.0,
+      "end_year": -375.0,
+      "mean_count": 11.584444444444445
+    },
+    {
+      "start_idx": 5,
+      "end_idx": 15,
+      "start_year": -325.0,
+      "end_year": 125.0,
+      "mean_count": 75.79807265324848
+    },
+    {
+      "start_idx": 15,
+      "end_idx": 20,
+      "start_year": 175.0,
+      "end_year": 375.0,
+      "mean_count": 46.18939278143601
+    },
+    {
+      "start_idx": 20,
+      "end_idx": 32,
+      "start_year": 425.0,
+      "end_year": 975.0,
+      "mean_count": 4.446902493759848
+    }
+  ],
+  "changepoints_ship_east": [
+    -375.0,
+    125.0,
+    625.0
+  ],
+  "segments_ship_east": [
+    {
+      "start_idx": 0,
+      "end_idx": 5,
+      "start_year": -575.0,
+      "end_year": -375.0,
+      "mean_count": 6.666682897122567
+    },
+    {
+      "start_idx": 5,
+      "end_idx": 15,
+      "start_year": -325.0,
+      "end_year": 125.0,
+      "mean_count": 12.430785315682371
+    },
+    {
+      "start_idx": 15,
+      "end_idx": 25,
+      "start_year": 175.0,
+      "end_year": 625.0,
+      "mean_count": 8.690266367234814
+    },
+    {
+      "start_idx": 25,
+      "end_idx": 32,
+      "start_year": 675.0,
+      "end_year": 975.0,
+      "mean_count": 3.136893146162038
+    }
+  ],
+  "denarius_steepest_decline": [
+    {
+      "start_year": 253,
+      "end_year": 260,
+      "start_silver": 40.0,
+      "end_silver": 20.0,
+      "slope_pct_per_year": -2.857142857142857,
+      "total_drop_pct": -20.0
+    },
+    {
+      "start_year": 260,
+      "end_year": 268,
+      "start_silver": 20.0,
+      "end_silver": 2.5,
+      "slope_pct_per_year": -2.1875,
+      "total_drop_pct": -17.5
+    },
+    {
+      "start_year": 180,
+      "end_year": 193,
+      "start_silver": 75.0,
+      "end_silver": 60.0,
+      "slope_pct_per_year": -1.1538461538461537,
+      "total_drop_pct": -15.0
+    },
+    {
+      "start_year": 215,
+      "end_year": 222,
+      "start_silver": 51.5,
+      "end_silver": 47.0,
+      "slope_pct_per_year": -0.6428571428571429,
+      "total_drop_pct": -4.5
+    },
+    {
+      "start_year": 193,
+      "end_year": 200,
+      "start_silver": 60.0,
+      "end_silver": 56.0,
+      "slope_pct_per_year": -0.5714285714285714,
+      "total_drop_pct": -4.0
+    }
+  ],
+  "cross_correlation": {
+    "pearson_r": 0.20127760969086608,
+    "pearson_p": 0.2951005107713506,
+    "spearman_r": 0.14729064039408865,
+    "spearman_p": 0.44578116117811584
+  }
+}
