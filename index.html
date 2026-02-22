@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Fall of Mediterranean Trade — A Data-Driven Story</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
 <style>
   :root {
     --bg: #0c0f13;
@@ -508,6 +510,411 @@
     border-top: 2px solid var(--accent);
     opacity: 0.7;
   }
+
+  /* ── GEOCRON MAP ── */
+  #geocron {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto 2rem;
+  }
+
+  #geocron-header {
+    text-align: center;
+    padding: 3rem 2rem 1.5rem;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  #geocron-header .section-label { margin-bottom: 0.5rem; }
+
+  #geocron-header h2 { margin-bottom: 0.5rem; }
+  #geocron-header p { color: var(--text-muted); font-size: 0.95rem; }
+
+  #geocron-wrap {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 500px;
+    max-height: 900px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  #geocron-wrap:fullscreen,
+  #geocron-wrap:-webkit-full-screen {
+    max-height: none;
+    height: 100vh;
+    border: none;
+    background: #060810;
+  }
+
+  #geocron-fullscreen-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 12;
+    width: 34px;
+    height: 34px;
+    background: rgba(12,15,19,0.85);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(8px);
+    transition: border-color 0.2s, color 0.2s;
+    padding: 0;
+  }
+  #geocron-fullscreen-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  #geocron-fullscreen-btn svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  #geocron-map {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  #geocron-map.loaded { opacity: 1; }
+
+  .maplibregl-popup-content {
+    background: var(--bg-card) !important;
+    color: var(--text) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    padding: 12px 16px !important;
+    font-family: var(--font-sans) !important;
+    font-size: 13px !important;
+    max-width: 320px !important;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+  }
+
+  .maplibregl-popup-content .popup-title {
+    font-weight: 700;
+    color: var(--accent-light);
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .maplibregl-popup-content .popup-detail {
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  .maplibregl-popup-tip { border-top-color: var(--bg-card) !important; }
+  .maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--bg-card) !important; }
+  .maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--bg-card) !important; }
+
+  #geocron-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: linear-gradient(transparent, rgba(12,15,19,0.92) 30%);
+    padding: 3rem 2rem 1.5rem;
+  }
+
+  #geocron-year-display {
+    text-align: center;
+    font-family: var(--font);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: var(--text-heading);
+    margin-bottom: 0.25rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  #geocron-year-display .era-label {
+    font-size: 0.55em;
+    color: var(--accent);
+    margin-left: 0.25em;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  #geocron-context {
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+    min-height: 1.2em;
+  }
+
+  #geocron-slider-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  #geocron-play {
+    background: none;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s, color 0.2s;
+    font-size: 16px;
+  }
+  #geocron-play:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  #geocron-slider {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--border);
+    outline: none;
+    cursor: pointer;
+  }
+  #geocron-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+    cursor: grab;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+  #geocron-slider::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+    cursor: grab;
+  }
+
+  #geocron-event-ticks {
+    position: relative;
+    max-width: 900px;
+    margin: 0.25rem auto 0;
+    height: 52px;
+    overflow: hidden;
+  }
+
+  .event-tick {
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 6px;
+    background: var(--accent);
+    opacity: 0.4;
+  }
+  .event-tick-label {
+    position: absolute;
+    font-family: var(--font-sans);
+    font-size: 8px;
+    color: var(--text-muted);
+    white-space: nowrap;
+    transform-origin: left center;
+    transform: rotate(-38deg);
+    letter-spacing: 0.01em;
+  }
+  .event-tick-label.row-0 { top: 8px; }
+  .event-tick-label.row-1 { top: 28px; }
+
+  #geocron-layer-toggles {
+    position: absolute;
+    top: 54px;
+    right: 12px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .layer-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    background: rgba(12,15,19,0.85);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--text-muted);
+    cursor: pointer;
+    user-select: none;
+    backdrop-filter: blur(8px);
+    transition: border-color 0.2s;
+  }
+  .layer-toggle:hover { border-color: var(--accent); }
+
+  .layer-toggle .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .layer-toggle input { display: none; }
+  .layer-toggle.off { opacity: 0.45; }
+
+  #geocron-hover-tooltip {
+    position: absolute;
+    z-index: 20;
+    pointer-events: none;
+    background: rgba(12,15,19,0.92);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px 11px;
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--text);
+    line-height: 1.5;
+    max-width: 280px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    backdrop-filter: blur(8px);
+    display: none;
+  }
+  #geocron-hover-tooltip .ht-empire {
+    color: #b39ddb;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  #geocron-hover-tooltip .ht-detail {
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid rgba(42,48,60,0.6);
+    color: var(--text-muted);
+    font-size: 11px;
+  }
+  #geocron-hover-tooltip .ht-detail b {
+    color: var(--text);
+  }
+
+  #geocron-legend {
+    position: absolute;
+    bottom: 180px;
+    right: 12px;
+    z-index: 10;
+    background: rgba(12,15,19,0.85);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    backdrop-filter: blur(8px);
+    font-family: var(--font-sans);
+    font-size: 10px;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+
+  #geocron-legend .legend-title {
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .legend-swatch {
+    flex-shrink: 0;
+  }
+
+  .legend-line {
+    width: 18px;
+    height: 2px;
+    border-radius: 1px;
+  }
+
+  .legend-line.dashed {
+    background: repeating-linear-gradient(90deg, currentColor 0, currentColor 4px, transparent 4px, transparent 7px);
+    height: 2px;
+  }
+
+  .legend-anchor {
+    font-size: 13px;
+    line-height: 1;
+  }
+
+  #geocron-sidebar {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 10;
+    width: 220px;
+    background: rgba(12,15,19,0.88);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    backdrop-filter: blur(10px);
+    font-family: var(--font-sans);
+  }
+
+  #geocron-sidebar h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .sidebar-stat {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--text-muted);
+    padding: 3px 0;
+    border-bottom: 1px solid rgba(42,48,60,0.5);
+  }
+  .sidebar-stat .val {
+    color: var(--text-heading);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  #sparkline-canvas {
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    border-radius: 4px;
+  }
+
+  @media (max-width: 768px) {
+    #geocron-wrap { height: 70vh; min-height: 400px; }
+    #geocron-sidebar { display: none; }
+    #geocron-legend { display: none; }
+    #geocron-layer-toggles { top: 50px; right: 8px; }
+    .layer-toggle { padding: 4px 8px; font-size: 10px; }
+    #geocron-controls { padding: 2rem 1rem 1rem; }
+    #geocron-event-ticks { display: none; }
+  }
 </style>
 </head>
 <body>
@@ -515,6 +922,7 @@
 <!-- NAV -->
 <nav>
   <span class="logo">Mediterranean Decline</span>
+  <a href="#geocron" style="color:var(--accent)">Map</a>
   <a href="#lead">Lead</a>
   <a href="#shipwrecks">Shipwrecks</a>
   <a href="#currency">Currency</a>
@@ -532,6 +940,68 @@
     Fourteen independent datasets &mdash; ice cores, shipwrecks, coinage, wheat prices, tree rings, volcanic records, pollen cores, and more &mdash; tell the story of rise, collapse, and recovery across 2,000 years. Starting from the data alone, with no historical thesis to prove.
   </p>
   <div class="scroll-hint">Scroll to explore the data</div>
+</div>
+
+<!-- GEOCRON MAP -->
+<div id="geocron">
+  <div id="geocron-header">
+    <div class="section-label">GeoCron</div>
+    <h2>The Mediterranean World Through Time</h2>
+    <p>Empires, trade routes, and shipwrecks from 1200 BCE to 800 CE. Drag the timeline to explore.</p>
+  </div>
+  <div id="geocron-wrap">
+    <div id="geocron-map"></div>
+    <div id="geocron-hover-tooltip"></div>
+
+    <button id="geocron-fullscreen-btn" title="Toggle fullscreen">
+      <svg viewBox="0 0 20 20" id="fs-icon-expand">
+        <polyline points="6 1 1 1 1 6"/><polyline points="14 1 19 1 19 6"/>
+        <polyline points="6 19 1 19 1 14"/><polyline points="14 19 19 19 19 14"/>
+      </svg>
+      <svg viewBox="0 0 20 20" id="fs-icon-collapse" style="display:none">
+        <polyline points="1 6 6 6 6 1"/><polyline points="19 6 14 6 14 1"/>
+        <polyline points="1 14 6 14 6 19"/><polyline points="19 14 14 14 14 19"/>
+      </svg>
+    </button>
+
+    <div id="geocron-loading" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:5;pointer-events:none;font-family:var(--font-sans);font-size:0.85rem;color:var(--text-muted);letter-spacing:0.05em">Loading map data&hellip;</div>
+
+    <div id="geocron-sidebar">
+      <h4>Dashboard</h4>
+      <div class="sidebar-stat"><span>Visible wrecks</span><span class="val" id="stat-wrecks">0</span></div>
+      <div class="sidebar-stat"><span>Empires</span><span class="val" id="stat-empires">0</span></div>
+      <div class="sidebar-stat"><span>Trade routes</span><span class="val" id="stat-routes">0</span></div>
+      <div class="sidebar-stat" style="border:none"><span>Lead emissions</span><span class="val" id="stat-lead">—</span></div>
+      <canvas id="sparkline-canvas"></canvas>
+    </div>
+
+    <div id="geocron-layer-toggles">
+      <label class="layer-toggle" data-layer="borders"><input type="checkbox" checked><span class="dot" style="background:var(--purple)"></span>Empires</label>
+      <label class="layer-toggle" data-layer="routes"><input type="checkbox" checked><span class="dot" style="background:var(--accent)"></span>Routes</label>
+      <label class="layer-toggle" data-layer="wrecks"><input type="checkbox" checked><span class="dot" style="background:var(--red)"></span>Shipwrecks</label>
+      <label class="layer-toggle" data-layer="arcs"><input type="checkbox" checked><span class="dot" style="background:var(--teal)"></span>Trade arcs</label>
+    </div>
+
+    <div id="geocron-legend">
+      <div class="legend-title">Legend</div>
+      <div class="legend-item"><span class="legend-swatch"><span class="legend-line" style="background:#c9944a;width:18px;height:2.5px;display:inline-block;border-radius:1px"></span></span> Road</div>
+      <div class="legend-item"><span class="legend-swatch"><span class="legend-line dashed" style="color:#5b8dd9;width:18px;height:2px;display:inline-block"></span></span> Sea route</div>
+      <div class="legend-item"><span class="legend-swatch"><span class="legend-line dashed" style="color:#4fc3f7;width:18px;height:2px;display:inline-block"></span></span> River</div>
+      <div class="legend-item"><span class="legend-anchor" style="color:#d94f4f">&#9875;</span> Wreck (West)</div>
+      <div class="legend-item"><span class="legend-anchor" style="color:#5b8dd9">&#9875;</span> Wreck (East)</div>
+      <div class="legend-item"><span class="legend-swatch" style="width:12px;height:12px;background:rgba(155,109,215,0.25);border:1px solid rgba(155,109,215,0.5);border-radius:2px;display:inline-block"></span> Empire</div>
+    </div>
+
+    <div id="geocron-controls">
+      <div id="geocron-year-display">200 <span class="era-label">BCE</span></div>
+      <div id="geocron-context"></div>
+      <div id="geocron-slider-row">
+        <button id="geocron-play" title="Play / Pause">&#9654;</button>
+        <input type="range" id="geocron-slider" min="-1200" max="800" value="-200" step="1">
+      </div>
+      <div id="geocron-event-ticks"></div>
+    </div>
+  </div>
 </div>
 
 <!-- THE QUESTION -->
@@ -1037,8 +1507,769 @@
 <!-- FOOTER -->
 <footer>
   <p>Data: McConnell et al. 2018 (PNAS) &middot; Oxford Roman Economy Project &middot; Butcher &amp; Ponting 2015 &middot; Walker 1976 &middot; B&uuml;ntgen et al. 2011 &middot; eVolv2k v3 &middot; Rathbone &amp; Temin &middot; Scheidel 2006 &middot; CHRE (Oxford) &middot; Fyfe et al. 2015 &middot; Rijpma (cathedrals) &middot; Portable Antiquities Scheme &middot; Vrij 2016 &middot; Antiquity 2023</p>
-  <p style="margin-top: 0.5rem;">Analysis: blind change-point detection with <a href="https://centre-borelli.github.io/ruptures-docs/" target="_blank">ruptures</a> &middot; Visualization: <a href="https://plotly.com/javascript/" target="_blank">Plotly.js</a></p>
+  <p style="margin-top: 0.5rem;">Analysis: blind change-point detection with <a href="https://centre-borelli.github.io/ruptures-docs/" target="_blank">ruptures</a> &middot; Visualization: <a href="https://plotly.com/javascript/" target="_blank">Plotly.js</a> &middot; Map: <a href="https://maplibre.org/" target="_blank">MapLibre GL JS</a></p>
+  <p style="margin-top: 0.5rem;">GeoCron data: <a href="https://zenodo.org/records/13363121" target="_blank">Cliopatria</a> (CC BY 4.0) &middot; <a href="https://orbis.stanford.edu/" target="_blank">ORBIS v2, Stanford</a> (CC BY 3.0)</p>
 </footer>
+
+<script>
+// ============================================================
+// GEOCRON MAP VISUALIZATION
+// ============================================================
+(function() {
+  'use strict';
+
+  const GC_TIME_MIN = -1200, GC_TIME_MAX = 800;
+  let gcMap, gcYear = -200, gcPlaying = false, gcAnimId = null;
+  let gcBorders = null, gcRoutes = null, gcWrecks = null, gcArcs = null, gcLeadData = null, gcRouteNodes = null;
+  let gcLayerVisibility = { borders: true, routes: true, wrecks: true, arcs: true };
+
+  const HISTORICAL_EVENTS = [
+    { year: -1177, label: 'Bronze Age Collapse' },
+    { year: -753, label: 'Rome Founded' },
+    { year: -509, label: 'Roman Republic' },
+    { year: -334, label: "Alexander's Conquest" },
+    { year: -264, label: 'First Punic War' },
+    { year: -146, label: 'Carthage Destroyed' },
+    { year: -44, label: 'Caesar Assassinated' },
+    { year: -27, label: 'Roman Empire' },
+    { year: 14, label: 'Death of Augustus' },
+    { year: 79, label: 'Vesuvius' },
+    { year: 117, label: 'Peak Extent' },
+    { year: 165, label: 'Antonine Plague' },
+    { year: 235, label: 'Crisis of 3rd C.' },
+    { year: 284, label: 'Diocletian' },
+    { year: 330, label: 'Constantinople' },
+    { year: 395, label: 'Empire Split' },
+    { year: 410, label: 'Sack of Rome' },
+    { year: 476, label: 'Fall of West' },
+    { year: 541, label: 'Justinianic Plague' },
+    { year: 632, label: 'Islamic Expansion' },
+    { year: 750, label: 'Abbasid Caliphate' },
+  ];
+
+  function yearLabel(y) {
+    if (y < 0) return Math.abs(y) + ' BCE';
+    if (y === 0) return '1 BCE';
+    return y + ' CE';
+  }
+
+  function getContextForYear(y) {
+    let best = null, bestDist = Infinity;
+    for (const ev of HISTORICAL_EVENTS) {
+      const d = Math.abs(ev.year - y);
+      if (d < bestDist) { bestDist = d; best = ev; }
+    }
+    if (best && bestDist <= 30) return best.label + ' (' + yearLabel(best.year) + ')';
+    return '';
+  }
+
+  function formatYearDisplay(y) {
+    const abs = Math.abs(y);
+    const era = y < 0 ? 'BCE' : 'CE';
+    return abs + ' <span class="era-label">' + era + '</span>';
+  }
+
+  async function loadJSON(url) {
+    const resp = await fetch(url);
+    return resp.json();
+  }
+
+  function drawSparkline(canvas, data, currentYear) {
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width = canvas.offsetWidth * 2;
+    const H = canvas.height = canvas.offsetHeight * 2;
+    ctx.clearRect(0, 0, W, H);
+
+    if (!data || data.length === 0) return;
+
+    const maxV = Math.max(...data.map(d => d.v));
+    const minY = data[0].y, maxY = data[data.length - 1].y;
+    const rangeY = maxY - minY || 1;
+
+    ctx.beginPath();
+    ctx.strokeStyle = 'rgba(201,148,74,0.6)';
+    ctx.lineWidth = 1.5;
+    for (let i = 0; i < data.length; i++) {
+      const x = ((data[i].y - minY) / rangeY) * W;
+      const yy = H - (data[i].v / maxV) * H * 0.85 - H * 0.05;
+      if (i === 0) ctx.moveTo(x, yy); else ctx.lineTo(x, yy);
+    }
+    ctx.stroke();
+
+    const cx = ((currentYear - minY) / rangeY) * W;
+    ctx.beginPath();
+    ctx.strokeStyle = 'rgba(240,240,242,0.5)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([3, 3]);
+    ctx.moveTo(cx, 0);
+    ctx.lineTo(cx, H);
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  function updateStats() {
+    if (!gcWrecks || !gcBorders) return;
+    let visibleWrecks = 0, visibleEmpires = 0;
+    for (const f of gcWrecks.features) {
+      if (f.properties.from <= gcYear && f.properties.to >= gcYear) visibleWrecks++;
+    }
+    for (const f of gcBorders.features) {
+      if (f.properties.from <= gcYear && f.properties.to >= gcYear) visibleEmpires++;
+    }
+    let visibleRoutes = 0;
+    if (gcRoutes) {
+      for (const f of gcRoutes.features) {
+        if (f.properties.from <= gcYear && f.properties.to >= gcYear) visibleRoutes++;
+      }
+    }
+    document.getElementById('stat-wrecks').textContent = visibleWrecks;
+    document.getElementById('stat-empires').textContent = visibleEmpires;
+    document.getElementById('stat-routes').textContent = visibleRoutes;
+
+    if (gcLeadData) {
+      let closest = gcLeadData[0];
+      let minDist = Infinity;
+      for (const d of gcLeadData) {
+        const dist = Math.abs(d.y - gcYear);
+        if (dist < minDist) { minDist = dist; closest = d; }
+      }
+      document.getElementById('stat-lead').textContent = closest.v.toFixed(2) + ' kt/a';
+      drawSparkline(document.getElementById('sparkline-canvas'), gcLeadData, gcYear);
+    }
+  }
+
+  const TIME_FILTER = (y) => ['all', ['<=', 'from', y], ['>=', 'to', y]];
+
+  function updateMap() {
+    if (!gcMap || !gcMap.isStyleLoaded()) return;
+
+    const y = gcYear;
+    const tf = TIME_FILTER(y);
+
+    if (gcMap.getSource('borders')) {
+      gcMap.setFilter('borders-fill', tf);
+      gcMap.setFilter('borders-line', tf);
+    }
+
+    if (gcMap.getSource('routes')) {
+      gcMap.setFilter('routes-roads', ['all', ['<=', 'from', y], ['>=', 'to', y], ['==', 'type', 'road']]);
+      gcMap.setFilter('routes-roads-glow', ['all', ['<=', 'from', y], ['>=', 'to', y], ['==', 'type', 'road']]);
+
+      const seaTypes = ['coastal', 'open sea', 'overseas', 'slowcoast', 'slowover', 'ferry'];
+      const seaFilter = ['all', ['<=', 'from', y], ['>=', 'to', y], ['in', 'type', ...seaTypes]];
+      gcMap.setFilter('routes-sea', seaFilter);
+      gcMap.setFilter('routes-sea-glow', seaFilter);
+
+      const riverTypes = ['river', 'upstream', 'downstream', 'fastup', 'fastdown'];
+      const riverFilter = ['all', ['<=', 'from', y], ['>=', 'to', y], ['in', 'type', ...riverTypes]];
+      gcMap.setFilter('routes-river', riverFilter);
+      gcMap.setFilter('routes-river-glow', riverFilter);
+    }
+
+    if (gcMap.getSource('route-nodes')) {
+      gcMap.setFilter('route-nodes-circles', tf);
+      gcMap.setFilter('route-nodes-labels', tf);
+    }
+
+    if (gcMap.getSource('wrecks')) {
+      gcMap.setFilter('wrecks-circles', tf);
+    }
+
+    if (gcMap.getSource('arcs')) {
+      gcMap.setFilter('arcs-lines', tf);
+    }
+
+    document.getElementById('geocron-year-display').innerHTML = formatYearDisplay(y);
+    document.getElementById('geocron-context').textContent = getContextForYear(y);
+
+    updateStats();
+  }
+
+  function buildEventTicks() {
+    const container = document.getElementById('geocron-event-ticks');
+    if (!container) return;
+    container.innerHTML = '';
+    const range = GC_TIME_MAX - GC_TIME_MIN;
+
+    // Sort events by year and assign alternating rows
+    const sorted = [...HISTORICAL_EVENTS].sort((a, b) => a.year - b.year);
+    let row = 0;
+    for (let i = 0; i < sorted.length; i++) {
+      const ev = sorted[i];
+      const pct = ((ev.year - GC_TIME_MIN) / range) * 100;
+
+      const tick = document.createElement('div');
+      tick.className = 'event-tick';
+      tick.style.left = pct + '%';
+      container.appendChild(tick);
+
+      const label = document.createElement('div');
+      label.className = 'event-tick-label row-' + row;
+      label.style.left = pct + '%';
+      label.textContent = ev.label;
+      container.appendChild(label);
+
+      // Alternate rows; if next event is very close, force different row
+      if (i + 1 < sorted.length) {
+        const nextPct = ((sorted[i + 1].year - GC_TIME_MIN) / range) * 100;
+        if (nextPct - pct < 4) { row = row === 0 ? 1 : 0; }
+        else { row = (row + 1) % 2; }
+      }
+    }
+  }
+
+  function setupLayerToggles() {
+    document.querySelectorAll('.layer-toggle').forEach(toggle => {
+      const layerKey = toggle.dataset.layer;
+      const checkbox = toggle.querySelector('input');
+      toggle.addEventListener('click', () => {
+        checkbox.checked = !checkbox.checked;
+        gcLayerVisibility[layerKey] = checkbox.checked;
+        toggle.classList.toggle('off', !checkbox.checked);
+
+        const layerMap = {
+          borders: ['borders-fill', 'borders-line'],
+          routes: ['routes-roads', 'routes-sea', 'routes-river', 'routes-roads-glow', 'routes-sea-glow', 'routes-river-glow', 'route-nodes-circles', 'route-nodes-labels'],
+          wrecks: ['wrecks-circles'],
+          arcs: ['arcs-lines'],
+        };
+        const vis = checkbox.checked ? 'visible' : 'none';
+        for (const lid of (layerMap[layerKey] || [])) {
+          if (gcMap.getLayer(lid)) gcMap.setLayoutProperty(lid, 'visibility', vis);
+        }
+      });
+    });
+  }
+
+  const POLITY_COLORS = [
+    '#9b6dd7', '#7b5ea7', '#6d5baf', '#8e7cc3', '#b39ddb',
+    '#5b8dd9', '#7986cb', '#64b5f6', '#4fc3f7', '#4dd0e1',
+    '#4fad7a', '#66bb6a', '#81c784', '#aed581', '#c5e1a5',
+    '#d94f4f', '#e57373', '#ef5350', '#f06292', '#ce93d8',
+    '#c9944a', '#e6b86e', '#ffb74d', '#ffa726', '#ff8a65',
+  ];
+
+  function polityColor(name) {
+    let hash = 0;
+    for (let i = 0; i < name.length; i++) hash = ((hash << 5) - hash) + name.charCodeAt(i);
+    return POLITY_COLORS[Math.abs(hash) % POLITY_COLORS.length];
+  }
+
+  async function initGeoCron() {
+    const mapContainer = document.getElementById('geocron-map');
+    if (!mapContainer) return;
+
+    gcMap = new maplibregl.Map({
+      container: 'geocron-map',
+      style: {
+        version: 8,
+        name: 'GeoCron Satellite',
+        sources: {
+          'satellite': {
+            type: 'raster',
+            tiles: [
+              'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+            ],
+            tileSize: 256,
+            maxzoom: 18,
+            attribution: '&copy; <a href="https://www.esri.com/">Esri</a>, Maxar, Earthstar, USDA, USGS, AeroGRID, IGN'
+          }
+        },
+        layers: [{
+          id: 'background',
+          type: 'background',
+          paint: { 'background-color': '#060810' }
+        }, {
+          id: 'satellite-tiles',
+          type: 'raster',
+          source: 'satellite',
+          paint: {
+            'raster-opacity': 0.75,
+            'raster-saturation': -0.35,
+            'raster-brightness-min': 0.02,
+            'raster-brightness-max': 0.55,
+            'raster-contrast': 0.15
+          }
+        }]
+      },
+      center: [18, 37],
+      zoom: 3.8,
+      pitch: 20,
+      minZoom: 2,
+      maxZoom: 10,
+      maxBounds: [[-30, 10], [60, 62]],
+    });
+
+    gcMap.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'bottom-right');
+
+    let borders, routes, routeNodes, wrecks, arcs, leadData;
+    try {
+      [borders, routes, routeNodes, wrecks, arcs, leadData] = await Promise.all([
+        loadJSON('data/geo/borders.json'),
+        loadJSON('data/geo/routes.json'),
+        loadJSON('data/geo/route_nodes.json'),
+        loadJSON('data/geo/shipwrecks.json'),
+        loadJSON('data/geo/trade_arcs.json'),
+        loadJSON('data/geo/lead_sparkline.json'),
+      ]);
+    } catch (err) {
+      console.error('GeoCron: Failed to load data', err);
+      const loadingEl = document.getElementById('geocron-loading');
+      if (loadingEl) loadingEl.textContent = 'Failed to load map data.';
+      return;
+    }
+
+    gcBorders = borders;
+    gcRoutes = routes;
+    gcRouteNodes = routeNodes;
+    gcWrecks = wrecks;
+    gcArcs = arcs;
+    gcLeadData = leadData;
+
+    gcMap.on('load', () => {
+      document.getElementById('geocron-map').classList.add('loaded');
+      const loadingEl = document.getElementById('geocron-loading');
+      if (loadingEl) loadingEl.style.display = 'none';
+      // ── Borders layer ──
+      const bordersWithColors = {
+        ...borders,
+        features: borders.features.map(f => ({
+          ...f,
+          properties: { ...f.properties, color: polityColor(f.properties.name) }
+        }))
+      };
+      gcMap.addSource('borders', { type: 'geojson', data: bordersWithColors });
+      gcMap.addLayer({
+        id: 'borders-fill',
+        type: 'fill',
+        source: 'borders',
+        paint: {
+          'fill-color': ['get', 'color'],
+          'fill-opacity': 0.22,
+        },
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear]]
+      });
+      gcMap.addLayer({
+        id: 'borders-line',
+        type: 'line',
+        source: 'borders',
+        paint: {
+          'line-color': ['get', 'color'],
+          'line-width': 1.5,
+          'line-opacity': 0.5,
+        },
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear]]
+      });
+
+      // ── Routes layers ──
+      gcMap.addSource('routes', { type: 'geojson', data: routes });
+
+      // Glow layers (wide, blurred-looking underlay for each route type)
+      gcMap.addLayer({
+        id: 'routes-roads-glow',
+        type: 'line',
+        source: 'routes',
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear], ['==', 'type', 'road']],
+        paint: {
+          'line-color': '#c9944a',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 3, 6, 7, 12, 10, 18],
+          'line-opacity': 0.12,
+          'line-blur': 4,
+        }
+      });
+
+      const seaTypesInit = ['coastal', 'open sea', 'overseas', 'slowcoast', 'slowover', 'ferry'];
+      const riverTypesInit = ['river', 'upstream', 'downstream', 'fastup', 'fastdown'];
+
+      gcMap.addLayer({
+        id: 'routes-sea-glow',
+        type: 'line',
+        source: 'routes',
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear], ['in', 'type', ...seaTypesInit]],
+        paint: {
+          'line-color': '#5b8dd9',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 3, 5, 7, 10, 10, 16],
+          'line-opacity': 0.10,
+          'line-blur': 4,
+        }
+      });
+      gcMap.addLayer({
+        id: 'routes-river-glow',
+        type: 'line',
+        source: 'routes',
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear], ['in', 'type', ...riverTypesInit]],
+        paint: {
+          'line-color': '#4fc3f7',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 3, 4, 7, 8, 10, 12],
+          'line-opacity': 0.08,
+          'line-blur': 3,
+        }
+      });
+
+      // Main route lines
+      gcMap.addLayer({
+        id: 'routes-roads',
+        type: 'line',
+        source: 'routes',
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear], ['==', 'type', 'road']],
+        paint: {
+          'line-color': '#c9944a',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 3, 1.5, 6, 2.5, 9, 4],
+          'line-opacity': 0.8,
+        }
+      });
+      gcMap.addLayer({
+        id: 'routes-sea',
+        type: 'line',
+        source: 'routes',
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear], ['in', 'type', ...seaTypesInit]],
+        paint: {
+          'line-color': '#5b8dd9',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 3, 1.2, 6, 2, 9, 3.5],
+          'line-opacity': 0.7,
+          'line-dasharray': [4, 2],
+        }
+      });
+      gcMap.addLayer({
+        id: 'routes-river',
+        type: 'line',
+        source: 'routes',
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear], ['in', 'type', ...riverTypesInit]],
+        paint: {
+          'line-color': '#4fc3f7',
+          'line-width': ['interpolate', ['linear'], ['zoom'], 3, 1.5, 6, 2.5, 9, 4],
+          'line-opacity': 0.75,
+          'line-dasharray': [3, 1.5],
+        }
+      });
+
+      // ── Route nodes (cities/ports) ──
+      gcMap.addSource('route-nodes', { type: 'geojson', data: routeNodes });
+      gcMap.addLayer({
+        id: 'route-nodes-circles',
+        type: 'circle',
+        source: 'route-nodes',
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear]],
+        paint: {
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 1.5, 6, 3, 9, 5],
+          'circle-color': '#c9944a',
+          'circle-opacity': 0.7,
+          'circle-stroke-width': 1,
+          'circle-stroke-color': 'rgba(12,15,19,0.8)',
+        }
+      });
+      gcMap.addLayer({
+        id: 'route-nodes-labels',
+        type: 'symbol',
+        source: 'route-nodes',
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear]],
+        minzoom: 6,
+        layout: {
+          'text-field': ['get', 'label'],
+          'text-size': ['interpolate', ['linear'], ['zoom'], 6, 9, 9, 12],
+          'text-offset': [0, 1.2],
+          'text-anchor': 'top',
+          'text-max-width': 8,
+          'text-allow-overlap': false,
+        },
+        paint: {
+          'text-color': '#e6b86e',
+          'text-halo-color': 'rgba(12,15,19,0.9)',
+          'text-halo-width': 1.5,
+          'text-opacity': 0.85,
+        }
+      });
+
+      // ── Shipwrecks layer (anchor icons) ──
+      const anchorColors = {
+        'western_med': '#d94f4f',
+        'eastern_med': '#5b8dd9',
+        'adriatic': '#4fb5ad',
+        'black_sea': '#9b6dd7',
+        'default': '#e6b86e',
+      };
+      function createAnchorImage(color, size) {
+        const s = size;
+        const canvas = document.createElement('canvas');
+        canvas.width = s; canvas.height = s;
+        const ctx = canvas.getContext('2d');
+        const cx = s / 2, cy = s / 2;
+        const r = s * 0.38;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.strokeStyle = color;
+        ctx.lineWidth = s * 0.09;
+        // Ring at top
+        ctx.beginPath();
+        ctx.arc(cx, cy - r * 0.55, r * 0.28, 0, Math.PI * 2);
+        ctx.stroke();
+        // Vertical shaft
+        ctx.beginPath();
+        ctx.moveTo(cx, cy - r * 0.27);
+        ctx.lineTo(cx, cy + r * 0.75);
+        ctx.stroke();
+        // Cross bar
+        ctx.beginPath();
+        ctx.moveTo(cx - r * 0.45, cy - r * 0.05);
+        ctx.lineTo(cx + r * 0.45, cy - r * 0.05);
+        ctx.stroke();
+        // Curved flukes at bottom
+        ctx.beginPath();
+        ctx.moveTo(cx - r * 0.55, cy + r * 0.35);
+        ctx.quadraticCurveTo(cx - r * 0.5, cy + r * 0.85, cx, cy + r * 0.75);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(cx + r * 0.55, cy + r * 0.35);
+        ctx.quadraticCurveTo(cx + r * 0.5, cy + r * 0.85, cx, cy + r * 0.75);
+        ctx.stroke();
+        return ctx.getImageData(0, 0, s, s);
+      }
+      const anchorSize = 32;
+      for (const [key, color] of Object.entries(anchorColors)) {
+        gcMap.addImage('anchor-' + key, createAnchorImage(color, anchorSize), { pixelRatio: 2 });
+      }
+
+      gcMap.addSource('wrecks', { type: 'geojson', data: wrecks });
+      gcMap.addLayer({
+        id: 'wrecks-circles',
+        type: 'symbol',
+        source: 'wrecks',
+        layout: {
+          'icon-image': [
+            'match', ['get', 'region'],
+            'western_med', 'anchor-western_med',
+            'eastern_med', 'anchor-eastern_med',
+            'adriatic', 'anchor-adriatic',
+            'black_sea', 'anchor-black_sea',
+            'anchor-default'
+          ],
+          'icon-size': ['interpolate', ['linear'], ['zoom'], 3, 0.5, 6, 0.8, 9, 1.2],
+          'icon-allow-overlap': true,
+          'icon-ignore-placement': true,
+        },
+        paint: {
+          'icon-opacity': 0.85,
+        },
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear]]
+      });
+
+      // ── Trade arcs layer ──
+      gcMap.addSource('arcs', { type: 'geojson', data: arcs });
+      gcMap.addLayer({
+        id: 'arcs-lines',
+        type: 'line',
+        source: 'arcs',
+        paint: {
+          'line-color': '#4fb5ad',
+          'line-width': 1.2,
+          'line-opacity': 0.35,
+        },
+        filter: ['all', ['<=', 'from', gcYear], ['>=', 'to', gcYear]]
+      }, 'wrecks-circles');
+
+      // ── Interactions ──
+      const popup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: '320px' });
+
+      gcMap.on('click', 'wrecks-circles', (e) => {
+        const f = e.features[0];
+        const p = f.properties;
+        let html = '<div class="popup-title">' + (p.name || 'Unknown Wreck') + '</div><div class="popup-detail">';
+        html += '<b>Date:</b> ' + yearLabel(p.from) + ' – ' + yearLabel(p.to) + '<br>';
+        if (p.cargo) html += '<b>Cargo:</b> ' + p.cargo + '<br>';
+        if (p.provenance) html += '<b>From:</b> ' + p.provenance + '<br>';
+        if (p.destination) html += '<b>To:</b> ' + p.destination + '<br>';
+        if (p.region) html += '<b>Region:</b> ' + p.region.replace('_', ' ') + '<br>';
+        if (p.country) html += '<b>Country:</b> ' + p.country;
+        html += '</div>';
+        popup.setLngLat(e.lngLat).setHTML(html).addTo(gcMap);
+      });
+
+      function handleRouteClick(e) {
+        const f = e.features[0];
+        const p = f.properties;
+        let html = '<div class="popup-title">' + p.source + ' → ' + p.target + '</div><div class="popup-detail">';
+        html += '<b>Type:</b> ' + p.type + '<br>';
+        html += '<b>Distance:</b> ' + p.km + ' km<br>';
+        html += '<b>Travel time:</b> ' + p.days + ' days<br>';
+        html += '<b>Cost:</b> ' + p.expense + ' denarii/kg';
+        html += '</div>';
+        popup.setLngLat(e.lngLat).setHTML(html).addTo(gcMap);
+      }
+      gcMap.on('click', 'routes-roads', handleRouteClick);
+      gcMap.on('click', 'routes-sea', handleRouteClick);
+      gcMap.on('click', 'routes-river', handleRouteClick);
+
+      gcMap.on('click', 'route-nodes-circles', (e) => {
+        const f = e.features[0];
+        const p = f.properties;
+        let html = '<div class="popup-title">' + (p.title || p.label) + '</div><div class="popup-detail">';
+        if (p.pleiades) html += '<a href="https://pleiades.stoa.org/places/' + p.pleiades + '" target="_blank" style="color:var(--accent)">Pleiades entry</a>';
+        html += '</div>';
+        popup.setLngLat(e.lngLat).setHTML(html).addTo(gcMap);
+      });
+
+      gcMap.on('click', 'borders-fill', (e) => {
+        const f = e.features[0];
+        const p = f.properties;
+        let html = '<div class="popup-title">' + p.name + '</div><div class="popup-detail">';
+        html += '<b>Period:</b> ' + yearLabel(p.from) + ' – ' + yearLabel(p.to) + '<br>';
+        if (p.area) html += '<b>Area:</b> ~' + Math.round(p.area).toLocaleString() + ' km²<br>';
+        if (p.wiki) html += '<a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(p.wiki) + '" target="_blank" style="color:var(--accent)">Wikipedia</a>';
+        html += '</div>';
+        popup.setLngLat(e.lngLat).setHTML(html).addTo(gcMap);
+      });
+
+      // Cursor changes
+      for (const layerId of ['wrecks-circles', 'routes-roads', 'routes-sea', 'routes-river', 'route-nodes-circles', 'borders-fill']) {
+        gcMap.on('mouseenter', layerId, () => { gcMap.getCanvas().style.cursor = 'pointer'; });
+        gcMap.on('mouseleave', layerId, () => { gcMap.getCanvas().style.cursor = ''; });
+      }
+
+      // ── Hover tooltip ──
+      const hoverTip = document.getElementById('geocron-hover-tooltip');
+      const interactiveLayers = ['borders-fill', 'wrecks-circles', 'routes-roads', 'routes-sea', 'routes-river', 'route-nodes-circles', 'arcs-lines'];
+
+      gcMap.on('mousemove', (e) => {
+        const feats = gcMap.queryRenderedFeatures(e.point, { layers: interactiveLayers });
+        if (!feats || feats.length === 0) {
+          hoverTip.style.display = 'none';
+          return;
+        }
+
+        let empireName = '';
+        let detailLines = [];
+
+        for (const f of feats) {
+          const p = f.properties;
+          const lid = f.layer.id;
+
+          if (lid === 'borders-fill' && !empireName) {
+            empireName = p.name || '';
+          }
+          else if (lid === 'wrecks-circles') {
+            let line = '<b>' + (p.name || 'Shipwreck') + '</b>';
+            if (p.cargo) {
+              const short = p.cargo.length > 60 ? p.cargo.substring(0, 60) + '...' : p.cargo;
+              line += ' — ' + short;
+            }
+            if (p.provenance || p.destination) {
+              line += '<br>' + (p.provenance || '?') + ' → ' + (p.destination || '?');
+            }
+            detailLines.push(line);
+          }
+          else if (lid === 'route-nodes-circles') {
+            detailLines.push('<b>' + (p.title || p.label) + '</b> (city/port)');
+          }
+          else if (lid.startsWith('routes-')) {
+            detailLines.push(p.source + ' → ' + p.target + ' <span style="opacity:0.6">(' + p.type + ', ' + p.km + ' km, ' + p.days + ' days)</span>');
+          }
+          else if (lid === 'arcs-lines') {
+            detailLines.push(p.provenance + ' → ' + p.destination + ' <span style="opacity:0.6">(trade arc)</span>');
+          }
+        }
+
+        if (!empireName && detailLines.length === 0) {
+          hoverTip.style.display = 'none';
+          return;
+        }
+
+        let html = '';
+        if (empireName) html += '<div class="ht-empire">' + empireName + '</div>';
+        if (detailLines.length > 0) {
+          html += '<div class="ht-detail">' + detailLines.slice(0, 3).join('<br>') + '</div>';
+        }
+        hoverTip.innerHTML = html;
+        hoverTip.style.display = 'block';
+
+        const wrap = document.getElementById('geocron-wrap');
+        const rect = wrap.getBoundingClientRect();
+        let tipX = e.point.x + 14;
+        let tipY = e.point.y + 14;
+        // Keep tooltip within bounds
+        const tipW = hoverTip.offsetWidth;
+        const tipH = hoverTip.offsetHeight;
+        if (tipX + tipW > rect.width - 10) tipX = e.point.x - tipW - 10;
+        if (tipY + tipH > rect.height - 10) tipY = e.point.y - tipH - 10;
+        hoverTip.style.left = tipX + 'px';
+        hoverTip.style.top = tipY + 'px';
+      });
+
+      gcMap.on('mouseout', () => {
+        hoverTip.style.display = 'none';
+      });
+
+      updateMap();
+    });
+
+    // ── Slider + play button ──
+    const slider = document.getElementById('geocron-slider');
+    slider.addEventListener('input', () => {
+      gcYear = parseInt(slider.value);
+      updateMap();
+    });
+
+    const playBtn = document.getElementById('geocron-play');
+    playBtn.addEventListener('click', () => {
+      gcPlaying = !gcPlaying;
+      playBtn.innerHTML = gcPlaying ? '&#10074;&#10074;' : '&#9654;';
+      if (gcPlaying) animateTimeline();
+      else cancelAnimationFrame(gcAnimId);
+    });
+
+    let lastTick = 0;
+    function animateTimeline(ts) {
+      if (!gcPlaying) return;
+      if (ts - lastTick > 40) {
+        lastTick = ts;
+        gcYear += 2;
+        if (gcYear > GC_TIME_MAX) { gcYear = GC_TIME_MIN; }
+        slider.value = gcYear;
+        updateMap();
+      }
+      gcAnimId = requestAnimationFrame(animateTimeline);
+    }
+
+    buildEventTicks();
+    setupLayerToggles();
+    updateStats();
+
+    // ── Fullscreen toggle ──
+    const fsBtn = document.getElementById('geocron-fullscreen-btn');
+    const fsWrap = document.getElementById('geocron-wrap');
+    const iconExpand = document.getElementById('fs-icon-expand');
+    const iconCollapse = document.getElementById('fs-icon-collapse');
+
+    function updateFsIcons() {
+      const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+      iconExpand.style.display = isFs ? 'none' : 'block';
+      iconCollapse.style.display = isFs ? 'block' : 'none';
+    }
+
+    fsBtn.addEventListener('click', () => {
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
+        (document.exitFullscreen || document.webkitExitFullscreen).call(document);
+      } else {
+        (fsWrap.requestFullscreen || fsWrap.webkitRequestFullscreen).call(fsWrap);
+      }
+    });
+
+    document.addEventListener('fullscreenchange', () => {
+      updateFsIcons();
+      setTimeout(() => { if (gcMap) gcMap.resize(); }, 100);
+    });
+    document.addEventListener('webkitfullscreenchange', () => {
+      updateFsIcons();
+      setTimeout(() => { if (gcMap) gcMap.resize(); }, 100);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initGeoCron);
+  } else {
+    initGeoCron();
+  }
+})();
+</script>
 
 <script>
 // ============================================================
