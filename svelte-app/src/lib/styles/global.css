@@ -1,0 +1,1081 @@
+/* =============================================================================
+   GLOBAL STYLESHEET — Mediterranean Decline
+   Extracted from index.html <style> block (lines 10–1004)
+   Plain CSS, no preprocessor, no @import needed.
+   ============================================================================= */
+
+
+/* =============================================================================
+   CSS CUSTOM PROPERTIES
+   ============================================================================= */
+
+:root {
+  --bg: #0c0f13;
+  --bg-section: #12161c;
+  --bg-card: #1a1f28;
+  --text: #d4d4d8;
+  --text-muted: #8b8fa3;
+  --text-heading: #f0f0f2;
+  --accent: #c9944a;
+  --accent-light: #e6b86e;
+  --red: #d94f4f;
+  --green: #4fad7a;
+  --blue: #5b8dd9;
+  --purple: #9b6dd7;
+  --teal: #4fb5ad;
+  --border: #2a303c;
+  --font: 'Georgia', 'Times New Roman', serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+
+/* =============================================================================
+   RESET AND BASE STYLES
+   ============================================================================= */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+
+/* =============================================================================
+   TYPOGRAPHY
+   ============================================================================= */
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  color: var(--text-heading);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: var(--text-heading);
+  font-weight: 400;
+  margin: 2rem 0 1rem;
+}
+
+p { margin-bottom: 1.25rem; }
+
+.highlight {
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+
+/* =============================================================================
+   NAVIGATION
+   ============================================================================= */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(12, 15, 19, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: color 0.2s;
+}
+nav a:hover { color: var(--accent-light); }
+
+nav .logo {
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: auto;
+  font-size: 14px;
+}
+
+
+/* =============================================================================
+   HERO SECTION
+   ============================================================================= */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 40%, rgba(201, 148, 74, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  color: var(--text-heading);
+  line-height: 1.15;
+  max-width: 800px;
+  font-weight: 400;
+}
+
+.hero h1 em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.hero .subtitle {
+  margin-top: 1.5rem;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--text-muted);
+  max-width: 620px;
+  line-height: 1.6;
+}
+
+.hero .scroll-hint {
+  margin-top: 3rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+
+/* =============================================================================
+   SECTIONS AND LAYOUT
+   ============================================================================= */
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+section.wide {
+  max-width: 1100px;
+}
+
+.section-label {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.divider {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.divider hr {
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.part-header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 2rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  border-top: 2px solid var(--accent);
+  opacity: 0.7;
+}
+
+
+/* =============================================================================
+   STAT GRID AND STAT CARDS
+   ============================================================================= */
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2.5rem 0;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-card .number {
+  font-size: 2.2rem;
+  color: var(--accent);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-card .label {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+/* =============================================================================
+   PROXY CARDS
+   ============================================================================= */
+
+.proxy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.proxy-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.proxy-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.proxy-card h4 {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-heading);
+  margin-bottom: 0.5rem;
+}
+
+.proxy-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-bottom: 0;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+
+/* =============================================================================
+   SCHOLAR CARDS AND VERDICT BADGES
+   ============================================================================= */
+
+.scholar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.scholar-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem;
+  transition: border-color 0.2s;
+  cursor: default;
+}
+.scholar-card:hover { border-color: var(--accent); }
+
+.scholar-card .name {
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.scholar-card .claim {
+  font-size: 1.05rem;
+  color: var(--text-heading);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.scholar-card .evidence {
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.verdict-badge {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.verdict-badge.supported { background: rgba(79, 173, 122, 0.15); color: var(--green); }
+.verdict-badge.not-supported { background: rgba(217, 79, 79, 0.15); color: var(--red); }
+.verdict-badge.partial { background: rgba(230, 184, 110, 0.15); color: var(--accent-light); }
+
+
+/* =============================================================================
+   CHART CONTAINERS, CAPTIONS, KEY FINDINGS
+   ============================================================================= */
+
+.chart-container {
+  background: var(--bg-section);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 2rem 0;
+}
+
+.chart-caption {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+  line-height: 1.5;
+}
+
+.chart-caption .source-link,
+.source-cite {
+  display: block;
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-family: var(--font-sans);
+}
+.source-cite a,
+.chart-caption .source-link a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(201, 148, 74, 0.3);
+  transition: border-color 0.2s;
+}
+.source-cite a:hover,
+.chart-caption .source-link a:hover {
+  border-color: var(--accent-light);
+}
+
+.key-finding {
+  background: linear-gradient(135deg, rgba(201, 148, 74, 0.1), rgba(201, 148, 74, 0.03));
+  border-left: 3px solid var(--accent);
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 0 8px 8px 0;
+  font-size: 1.05rem;
+}
+
+.key-finding strong {
+  color: var(--accent-light);
+}
+
+/* Plotly overrides */
+.js-plotly-plot .plotly .modebar { top: 4px !important; right: 4px !important; }
+
+
+/* =============================================================================
+   DATA TERMS (TOOLTIPS)
+   ============================================================================= */
+
+.data-term {
+  position: relative;
+  border-bottom: 1px dotted var(--accent);
+  cursor: help;
+  color: inherit;
+}
+.data-term::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #232a36;
+  color: #d4d4d8;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.45;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  white-space: normal;
+  width: max-content;
+  max-width: 280px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 50;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+.data-term::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #232a36;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 51;
+}
+.data-term:hover::after,
+.data-term:hover::before {
+  opacity: 1;
+}
+
+
+/* =============================================================================
+   SOURCE CRITICISM / COLLAPSIBLE DETAILS
+   ============================================================================= */
+
+.source-criticism-detail {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  background: linear-gradient(135deg, rgba(217, 79, 79, 0.06), rgba(217, 79, 79, 0.02));
+  border: 1px solid rgba(217, 79, 79, 0.25);
+  border-left: 3px solid var(--red);
+  border-radius: 0 8px 8px 0;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+.source-criticism-detail summary {
+  cursor: pointer;
+  color: var(--text-heading);
+  font-weight: 600;
+  font-size: 1.05rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.source-criticism-detail summary::-webkit-details-marker { display: none; }
+.source-criticism-detail summary::before {
+  content: '\25B6';
+  font-size: 0.7rem;
+  color: var(--red);
+  transition: transform 0.2s;
+  display: inline-block;
+}
+.source-criticism-detail[open] summary::before {
+  transform: rotate(90deg);
+}
+.source-criticism-detail summary:hover { color: var(--red); }
+.source-criticism-detail > div {
+  margin-top: 1.25rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+.source-criticism-box {
+  margin: 1.25rem 0;
+}
+.source-criticism-box h3 {
+  color: var(--red);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+.source-criticism-box ul {
+  list-style: none;
+  padding: 0;
+}
+.source-criticism-box li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.93rem;
+}
+.source-criticism-box li::before {
+  content: '\26A0';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.85rem;
+}
+
+/* Methodology detail (collapsible) */
+.method-detail {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  background: var(--bg-section);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.method-detail summary {
+  cursor: pointer;
+  color: var(--text-heading);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.method-detail summary:hover { color: var(--accent); }
+
+.method-detail > div {
+  margin-top: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+
+/* =============================================================================
+   CAVEATS
+   ============================================================================= */
+
+.caveat-list {
+  list-style: none;
+  padding: 0;
+}
+.caveat-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+.caveat-list li::before {
+  content: '!';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--accent);
+  background: rgba(201, 148, 74, 0.15);
+  width: 1.1rem;
+  height: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+
+/* =============================================================================
+   EVENT MARKERS / TAGS
+   ============================================================================= */
+
+.event-markers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.event-tag {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  color: var(--text-muted);
+}
+
+.event-tag.plague { border-color: var(--red); color: var(--red); }
+.event-tag.economic { border-color: var(--accent); color: var(--accent); }
+.event-tag.political { border-color: var(--blue); color: var(--blue); }
+.event-tag.military { border-color: var(--purple); color: var(--purple); }
+
+
+/* =============================================================================
+   FOOTER
+   ============================================================================= */
+
+footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border);
+}
+
+footer a { color: var(--accent); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+
+
+/* =============================================================================
+   GEOCRON MAP AND SUB-ELEMENTS
+   ============================================================================= */
+
+#geocron {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto 2rem;
+}
+
+#geocron-header {
+  text-align: center;
+  padding: 3rem 2rem 1.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#geocron-header .section-label { margin-bottom: 0.5rem; }
+
+#geocron-header h2 { margin-bottom: 0.5rem; }
+#geocron-header p { color: var(--text-muted); font-size: 0.95rem; }
+
+#geocron-wrap {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  min-height: 500px;
+  max-height: 900px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+#geocron-wrap:fullscreen,
+#geocron-wrap:-webkit-full-screen {
+  max-height: none;
+  height: 100vh;
+  border: none;
+  background: #060810;
+}
+
+/* Fullscreen button */
+#geocron-fullscreen-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 12;
+  width: 34px;
+  height: 34px;
+  background: rgba(12,15,19,0.85);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.2s, color 0.2s;
+  padding: 0;
+}
+#geocron-fullscreen-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+#geocron-fullscreen-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Map canvas */
+#geocron-map {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+#geocron-map.loaded { opacity: 1; }
+
+/* MapLibre popup overrides */
+.maplibregl-popup-content {
+  background: var(--bg-card) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+  font-family: var(--font-sans) !important;
+  font-size: 13px !important;
+  max-width: 320px !important;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5) !important;
+}
+
+.maplibregl-popup-content .popup-title {
+  font-weight: 700;
+  color: var(--accent-light);
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.maplibregl-popup-content .popup-detail {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.maplibregl-popup-tip { border-top-color: var(--bg-card) !important; }
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip { border-top-color: var(--bg-card) !important; }
+.maplibregl-popup-anchor-top .maplibregl-popup-tip { border-bottom-color: var(--bg-card) !important; }
+
+/* Controls overlay */
+#geocron-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: linear-gradient(transparent, rgba(12,15,19,0.92) 30%);
+  padding: 3rem 2rem 1.5rem;
+}
+
+#geocron-year-display {
+  text-align: center;
+  font-family: var(--font);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: var(--text-heading);
+  margin-bottom: 0.25rem;
+  font-variant-numeric: tabular-nums;
+}
+
+#geocron-year-display .era-label {
+  font-size: 0.55em;
+  color: var(--accent);
+  margin-left: 0.25em;
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+#geocron-context {
+  text-align: center;
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  min-height: 1.2em;
+}
+
+#geocron-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Play button */
+#geocron-play {
+  background: none;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.2s, color 0.2s;
+  font-size: 16px;
+}
+#geocron-play:hover {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+/* Timeline slider */
+#geocron-slider {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--border);
+  outline: none;
+  cursor: pointer;
+}
+#geocron-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  cursor: grab;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+#geocron-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  cursor: grab;
+}
+
+/* Event ticks row */
+#geocron-event-ticks {
+  position: relative;
+  max-width: 900px;
+  margin: 0.25rem auto 0;
+  height: 52px;
+  overflow: hidden;
+}
+
+.event-tick {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 6px;
+  background: var(--accent);
+  opacity: 0.4;
+}
+.event-tick-label {
+  position: absolute;
+  font-family: var(--font-sans);
+  font-size: 8px;
+  color: var(--text-muted);
+  white-space: nowrap;
+  transform-origin: left center;
+  transform: rotate(-38deg);
+  letter-spacing: 0.01em;
+}
+.event-tick-label.row-0 { top: 8px; }
+.event-tick-label.row-1 { top: 28px; }
+
+/* Layer toggles */
+#geocron-layer-toggles {
+  position: absolute;
+  top: 54px;
+  right: 12px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.layer-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: rgba(12,15,19,0.85);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-family: var(--font-sans);
+  font-size: 11px;
+  color: var(--text-muted);
+  cursor: pointer;
+  user-select: none;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.2s;
+}
+.layer-toggle:hover { border-color: var(--accent); }
+
+.layer-toggle .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.layer-toggle input { display: none; }
+.layer-toggle.off { opacity: 0.45; }
+
+/* Hover tooltip */
+#geocron-hover-tooltip {
+  position: absolute;
+  z-index: 20;
+  pointer-events: none;
+  background: rgba(12,15,19,0.92);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 11px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+  color: var(--text);
+  line-height: 1.5;
+  max-width: 280px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  display: none;
+}
+#geocron-hover-tooltip .ht-empire {
+  color: #b39ddb;
+  font-weight: 600;
+  font-size: 13px;
+}
+#geocron-hover-tooltip .ht-detail {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(42,48,60,0.6);
+  color: var(--text-muted);
+  font-size: 11px;
+}
+#geocron-hover-tooltip .ht-detail b {
+  color: var(--text);
+}
+
+/* Legend */
+#geocron-legend {
+  position: absolute;
+  bottom: 180px;
+  right: 12px;
+  z-index: 10;
+  background: rgba(12,15,19,0.85);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  backdrop-filter: blur(8px);
+  font-family: var(--font-sans);
+  font-size: 10px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+#geocron-legend .legend-title {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legend-swatch {
+  flex-shrink: 0;
+}
+
+.legend-line {
+  width: 18px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.legend-line.dashed {
+  background: repeating-linear-gradient(90deg, currentColor 0, currentColor 4px, transparent 4px, transparent 7px);
+  height: 2px;
+}
+
+.legend-anchor {
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* Sidebar dashboard */
+#geocron-sidebar {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  width: 220px;
+  background: rgba(12,15,19,0.88);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px;
+  backdrop-filter: blur(10px);
+  font-family: var(--font-sans);
+}
+
+#geocron-sidebar h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.sidebar-stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-muted);
+  padding: 3px 0;
+  border-bottom: 1px solid rgba(42,48,60,0.5);
+}
+.sidebar-stat .val {
+  color: var(--text-heading);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+#sparkline-canvas {
+  width: 100%;
+  height: 50px;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+
+/* =============================================================================
+   RESPONSIVE BREAKPOINTS
+   ============================================================================= */
+
+@media (max-width: 700px) {
+  .proxy-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  #geocron-wrap { height: 70vh; min-height: 400px; }
+  #geocron-sidebar { display: none; }
+  #geocron-legend { display: none; }
+  #geocron-layer-toggles { top: 50px; right: 8px; }
+  .layer-toggle { padding: 4px 8px; font-size: 10px; }
+  #geocron-controls { padding: 2rem 1rem 1rem; }
+  #geocron-event-ticks { display: none; }
+}

@@ -195,6 +195,92 @@
     line-height: 1.5;
   }
 
+  .chart-caption .source-link,
+  .source-cite {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-family: var(--font-sans);
+  }
+  .source-cite a,
+  .chart-caption .source-link a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 148, 74, 0.3);
+    transition: border-color 0.2s;
+  }
+  .source-cite a:hover,
+  .chart-caption .source-link a:hover {
+    border-color: var(--accent-light);
+  }
+
+  .source-criticism-detail {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, rgba(217, 79, 79, 0.06), rgba(217, 79, 79, 0.02));
+    border: 1px solid rgba(217, 79, 79, 0.25);
+    border-left: 3px solid var(--red);
+    border-radius: 0 8px 8px 0;
+    padding: 1.25rem 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .source-criticism-detail summary {
+    cursor: pointer;
+    color: var(--text-heading);
+    font-weight: 600;
+    font-size: 1.05rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .source-criticism-detail summary::-webkit-details-marker { display: none; }
+  .source-criticism-detail summary::before {
+    content: '\25B6';
+    font-size: 0.7rem;
+    color: var(--red);
+    transition: transform 0.2s;
+    display: inline-block;
+  }
+  .source-criticism-detail[open] summary::before {
+    transform: rotate(90deg);
+  }
+  .source-criticism-detail summary:hover { color: var(--red); }
+  .source-criticism-detail > div {
+    margin-top: 1.25rem;
+    color: var(--text);
+    line-height: 1.7;
+  }
+  .source-criticism-box {
+    margin: 1.25rem 0;
+  }
+  .source-criticism-box h3 {
+    color: var(--red);
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+  }
+  .source-criticism-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .source-criticism-box li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 0.93rem;
+  }
+  .source-criticism-box li::before {
+    content: '\26A0';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 0.85rem;
+  }
+
   /* KEY FINDING BOX */
   .key-finding {
     background: linear-gradient(135deg, rgba(201, 148, 74, 0.1), rgba(201, 148, 74, 0.03));
@@ -923,12 +1009,12 @@
 <nav>
   <span class="logo">Mediterranean Decline</span>
   <a href="#geocron" style="color:var(--accent)">Map</a>
-  <a href="#lead">Lead</a>
-  <a href="#shipwrecks">Shipwrecks</a>
-  <a href="#currency">Currency</a>
-  <a href="#wheat">Prices</a>
+  <a href="#shipwrecks">Trade</a>
+  <a href="#shipwreck-source-criticism" style="color:var(--red)">Criticism</a>
+  <a href="#currency">Money</a>
+  <a href="#lead">Industry</a>
+  <a href="#inscriptions">Institutions</a>
   <a href="#climate">Climate</a>
-  <a href="#recovery">Recovery</a>
   <a href="#overlay">Overlay</a>
   <a href="#scholars">Scholars</a>
 </nav>
@@ -937,10 +1023,12 @@
 <div class="hero">
   <h1>When Did the Ancient Economy <em>Actually</em> Collapse?</h1>
   <p class="subtitle">
-    Fourteen independent datasets &mdash; ice cores, shipwrecks, coinage, wheat prices, tree rings, volcanic records, pollen cores, and more &mdash; tell the story of rise, collapse, and recovery across 2,000 years. Starting from the data alone, with no historical thesis to prove.
+    Sixteen independent datasets &mdash; ice cores, shipwrecks, coinage, wheat prices, tree rings, volcanic records, pollen cores, and more &mdash; tell the story of rise, collapse, and recovery across 2,000 years. Starting from the data alone, with no historical thesis to prove.
   </p>
   <div class="scroll-hint">Scroll to explore the data</div>
 </div>
+
+<div class="part-header">Part I &mdash; The Map</div>
 
 <!-- GEOCRON MAP -->
 <div id="geocron">
@@ -1012,12 +1100,12 @@
     For nearly a century, historians have debated the economic collapse of the ancient Mediterranean world. Was it the Germanic migrations? The rise of Islam? Plagues? A slow structural unwinding? Each scholar has a theory &mdash; and each cites different evidence.
   </p>
   <p>
-    This project takes a different approach: <span class="highlight">start from the numbers, find the structural breaks, then see which story the data supports.</span> No priors. No thesis to defend. Just change-point detection on fourteen independent quantitative proxies that span 2,000 years &mdash; from the Roman Republic to the Carolingian revival.
+    This project takes a different approach: <span class="highlight">start from the numbers, find the structural breaks, then see which story the data supports.</span> No priors. No thesis to defend. Just change-point detection on sixteen independent quantitative proxies that span 2,000 years &mdash; from the Roman Republic to the Carolingian revival.
   </p>
 
   <div class="stat-grid">
     <div class="stat-card">
-      <div class="number">14</div>
+      <div class="number">16</div>
       <div class="label">Independent datasets</div>
     </div>
     <div class="stat-card">
@@ -1040,7 +1128,7 @@
 <!-- THREE PROXIES -->
 <section id="proxies">
   <div class="section-label">The Evidence</div>
-  <h2>Fourteen windows into the ancient economy</h2>
+  <h2>Sixteen windows into the ancient economy</h2>
   <p>Each proxy measures a different facet of economic activity. They were collected independently, by different research teams, using different methods. When they converge, the signal is real.</p>
 
   <div class="proxy-grid">
@@ -1052,7 +1140,7 @@
     <div class="proxy-card">
       <div class="icon" style="color: var(--blue);">&#9875;</div>
       <h4>Shipwrecks</h4>
-      <p><span class="data-term" data-tooltip="From the Oxford Roman Economy Project (OxREP). More ships sailing = more sinkings. Wrecks are dated using equal-probability methods to avoid midpoint bias.">1,784 catalogued wrecks</span> across the Mediterranean, a proxy for trade volume.</p>
+      <p><span class="data-term" data-tooltip="From the Oxford Roman Economy Project (OxREP) v2.1 (Strauss, Wilson &amp; Flohr 2017), updating Parker's 1992 catalogue. More ships sailing = more sinkings — but this proxy has well-documented limitations (barrel bias, discovery bias). Wrecks are dated using equal-probability methods (Wilson 2011) to avoid midpoint bias.">1,784 catalogued wrecks</span> across the Mediterranean, a <a href="#shipwreck-source-criticism" style="color: var(--red); font-size: 0.85em;">contested</a> proxy for trade volume.</p>
     </div>
     <div class="proxy-card">
       <div class="icon" style="color: var(--accent);">Au &middot; Ag</div>
@@ -1064,56 +1152,24 @@
 
 <div class="divider"><hr></div>
 
-<!-- LEAD EMISSIONS -->
-<section id="lead" class="wide">
-  <div class="section-label">Proxy 1 &mdash; Industrial Activity</div>
-  <h2>Lead pollution: a 1,400-year record of mining</h2>
-  <p>
-    <span class="data-term" data-tooltip="Lead isotopes in ice layers act as a timestamp for European mining activity. When silver ore (galena) is smelted, lead is released into the atmosphere, drifts to Greenland, and is trapped in annual ice layers.">Lead isotopes</span> trapped in Greenland ice record the rise and fall of European metal smelting with annual precision. The signal is unambiguous: a massive industrial expansion under the Roman Republic and early Empire, then a catastrophic crash around <span class="highlight">174 CE</span> &mdash; the single largest structural break in the entire 1,400-year record.
-  </p>
-
-  <div class="chart-container">
-    <div id="chart-lead"></div>
-    <p class="chart-caption">
-      Annual European lead emissions estimated from <span class="data-term" data-tooltip="North Greenland Ice Core Project 2. A 2,540m ice core drilled at 75.1°N in Greenland. Annual layers preserve atmospheric chemistry going back millennia.">NGRIP2</span> ice core (McConnell et al. 2018). Colored bands show segments identified by blind change-point detection (PELT algorithm). Hover over the chart for values.
-    </p>
-  </div>
-
-  <div class="key-finding">
-    <strong>The 174 CE crash is the largest break in the record.</strong> Emissions drop from 0.91 to 0.33 <span class="data-term" data-tooltip="Kilotonnes per year. For context, peak Roman emissions (~2.4 kt/yr in the 770s CE) were about 1/500th of modern industrial lead emissions.">kt/year</span> &mdash; a 64% decline &mdash; coincident with the <span class="data-term" data-tooltip="Pandemic of 165–193 CE, probably smallpox. Estimated 5–10 million deaths across the Roman Empire (roughly 10% of the population). Named after the Antonine dynasty ruling at the time.">Antonine Plague</span> (165&ndash;193 CE). Industrial mining activity doesn't recover for 500 years.
-  </div>
-</section>
-
-<!-- LEAD SPIKE DETAIL -->
-<section id="lead-spike" class="wide">
-  <div class="section-label">Zoom In</div>
-  <h2>The Augustan peak: why lead spiked around 5 CE</h2>
-  <p>
-    The single highest point in the early record &mdash; ~1.35 <span class="data-term" data-tooltip="Kilotonnes per year of lead emissions estimated from ice-core concentrations and atmospheric transport models.">kt/yr</span> around 5&ndash;10 CE &mdash; demands explanation. After the <span class="data-term" data-tooltip="Roman military campaigns (29–19 BCE) to conquer the last independent peoples of the Iberian Peninsula. Victory gave Rome direct control of Spain's massive silver-lead mining districts.">Cantabrian Wars</span> (~29&ndash;19 BCE), Augustus consolidated control of the Iberian Peninsula, unlocking industrial-scale exploitation of the silver-lead mines at Rio Tinto, Cartagena, and Las M&eacute;dulas. For a brief window, Roman industrial output approached levels not seen again until the early modern period.
-  </p>
-
-  <div class="chart-container">
-    <div id="chart-lead-zoom"></div>
-    <p class="chart-caption">
-      Zoomed view of lead emissions from 100 BCE to 200 CE. The Augustan peak is clearly visible, driven by Iberian silver mining. A recent study (Needleman et al. 2024, PNAS) estimated this pollution raised blood lead levels by ~2.4 &mu;g/dL across Europe.
-    </p>
-  </div>
-</section>
-
-<div class="divider"><hr></div>
+<div class="part-header">Part II &mdash; Trade &amp; Commerce</div>
 
 <!-- SHIPWRECKS -->
 <section id="shipwrecks" class="wide">
   <div class="section-label">Proxy 2 &mdash; Maritime Trade</div>
   <h2>Shipwrecks: counting the vessels that never arrived</h2>
   <p>
-    The number of <span class="data-term" data-tooltip="Archaeologically documented ships that sank in antiquity. Found by divers and underwater surveys. Dated by their cargo (amphorae, coins) and construction techniques.">shipwrecks</span> per period is a direct proxy for the volume of maritime trade. More ships meant more sinkings. The <span class="data-term" data-tooltip="Major research project at Oxford University cataloguing ancient Mediterranean trade data. The shipwreck database contains 1,784 wrecks with location, date range, cargo type, and construction details.">Oxford Roman Economy Project</span> catalogues 1,784 wrecks across the Mediterranean, dated using <span class="data-term" data-tooltip="When a wreck's date is uncertain (e.g. '100–200 CE'), instead of using the midpoint, equal-probability dating spreads a fractional count evenly across every year in the range. This avoids artificial clustering at midpoints.">equal-probability methods</span> to avoid midpoint distortion.
+    The number of <span class="data-term" data-tooltip="Archaeologically documented ships that sank in antiquity. Found by divers and underwater surveys. Dated by their cargo (amphorae, coins) and construction techniques.">shipwrecks</span> per period is one proxy for the volume of maritime trade. The <span class="data-term" data-tooltip="Major research project at Oxford University cataloguing ancient Mediterranean trade data. The shipwreck database v2.1 (2017) contains 1,784 wrecks with location, date range, cargo type, and construction details. It updates Parker's 1992 catalogue with ~600 additional wrecks found through 2009.">Oxford Roman Economy Project (OxREP)</span> database v2.1 (Strauss, Wilson &amp; Flohr 2017) catalogues 1,784 wrecks across the Mediterranean. It is the most comprehensive ancient shipwreck dataset available, updating A.&thinsp;J. Parker&rsquo;s foundational 1992 catalogue with ~600 additional wrecks documented through 2009. Wrecks are dated using <span class="data-term" data-tooltip="When a wreck's date is uncertain (e.g. '100–200 CE'), instead of using the midpoint, equal-probability dating spreads a fractional count evenly across every year in the range. This avoids artificial clustering at midpoints. Method from Wilson (2011) in Quantifying the Roman Economy.">equal-probability methods</span> (Wilson 2011) to avoid midpoint distortion.
+  </p>
+  <p style="font-size: 0.92rem; color: var(--text-muted); margin-top: 0.5rem;">
+    <strong>Important:</strong> Shipwreck counts are a contested proxy. The data has <a href="#shipwreck-source-criticism" style="color: var(--red); border-bottom: 1px solid rgba(217, 79, 79, 0.4);">well-documented limitations</a> that readers should understand before drawing conclusions. See the source criticism section below.
   </p>
 
   <div class="chart-container">
     <div id="chart-shipwrecks"></div>
     <p class="chart-caption">
       Mediterranean shipwreck density in 25-year bins with equal-probability dating (Wilson 2011 method). Regional totals stacked. Hover for breakdown by region.
+      <span class="source-link">Source: <a href="https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/" target="_blank">OxREP Shipwrecks Database v2.1</a> (Strauss, Wilson &amp; Flohr 2017), 1,784 wrecks. Dating method: Wilson 2011 in <em>Quantifying the Roman Economy</em> (Bowman &amp; Wilson, eds.), Oxford.</span>
     </p>
   </div>
 
@@ -1136,6 +1192,7 @@
     <div id="chart-divergence"></div>
     <p class="chart-caption">
       Western vs. Eastern Mediterranean shipwreck counts (50-year bins). The West drops below 10% of peak by 475 CE; the East sustains near-peak trade until ~625 CE.
+      <span class="source-link">Source: <a href="https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/" target="_blank">OxREP v2.1</a> (Strauss, Wilson &amp; Flohr 2017). Regional classification by Country and Sea Area fields; 1,713 of 1,784 wrecks classified.</span>
     </p>
   </div>
 
@@ -1158,6 +1215,7 @@
     <div id="chart-ratio"></div>
     <p class="chart-caption">
       Ratio of Western to Eastern Mediterranean shipwreck counts over time. A value above 1 means the West dominates; below 1, the East. The dramatic reversal occurs in the 5th century.
+      <span class="source-link">Source: Derived from <a href="https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/" target="_blank">OxREP v2.1</a> regional data.</span>
     </p>
   </div>
 
@@ -1168,8 +1226,46 @@
 
 <div class="divider"><hr></div>
 
+<!-- SHIPWRECK SOURCE CRITICISM -->
+<section id="shipwreck-source-criticism" class="wide">
+  <details class="source-criticism-detail">
+    <summary>How much should you trust the shipwreck data?</summary>
+    <div>
+      <p>
+        The OxREP shipwreck database is the best available dataset for ancient Mediterranean maritime activity &mdash; but &ldquo;best available&rdquo; does not mean &ldquo;unproblematic.&rdquo; Parker&rsquo;s original 1992 catalogue was never intended as an economic proxy; it was a descriptive inventory. Andrew Wilson, whose equal-probability dating method we use here, has himself articulated the most substantial criticisms of treating shipwreck counts as a direct measure of trade volume. The debate is ongoing, and honest use of this data requires acknowledging what it cannot tell us.
+      </p>
+
+      <div class="source-criticism-box">
+        <h3>Known problems with shipwreck &rarr; trade inference</h3>
+        <ul>
+          <li><strong>Unequal sinking probability.</strong> The assumption that a ship was equally likely to sink in any period is false. The invention of the bilge pump (~1st century BCE), the shift from coastal cabotage to open-water sailing, the end of the <em>Pax Romana</em>&rsquo;s relative safety from piracy, and changing climate all altered sinking risk. A decline in wrecks could reflect safer sailing, not less trade. (Wilson 2011; Hopkins 1980)</li>
+          <li><strong>Unequal wreck visibility &mdash; the barrel problem.</strong> Nearly 70% of identifiable wrecks carried amphorae or pottery. After the 2nd&ndash;4th century CE, Western Mediterranean trade shifted from ceramic amphorae to wooden barrels &mdash; which rot on the seabed. Ships carrying barrels, grain, textiles, or slaves leave almost no archaeological trace. Wilson himself concluded that the late decline is &ldquo;at least partly explicable by a move from amphorae to wooden barrels.&rdquo; The Eastern Mediterranean retained amphorae longer, which may <em>inflate</em> the apparent East/West divergence. (Wilson 2011, p.220)</li>
+          <li><strong>Massive geographic discovery bias.</strong> Italy, France, and Spain account for over 70% of all wrecks in the database &mdash; not because more ships sank there, but because those coastlines have been more heavily surveyed by divers and archaeologists. The North African coast (Tunisia, Libya, Algeria) is severely under-surveyed despite being a major Roman trade corridor. This systematically over-represents early Western Mediterranean trade and under-represents the South. (Parker 1992, p.548)</li>
+          <li><strong>Ceramic dating uncertainty.</strong> Most wrecks are dated solely by their cargo ceramics &mdash; a method that yields approximate and sometimes incorrect dates. Manning, Lorentzen &amp; Demesticha (2022, <em>Antiquity</em>) demonstrated that independent radiocarbon and tree-ring dating can produce significantly different results than ceramic-based dates, and called for &ldquo;independent chronological anchors&rdquo; to improve wreck chronologies. <a href="https://doi.org/10.15184/aqy.2022.76" target="_blank" style="color: var(--accent);">doi:10.15184/aqy.2022.76</a></li>
+          <li><strong>Inconsistency with land-based archaeology.</strong> During the supposed 2nd&ndash;3rd century &ldquo;decline,&rdquo; archaeological evidence shows massive port expansion at Portus (Rome&rsquo;s gateway) and intensification of olive oil production across Roman North Africa &mdash; including new presses on marginal land deep inland. Pottery origin data from Ostia shows a surge in African imports precisely when the wreck graph declines. The graph and the ground evidence tell different stories. (Wilson 2011; Greene 1986)</li>
+          <li><strong>Small-n fragility.</strong> The entire database contains 1,784 wrecks spread across ~1,600 years and the whole Mediterranean basin. When split by region and time bin, individual data points rest on very small numbers. The regional divergence chart, while suggestive, is built on increasingly thin evidence in the later periods.</li>
+        </ul>
+      </div>
+
+      <p>
+        <strong>So why show it at all?</strong> Because even flawed proxies are informative when understood in context. The shipwreck data is most reliable for the <em>overall shape</em> of the trade curve (the peak and general decline are likely real) and least reliable for the <em>magnitude and timing</em> of the late decline (which barrel bias and discovery bias may exaggerate). We show it alongside 15 other independent datasets precisely so that no single proxy bears the full interpretive weight. Where shipwrecks, lead emissions, coin hoards, inscriptions, and pollen all agree, the convergence is meaningful even if each individual dataset is imperfect.
+      </p>
+
+      <p class="source-cite" style="margin-top: 1rem;">
+        Key references on shipwreck data limitations:
+        Wilson, A. (2011). &ldquo;Trade volumes in the Roman Mediterranean&rdquo; in <em>Quantifying the Roman Economy</em>, Oxford. &middot;
+        <a href="https://doi.org/10.15184/aqy.2022.76" target="_blank">Manning et al. (2022)</a>, <em>Antiquity</em>. &middot;
+        Parker, A.J. (1992). <em>Ancient Shipwrecks of the Mediterranean</em>, BAR. &middot;
+        See also: <a href="https://knowles06.medium.com/dont-link-ancient-shipwrecks-and-economic-activity-c887996c51d4" target="_blank">Knowles (2023), &ldquo;Please don&rsquo;t link ancient shipwrecks and the economy&rdquo;</a> for a popular summary of these criticisms.
+      </p>
+    </div>
+  </details>
+</section>
+
+<div class="divider"><hr></div>
+
 <!-- CURRENCY -->
-<div class="part-header">Part III &mdash; Fiscal Collapse &amp; Monetary History</div>
+<div class="part-header">Part III &mdash; Money &amp; Prices</div>
 
 <section id="currency" class="wide">
   <div class="section-label">The Money</div>
@@ -1194,6 +1290,7 @@
     <div id="chart-gold"></div>
     <p class="chart-caption">
       Gold coin weight over time: Roman aureus (46 BCE&ndash;309 CE) and Byzantine solidus (309&ndash;1092 CE). Purity stayed above 95% for most of this period; the collapse came in weight, then finally in purity under the Comneni.
+      <span class="source-link">Sources: Walker, <em>The Metrology of the Roman Silver Coinage</em> (ANS, 1976&ndash;78); <a href="https://numismatics.org/ocre/" target="_blank">OCRE</a> (Online Coins of the Roman Empire); <a href="https://hdl.handle.net/1887/43427" target="_blank">Vrij (2016)</a> for Byzantine solidus weights.</span>
     </p>
   </div>
 
@@ -1205,6 +1302,7 @@
     <div id="chart-dirham"></div>
     <p class="chart-caption">
       Islamic silver dirham weight standard, 696&ndash;940 CE. The Umayyad reform established a stable ~2.97g standard; Abbasid-era variation reflects the vast geographic scope of silver sourcing.
+      <span class="source-link">Sources: Umayyad/Abbasid coinage studies; Jonsson &amp; Herschend, &ldquo;The silver trail&rdquo; <em>Antiquity</em> (2023). <a href="https://doi.org/10.15184/aqy.2022.165" target="_blank">doi:10.15184/aqy.2022.165</a></span>
     </p>
   </div>
 
@@ -1216,8 +1314,6 @@
 <div class="divider"><hr></div>
 
 <!-- WHEAT PRICES -->
-<div class="part-header">Part IV &mdash; The Evidence Converges</div>
-
 <section id="wheat" class="wide">
   <div class="section-label">Prices</div>
   <h2>Egyptian wheat: the only ancient price series</h2>
@@ -1227,7 +1323,8 @@
   <div class="chart-container">
     <div id="chart-wheat"></div>
     <p class="chart-caption">
-      Egyptian wheat prices in drachmas per artaba (Rathbone &amp; Temin). Stable at ~8 dr/artaba for a century, then doubling after 160 CE. Hyperinflation follows in the late 3rd century.
+      Egyptian wheat prices in drachmas per artaba. Stable at ~8 dr/artaba for a century, then doubling after 160 CE. Hyperinflation follows in the late 3rd century.
+      <span class="source-link">Source: Rathbone, D. (1997). &ldquo;Prices and Price Formation in Roman Egypt&rdquo; in <em>&Eacute;conomie antique: prix et formation des prix</em>; Temin, P. (2013). <em>The Roman Market Economy</em>, Princeton. Price data from Egyptian papyri.</span>
     </p>
   </div>
   <div class="key-finding">
@@ -1247,101 +1344,12 @@
   <div class="chart-container">
     <div id="chart-hoards"></div>
     <p class="chart-caption">
-      Coin hoard frequency by 25-year period (terminal date). Spikes correspond to civil wars, invasions, and plagues. Data from the Coin Hoards of the Roman Empire project (Oxford).
+      Coin hoard frequency by 25-year period (terminal date). Spikes correspond to civil wars, invasions, and plagues.
+      <span class="source-link">Source: <a href="https://chre.ashmus.ox.ac.uk/" target="_blank">Coin Hoards of the Roman Empire (CHRE)</a>, Oxford/Ashmolean. 18,315 hoards, 7,026,455 coins.</span>
     </p>
   </div>
   <div class="key-finding">
     <strong>The massive 250&ndash;275 CE spike is unmistakable</strong> &mdash; the Crisis of the Third Century, when the Empire nearly disintegrated. Hoarding peaks align perfectly with the denarius collapse and the Plague of Cyprian.
-  </div>
-</section>
-
-<div class="divider"><hr></div>
-
-<!-- POPULATION -->
-<section id="population" class="wide">
-  <div class="section-label">The Denominator</div>
-  <h2>Population: the number that explains everything else</h2>
-  <p>
-    All other indicators &mdash; trade volume, mining output, tax revenue &mdash; depend on how many people were alive. Roman population estimates are uncertain, but scholars broadly agree on the trajectory: growth through the 1st century, catastrophic loss from the Antonine Plague, and never a full recovery.
-  </p>
-  <div class="chart-container">
-    <div id="chart-population"></div>
-    <p class="chart-caption">
-      Estimated population of the Roman Empire (Scheidel 2006; Frier 2000). Shaded band shows scholarly uncertainty range. The Antonine Plague (~165 CE) and Plague of Cyprian (~250 CE) are both visible.
-    </p>
-  </div>
-  <div class="key-finding">
-    <strong>An estimated 20&ndash;30% of the population died in the Antonine Plague.</strong> When you lose a quarter of your people, everything else follows: tax revenues fall, mines close, trade contracts, the army can't recruit. Population is the denominator.
-  </div>
-</section>
-
-<div class="divider"><hr></div>
-
-<!-- CLIMATE -->
-<div class="part-header">Part V &mdash; Why Did It Happen?</div>
-
-<section id="climate" class="wide">
-  <div class="section-label">Climate</div>
-  <h2>536 CE: the worst year to be alive</h2>
-  <p>
-    In 536 CE, a massive volcanic eruption (probably in Iceland) threw enough sulfur into the stratosphere to dim the sun across Europe for 18 months. Temperatures plunged. Crops failed from Ireland to China. A second eruption in 540 CE compounded the disaster. Together they triggered the <span class="data-term" data-tooltip="Period of unusually cold climate in Europe from ~536 to 660 CE, triggered by volcanic eruptions. Average summer temperatures dropped by up to 2.5°C. Coincided with the Plague of Justinian.">Late Antique Little Ice Age</span> (~536&ndash;660 CE), which coincided with the <span class="data-term" data-tooltip="First plague pandemic (541–750 CE). Yersinia pestis (bubonic plague) arrived in Constantinople in 541 CE, killing an estimated 25–50% of the Mediterranean population over repeated waves.">Plague of Justinian</span> and the final collapse of Mediterranean trade networks.
-  </p>
-
-  <div class="chart-container">
-    <div id="chart-climate"></div>
-    <p class="chart-caption">
-      Top: Summer temperature anomaly from Central European tree rings (B&uuml;ntgen et al. 2011, sampled at 5-year intervals). Bottom: Major volcanic eruptions (eVolv2k v3, sulfur injection in Tg SO&#8322;). The 536/540 CE double eruption is the most dramatic climate event in the record.
-    </p>
-  </div>
-
-  <div class="key-finding">
-    <strong>Tree rings show the 536 CE event as the sharpest cooling in 2,500 years.</strong> Danish oaks lost 53% of their growth by 539 CE. The climate shock provides a causal mechanism linking volcanic forcing &rarr; crop failure &rarr; famine &rarr; plague susceptibility &rarr; economic collapse.
-  </div>
-</section>
-
-<div class="divider"><hr></div>
-
-<!-- POLLEN / FOREST REGROWTH -->
-<section id="pollen" class="wide">
-  <div class="section-label">Biology</div>
-  <h2>The forests grew back: pollen as a collapse indicator</h2>
-  <p>
-    When farms are abandoned and mines close, forests return. <span class="data-term" data-tooltip="Study of pollen preserved in lake sediments and peat bogs. Different plants produce distinctive pollen grains; counting them reveals the balance between forest (arboreal pollen) and farmland (cereal, grass pollen) over time.">Palynological evidence</span> from nearly 1,000 pollen cores across Europe reveals a dramatic surge in tree pollen between 250 and 550 CE &mdash; forests literally reclaimed Roman farmland. The trend reverses around 800&ndash;1000 CE with Carolingian-era land clearance.
-  </p>
-
-  <div class="chart-container">
-    <div id="chart-pollen"></div>
-    <p class="chart-caption">
-      Percentage of arboreal (tree) pollen in European sediment cores (Fyfe et al. 2015, PANGAEA). Higher values = more forest, less farmland. 200-year bins, 982 records across NW Europe.
-    </p>
-  </div>
-
-  <div class="key-finding">
-    <strong>Forest regrowth is the biological mirror of lead pollution decline.</strong> When the mines closed and farms were abandoned, the trees returned. The pollen record independently confirms the economic collapse visible in every other dataset.
-  </div>
-</section>
-
-<div class="divider"><hr></div>
-
-<!-- RECOVERY -->
-<div class="part-header">Part VI &mdash; The Recovery</div>
-
-<section id="recovery" class="wide">
-  <div class="section-label">Building Again</div>
-  <h2>Churches: the medieval recovery signal</h2>
-  <p>
-    After centuries of economic contraction, Europe began building again. The construction of major churches and cathedrals is one of the clearest quantitative signals of renewed economic capacity. The pattern is stark: near-zero monumental construction from 700&ndash;950 CE, then a dramatic acceleration into the "Age of the Cathedrals."
-  </p>
-
-  <div class="chart-container">
-    <div id="chart-churches"></div>
-    <p class="chart-caption">
-      Major church construction starts per 25-year period across Western Europe (Rijpma dataset, ~1,695 churches in Italy, France, Germany, Britain, Low Countries). The takeoff begins ~975 CE.
-    </p>
-  </div>
-
-  <div class="key-finding">
-    <strong>The church construction boom begins exactly when lead emissions surge.</strong> Around 750&ndash;800 CE, Carolingian and Merovingian mines reopened across France and Germany. Construction follows within a generation. The recovery was real and measurable.
   </div>
 </section>
 
@@ -1358,7 +1366,8 @@
   <div class="chart-container">
     <div id="chart-pas"></div>
     <p class="chart-caption">
-      Coin finds per period from the Portable Antiquities Scheme database (Britain). The "Anglo-Saxon gap" (~410&ndash;680 CE) represents near-total de-monetization of the British economy.
+      Coin finds per period from the Portable Antiquities Scheme database (Britain). The &ldquo;Anglo-Saxon gap&rdquo; (~410&ndash;680 CE) represents near-total de-monetization of the British economy.
+      <span class="source-link">Source: <a href="https://finds.org.uk/" target="_blank">Portable Antiquities Scheme (PAS)</a>, UK Government. Over 1.7 million archaeological objects catalogued.</span>
     </p>
   </div>
 
@@ -1368,6 +1377,167 @@
 </section>
 
 <div class="divider"><hr></div>
+
+<div class="part-header">Part IV &mdash; Industry &amp; Agriculture</div>
+
+<!-- LEAD EMISSIONS -->
+<section id="lead" class="wide">
+  <div class="section-label">Proxy 1 &mdash; Industrial Activity</div>
+  <h2>Lead pollution: a 1,400-year record of mining</h2>
+  <p>
+    <span class="data-term" data-tooltip="Lead isotopes in ice layers act as a timestamp for European mining activity. When silver ore (galena) is smelted, lead is released into the atmosphere, drifts to Greenland, and is trapped in annual ice layers.">Lead isotopes</span> trapped in Greenland ice record the rise and fall of European metal smelting with annual precision. The signal is unambiguous: a massive industrial expansion under the Roman Republic and early Empire, then a catastrophic crash around <span class="highlight">174 CE</span> &mdash; the single largest structural break in the entire 1,400-year record.
+  </p>
+
+  <div class="chart-container">
+    <div id="chart-lead"></div>
+    <p class="chart-caption">
+      Annual European lead emissions estimated from <span class="data-term" data-tooltip="North Greenland Ice Core Project 2. A 2,540m ice core drilled at 75.1°N in Greenland. Annual layers preserve atmospheric chemistry going back millennia.">NGRIP2</span> ice core. Colored bands show segments identified by blind change-point detection (PELT algorithm). Hover over the chart for values.
+      <span class="source-link">Source: <a href="https://doi.org/10.1073/pnas.1721818115" target="_blank">McConnell, J.R. et al. (2018)</a>. &ldquo;Lead pollution recorded in Greenland ice indicates European emissions tracked plagues, wars, and imperial expansion during antiquity.&rdquo; <em>PNAS</em> 115(22), 5726&ndash;5731.</span>
+    </p>
+  </div>
+
+  <div class="key-finding">
+    <strong>The 174 CE crash is the largest break in the record.</strong> Emissions drop from 0.91 to 0.33 <span class="data-term" data-tooltip="Kilotonnes per year. For context, peak Roman emissions (~2.4 kt/yr in the 770s CE) were about 1/500th of modern industrial lead emissions.">kt/year</span> &mdash; a 64% decline &mdash; coincident with the <span class="data-term" data-tooltip="Pandemic of 165–193 CE, probably smallpox. Estimated 5–10 million deaths across the Roman Empire (roughly 10% of the population). Named after the Antonine dynasty ruling at the time.">Antonine Plague</span> (165&ndash;193 CE). Industrial mining activity doesn't recover for 500 years.
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- LEAD SPIKE DETAIL -->
+<section id="lead-spike" class="wide">
+  <div class="section-label">Zoom In</div>
+  <h2>The Augustan peak: why lead spiked around 5 CE</h2>
+  <p>
+    The single highest point in the early record &mdash; ~1.35 <span class="data-term" data-tooltip="Kilotonnes per year of lead emissions estimated from ice-core concentrations and atmospheric transport models.">kt/yr</span> around 5&ndash;10 CE &mdash; demands explanation. After the <span class="data-term" data-tooltip="Roman military campaigns (29–19 BCE) to conquer the last independent peoples of the Iberian Peninsula. Victory gave Rome direct control of Spain's massive silver-lead mining districts.">Cantabrian Wars</span> (~29&ndash;19 BCE), Augustus consolidated control of the Iberian Peninsula, unlocking industrial-scale exploitation of the silver-lead mines at Rio Tinto, Cartagena, and Las M&eacute;dulas. For a brief window, Roman industrial output approached levels not seen again until the early modern period.
+  </p>
+
+  <div class="chart-container">
+    <div id="chart-lead-zoom"></div>
+    <p class="chart-caption">
+      Zoomed view of lead emissions from 100 BCE to 200 CE. The Augustan peak is clearly visible, driven by Iberian silver mining. A recent study (Needleman et al. 2024, PNAS) estimated this pollution raised blood lead levels by ~2.4 &mu;g/dL across Europe.
+      <span class="source-link">Source: <a href="https://doi.org/10.1073/pnas.1721818115" target="_blank">McConnell et al. (2018)</a>, PNAS &mdash; NGRIP2 Greenland ice core, annual resolution.</span>
+    </p>
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- POLLEN / FOREST REGROWTH -->
+<section id="pollen" class="wide">
+  <div class="section-label">Biology</div>
+  <h2>The forests grew back: pollen as a collapse indicator</h2>
+  <p>
+    When farms are abandoned and mines close, forests return. <span class="data-term" data-tooltip="Study of pollen preserved in lake sediments and peat bogs. Different plants produce distinctive pollen grains; counting them reveals the balance between forest (arboreal pollen) and farmland (cereal, grass pollen) over time.">Palynological evidence</span> from nearly 1,000 pollen cores across Europe reveals a dramatic surge in tree pollen between 250 and 550 CE &mdash; forests literally reclaimed Roman farmland. The trend reverses around 800&ndash;1000 CE with Carolingian-era land clearance.
+  </p>
+
+  <div class="chart-container">
+    <div id="chart-pollen"></div>
+    <p class="chart-caption">
+      Percentage of arboreal (tree) pollen in European sediment cores. Higher values = more forest, less farmland. 200-year bins, 982 records across NW Europe.
+      <span class="source-link">Source: <a href="https://doi.org/10.1016/j.quascirev.2015.09.012" target="_blank">Fyfe, R.M. et al. (2015)</a>. &ldquo;The European Pollen Database: past efforts and current activities.&rdquo; <em>Quaternary Science Reviews</em>. Data: <a href="https://doi.org/10.1594/PANGAEA.855674" target="_blank">PANGAEA</a>.</span>
+    </p>
+  </div>
+
+  <div class="key-finding">
+    <strong>Forest regrowth is the biological mirror of lead pollution decline.</strong> When the mines closed and farms were abandoned, the trees returned. The pollen record independently confirms the economic collapse visible in every other dataset.
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<div class="part-header">Part V &mdash; Institutions &amp; Population</div>
+
+<!-- INSCRIPTIONS -->
+<section id="inscriptions" class="wide">
+  <div class="section-label">State Capacity</div>
+  <h2>Latin inscriptions: when the bureaucracy stopped writing</h2>
+  <p>
+    When Rome&rsquo;s civic and bureaucratic life was functioning, people carved inscriptions &mdash; dedications, epitaphs, milestones, building records. When it collapsed, they stopped. The <span class="data-term" data-tooltip="Epigraphic Database Heidelberg (EDH). Contains over 81,000 Latin inscriptions from across the Roman world, with date ranges estimated by epigraphers.">EDH database</span> of over 81,000 Latin inscriptions provides a direct measure of institutional continuity.
+  </p>
+  <div class="chart-container">
+    <div id="chart-inscriptions"></div>
+    <p class="chart-caption">
+      Latin inscription density by 25-year period (equal-probability dating). Western provinces dominate, reflecting the Latin-speaking half of the Empire.
+      <span class="source-link">Source: <a href="https://edh.ub.uni-heidelberg.de/" target="_blank">Epigraphic Database Heidelberg (EDH)</a> via <a href="https://doi.org/10.5281/zenodo.4888168" target="_blank">SDAM/Zenodo</a>. 81,476 inscriptions (56,280 dated).</span>
+    </p>
+  </div>
+  <div class="key-finding">
+    <strong>Inscriptions peak around 175&ndash;200 CE, then crash.</strong> By 300 CE, inscription production has fallen by over 80%. This tracks the collapse of municipal government, public building, and the civic elite who commissioned inscriptions. The institutional fabric of the Roman state was dissolving.
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- POPULATION -->
+<section id="population" class="wide">
+  <div class="section-label">The Denominator</div>
+  <h2>Population: the number that explains everything else</h2>
+  <p>
+    All other indicators &mdash; trade volume, mining output, tax revenue &mdash; depend on how many people were alive. Roman population estimates are uncertain, but scholars broadly agree on the trajectory: growth through the 1st century, catastrophic loss from the Antonine Plague, and never a full recovery.
+  </p>
+  <div class="chart-container">
+    <div id="chart-population"></div>
+    <p class="chart-caption">
+      Estimated population of the Roman Empire. Shaded band shows scholarly uncertainty range. The Antonine Plague (~165 CE) and Plague of Cyprian (~250 CE) are both visible.
+      <span class="source-link">Sources: <a href="https://www.princeton.edu/~pswpc/pdfs/scheidel/070604.pdf" target="_blank">Scheidel, W. (2006)</a>. &ldquo;Population and Demography.&rdquo; Princeton/Stanford Working Papers in Classics; Frier, B. (2000) in <em>Cambridge Ancient History</em> XI.</span>
+    </p>
+  </div>
+  <div class="key-finding">
+    <strong>An estimated 20&ndash;30% of the population died in the Antonine Plague.</strong> When you lose a quarter of your people, everything else follows: tax revenues fall, mines close, trade contracts, the army can't recruit. Population is the denominator.
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<!-- RECOVERY -->
+<section id="recovery" class="wide">
+  <div class="section-label">Building Again</div>
+  <h2>Churches: the medieval recovery signal</h2>
+  <p>
+    After centuries of economic contraction, Europe began building again. The construction of major churches and cathedrals is one of the clearest quantitative signals of renewed economic capacity. The pattern is stark: near-zero monumental construction from 700&ndash;950 CE, then a dramatic acceleration into the "Age of the Cathedrals."
+  </p>
+
+  <div class="chart-container">
+    <div id="chart-churches"></div>
+    <p class="chart-caption">
+      Major church construction starts per 25-year period across Western Europe (~1,695 churches in Italy, France, Germany, Britain, Low Countries). The takeoff begins ~975 CE.
+      <span class="source-link">Source: Rijpma, A. (2016). &ldquo;A Composite View of Well-Being since 1820&rdquo; in <em>How Was Life? Global Well-being since 1820</em>, OECD/IISG. Cathedral construction dataset.</span>
+    </p>
+  </div>
+
+  <div class="key-finding">
+    <strong>The church construction boom begins exactly when lead emissions surge.</strong> Around 750&ndash;800 CE, Carolingian and Merovingian mines reopened across France and Germany. Construction follows within a generation. The recovery was real and measurable.
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<div class="part-header">Part VI &mdash; Climate &amp; Environment</div>
+
+<!-- CLIMATE -->
+<section id="climate" class="wide">
+  <div class="section-label">Climate</div>
+  <h2>536 CE: the worst year to be alive</h2>
+  <p>
+    In 536 CE, a massive volcanic eruption (probably in Iceland) threw enough sulfur into the stratosphere to dim the sun across Europe for 18 months. Temperatures plunged. Crops failed from Ireland to China. A second eruption in 540 CE compounded the disaster. Together they triggered the <span class="data-term" data-tooltip="Period of unusually cold climate in Europe from ~536 to 660 CE, triggered by volcanic eruptions. Average summer temperatures dropped by up to 2.5°C. Coincided with the Plague of Justinian.">Late Antique Little Ice Age</span> (~536&ndash;660 CE), which coincided with the <span class="data-term" data-tooltip="First plague pandemic (541–750 CE). Yersinia pestis (bubonic plague) arrived in Constantinople in 541 CE, killing an estimated 25–50% of the Mediterranean population over repeated waves.">Plague of Justinian</span> and the final collapse of Mediterranean trade networks.
+  </p>
+
+  <div class="chart-container">
+    <div id="chart-climate"></div>
+    <p class="chart-caption">
+      Top: Summer temperature anomaly from Central European tree rings (sampled at 5-year intervals). Bottom: Major volcanic eruptions (sulfur injection in Tg SO&#8322;). The 536/540 CE double eruption is the most dramatic climate event in the record.
+      <span class="source-link">Sources: <a href="https://doi.org/10.1126/science.1197175" target="_blank">B&uuml;ntgen et al. (2011)</a>. &ldquo;2500 Years of European Climate Variability.&rdquo; <em>Science</em> 331, 578&ndash;582. Volcanic: <a href="https://doi.org/10.5194/essd-9-809-2017" target="_blank">Toohey &amp; Sigl (2017)</a>, eVolv2k v3. Full data: <a href="https://www.ncei.noaa.gov/products/paleoclimatology" target="_blank">NOAA Paleoclimatology</a>.</span>
+    </p>
+  </div>
+
+  <div class="key-finding">
+    <strong>Tree rings show the 536 CE event as the sharpest cooling in 2,500 years.</strong> Danish oaks lost 53% of their growth by 539 CE. The climate shock provides a causal mechanism linking volcanic forcing &rarr; crop failure &rarr; famine &rarr; plague susceptibility &rarr; economic collapse.
+  </div>
+</section>
+
+<div class="divider"><hr></div>
+
+<div class="part-header">Part VII &mdash; Synthesis</div>
 
 <!-- MULTI-PROXY OVERLAY -->
 <section id="overlay" class="wide">
@@ -1383,7 +1553,8 @@
   <div class="chart-container">
     <div id="chart-overlay"></div>
     <p class="chart-caption">
-      All three proxies normalized to their respective peak values (100%). Historical events annotated. The weak cross-correlation (Pearson r = 0.20) confirms these measure genuinely different economic dimensions.
+      All proxies normalized to their respective peak values (100%). Historical events annotated. The weak lead&ndash;shipwreck cross-correlation (Pearson r&nbsp;=&nbsp;0.20) confirms these measure genuinely different economic dimensions.
+      <span class="source-link">Sources: Lead &mdash; <a href="https://doi.org/10.1073/pnas.1721818115" target="_blank">McConnell et al. (2018)</a>; Shipwrecks &mdash; <a href="https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/" target="_blank">OxREP v2.1</a>; Denarius &mdash; Butcher &amp; Ponting (2015), Walker (1976); Hoards &mdash; <a href="https://chre.ashmus.ox.ac.uk/" target="_blank">CHRE, Oxford</a>; Inscriptions &mdash; <a href="https://edh.ub.uni-heidelberg.de/" target="_blank">EDH</a> via SDAM/Zenodo.</span>
     </p>
   </div>
 </section>
@@ -1402,6 +1573,7 @@
     <div id="chart-changepoints"></div>
     <p class="chart-caption">
       All detected change-points across proxies and regions. Each vertical line represents a blind structural break. They cluster around known historical crises &mdash; but the algorithm didn't know that.
+      <span class="source-link">Method: Binary segmentation with RBF kernel, <a href="https://centre-borelli.github.io/ruptures-docs/" target="_blank">ruptures</a> library (Truong, Oudre &amp; Vayer 2020). Penalty selected via BIC. No historical priors.</span>
     </p>
   </div>
 
@@ -1478,35 +1650,58 @@
 <!-- CAVEATS -->
 <section id="caveats">
   <div class="section-label">Caveats</div>
-  <h2>What the data can't tell us</h2>
+  <h2>What the data can&rsquo;t tell us</h2>
+
+  <p style="margin-bottom: 1.5rem;">
+    Every dataset on this page has limitations. The convergence of multiple imperfect proxies is more informative than any single dataset alone &mdash; but intellectual honesty requires listing what each proxy can and cannot show. For detailed criticism of the shipwreck data specifically, see the <a href="#shipwreck-source-criticism" style="color: var(--accent);">dedicated source criticism section</a> above.
+  </p>
 
   <ul class="caveat-list">
-    <li><strong>Barrel bias.</strong> After the 2nd century, a shift from amphorae to barrels means late-period trade may be systematically undercounted in the shipwreck record. Ships carrying barrels leave fewer datable traces.</li>
-    <li><strong>Discovery bias.</strong> More wrecks have been found in French and Italian waters; the North African coast is under-surveyed. This may overweight Western Mediterranean data in earlier periods.</li>
-    <li><strong>Lead proxy scope.</strong> The ice-core record reflects primarily Iberian and northern European mining, weighted by atmospheric transport to Greenland. It may not fully represent Eastern Mediterranean industrial activity.</li>
-    <li><strong>Correlation is not causation.</strong> Change-points align with known events but don't prove those events caused the shifts. Plague, war, fiscal crisis, and institutional decay likely interacted.</li>
-    <li><strong>Pollen resolution.</strong> The pollen data uses 200-year bins, far coarser than the other proxies. It captures broad trends but cannot pinpoint the timing of specific events.</li>
-    <li><strong>PAS geographic bias.</strong> The Portable Antiquities Scheme is Britain-only. Monetization patterns in Gaul, Iberia, or the Eastern Mediterranean may have differed significantly.</li>
-    <li><strong>Population estimates.</strong> Ancient population figures are among the most contested numbers in Roman history. The "high count" and "low count" schools differ by nearly 2x. We show the mid-range consensus.</li>
-    <li><strong>Compiled numismatic data.</strong> The aureus, solidus, and dirham datasets are compiled from multiple academic sources. Individual coins varied; the values shown represent scholarly averages for each period.</li>
+    <li><strong>Shipwreck barrel bias.</strong> After the 2nd century, a shift from amphorae to wooden barrels means late-period trade is systematically undercounted. Ships carrying barrels, grain, textiles, or slaves leave almost no archaeological trace. Wilson (2011) concluded the late decline is &ldquo;at least partly explicable by a move from amphorae to wooden barrels.&rdquo; See <a href="#shipwreck-source-criticism" style="color: var(--accent);">full discussion</a>.</li>
+    <li><strong>Shipwreck discovery bias.</strong> Italy, France, and Spain account for &gt;70% of all wrecks. North Africa is under-surveyed despite being a major trade corridor. This over-weights the Western Mediterranean and may inflate the apparent East/West divergence.</li>
+    <li><strong>Lead proxy scope.</strong> The NGRIP2 ice-core record reflects primarily Iberian and northern European mining, weighted by atmospheric transport to Greenland. Eastern Mediterranean industrial activity (e.g. Cypriot or Anatolian smelting) may be underrepresented. See <a href="https://doi.org/10.1073/pnas.1721818115" target="_blank" style="color: var(--accent);">McConnell et al. (2018)</a> for methodology and limitations.</li>
+    <li><strong>Correlation is not causation.</strong> Change-points align with known events but don&rsquo;t prove those events caused the shifts. Plague, war, fiscal crisis, and institutional decay likely interacted in feedback loops that no single proxy can disentangle.</li>
+    <li><strong>Pollen resolution.</strong> The pollen data uses 200-year bins, far coarser than the other proxies. It captures broad trends but cannot pinpoint the timing of specific events. Regional variation within Europe is significant. <a href="https://doi.org/10.1016/j.quascirev.2015.09.012" target="_blank" style="color: var(--accent);">Fyfe et al. (2015)</a>.</li>
+    <li><strong>PAS geographic bias.</strong> The Portable Antiquities Scheme covers Britain only. Monetization patterns in Gaul, Iberia, or the Eastern Mediterranean may have differed significantly. Britain was an atypically rapid de-monetizer.</li>
+    <li><strong>Population estimates.</strong> Ancient population figures are among the most contested numbers in Roman history. The &ldquo;high count&rdquo; and &ldquo;low count&rdquo; schools differ by nearly 2&times;. We show the mid-range consensus from <a href="https://www.princeton.edu/~pswpc/pdfs/scheidel/070604.pdf" target="_blank" style="color: var(--accent);">Scheidel (2006)</a>.</li>
+    <li><strong>Compiled numismatic data.</strong> The aureus, solidus, and dirham datasets are compiled from multiple academic sources spanning decades. Individual coins varied; the values shown represent scholarly averages. Silver content measurements depend on analytical technique (XRF vs. wet chemistry), which can produce different results.</li>
+    <li><strong>Inscription survival bias.</strong> Latin inscriptions survive unevenly: stone inscriptions from arid climates are over-represented, while wooden or painted inscriptions are lost. Epigraphic &ldquo;decline&rdquo; could partly reflect changing materials rather than institutional collapse.</li>
+    <li><strong>Selection of proxies itself.</strong> The datasets shown here were chosen because they are quantifiable and publicly available &mdash; a filter that introduces its own biases. Aspects of ancient economies that don&rsquo;t leave measurable traces (e.g. local barter, pastoral agriculture, oral administration) are invisible to this analysis.</li>
   </ul>
 
   <details class="method-detail">
     <summary>Methodology Details</summary>
     <div>
-      <p><strong>Equal-probability dating:</strong> Shipwrecks with date ranges contribute fractional counts to each year in the range, avoiding midpoint distortion (Wilson 2011).</p>
-      <p><strong>Change-point detection:</strong> Binary segmentation with RBF kernel (ruptures library), no historical dates as priors. Penalty parameter selected via BIC.</p>
-      <p><strong>Regional classification:</strong> 1,713 of 1,784 wrecks classified into Western Med, Eastern Med, Adriatic, Black Sea, or Atlantic using Country, Region, and name-based heuristics.</p>
-      <p><strong>Tree-ring data:</strong> Central European JJA temperature anomalies (B&uuml;ntgen et al. 2011), sampled at 5-year intervals for visualization. Full annual data available from NOAA Paleoclimatology.</p>
-      <p><strong>Volcanic forcing:</strong> Major eruptions from the eVolv2k v3 dataset (Toohey &amp; Sigl 2017), showing volcanic stratospheric sulfur injection in Tg SO&#8322;.</p>
-      <p><strong>Numismatic data:</strong> Aureus/solidus weights compiled from Walker (ANS), OCRE, and Vrij (2016). Dirham data from Umayyad/Abbasid coinage studies and Antiquity (2023).</p>
+      <p><strong>Equal-probability dating:</strong> Shipwrecks and inscriptions with date ranges contribute fractional counts to each year in the range, avoiding midpoint distortion. Method: <a href="https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/" target="_blank" style="color: var(--accent);">Wilson (2011)</a> in <em>Quantifying the Roman Economy</em> (Bowman &amp; Wilson, eds.), Oxford.</p>
+      <p><strong>Change-point detection:</strong> Binary segmentation with RBF kernel (<a href="https://centre-borelli.github.io/ruptures-docs/" target="_blank" style="color: var(--accent);">ruptures</a> library, Truong, Oudre &amp; Vayer 2020), no historical dates as priors. Penalty parameter selected via BIC.</p>
+      <p><strong>Regional classification (shipwrecks):</strong> 1,713 of 1,784 wrecks classified into Western Med, Eastern Med, Adriatic, Black Sea, or Atlantic using Country, Sea Area, and name-based heuristics from the <a href="https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/" target="_blank" style="color: var(--accent);">OxREP v2.1</a> database.</p>
+      <p><strong>Regional classification (hoards &amp; inscriptions):</strong> Western (Britannia, Gaul, Hispania, Italia, Africa) vs. Eastern (Asia Minor, Syria, Aegyptus, Balkans, Greece) using fuzzy province-name matching.</p>
+      <p><strong>Tree-ring data:</strong> Central European JJA temperature anomalies from <a href="https://doi.org/10.1126/science.1197175" target="_blank" style="color: var(--accent);">B&uuml;ntgen et al. (2011)</a>, sampled at 5-year intervals for visualization. Full annual data: <a href="https://www.ncei.noaa.gov/products/paleoclimatology" target="_blank" style="color: var(--accent);">NOAA Paleoclimatology</a>.</p>
+      <p><strong>Volcanic forcing:</strong> Major eruptions from <a href="https://doi.org/10.5194/essd-9-809-2017" target="_blank" style="color: var(--accent);">eVolv2k v3 (Toohey &amp; Sigl 2017)</a>, showing volcanic stratospheric sulfur injection in Tg SO&#8322;.</p>
+      <p><strong>Numismatic data:</strong> Aureus/solidus weights compiled from Walker (ANS, 1976&ndash;78), <a href="https://numismatics.org/ocre/" target="_blank" style="color: var(--accent);">OCRE</a>, and <a href="https://hdl.handle.net/1887/43427" target="_blank" style="color: var(--accent);">Vrij (2016)</a>. Dirham data from Umayyad/Abbasid coinage studies and <a href="https://doi.org/10.15184/aqy.2022.165" target="_blank" style="color: var(--accent);">Antiquity (2023)</a>.</p>
     </div>
   </details>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>Data: McConnell et al. 2018 (PNAS) &middot; Oxford Roman Economy Project &middot; Butcher &amp; Ponting 2015 &middot; Walker 1976 &middot; B&uuml;ntgen et al. 2011 &middot; eVolv2k v3 &middot; Rathbone &amp; Temin &middot; Scheidel 2006 &middot; CHRE (Oxford) &middot; Fyfe et al. 2015 &middot; Rijpma (cathedrals) &middot; Portable Antiquities Scheme &middot; Vrij 2016 &middot; Antiquity 2023</p>
+  <p>Data:
+    <a href="https://doi.org/10.1073/pnas.1721818115" target="_blank">McConnell et al. 2018</a> (PNAS) &middot;
+    <a href="https://oxrep.classics.ox.ac.uk/databases/shipwrecks_database/" target="_blank">OxREP Shipwrecks v2.1</a> &middot;
+    Butcher &amp; Ponting 2015 &middot;
+    Walker 1976 &middot;
+    <a href="https://doi.org/10.1126/science.1197175" target="_blank">B&uuml;ntgen et al. 2011</a> &middot;
+    <a href="https://doi.org/10.5194/essd-9-809-2017" target="_blank">eVolv2k v3</a> &middot;
+    Rathbone &amp; Temin &middot;
+    <a href="https://www.princeton.edu/~pswpc/pdfs/scheidel/070604.pdf" target="_blank">Scheidel 2006</a> &middot;
+    <a href="https://chre.ashmus.ox.ac.uk/" target="_blank">CHRE</a> (Oxford) &middot;
+    <a href="https://doi.org/10.1016/j.quascirev.2015.09.012" target="_blank">Fyfe et al. 2015</a> &middot;
+    Rijpma 2016 (cathedrals) &middot;
+    <a href="https://finds.org.uk/" target="_blank">Portable Antiquities Scheme</a> &middot;
+    <a href="https://hdl.handle.net/1887/43427" target="_blank">Vrij 2016</a> &middot;
+    <a href="https://doi.org/10.15184/aqy.2022.165" target="_blank">Antiquity 2023</a> &middot;
+    <a href="https://edh.ub.uni-heidelberg.de/" target="_blank">EDH</a> via <a href="https://doi.org/10.5281/zenodo.4888168" target="_blank">SDAM/Zenodo</a>
+  </p>
   <p style="margin-top: 0.5rem;">Analysis: blind change-point detection with <a href="https://centre-borelli.github.io/ruptures-docs/" target="_blank">ruptures</a> &middot; Visualization: <a href="https://plotly.com/javascript/" target="_blank">Plotly.js</a> &middot; Map: <a href="https://maplibre.org/" target="_blank">MapLibre GL JS</a></p>
   <p style="margin-top: 0.5rem;">GeoCron data: <a href="https://zenodo.org/records/13363121" target="_blank">Cliopatria</a> (CC BY 4.0) &middot; <a href="https://orbis.stanford.edu/" target="_blank">ORBIS v2, Stanford</a> (CC BY 3.0)</p>
 </footer>
@@ -2385,32 +2580,76 @@ const WHEAT_PRICES = [
   {year: 290, price: 330.0, note: 'Diocletian (pre-reform)'}
 ];
 
-// COIN HOARD FREQUENCY (number of hoards per 25-year period, by terminal date)
-const COIN_HOARDS = [
-  {mid: -175, count: 45},
-  {mid: -150, count: 52},
-  {mid: -125, count: 68},
-  {mid: -100, count: 85},
-  {mid: -75, count: 120},
-  {mid: -50, count: 140},
-  {mid: -25, count: 95},
-  {mid: 0, count: 60},
-  {mid: 25, count: 50},
-  {mid: 50, count: 55},
-  {mid: 75, count: 110},
-  {mid: 100, count: 65},
-  {mid: 125, count: 55},
-  {mid: 150, count: 70},
-  {mid: 175, count: 130},
-  {mid: 200, count: 180},
-  {mid: 225, count: 150},
-  {mid: 250, count: 420},
-  {mid: 275, count: 680},
-  {mid: 300, count: 350},
-  {mid: 325, count: 200},
-  {mid: 350, count: 280},
-  {mid: 375, count: 320},
-  {mid: 400, count: 260}
+// CHRE COIN HOARD FREQUENCY (number of hoards per 25-year period, by terminal date, with regional breakdown)
+const CHRE_HOARDS = [
+  {mid: -187.5, total: 30, western: 18, eastern: 12},
+  {mid: -162.5, total: 32, western: 24, eastern: 8},
+  {mid: -137.5, total: 37, western: 25, eastern: 12},
+  {mid: -112.5, total: 37, western: 21, eastern: 16},
+  {mid: -87.5, total: 123, western: 59, eastern: 64},
+  {mid: -62.5, total: 127, western: 65, eastern: 62},
+  {mid: -37.5, total: 144, western: 61, eastern: 83},
+  {mid: -12.5, total: 167, western: 68, eastern: 99},
+  {mid: 12.5, total: 72, western: 46, eastern: 26},
+  {mid: 37.5, total: 64, western: 51, eastern: 13},
+  {mid: 62.5, total: 73, western: 46, eastern: 27},
+  {mid: 87.5, total: 82, western: 59, eastern: 23},
+  {mid: 112.5, total: 68, western: 45, eastern: 23},
+  {mid: 137.5, total: 77, western: 62, eastern: 15},
+  {mid: 162.5, total: 108, western: 92, eastern: 16},
+  {mid: 187.5, total: 138, western: 108, eastern: 30},
+  {mid: 212.5, total: 100, western: 77, eastern: 23},
+  {mid: 237.5, total: 674, western: 439, eastern: 235},
+  {mid: 262.5, total: 795, western: 448, eastern: 347},
+  {mid: 287.5, total: 369, western: 173, eastern: 196},
+  {mid: 312.5, total: 170, western: 82, eastern: 88},
+  {mid: 337.5, total: 133, western: 66, eastern: 67},
+  {mid: 362.5, total: 116, western: 62, eastern: 54},
+  {mid: 387.5, total: 133, western: 71, eastern: 62},
+  {mid: 412.5, total: 48, western: 33, eastern: 15},
+  {mid: 437.5, total: 45, western: 27, eastern: 18},
+  {mid: 462.5, total: 42, western: 29, eastern: 13},
+  {mid: 487.5, total: 35, western: 17, eastern: 18}
+];
+
+// LATIN INSCRIPTIONS — EDH (expected inscription count per 25-year period, with regional breakdown)
+const INSCRIPTIONS_DATA = [
+  {mid: -187.5, total: 14.3, western: 7.1, eastern: 7.1},
+  {mid: -162.5, total: 26.6, western: 9.4, eastern: 15.9},
+  {mid: -137.5, total: 21.3, western: 8.7, eastern: 12.4},
+  {mid: -112.5, total: 44.6, western: 22.4, eastern: 21.5},
+  {mid: -87.5, total: 89.9, western: 59.6, eastern: 28.6},
+  {mid: -62.5, total: 111.2, western: 86.1, eastern: 23.3},
+  {mid: -37.5, total: 262.1, western: 211.7, eastern: 44.3},
+  {mid: -12.5, total: 825.2, western: 696.9, eastern: 91.1},
+  {mid: 12.5, total: 2331.3, western: 2022.6, eastern: 194.0},
+  {mid: 37.5, total: 2618.8, western: 2292.8, eastern: 207.0},
+  {mid: 62.5, total: 2952.4, western: 2584.8, eastern: 236.5},
+  {mid: 87.5, total: 3822.2, western: 3357.3, eastern: 313.8},
+  {mid: 112.5, total: 5082.1, western: 4143.1, eastern: 800.6},
+  {mid: 137.5, total: 5489.1, western: 4438.4, eastern: 904.5},
+  {mid: 162.5, total: 6057.0, western: 4687.3, eastern: 1224.1},
+  {mid: 187.5, total: 6525.6, western: 5103.1, eastern: 1301.6},
+  {mid: 212.5, total: 5993.1, western: 4573.8, eastern: 1297.3},
+  {mid: 237.5, total: 5019.6, western: 3754.2, eastern: 1166.6},
+  {mid: 262.5, total: 3253.7, western: 2530.3, eastern: 640.0},
+  {mid: 287.5, total: 2729.7, western: 2280.2, eastern: 364.6},
+  {mid: 312.5, total: 1083.4, western: 781.6, eastern: 249.4},
+  {mid: 337.5, total: 695.5, western: 548.9, eastern: 119.8},
+  {mid: 362.5, total: 699.0, western: 570.0, eastern: 104.6},
+  {mid: 387.5, total: 638.6, western: 541.5, eastern: 78.1},
+  {mid: 412.5, total: 405.7, western: 365.8, eastern: 33.1},
+  {mid: 437.5, total: 328.3, western: 299.5, eastern: 22.9},
+  {mid: 462.5, total: 291.6, western: 263.4, eastern: 24.5},
+  {mid: 487.5, total: 293.6, western: 267.0, eastern: 22.7},
+  {mid: 512.5, total: 210.8, western: 185.2, eastern: 23.6},
+  {mid: 537.5, total: 194.4, western: 169.2, eastern: 23.6},
+  {mid: 562.5, total: 193.6, western: 169.4, eastern: 22.1},
+  {mid: 587.5, total: 202.1, western: 181.0, eastern: 19.5},
+  {mid: 612.5, total: 73.7, western: 70.7, eastern: 2.4},
+  {mid: 637.5, total: 52.8, western: 51.5, eastern: 1.1},
+  {mid: 662.5, total: 49.6, western: 48.6, eastern: 0.8},
+  {mid: 687.5, total: 54.1, western: 53.2, eastern: 0.8}
 ];
 
 // POPULATION ESTIMATES (millions, with uncertainty)
@@ -2805,6 +3044,16 @@ function renderOverlayChart() {
   const denX = DENARIUS.map(d => d.year);
   const denY = DENARIUS.map(d => (d.silver / denPeak) * 100);
 
+  // Normalize coin hoards to peak
+  const hoardsPeak = Math.max(...CHRE_HOARDS.map(d => d.total));
+  const hoardsX = CHRE_HOARDS.map(d => d.mid);
+  const hoardsY = CHRE_HOARDS.map(d => (d.total / hoardsPeak) * 100);
+
+  // Normalize inscriptions to peak
+  const inscPeak = Math.max(...INSCRIPTIONS_DATA.map(d => d.total));
+  const inscX = INSCRIPTIONS_DATA.map(d => d.mid);
+  const inscY = INSCRIPTIONS_DATA.map(d => (d.total / inscPeak) * 100);
+
   const evtShapes = HISTORICAL_EVENTS.map(e => ({
     type: 'line', x0: e.year, x1: e.year, y0: 0, y1: 1,
     xref: 'x', yref: 'paper',
@@ -2839,6 +3088,20 @@ function renderOverlayChart() {
       line: {color: '#e6b86e', width: 2.5},
       marker: {size: 5},
       hovertemplate: 'Denarius: %{y:.0f}%<extra></extra>'
+    },
+    {
+      type: 'scatter', mode: 'lines', name: 'Coin Hoards (CHRE)',
+      x: hoardsX, y: hoardsY,
+      line: {color: '#e6b86e', width: 2, dash: 'dash'},
+      opacity: 0.7,
+      hovertemplate: 'Hoards: %{y:.0f}%<extra></extra>'
+    },
+    {
+      type: 'scatter', mode: 'lines', name: 'Inscriptions (EDH)',
+      x: inscX, y: inscY,
+      line: {color: '#9b6dd7', width: 2},
+      opacity: 0.7,
+      hovertemplate: 'Inscriptions: %{y:.0f}%<extra></extra>'
     }
   ], mergeLayout({
     title: {text: 'All Proxies Normalized to Peak (= 100%)', font: {size: 15, color: '#d4d4d8'}},
@@ -3052,19 +3315,35 @@ function renderWheatChart() {
 // 11. COIN HOARDS CHART
 // ============================================================
 function renderHoardsChart() {
-  Plotly.newPlot('chart-hoards', [{
-    type: 'bar',
-    x: COIN_HOARDS.map(d => d.mid), y: COIN_HOARDS.map(d => d.count),
-    marker: {
-      color: COIN_HOARDS.map(d => d.count > 300 ? '#d94f4f' : d.count > 150 ? '#e6b86e' : '#5b8dd9'),
-      line: {color: '#0c0f13', width: 0.5}
+  Plotly.newPlot('chart-hoards', [
+    {
+      type: 'bar',
+      x: CHRE_HOARDS.map(d => d.mid), y: CHRE_HOARDS.map(d => d.total),
+      marker: {
+        color: CHRE_HOARDS.map(d => d.total > 300 ? '#d94f4f' : d.total > 150 ? '#e6b86e' : '#5b8dd9'),
+        line: {color: '#0c0f13', width: 0.5}
+      },
+      width: 22,
+      hovertemplate: '%{x} CE<br>%{y} hoards (total)<extra></extra>',
+      name: 'Total Hoards'
     },
-    width: 22,
-    hovertemplate: '%{x} CE<br>%{y} hoards<extra></extra>',
-    name: 'Hoards'
-  }], mergeLayout({
-    title: {text: 'Coin Hoard Frequency (200 BCE–400 CE)', font: {size: 15, color: '#d4d4d8'}},
-    xaxis: {title: 'Year CE (terminal date, 25-yr bins)', range: [-200, 420]},
+    {
+      type: 'scatter', mode: 'lines+markers', name: 'Western',
+      x: CHRE_HOARDS.map(d => d.mid), y: CHRE_HOARDS.map(d => d.western),
+      line: {color: '#5b8dd9', width: 2},
+      marker: {size: 4},
+      hovertemplate: '%{x} CE<br>Western: %{y}<extra></extra>'
+    },
+    {
+      type: 'scatter', mode: 'lines+markers', name: 'Eastern',
+      x: CHRE_HOARDS.map(d => d.mid), y: CHRE_HOARDS.map(d => d.eastern),
+      line: {color: '#d94f4f', width: 2},
+      marker: {size: 4},
+      hovertemplate: '%{x} CE<br>Eastern: %{y}<extra></extra>'
+    }
+  ], mergeLayout({
+    title: {text: 'CHRE Coin Hoard Frequency (200 BCE–500 CE)', font: {size: 15, color: '#d4d4d8'}},
+    xaxis: {title: 'Year CE (terminal date, 25-yr bins)', range: [-210, 510]},
     yaxis: {title: 'Number of hoards', rangemode: 'tozero'},
     shapes: [
       {type: 'rect', x0: 235, x1: 285, y0: 0, y1: 1, xref: 'x', yref: 'paper', fillcolor: 'rgba(217, 79, 79, 0.08)', line: {width: 0}}
@@ -3076,7 +3355,45 @@ function renderHoardsChart() {
 }
 
 // ============================================================
-// 12. POPULATION CHART
+// 12. INSCRIPTIONS CHART (EDH)
+// ============================================================
+function renderInscriptionsChart() {
+  Plotly.newPlot('chart-inscriptions', [
+    {
+      type: 'scatter', mode: 'lines', name: 'Total Inscriptions',
+      x: INSCRIPTIONS_DATA.map(d => d.mid), y: INSCRIPTIONS_DATA.map(d => d.total),
+      fill: 'tozeroy',
+      fillcolor: 'rgba(155, 109, 215, 0.15)',
+      line: {color: '#9b6dd7', width: 2},
+      hovertemplate: '%{x} CE<br>Total: %{y:.1f}<extra></extra>'
+    },
+    {
+      type: 'scatter', mode: 'lines+markers', name: 'Western',
+      x: INSCRIPTIONS_DATA.map(d => d.mid), y: INSCRIPTIONS_DATA.map(d => d.western),
+      line: {color: '#5b8dd9', width: 2},
+      marker: {size: 4},
+      hovertemplate: '%{x} CE<br>Western: %{y:.1f}<extra></extra>'
+    },
+    {
+      type: 'scatter', mode: 'lines+markers', name: 'Eastern',
+      x: INSCRIPTIONS_DATA.map(d => d.mid), y: INSCRIPTIONS_DATA.map(d => d.eastern),
+      line: {color: '#d94f4f', width: 2},
+      marker: {size: 4},
+      hovertemplate: '%{x} CE<br>Eastern: %{y:.1f}<extra></extra>'
+    }
+  ], mergeLayout({
+    title: {text: 'Latin Inscriptions \u2014 EDH (200 BCE\u2013700 CE)', font: {size: 15, color: '#d4d4d8'}},
+    xaxis: {title: 'Year CE (25-yr bins)', range: [-210, 710]},
+    yaxis: {title: 'Expected inscription count', rangemode: 'tozero'},
+    annotations: [
+      {x: 187.5, y: 6525.6, text: 'Severan peak', showarrow: true, ax: 40, ay: -30, font: {size: 10, color: '#9b6dd7'}, arrowcolor: '#9b6dd7'},
+      {x: 262.5, y: 3253.7, text: 'Diocletianic decline', showarrow: true, ax: 60, ay: -40, font: {size: 10, color: '#d94f4f'}, arrowcolor: '#d94f4f'}
+    ]
+  }), CONFIG);
+}
+
+// ============================================================
+// 13. POPULATION CHART
 // ============================================================
 function renderPopulationChart() {
   Plotly.newPlot('chart-population', [
@@ -3279,6 +3596,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderDirhamChart();
   renderWheatChart();
   renderHoardsChart();
+  renderInscriptionsChart();
   renderPopulationChart();
   renderClimateChart();
   renderPollenChart();

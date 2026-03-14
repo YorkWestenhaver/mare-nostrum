@@ -3,4 +3,22 @@ __pycache__/
 .DS_Store
 *.egg-info/
 .env
+
+# Raw source data (large, download separately)
 data/raw/
+
+# Generated geo data (regenerate with src/prepare_*.py)
+svelte-app/static/data/geo/world_borders.json
+
+# Node
+node_modules/
+
+# SvelteKit build artifacts
+svelte-app/.svelte-kit/
+svelte-app/build/
+
+# IDE
+.cursor/
+
+# Debug artifacts
+*.png
