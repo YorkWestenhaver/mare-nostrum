@@ -13,7 +13,7 @@
     '#26a69a', '#42a5f5', '#ab47bc', '#ec407a', '#78909c',
   ];
 
-  let gcYear = $state(-500);
+  let gcYear = $state(1001);
   let gcPlaying = $state(false);
   let gcAnimId = $state(null);
   let loaded = $state(false);
@@ -107,13 +107,13 @@
   const TIME_FILTER = (y) => ['all', ['<=', 'from', y], ['>=', 'to', y]];
 
   function updateMap() {
-    if (!gcMap || !gcMap.isStyleLoaded()) return;
+    if (!gcMap) return;
     const y = gcYear;
     const tf = TIME_FILTER(y);
-    if (gcMap.getSource('world-borders')) {
-      gcMap.setFilter('world-borders-fill', tf);
-      gcMap.setFilter('world-borders-line', tf);
-    }
+    try {
+      if (gcMap.getLayer('world-borders-fill')) gcMap.setFilter('world-borders-fill', tf);
+      if (gcMap.getLayer('world-borders-line')) gcMap.setFilter('world-borders-line', tf);
+    } catch (_) {}
   }
 
   let lastTick = 0;
@@ -225,8 +225,6 @@
       gcBorders = borders;
 
       map.on('load', () => {
-        loaded = true;
-
         const bordersWithColors = {
           ...borders,
           features: borders.features.map(f => ({
@@ -259,9 +257,10 @@
           filter: TIME_FILTER(gcYear)
         });
 
-        const popup = new maplibregl.Popup({ closeButton: true, closeOnClick: true, maxWidth: '340px' });
+        const popup = new maplibregl.Popup({ closeButton: true, closeOnClick: false, maxWidth: '340px' });
 
         map.on('click', 'world-borders-fill', (e) => {
+          e.originalEvent.stopPropagation();
           const f = e.features[0];
           const p = f.properties;
           let html = '<div class="popup-title">' + p.name + '</div><div class="popup-detail">';
@@ -270,6 +269,11 @@
           if (p.wiki) html += '<a href="https://en.wikipedia.org/wiki/' + encodeURIComponent(p.wiki) + '" target="_blank" rel="noopener" style="color:var(--accent)">Wikipedia</a>';
           html += '</div>';
           popup.setLngLat(e.lngLat).setHTML(html).addTo(map);
+        });
+
+        map.on('click', (e) => {
+          const feats = map.queryRenderedFeatures(e.point, { layers: ['world-borders-fill'] });
+          if (!feats || feats.length === 0) popup.remove();
         });
 
         map.on('mouseenter', 'world-borders-fill', () => { map.getCanvas().style.cursor = 'pointer'; });
@@ -300,6 +304,11 @@
         map.on('mouseout', () => { hoverVisible = false; });
 
         updateMap();
+
+        map.once('idle', () => {
+          updateMap();
+          loaded = true;
+        });
       });
 
       fsHandler = () => {

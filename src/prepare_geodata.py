@@ -146,8 +146,6 @@ def process_borders():
         if lon is None or not in_med_bbox(lon, lat):
             continue
 
-        simplified = simplify_geometry(geom, tolerance=0.4)
-
         features_out.append({
             "type": "Feature",
             "properties": {
@@ -158,7 +156,7 @@ def process_borders():
                 "wiki": props.get("Wikipedia", ""),
                 "area": round(props.get("Area", 0), 1),
             },
-            "geometry": simplified
+            "geometry": geom
         })
 
     def round_coords(obj):
