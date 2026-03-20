@@ -18,6 +18,8 @@
   let gcAnimId = $state(null);
   let loaded = $state(false);
   let loadError = $state(false);
+  let loadPhase = $state('');
+  let loadPercent = $state(0);
 
   let gcBorders = $state(null);
 
@@ -62,6 +64,34 @@
   async function loadJSON(url) {
     const resp = await fetch(url);
     return resp.json();
+  }
+
+  async function loadJSONWithProgress(url) {
+    const resp = await fetch(url);
+    const total = parseInt(resp.headers.get('Content-Length') || '0', 10);
+    if (!total || !resp.body) {
+      return resp.json();
+    }
+    const reader = resp.body.getReader();
+    const chunks = [];
+    let received = 0;
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      chunks.push(value);
+      received += value.length;
+      loadPercent = Math.min(95, Math.round((received / total) * 95));
+    }
+    const buf = new Uint8Array(received);
+    let pos = 0;
+    for (const chunk of chunks) {
+      buf.set(chunk, pos);
+      pos += chunk.length;
+    }
+    loadPhase = 'Rendering';
+    loadPercent = 97;
+    await new Promise(r => setTimeout(r, 0));
+    return JSON.parse(new TextDecoder().decode(buf));
   }
 
   function computeStatPolities(borders, year) {
@@ -215,7 +245,11 @@
 
       let borders;
       try {
-        borders = await loadJSON('/data/geo/world_borders.json');
+        loadPhase = 'Downloading';
+        loadPercent = 0;
+        borders = await loadJSONWithProgress('/data/geo/world_borders.json');
+        loadPhase = 'Rendering';
+        loadPercent = 98;
       } catch (err) {
         console.error('Cliopatria: Failed to load world_borders.json', err);
         loadError = true;
@@ -294,9 +328,37 @@
 
           const rect = wrapEl.getBoundingClientRect();
           let tipX = e.point.x + 14;
-          let tipY = e.point.y + 14;
+          let tipY = e.point.y - 60;
+
+          const popupEl = wrapEl.querySelector('.maplibregl-popup');
+          if (popupEl) {
+            const popupRect = popupEl.getBoundingClientRect();
+            const wrapRect = rect;
+            const pr = {
+              left: popupRect.left - wrapRect.left,
+              right: popupRect.right - wrapRect.left,
+              top: popupRect.top - wrapRect.top,
+              bottom: popupRect.bottom - wrapRect.top,
+            };
+            const cursorX = e.point.x;
+            const cursorY = e.point.y;
+            const hoverW = 220;
+            const hoverH = 60;
+            const aboveTop = tipY;
+            const aboveLeft = tipX;
+            const wouldOverlap =
+              aboveLeft < pr.right + 8 &&
+              aboveLeft + hoverW > pr.left - 8 &&
+              aboveTop < pr.bottom + 8 &&
+              aboveTop + hoverH > pr.top - 8;
+            if (wouldOverlap) {
+              tipY = cursorY + 18;
+            }
+          }
+
           if (tipX + 220 > rect.width - 10) tipX = e.point.x - 220 - 10;
           if (tipY + 60 > rect.height - 10) tipY = e.point.y - 60 - 10;
+          if (tipY < 10) tipY = e.point.y + 18;
           hoverLeft = tipX + 'px';
           hoverTop = tipY + 'px';
         });
@@ -372,9 +434,17 @@
     </button>
 
     {#if !loaded && !loadError}
-      <div class="clio-loading">Loading world data&hellip;</div>
+      <div class="clio-loading">
+        <div class="clio-loading-text">{loadPhase || 'Loading'} world data&hellip;</div>
+        <div class="clio-progress-track">
+          <div class="clio-progress-bar" style="width:{loadPercent}%"></div>
+        </div>
+        <div class="clio-progress-pct">{loadPercent}%</div>
+      </div>
     {:else if loadError}
-      <div class="clio-loading">Failed to load world data.</div>
+      <div class="clio-loading">
+        <div class="clio-loading-text">Failed to load world data.</div>
+      </div>
     {/if}
 
     <div class="clio-sidebar">
@@ -480,12 +550,35 @@
     position: absolute;
     inset: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 0.75rem;
     font-family: var(--font-sans);
     font-size: 1rem;
     color: var(--text-muted);
     z-index: 5;
+  }
+  .clio-loading-text {
+    font-size: 0.95rem;
+  }
+  .clio-progress-track {
+    width: 240px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .clio-progress-bar {
+    height: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    transition: width 0.15s ease;
+  }
+  .clio-progress-pct {
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--accent);
   }
 
   .clio-fullscreen-btn {

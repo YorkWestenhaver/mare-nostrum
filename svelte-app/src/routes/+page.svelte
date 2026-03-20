@@ -2,7 +2,6 @@
   import { CHARTS } from '$lib/charts/charts.js';
   import { activeTab } from '$lib/stores/activeTab.js';
   import Hero from '$lib/components/Hero.svelte';
-  import GeoCronMap from '$lib/components/GeoCronMap.svelte';
   import CliopatriaMap from '$lib/components/CliopatriaMap.svelte';
   import ChartSection from '$lib/components/ChartSection.svelte';
   import PlotlyChart from '$lib/components/PlotlyChart.svelte';
@@ -11,6 +10,7 @@
   import DataTerm from '$lib/components/DataTerm.svelte';
   import PartDivider from '$lib/components/PartDivider.svelte';
   import Collapsible from '$lib/components/Collapsible.svelte';
+  import ChartGroup from '$lib/components/ChartGroup.svelte';
 </script>
 
 {#if $activeTab === 'world'}
@@ -18,10 +18,6 @@
 {:else}
 
 <Hero />
-
-<PartDivider number="I" title="The Map" />
-
-<GeoCronMap />
 
 <!-- THE QUESTION -->
 <section id="question">
@@ -31,10 +27,10 @@
     For nearly a century, historians have debated the economic collapse of the ancient Mediterranean world. Was it the Germanic migrations? The rise of Islam? Plagues? A slow structural unwinding? Each scholar has a theory &mdash; and each cites different evidence.
   </p>
   <p>
-    This project takes a different approach: <span class="highlight">start from the numbers, find the structural breaks, then see which story the data supports.</span> No priors. No thesis to defend. Just change-point detection on sixteen independent quantitative proxies that span 2,000 years &mdash; from the Roman Republic to the Carolingian revival.
+    This project takes a different approach: <span class="highlight">start from the numbers, find the structural breaks, then see which story the data supports.</span> No priors. No thesis to defend. Just change-point detection on eighteen independent quantitative proxies that span 2,000 years &mdash; from the Roman Republic to the Carolingian revival.
   </p>
   <StatGrid items={[
-    { value: '16', label: 'Independent datasets' },
+    { value: '18', label: 'Independent datasets' },
     { value: '2,037', label: 'Annual lead measurements' },
     { value: '1,784', label: 'Shipwrecks catalogued' },
     { value: '2,000 yrs', label: 'Time span covered' }
@@ -46,7 +42,7 @@
 <!-- THE EVIDENCE -->
 <section id="proxies">
   <div class="section-label">The Evidence</div>
-  <h2>Sixteen windows into the ancient economy</h2>
+  <h2>Eighteen windows into the ancient economy</h2>
   <p>Each proxy measures a different facet of economic activity. They were collected independently, by different research teams, using different methods. When they converge, the signal is real.</p>
   <div class="proxy-grid">
     <div class="proxy-card">
@@ -68,7 +64,7 @@
 </section>
 
 <div class="divider"><hr></div>
-<PartDivider number="II" title="Trade &amp; Commerce" />
+<PartDivider number="I" title="Trade &amp; Commerce" />
 
 <!-- SHIPWRECKS -->
 <ChartSection id="shipwrecks" label="Proxy 2 &mdash; Maritime Trade"
@@ -138,7 +134,7 @@
 </section>
 
 <div class="divider"><hr></div>
-<PartDivider number="III" title="Money &amp; Prices" />
+<PartDivider number="II" title="Money &amp; Prices" />
 
 <!-- CURRENCY -->
 <section id="currency" class="wide">
@@ -214,7 +210,7 @@
 </ChartSection>
 
 <div class="divider"><hr></div>
-<PartDivider number="IV" title="Industry &amp; Agriculture" />
+<PartDivider number="III" title="Industry &amp; Agriculture" />
 
 <!-- LEAD EMISSIONS -->
 <ChartSection id="lead" label="Proxy 1 &mdash; Industrial Activity"
@@ -248,6 +244,39 @@
   keyFinding="<strong>Forest regrowth is the biological mirror of lead pollution decline.</strong> When the mines closed and farms were abandoned, the trees returned.">
   <p><DataTerm tooltip="Study of pollen preserved in lake sediments and peat bogs.">Palynological evidence</DataTerm> from nearly 1,000 pollen cores across Europe reveals a dramatic surge in tree pollen between 250 and 550 CE &mdash; forests literally reclaimed Roman farmland.</p>
 </ChartSection>
+
+<div class="divider"><hr></div>
+
+<ChartSection id="timber" label="Construction"
+  heading="Roman timber: 20,397 dated woods tell the story"
+  chartId="chart-timber" chartFn={CHARTS.timber}
+  caption="Count of absolutely dated archaeological wood samples per 25-year bin. Based on felling dates from dendrochronological analysis."
+  sourceHtml='Source: <a href="https://zenodo.org/records/17090407" target="_blank">Muigg, Tegel et al. (2025)</a>, PNAS. Dataset: <a href="https://doi.org/10.5281/zenodo.17090407" target="_blank">Zenodo</a>. 20,397 dated woods from north of the Alps.'
+  keyFinding="<strong>Timber felling peaks around 25–50 CE</strong>, exactly when lead emissions peak. The 3rd-century collapse is unmistakable — dated wood samples drop 90% between 150 and 300 CE.">
+  <p>Every piece of construction timber has a story written in its tree rings. The <a href="https://zenodo.org/records/17090407" target="_blank" style="color: var(--accent);">Woodlands of Antiquity</a> dataset compiled 20,397 absolutely dated archaeological woods from across northern Europe — from water wells to military fortifications to urban buildings.</p>
+</ChartSection>
+
+<div class="divider"><hr></div>
+<PartDivider number="IV" title="Living Standards" />
+
+<ChartGroup title="Biological Indicators" subtitle="How did Roman economic development affect actual living organisms?">
+  <div>
+    <ChartSection id="cattle" label="Animal Size"
+      heading="Roman cattle were 21% larger"
+      chartId="chart-cattle" chartFn={CHARTS.cattle}
+      caption="Log-size-index of cattle distal breadth (Bd) measurements relative to Iron Age baseline. Positive = larger animals."
+      sourceHtml='Source: <a href="https://zenodo.org/records/6917159" target="_blank">Trentacoste et al. (2022)</a>. 898 cattle bone measurements from N. Italy.'
+      keyFinding="<strong>Roman cattle were significantly larger than Iron Age cattle.</strong> The 21% increase in bone size reflects selective breeding, improved fodder, and organized livestock trade under Roman administration." />
+  </div>
+  <div>
+    <ChartSection id="gdp" label="GDP Estimates"
+      heading="What Rome earned — in dollars"
+      chartId="chart-gdp" chartFn={CHARTS.gdp}
+      caption="GDP per capita estimates for ancient civilizations at key dates, in 2011 international dollars (PPP)."
+      sourceHtml='Source: <a href="https://doi.org/10.34894/INZBF2" target="_blank">Maddison Project Database 2023</a>. Bolt &amp; van Zanden (2024).'
+      keyFinding="<strong>Roman Italy at 1 CE: ~$1,407 per capita</strong> — comparable to early modern Europe and well above subsistence. For context, medieval England didn't consistently surpass this level until the 14th century." />
+  </div>
+</ChartGroup>
 
 <div class="divider"><hr></div>
 <PartDivider number="V" title="Institutions &amp; Population" />
@@ -391,10 +420,12 @@
     <a href="https://finds.org.uk/" target="_blank">Portable Antiquities Scheme</a> &middot;
     <a href="https://hdl.handle.net/1887/43427" target="_blank">Vrij 2016</a> &middot;
     <a href="https://doi.org/10.15184/aqy.2022.165" target="_blank">Antiquity 2023</a> &middot;
-    <a href="https://edh.ub.uni-heidelberg.de/" target="_blank">EDH</a> via <a href="https://doi.org/10.5281/zenodo.4888168" target="_blank">SDAM/Zenodo</a>
+    <a href="https://edh.ub.uni-heidelberg.de/" target="_blank">EDH</a> via <a href="https://doi.org/10.5281/zenodo.4888168" target="_blank">SDAM/Zenodo</a> &middot;
+    <a href="https://zenodo.org/records/17090407" target="_blank">Muigg/Tegel 2025</a> (PNAS) &middot;
+    <a href="https://zenodo.org/records/6917159" target="_blank">Trentacoste 2022</a> &middot;
+    <a href="https://doi.org/10.34894/INZBF2" target="_blank">Maddison Project 2023</a>
   </p>
   <p style="margin-top: 0.5rem;">Analysis: blind change-point detection with <a href="https://centre-borelli.github.io/ruptures-docs/" target="_blank">ruptures</a> &middot; Visualization: <a href="https://plotly.com/javascript/" target="_blank">Plotly.js</a> &middot; Map: <a href="https://maplibre.org/" target="_blank">MapLibre GL JS</a></p>
-  <p style="margin-top: 0.5rem;">GeoCron data: <a href="https://zenodo.org/records/13363121" target="_blank">Cliopatria</a> (CC BY 4.0) &middot; <a href="https://orbis.stanford.edu/" target="_blank">ORBIS v2, Stanford</a> (CC BY 3.0)</p>
 </footer>
 
 {/if}

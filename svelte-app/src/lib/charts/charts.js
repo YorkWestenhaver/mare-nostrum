@@ -9,7 +9,8 @@ import {
   DENARIUS, AUREUS_DATA, SOLIDUS_DATA, DIRHAM_DATA,
   WHEAT_PRICES, CHRE_HOARDS, INSCRIPTIONS_DATA,
   POPULATION, TREE_RINGS, VOLCANIC_EVENTS, POLLEN_DATA,
-  CHURCH_DATA, PAS_COINS
+  CHURCH_DATA, PAS_COINS,
+  TIMBER_DATA, CATTLE_DATA, GDP_DATA
 } from '$lib/data/datasets.js';
 import { CHANGEPOINTS, HISTORICAL_EVENTS } from '$lib/data/events.js';
 
@@ -528,15 +529,15 @@ export const CHARTS = {
         hovertemplate: '%{x} CE<br>%{y:+.1f}\u00b0C<extra></extra>'
       },
       {
-        type: 'bar', name: 'Volcanic sulfur (Tg SO\u2082)',
-        x: VOLCANIC_EVENTS.map(d => d.year),
-        y: VOLCANIC_EVENTS.map(d => -d.sulfur / 10),
-        text: VOLCANIC_EVENTS.map(d => d.label),
+        type: 'bar', name: 'Volcanic sulfur (Tg S)',
+        x: VOLCANIC_EVENTS.filter(d => d.sulfur >= 5).map(d => d.year),
+        y: VOLCANIC_EVENTS.filter(d => d.sulfur >= 5).map(d => -d.sulfur / 10),
+        text: VOLCANIC_EVENTS.filter(d => d.sulfur >= 5).map(d => d.label),
         marker: {color: 'rgba(155, 109, 215, 0.7)', line: {color: '#9b6dd7', width: 1}},
         width: 8,
         yaxis: 'y2',
-        hovertemplate: '%{text}<br>%{x} CE<br>%{customdata} Tg SO\u2082<extra></extra>',
-        customdata: VOLCANIC_EVENTS.map(d => d.sulfur)
+        hovertemplate: '%{text}<br>%{x} CE<br>%{customdata} Tg S<extra></extra>',
+        customdata: VOLCANIC_EVENTS.filter(d => d.sulfur >= 5).map(d => d.sulfur)
       }
     ];
 
@@ -548,12 +549,12 @@ export const CHARTS = {
       yaxis2: {
         title: 'Eruption magnitude',
         overlaying: 'y', side: 'right',
-        range: [-5, 1],
+        range: [-7, 1],
         showgrid: false,
         tickfont: {size: 11, color: '#9b6dd7'},
         titlefont: {color: '#9b6dd7'},
-        tickvals: [-4, -3, -2, -1, 0],
-        ticktext: ['40', '30', '20', '10', '0']
+        tickvals: [-6, -5, -4, -3, -2, -1, 0],
+        ticktext: ['60', '50', '40', '30', '20', '10', '0']
       },
       margin: {l: 60, r: 60, t: 40, b: 50},
       shapes: [OVERLAYS.lateAntiqueLIA],
@@ -697,6 +698,10 @@ export const CHARTS = {
     const inscX = INSCRIPTIONS_DATA.map(d => d.mid);
     const inscY = INSCRIPTIONS_DATA.map(d => (d.total / inscPeak) * 100);
 
+    const timberPeak = Math.max(...TIMBER_DATA.map(d => d.count));
+    const timberX = TIMBER_DATA.map(d => d.mid);
+    const timberY = TIMBER_DATA.map(d => (d.count / timberPeak) * 100);
+
     const evtShapes = HISTORICAL_EVENTS.map(e => ({
       type: 'line', x0: e.year, x1: e.year, y0: 0, y1: 1,
       xref: 'x', yref: 'paper',
@@ -745,6 +750,13 @@ export const CHARTS = {
         line: {color: '#9b6dd7', width: 2},
         opacity: 0.7,
         hovertemplate: 'Inscriptions: %{y:.0f}%<extra></extra>'
+      },
+      {
+        type: 'scatter', mode: 'lines', name: 'Construction Timber',
+        x: timberX, y: timberY,
+        line: {color: '#c9944a', width: 2},
+        opacity: 0.85,
+        hovertemplate: 'Construction Timber: %{y:.0f}%<extra></extra>'
       }
     ];
 
@@ -808,6 +820,120 @@ export const CHARTS = {
         font: {size: 8, color: e.color},
         textangle: -45, xanchor: 'left'
       }))
+    });
+
+    return {traces, layout};
+  },
+
+  // ============================================================
+  // 18. CONSTRUCTION TIMBER (Tegel et al.)
+  // ============================================================
+  timber: () => {
+    const traces = [{
+      type: 'bar',
+      x: TIMBER_DATA.map(d => d.mid),
+      y: TIMBER_DATA.map(d => d.count),
+      marker: {
+        color: TIMBER_DATA.map(d => {
+          if (d.mid < -50) return '#5b8dd9';
+          if (d.mid < 250) return '#4fb5ad';
+          if (d.mid < 500) return '#d94f4f';
+          return '#4fad7a';
+        }),
+        line: {color: '#0c0f13', width: 0.5}
+      },
+      width: 22,
+      hovertemplate: '%{x} CE<br>%{y} wood samples<extra></extra>',
+      name: 'Dated wood samples'
+    }];
+
+    const layout = mergeLayout({
+      title: {text: 'Construction Timber: 20,397 Dated Woods (300 BCE \u2013 700 CE)', font: {size: 15, color: '#d4d4d8'}},
+      xaxis: {title: 'Year CE', range: [-320, 740]},
+      yaxis: {title: 'Dated wood samples per 25 years', rangemode: 'tozero'},
+      annotations: [
+        {x: 37.5, y: 1880, text: 'Imperial peak', showarrow: true, arrowhead: 0, arrowcolor: '#4fb5ad', ax: 40, ay: -30, font: {size: 10, color: '#4fb5ad'}},
+        {x: 262.5, y: 184, text: '3rd-c. collapse', showarrow: true, arrowhead: 0, arrowcolor: '#d94f4f', ax: 40, ay: -30, font: {size: 10, color: '#d94f4f'}}
+      ]
+    });
+
+    return {traces, layout};
+  },
+
+  // ============================================================
+  // 19. CATTLE SIZE (Trentacoste et al.)
+  // ============================================================
+  cattle: () => {
+    const traces = [
+      {
+        type: 'bar',
+        x: CATTLE_DATA.map(d => d.period),
+        y: CATTLE_DATA.map(d => d.lsi),
+        marker: {
+          color: CATTLE_DATA.map(d => d.lsi < 0 ? '#5b8dd9' : '#4fad7a'),
+          line: {color: '#0c0f13', width: 0.5}
+        },
+        customdata: CATTLE_DATA.map(d => [d.mean_bd, d.n]),
+        hovertemplate: '%{x}<br>LSI: %{y:.4f}<br>Mean BD: %{customdata[0]}<br>n=%{customdata[1]}<extra></extra>',
+        name: 'Log-Size Index'
+      },
+      {
+        type: 'scatter', mode: 'lines',
+        x: [CATTLE_DATA[0].period, CATTLE_DATA[CATTLE_DATA.length - 1].period],
+        y: [0, 0],
+        line: {color: '#8b8fa3', width: 1.5, dash: 'dash'},
+        showlegend: false, hoverinfo: 'skip'
+      }
+    ];
+
+    const layout = mergeLayout({
+      title: {text: 'Cattle Size in N. Italy (Log-Size-Index vs Iron Age)', font: {size: 15, color: '#d4d4d8'}},
+      xaxis: {title: 'Period'},
+      yaxis: {title: 'Log-Size Index (vs Iron Age baseline)'},
+      height: 350
+    });
+
+    return {traces, layout};
+  },
+
+  // ============================================================
+  // 20. GDP PER CAPITA (Maddison 2023)
+  // ============================================================
+  gdp: () => {
+    const landmarkYears = new Set([1, 730, 1000, 1150, 1300, 1500]);
+    const filtered = GDP_DATA.filter(d => landmarkYears.has(d.year));
+
+    const countryColors = {
+      Italy: '#e6b86e',
+      Egypt: '#4fb5ad',
+      Greece: '#9b6dd7',
+      Spain: '#d94f4f',
+      France: '#5b8dd9',
+      Britain: '#4fad7a',
+      Turkey: '#8b8fa3',
+      Iraq: '#c9944a',
+      Iran: '#d94f4f'
+    };
+
+    const countries = [...new Set(filtered.map(d => d.country))].filter(c => countryColors[c]);
+
+    const traces = countries.map(country => {
+      const rows = filtered.filter(d => d.country === country).sort((a, b) => a.year - b.year);
+      return {
+        type: 'scatter', mode: 'lines+markers',
+        name: country,
+        x: rows.map(d => d.year),
+        y: rows.map(d => d.gdp),
+        line: {color: countryColors[country], width: 2},
+        marker: {size: 7, color: countryColors[country], line: {color: '#0c0f13', width: 1.5}},
+        hovertemplate: `${country}<br>%{x} CE<br>$%{y} (2011 PPP)<extra></extra>`
+      };
+    });
+
+    const layout = mergeLayout({
+      title: {text: 'GDP Per Capita in Antiquity (Maddison 2023)', font: {size: 15, color: '#d4d4d8'}},
+      xaxis: {title: 'Year CE', range: [-50, 1550]},
+      yaxis: {title: '2011 Int\u2019l $ (PPP)', rangemode: 'tozero'}
     });
 
     return {traces, layout};

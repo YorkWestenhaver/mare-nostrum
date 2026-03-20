@@ -1,7 +1,7 @@
 <div class="hero">
-  <h1>When Did the Ancient Economy <em>Actually</em> Collapse?</h1>
+  <h1>Overview of the <em>Ancient</em> Economy</h1>
   <p class="subtitle">
-    Sixteen independent datasets &mdash; ice cores, shipwrecks, coinage, wheat prices, tree rings, volcanic records, pollen cores, and more &mdash; tell the story of rise, collapse, and recovery across 2,000 years. Starting from the data alone, with no historical thesis to prove.
+    Eighteen independent datasets &mdash; ice-core lead, shipwrecks, coinage, wheat prices, tree rings, volcanic records, pollen cores, timber, cattle bones, and more &mdash; chart the rise, peak, and transformation of the Mediterranean economy across 2,000 years.
   </p>
   <div class="scroll-hint">Scroll to explore the data</div>
 </div>
