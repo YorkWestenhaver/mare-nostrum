@@ -7,6 +7,9 @@ __pycache__/
 # Raw source data (large, download separately)
 data/raw/
 
+# Parquet cache (regenerate with python data/process.py)
+data/cache/
+
 # Generated geo data (regenerate with src/prepare_*.py)
 svelte-app/static/data/geo/world_borders.json
 
